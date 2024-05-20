@@ -17,7 +17,7 @@ const SectionNavigation = ({ sections }: SectionNavigationProps) => {
 
   const navContrastStyles = highContrast
     ? "bg-[#ffff00] text-white"
-    : "bg-[#1660C7] text-white";
+    : "bg-blue-950 text-white";
 
   const handleSmoothScroll = (
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,

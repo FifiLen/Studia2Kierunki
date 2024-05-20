@@ -26,7 +26,7 @@ export default function Seksuologia() {
   
     const linkContrastStyles = highContrast
       ? "bg-white hover:bg-gray-300 text-black"
-      : "bg-blue-600 hover:bg-blue-500 text-white";
+      : "bg-[#1660C7] hover:bg-blue-500 text-white";
   
     const sections = [
       { id: "o-specjalnosci", title: "O specjalności" },
@@ -48,7 +48,7 @@ export default function Seksuologia() {
                 className={`w-full lg:w-1/2 text-center lg:text-left ${fontSizeStyles[fontSize]}`}
               >
                 <div className="mb-4 flex flex-wrap justify-center lg:justify-start gap-2">
-                  <span className="bg-blue-500 text-white px-3 py-1 rounded-full">
+                  <span className={`bg-[#1660C7] ${fontSizeStyles[fontSize]}  text-white px-3 py-1 rounded-full`}>
                     Studia podyplomowe
                   </span>
                   <span className="bg-[#9E5AE2] text-white px-3 py-1 rounded-full">

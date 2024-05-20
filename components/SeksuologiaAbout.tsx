@@ -48,11 +48,11 @@ const AboutSpecialty = () => {
                 <div className="grid grid-cols-1 gap-4">
                   <p className="text-gray-900">studia RealTime Online (hybrydowe): <span className="font-semibold">800,00 zł</span></p>
                 </div>
-                <p className="text-pink-500 font-semibold mt-4 cursor-pointer">Dowiedz się, jak obniżyć czesne?</p>
+                <p className="text-[#9E5AE2] font-semibold mt-4 cursor-pointer">Dowiedz się, jak obniżyć czesne?</p>
               </div>
             </div>
             <div className="flex flex-col space-y-4">
-              <Link href="#rekrutacja" className="inline-block text-center transform transition duration-300 ease-in-out bg-pink-500 text-white px-4 py-2 rounded-md shadow-md hover:bg-pink-600 hover:-translate-y-1">
+              <Link href="#rekrutacja" className="inline-block text-center transform transition duration-300 ease-in-out bg-[#9E5AE2] text-white px-4 py-2 rounded-md shadow-md hover:bg-pink-600 hover:-translate-y-1">
                 Zapisz się online!
               </Link>
               <Link href="#program-studiow" className="inline-block text-center transform transition duration-300 ease-in-out bg-[#1660C7] text-white px-4 py-2 rounded-md shadow-md hover:bg-[#87B4E8] hover:-translate-y-1">

@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Header";
 import Footer from "@/components/Footer";
 import { UserPreferencesProvider } from "@/components/UserPreferencesContext";
+import Access from "@/components/Access";
 
 const dmsans = DM_Sans({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={dmsans.className}>
         <UserPreferencesProvider>
+        <Access />
         <Navbar />
         {children}
         <Footer />
