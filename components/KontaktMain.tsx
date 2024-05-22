@@ -106,7 +106,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="mt-10">
+        {/* <div className="mt-10">
           <h3 className={`text-2xl font-semibold mb-4 ${textContrastStyles}`}>
             Nasza lokalizacja
           </h3>
@@ -123,7 +123,7 @@ const Contact = () => {
               tabIndex={0}
             ></iframe>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

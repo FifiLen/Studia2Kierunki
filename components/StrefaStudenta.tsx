@@ -59,7 +59,7 @@ const StudentResources = () => {
         <h2
           className={`text-4xl font-bold ${textContrastStyles} sm:text-5xl lg:text-6xl tracking-tighter`}
         >
-          Zasoby dla studentów
+          Zasoby Dla Studentów
         </h2>
         <p className={`mt-4 leading-6 ${textContrastStyles} max-w-2xl`}>
           Skorzystaj z dostępnych zasobów, które pomogą Ci w nauce i rozwoju.

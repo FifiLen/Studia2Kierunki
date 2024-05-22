@@ -63,7 +63,7 @@ const WhyUs = () => {
         <h2
           className={`text-3xl font-bold ${textContrastStyles} sm:text-4xl lg:text-5xl tracking-tighter`}
         >
-          Dlaczego Warto Wybrać Nas?
+          Dlaczego Warto Nas Wybrać?
         </h2>
         <p className={`mt-4 text-lg leading-6 ${textContrastStyles}`}>
           Nasza instytucja oferuje wyjątkowe programy studiów podyplomowych,
