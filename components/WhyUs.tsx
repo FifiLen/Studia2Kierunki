@@ -1,103 +1,97 @@
 "use client";
-import React from "react";
-import { Card, CardHeader, CardContent } from "./ui/card";
-import { useUserPreferences } from "./UserPreferencesContext";
-import {
-  FaChalkboardTeacher,
-  FaHandshake,
-  FaLaptop,
-  FaUniversity,
-} from "react-icons/fa";
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import CardComponent from "./CardScrollComponent"; // Import nowego komponentu
 
-const WhyUs = () => {
-  const { fontSize, highContrast } = useUserPreferences();
+gsap.registerPlugin(ScrollTrigger);
 
-  const fontSizeClasses = {
-    small: "text-sm",
-    medium: "text-base",
-    large: "text-lg",
-  };
+const HorizontalScrollSection: React.FC = () => {
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const cardsRef = useRef<HTMLDivElement>(null);
 
-  const textContrastStyles = highContrast ? "text-[#FFFF00]" : "text-black";
-  const bgContrastStyles = highContrast ? "bg-black" : "bg-white";
-  const cardBgStyles = highContrast ? "bg-gray-800" : "bg-white";
-  const iconBgColors = [
-    "bg-blue-500",
-    "bg-green-500",
-    "bg-yellow-500",
-    "bg-red-500",
-  ];
-
-  const items = [
+  const cardsData = [
     {
-      icon: <FaChalkboardTeacher size={32} className="text-white" />,
-      title: "Doświadczeni Wykładowcy",
-      description: "Nasi wykładowcy to eksperci w swoich dziedzinach.",
-      bgColor: iconBgColors[0],
+      title: "Study at Our University",
+      content:
+        "Enjoy state-of-the-art facilities, a supportive learning environment, and a vibrant campus life. Join us to achieve academic excellence.",
+      image: "/assets/card1.svg",
     },
     {
-      icon: <FaLaptop size={32} className="text-white" />,
-      title: "Nowoczesne Technologie",
-      description: "Korzystamy z najnowszych technologii edukacyjnych.",
-      bgColor: iconBgColors[1],
+      title: "World-Class Faculty",
+      content:
+        "Learn from the best! Our faculty members are renowned experts in their fields, dedicated to providing you with an exceptional education.",
+      image: "/assets/card1.svg",
     },
     {
-      icon: <FaUniversity size={32} className="text-white" />,
-      title: "Bogata Oferta Kursów",
-      description: "Oferujemy szeroki zakres programów studiów.",
-      bgColor: iconBgColors[2],
+      title: "Cutting-Edge Research",
+      content:
+        "Engage in groundbreaking research with access to advanced laboratories and resources. Contribute to innovations that change the world.",
+      image: "/assets/card1.svg",
     },
     {
-      icon: <FaHandshake size={32} className="text-white" />,
-      title: "Wsparcie Kariery",
-      description: "Pomagamy naszym absolwentom w rozwoju kariery zawodowej.",
-      bgColor: iconBgColors[3],
+      title: "Global Opportunities",
+      content:
+        "Expand your horizons with our international programs. Study abroad, participate in global internships, and build a worldwide network.",
+      image: "/assets/card1.svg",
+    },
+    {
+      title: "Comprehensive Support",
+      content:
+        "Benefit from our comprehensive student support services, including academic advising, career counseling, and health and wellness resources.",
+      image: "/assets/card1.svg",
+    },
+    {
+      title: "Vibrant Community",
+      content:
+        "Be part of a diverse and inclusive community. Join student organizations, participate in events, and make lifelong friendships.",
+      image: "/assets/card1.svg",
     },
   ];
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const cards = cardsRef.current;
+
+    if (section && cards) {
+      const totalScroll = cards.scrollWidth - window.innerWidth;
+
+      gsap.to(cards, {
+        x: -totalScroll,
+        ease: "none",
+        scrollTrigger: {
+          trigger: section,
+          start: "top top",
+          end: () => `+=${totalScroll}`,
+          pin: true,
+          scrub: 0.5,
+          invalidateOnRefresh: true,
+        },
+      });
+
+      ScrollTrigger.refresh();
+    }
+
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
+  }, []);
 
   return (
     <div
-      className={`bg-gray-50 py-16 sm:py-24 lg:py-32 ${fontSizeClasses[fontSize]}`}
+      ref={sectionRef}
+      className="h-screen bg-blue-950 overflow-hidden relative will-change-transform"
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <h2
-          className={`text-3xl font-bold ${textContrastStyles} sm:text-4xl lg:text-5xl tracking-tighter`}
-        >
-          Dlaczego Warto Nas Wybrać?
+      <div className="fixed top-52 left-0 w-full text-center z-10">
+        <h2 className="text-6xl text-white font-bold tracking-tighter">
+          Dlaczego warto nas wybrać?
         </h2>
-        <p className={`mt-4 text-lg leading-6 ${textContrastStyles}`}>
-          Nasza instytucja oferuje wyjątkowe programy studiów podyplomowych,
-          które przygotowują do sukcesu w różnych dziedzinach zawodowych.
-        </p>
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {items.map((item, index) => (
-            <Card
-              key={index}
-              className={`shadow-lg rounded-lg overflow-hidden flex flex-col items-start ${cardBgStyles}`}
-            >
-              <CardHeader className="p-6 flex items-start justify-start flex-col w-full">
-                <div
-                  className={`${item.bgColor} text-white rounded-full p-4 inline-block`}
-                >
-                  {item.icon}
-                </div>
-                <h3
-                  className={`mt-4 text-xl font-semibold ${textContrastStyles}`}
-                >
-                  {item.title}
-                </h3>
-              </CardHeader>
-              <CardContent className="p-6 w-full">
-                <p className={`text-base ${textContrastStyles}`}>
-                  {item.description}
-                </p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+      </div>
+      <div ref={cardsRef} className="flex w-max h-full items-center mt-16">
+        <CardComponent cardsData={cardsData} />
       </div>
     </div>
   );
 };
 
-export default WhyUs;
+export default HorizontalScrollSection;
