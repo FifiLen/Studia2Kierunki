@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import { useUserPreferences } from "../components/UserPreferencesContext";
 
 interface SectionNavigationProps {
@@ -42,14 +42,14 @@ const SectionNavigation = ({ sections }: SectionNavigationProps) => {
       setActiveSection(currentSection);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [sections]);
 
   return (
-    <nav className={`py-4 ${navContrastStyles} sticky top-0 z-50`}>
+    <nav className={`py-8 ${navContrastStyles} sticky top-0 z-50`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ul className="flex flex-wrap space-x-4 justify-center">
           {sections.map((section) => (
@@ -57,11 +57,17 @@ const SectionNavigation = ({ sections }: SectionNavigationProps) => {
               <a
                 href={`#${section.id}`}
                 onClick={(event) => handleSmoothScroll(event, section.id)}
-                className={`inline-flex items-center gap-2 px-4 py-2 font-medium ${fontSizeStyles[fontSize]} ${
+                className={`inline-flex items-center gap-2 px-4 py-2 font-medium ${
+                  fontSizeStyles[fontSize]
+                } ${
                   highContrast
                     ? "text-black border-b-2 border-transparent hover:border-black"
                     : "text-white border-b-2 border-transparent hover:border-[#87B4E8]"
-                } ${activeSection === section.id ? 'border-b-2 border-[#87B4E8]' : ''}`}
+                } ${
+                  activeSection === section.id
+                    ? "border-b-2 border-[#87B4E8]"
+                    : ""
+                }`}
               >
                 {section.title}
               </a>

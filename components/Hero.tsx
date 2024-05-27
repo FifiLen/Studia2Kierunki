@@ -29,7 +29,59 @@ const slides = [
       "Nasz program oferuje kompleksowe podejście do nauczania seksuologii, łącząc teorię z praktyką. Przygotuj się do pracy w różnorodnych środowiskach, pomagając innym lepiej zrozumieć i zarządzać swoją seksualnością. Zdobądź kwalifikacje, które otworzą przed Tobą nowe możliwości kariery zawodowej.",
   },
   {
-    title: "Psychologia uzależnień",
+    title: "Psychologia uzależnień z terapią uzależnień",
+    description:
+      "Poznaj najnowsze metody terapii uzależnień. Nasz program oferuje zaawansowaną wiedzę teoretyczną i praktyczne umiejętności.",
+    image: "/assets/studentka2.png",
+    loading: "lazy",
+    badges: [
+      { text: "Studia podyplomowe", color: "bg-[#1660C7]" },
+      { text: "100% online", color: "bg-[#9E5AE2]" },
+    ],
+    detail:
+      "Zdobądź specjalistyczną wiedzę i umiejętności w zakresie psychologii uzależnień. Nasze studia przygotują Cię do pracy z osobami borykającymi się z różnymi rodzajami uzależnień. Dowiedz się, jak skutecznie prowadzić terapię i wsparcie, aby pomagać pacjentom w ich drodze do zdrowia i stabilności.",
+  },
+  {
+    title: "Diagnoza i strategie terapeutyczne w leczeniu hiperseksualności",
+    description:
+      "Poznaj najnowsze metody terapii uzależnień. Nasz program oferuje zaawansowaną wiedzę teoretyczną i praktyczne umiejętności.",
+    image: "/assets/studentka2.png",
+    loading: "lazy",
+    badges: [
+      { text: "Studia podyplomowe", color: "bg-[#1660C7]" },
+      { text: "100% online", color: "bg-[#9E5AE2]" },
+    ],
+    detail:
+      "Zdobądź specjalistyczną wiedzę i umiejętności w zakresie psychologii uzależnień. Nasze studia przygotują Cię do pracy z osobami borykającymi się z różnymi rodzajami uzależnień. Dowiedz się, jak skutecznie prowadzić terapię i wsparcie, aby pomagać pacjentom w ich drodze do zdrowia i stabilności.",
+  },
+  {
+    title: "Cyberpsychologia",
+    description:
+      "Poznaj najnowsze metody terapii uzależnień. Nasz program oferuje zaawansowaną wiedzę teoretyczną i praktyczne umiejętności.",
+    image: "/assets/studentka2.png",
+    loading: "lazy",
+    badges: [
+      { text: "Studia podyplomowe", color: "bg-[#1660C7]" },
+      { text: "100% online", color: "bg-[#9E5AE2]" },
+    ],
+    detail:
+      "Zdobądź specjalistyczną wiedzę i umiejętności w zakresie psychologii uzależnień. Nasze studia przygotują Cię do pracy z osobami borykającymi się z różnymi rodzajami uzależnień. Dowiedz się, jak skutecznie prowadzić terapię i wsparcie, aby pomagać pacjentom w ich drodze do zdrowia i stabilności.",
+  },
+  {
+    title: "Trening umiejętności społecznych",
+    description:
+      "Poznaj najnowsze metody terapii uzależnień. Nasz program oferuje zaawansowaną wiedzę teoretyczną i praktyczne umiejętności.",
+    image: "/assets/studentka2.png",
+    loading: "lazy",
+    badges: [
+      { text: "Studia podyplomowe", color: "bg-[#1660C7]" },
+      { text: "100% online", color: "bg-[#9E5AE2]" },
+    ],
+    detail:
+      "Zdobądź specjalistyczną wiedzę i umiejętności w zakresie psychologii uzależnień. Nasze studia przygotują Cię do pracy z osobami borykającymi się z różnymi rodzajami uzależnień. Dowiedz się, jak skutecznie prowadzić terapię i wsparcie, aby pomagać pacjentom w ich drodze do zdrowia i stabilności.",
+  },
+  {
+    title: "Psychologia uzależnień - uzależnienia behawioralne",
     description:
       "Poznaj najnowsze metody terapii uzależnień. Nasz program oferuje zaawansowaną wiedzę teoretyczną i praktyczne umiejętności.",
     image: "/assets/studentka2.png",

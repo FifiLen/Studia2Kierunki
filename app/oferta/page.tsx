@@ -54,12 +54,12 @@ const OfferPage = () => {
       ],
       image: "/assets/studentka2.png",
       link: "/seksuologia",
-      cost: "8,000 PLN",
+      cost: "6,000 PLN",
       semesters: 3,
       online: true,
     },
     {
-      title: "Psychologia Uzależnień",
+      title: "Psychologia uzależnień z terapią uzależnień",
       description:
         "Program obejmuje trzy semestry intensywnych zajęć, które łączą teorię z praktyką. Zajęcia prowadzone są przez doświadczonych wykładowców.",
       requirements:
@@ -71,8 +71,73 @@ const OfferPage = () => {
       ],
       image: "/assets/studentka.png",
       link: "#",
-      cost: "12,000 PLN",
+      cost: "8,000 PLN",
       semesters: 3,
+      online: true,
+    },
+    // Additional programs added here
+    {
+      title: "Cyberpsychologia",
+      description:
+        "Program obejmuje dwa semestry zajęć teoretycznych i praktycznych. Zajęcia prowadzone są przez specjalistów z zakresu zarządzania.",
+      requirements:
+        "Wymagania rekrutacyjne: ukończone studia wyższe, preferowane kierunki to zarządzanie i ochrona zdrowia.",
+      lecturers: [
+        "Dr. Tomasz Nowak: Ekspert w zarządzaniu służbą zdrowia",
+        "Prof. Maria Kowalska: Specjalistka w zakresie ekonomii zdrowia",
+      ],
+      image: "/assets/studentka2.png",
+      link: "#",
+      cost: "8,000 PLN",
+      semesters: 2,
+      online: true,
+    },
+    {
+      title: "Trening umiejętności społecznych",
+      description:
+        "Program obejmuje dwa semestry intensywnych zajęć teoretycznych i praktycznych z zakresu marketingu.",
+      requirements:
+        "Wymagania rekrutacyjne: ukończone studia wyższe, preferowane kierunki to marketing i zarządzanie.",
+      lecturers: [
+        "Dr. Adam Zieliński: Specjalista w zakresie marketingu",
+        "Prof. Julia Nowak: Ekspert w dziedzinie zarządzania",
+      ],
+      image: "/assets/studentka.png",
+      link: "#",
+      cost: "2,400 PLN",
+      semesters: 2,
+      online: true,
+    },
+    {
+      title: "Uzaleznienia behawioralne",
+      description:
+        "Program obejmuje dwa semestry zajęć teoretycznych i praktycznych z zakresu prawa biznesowego.",
+      requirements:
+        "Wymagania rekrutacyjne: ukończone studia wyższe, preferowane kierunki to prawo i administracja.",
+      lecturers: [
+        "Dr. Wojciech Kamiński: Ekspert w dziedzinie prawa biznesowego",
+        "Prof. Anna Kowalska: Specjalistka w zakresie prawa handlowego",
+      ],
+      image: "/assets/studentka2.png",
+      link: "#",
+      cost: "4,200 PLN",
+      semesters: 2,
+      online: true,
+    },
+    {
+      title: "Diagnoza i strategie terapeutyczne w leczeniu hiperseksualności",
+      description:
+        "Program obejmuje dwa semestry zajęć teoretycznych i praktycznych z zakresu informatyki biznesowej.",
+      requirements:
+        "Wymagania rekrutacyjne: ukończone studia wyższe, preferowane kierunki to informatyka i zarządzanie.",
+      lecturers: [
+        "Dr. Janusz Kwiatkowski: Ekspert w dziedzinie informatyki",
+        "Prof. Katarzyna Nowak: Specjalistka w zakresie zarządzania systemami IT",
+      ],
+      image: "/assets/studentka.png",
+      link: "#",
+      cost: "6,000 PLN",
+      semesters: 2,
       online: true,
     },
   ];
@@ -85,12 +150,12 @@ const OfferPage = () => {
         <h1
           className={`text-4xl font-bold ${textContrastStyles} sm:text-5xl lg:text-6xl tracking-tighter`}
         >
-          Nasza Oferta Studiów Podyplomowych
+          Studia Podyplomowe
         </h1>
         <p className={`mt-4 leading-6 ${textContrastStyles} max-w-2xl`}>
           Zapraszamy do zapoznania się z naszą ofertą studiów podyplomowych.
         </p>
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {programs.map((program, index) => (
             <Card
               key={index}
@@ -105,42 +170,11 @@ const OfferPage = () => {
               </CardHeader>
               <CardContent className="p-6">
                 <h3
-                  className={`text-2xl font-semibold mb-2 ${textContrastStyles}`}
+                  className={`text-2xl font-semibold tracking-tighter mb-2 ${textContrastStyles}`}
                 >
                   {program.title}
                 </h3>
-                <Accordion type="single" collapsible className="mt-4">
-                  <AccordionItem value="item-1">
-                    <AccordionTrigger>Opis programu</AccordionTrigger>
-                    <AccordionContent>
-                      <p className={`text-base mb-4 ${textContrastStyles}`}>
-                        {program.description}
-                      </p>
-                    </AccordionContent>
-                  </AccordionItem>
-                  <AccordionItem value="item-2">
-                    <AccordionTrigger>Wymagania rekrutacyjne</AccordionTrigger>
-                    <AccordionContent>
-                      <p className={`text-base mb-4 ${textContrastStyles}`}>
-                        {program.requirements}
-                      </p>
-                    </AccordionContent>
-                  </AccordionItem>
-                  <AccordionItem value="item-3">
-                    <AccordionTrigger>Wykładowcy</AccordionTrigger>
-                    <AccordionContent>
-                      <ul
-                        className={`list-disc list-inside mb-4 ${textContrastStyles}`}
-                      >
-                        {program.lecturers.map((lecturer, i) => (
-                          <li key={i} className="ml-4">
-                            {lecturer}
-                          </li>
-                        ))}
-                      </ul>
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
+
                 <div className="mt-6 grid grid-cols-1 gap-4">
                   <Card className={`p-4 ${bgContrastStyles}`}>
                     <div className="flex items-center">
@@ -189,11 +223,43 @@ const OfferPage = () => {
                     </div>
                   </Card>
                 </div>
+                <Accordion type="single" collapsible className="mt-4">
+                  <AccordionItem value="item-1">
+                    <AccordionTrigger>Opis programu</AccordionTrigger>
+                    <AccordionContent>
+                      <p className={`text-base mb-4 ${textContrastStyles}`}>
+                        {program.description}
+                      </p>
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item-2">
+                    <AccordionTrigger>Wymagania rekrutacyjne</AccordionTrigger>
+                    <AccordionContent>
+                      <p className={`text-base mb-4 ${textContrastStyles}`}>
+                        {program.requirements}
+                      </p>
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item-3">
+                    <AccordionTrigger>Wykładowcy</AccordionTrigger>
+                    <AccordionContent>
+                      <ul
+                        className={`list-disc list-inside mb-4 ${textContrastStyles}`}
+                      >
+                        {program.lecturers.map((lecturer, i) => (
+                          <li key={i} className="ml-4">
+                            {lecturer}
+                          </li>
+                        ))}
+                      </ul>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
               </CardContent>
               <CardFooter className="px-6">
                 <Link href={program.link}>
                   <p
-                    className={`font-semibold flex items-center px-4 py-2 rounded-lg gap-2 ${linkContrastStyles}`}
+                    className={`font-medium tracking-tight flex items-center px-4 py-2 rounded-lg gap-2 ${linkContrastStyles}`}
                   >
                     Dowiedz się więcej o kierunku <FaGraduationCap />
                   </p>
@@ -213,7 +279,7 @@ const OfferPage = () => {
             prosty i przejrzysty. Skontaktuj się z nami, aby uzyskać więcej
             informacji lub odwiedź naszą stronę rekrutacyjną.
           </p>
-          <Link href="#rekrutacja">
+          <Link href="/rekrutacja">
             <p
               className={`mt-4 inline-block px-6 py-3 rounded-md ${linkContrastStyles}`}
             >
@@ -248,84 +314,6 @@ const OfferPage = () => {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
-        </div>
-        <div className="mt-16">
-          <h2
-            className={`text-3xl font-bold ${textContrastStyles} sm:text-4xl lg:text-5xl tracking-tighter`}
-          >
-            Kontakt
-          </h2>
-          <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className={`shadow-lg rounded-lg p-6 ${bgContrastStyles}`}>
-              <h3
-                className={`text-2xl font-semibold mb-4 ${textContrastStyles}`}
-              >
-                Dane kontaktowe
-              </h3>
-              <div className="flex items-center mb-4">
-                <FaPhoneAlt size={24} className="mr-4 text-blue-500" />
-                <p className={textContrastStyles}>+48 123 456 789</p>
-              </div>
-              <div className="flex items-center mb-4">
-                <FaEnvelope size={24} className="mr-4 text-red-500" />
-                <p className={textContrastStyles}>kontakt@uczelni.pl</p>
-              </div>
-            </div>
-            <div className={`shadow-lg rounded-lg p-6 ${bgContrastStyles}`}>
-              <h3
-                className={`text-2xl font-semibold mb-4 ${textContrastStyles}`}
-              >
-                Formularz kontaktowy
-              </h3>
-              <form>
-                <div className="mb-4">
-                  <label
-                    className={`block mb-2 ${textContrastStyles}`}
-                    htmlFor="name"
-                  >
-                    Imię i nazwisko
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    className={`w-full p-3 rounded-md ${textContrastStyles} border border-gray-300 focus:border-blue-500`}
-                  />
-                </div>
-                <div className="mb-4">
-                  <label
-                    className={`block mb-2 ${textContrastStyles}`}
-                    htmlFor="email"
-                  >
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className={`w-full p-3 rounded-md ${textContrastStyles} border border-gray-300 focus:border-blue-500`}
-                  />
-                </div>
-                <div className="mb-4">
-                  <label
-                    className={`block mb-2 ${textContrastStyles}`}
-                    htmlFor="message"
-                  >
-                    Wiadomość
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={4}
-                    className={`w-full p-3 rounded-md ${textContrastStyles} border border-gray-300 focus:border-blue-500`}
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className={`w-full py-3 px-6 rounded-md ${linkContrastStyles} bg-blue-500 hover:bg-blue-600`}
-                >
-                  Wyślij
-                </button>
-              </form>
-            </div>
-          </div>
         </div>
       </div>
     </div>

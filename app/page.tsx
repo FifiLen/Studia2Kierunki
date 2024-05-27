@@ -13,11 +13,11 @@ export default function Home() {
     <>
       <Baner />
       <Hero />
-      <WhyUs />
-
-      <Lecture />
-
       <Offer />
+
+      {/* <Lecture /> */}
+
+      <WhyUs />
       <StudentResources />
       <News />
       <Faq />
