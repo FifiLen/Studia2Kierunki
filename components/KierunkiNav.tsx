@@ -1,5 +1,6 @@
+"use client";
 import React, { useEffect, useState } from "react";
-import { useUserPreferences } from "../components/UserPreferencesContext";
+import { useUserPreferences } from "./UserPreferencesContext";
 
 interface SectionNavigationProps {
   sections: { id: string; title: string }[];

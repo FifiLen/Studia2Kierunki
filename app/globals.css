@@ -111,3 +111,17 @@ html {
   align-items: center;
   font-size: 24px;
 }
+
+.baner {
+  background-image: url("/assets/banerTlo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.imageColBaner {
+  background-image: url("/assets/studentka.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
