@@ -22,10 +22,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={dmsans.className}>
         <UserPreferencesProvider>
-        <Access />
-        <Navbar />
-        {children}
-        <Footer />
+          <Access />
+          <Navbar />
+          {children}
+          <Footer />
         </UserPreferencesProvider>
       </body>
     </html>

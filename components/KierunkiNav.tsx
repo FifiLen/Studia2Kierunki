@@ -50,15 +50,15 @@ const SectionNavigation = ({ sections }: SectionNavigationProps) => {
   }, [sections]);
 
   return (
-    <nav className={`py-8 ${navContrastStyles} sticky top-0 z-50`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <ul className="flex flex-wrap space-x-4 justify-center">
+    <nav className={`md:py-8 pt-3 pb-1 ${navContrastStyles} sticky top-0 z-50`}>
+      <div className="max-w-7xl mx-auto px-2 md:px-4 sm:px-6 lg:px-8">
+        <ul className="flex flex-wrap space-x-2 md:space-x-5 justify-center">
           {sections.map((section) => (
             <li key={section.id} className="mb-2 sm:mb-0">
               <a
                 href={`#${section.id}`}
                 onClick={(event) => handleSmoothScroll(event, section.id)}
-                className={`inline-flex items-center gap-2 px-4 py-2 font-medium ${
+                className={`inline-flex items-center gap-2 px-2 md:px-4 py-0 md:py-2 font-medium ${
                   fontSizeStyles[fontSize]
                 } ${
                   highContrast

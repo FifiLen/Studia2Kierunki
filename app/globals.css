@@ -119,9 +119,38 @@ html {
   background-position: center;
 }
 
+.about {
+  background-image: url("/assets/AboutTlo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.program {
+  background-image: url("/assets/ProgramTlo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.praktyki {
+  background-image: url("/assets/PraktykiTlo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .imageColBaner {
   background-image: url("/assets/studentka.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.imageColAbout {
+  background-image: url("/assets/studentka.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
 }

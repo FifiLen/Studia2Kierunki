@@ -23,42 +23,42 @@ const HorizontalScrollSection: React.FC = () => {
       title: "Study at Our University",
       content:
         "Enjoy state-of-the-art facilities, a supportive learning environment, and a vibrant campus life. Join us to achieve academic excellence.",
-      image: "/assets/cardBg1.svg",
+      image: "/assets/programTlo.png",
       icon: <FaUniversity />,
     },
     {
       title: "World-Class Faculty",
       content:
         "Learn from the best! Our faculty members are renowned experts in their fields, dedicated to providing you with an exceptional education.",
-      image: "/assets/cardBg2.svg",
+      image: "/assets/BanerTlo.png",
       icon: <FaChalkboardTeacher />,
     },
     {
       title: "Cutting-Edge Research",
       content:
         "Engage in groundbreaking research with access to advanced laboratories and resources. Contribute to innovations that change the world.",
-      image: "/assets/cardBg1.svg",
+      image: "/assets/programTlo.png",
       icon: <FaFlask />,
     },
     {
       title: "Global Opportunities",
       content:
         "Expand your horizons with our international programs. Study abroad, participate in global internships, and build a worldwide network.",
-      image: "/assets/cardBg2.svg",
+      image: "/assets/BanerTlo.png",
       icon: <FaGlobe />,
     },
     {
       title: "Comprehensive Support",
       content:
         "Benefit from our comprehensive student support services, including academic advising, career counseling, and health and wellness resources.",
-      image: "/assets/cardBg1.svg",
+      image: "/assets/programTlo.png",
       icon: <FaLifeRing />,
     },
     {
       title: "Vibrant Community",
       content:
         "Be part of a diverse and inclusive community. Join student organizations, participate in events, and make lifelong friendships.",
-      image: "/assets/cardBg2.svg",
+      image: "/assets/BanerTlo.png",
       icon: <FaUsers />,
     },
   ];

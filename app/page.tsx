@@ -7,19 +7,20 @@ import News from "@/components/News";
 import Offer from "@/components/OfertaMain";
 import StudentResources from "@/components/StrefaStudenta";
 import WhyUs from "@/components/WhyUs";
+import KierunkiPage from "./(oferta)/oferta/page";
 
 export default function Home() {
   return (
     <>
       <Baner />
       <Hero />
-      <Offer />
+      <KierunkiPage />
 
       {/* <Lecture /> */}
 
       <WhyUs />
       <StudentResources />
-      <News />
+
       <Faq />
       <Contact />
     </>

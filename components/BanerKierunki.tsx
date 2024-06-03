@@ -64,7 +64,7 @@ const BanerKierunki = ({ course }: BanerKierunkiProps) => {
             </div>
           </div>
           {/* grid direction / boxy */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 lg:gap-3 mt-5 relative">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 lg:gap-3 mt-5 relative">
             <div className="bg-blue-100 rounded-lg p-5">
               <TbPigMoney className=" w-8 h-8" />
               <h4 className=" text-xl font-semibold tracking-tight">
@@ -105,7 +105,7 @@ const BanerKierunki = ({ course }: BanerKierunkiProps) => {
           </div>
           {/* buttons */}
           <Link href={"/rejestracja"}>
-            <button className="bg-blue-900 text-white font-semibold rounded-lg px-10 py-3 flex gap-2 items-center justify-center mt-4">
+            <button className="bg-blue-900 text-white font-semibold md:w-fit w-full rounded-lg px-10 py-3 flex gap-2 items-center justify-center mt-4">
               Zapisz się na wybrany kierunek
               <TbArrowBigRightFilled />
             </button>

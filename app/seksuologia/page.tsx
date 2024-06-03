@@ -3,7 +3,7 @@ import BanerKierunki from "@/components/BanerKierunki";
 import Faq from "@/components/Faq";
 import FormaStudiow from "@/components/FormaStudiowSeksuologia";
 import Kompetencje from "@/components/KompetencjeSeksuologia";
-import ProgramStudiow from "@/components/ProgramSeksuologia";
+import ProgramStudiow from "@/components/KierunkiProgram";
 import AboutSpecialty from "@/components/KierunkiAbout";
 import SectionNavigation from "@/components/KierunkiNav";
 
@@ -24,10 +24,10 @@ export default function Seksuologia() {
       <SectionNavigation sections={sections} />
 
       {/* About */}
-      <AboutSpecialty />
+      {/* <AboutSpecialty /> */}
 
       {/*Program */}
-      <ProgramStudiow />
+      {/* <ProgramStudiow /> */}
 
       {/* Kompetencje */}
       <Kompetencje />
