@@ -16,10 +16,8 @@ export default function Home() {
       <Hero />
       <KierunkiPage />
 
-      {/* <Lecture /> */}
-
-      <WhyUs />
-      <StudentResources />
+      {/* <WhyUs /> */}
+      {/* <StudentResources /> */}
 
       <Faq />
       <Contact />

@@ -20,7 +20,7 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 const KierunkiPage = () => {
   return (
     <div className="w-full baner">
-      <div className="max-w-7xl mx-auto py-20">
+      <div className="max-w-7xl mx-auto py-20 px-10 md:px-0">
         <h1 className="text-5xl font-bold mb-8 tracking-tighter">
           Nasze Kierunki
         </h1>
@@ -32,11 +32,12 @@ const KierunkiPage = () => {
             >
               <div className="relative h-48">
                 <Image
-                  src={`/assets/${course.id}.jpg`} // Zakładamy, że zdjęcia są zapisane w folderze public/images z nazwą identyczną jak id kursu
-                  alt={course.title}
+                  src={`/assets/${course.id}.jpg`}
                   layout="fill"
-                  objectFit="cover"
-                  className="rounded-t-lg"
+                  alt={`${course.title}`}
+                  className="object-cover rounded-t-lg"
+                  quality={75}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
               <CardHeader>
@@ -68,7 +69,7 @@ const KierunkiPage = () => {
               <CardFooter className="mt-auto">
                 <Link
                   href={`/oferta/${course.id}`}
-                  className="flex items-center text-white tracking-tight font-semibold gap-2 text-sm rounded-lg p-2 bg-blue-500"
+                  className="flex items-center text-white tracking-tight font-semibold gap-2 text-sm rounded-lg p-2 bg-[#9E5AE2]"
                 >
                   <p className="">Dowiedz się więcej</p>
                   <ArrowRightIcon className="w-5 h-5" />

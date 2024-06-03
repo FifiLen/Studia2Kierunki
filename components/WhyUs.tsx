@@ -70,7 +70,7 @@ const HorizontalScrollSection: React.FC = () => {
     if (section && cards) {
       const totalScroll = cards.scrollWidth - window.innerWidth;
 
-      gsap.to(cards, {
+      const tween = gsap.to(cards, {
         x: -totalScroll,
         ease: "none",
         scrollTrigger: {
@@ -84,11 +84,12 @@ const HorizontalScrollSection: React.FC = () => {
       });
 
       ScrollTrigger.refresh();
-    }
 
-    return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
+      return () => {
+        tween.kill();
+        ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+      };
+    }
   }, []);
 
   return (

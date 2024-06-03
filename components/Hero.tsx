@@ -3,102 +3,30 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-  type CarouselApi,
+  CarouselApi,
 } from "./ui/carousel";
-import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
-import { useState, useEffect } from "react";
-import { FaArrowRight } from "react-icons/fa";
+import { useState, useEffect, useRef } from "react";
+import {
+  FaArrowRight,
+  FaCircle,
+  FaPlay,
+  FaPause,
+  FaGraduationCap,
+  FaLaptopHouse,
+} from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 import { useUserPreferences } from "./UserPreferencesContext";
-
-const slides = [
-  {
-    title: "Seksuologia praktyczna",
-    description:
-      "Rozwiń swoje umiejętności w zakresie seksuologii praktycznej. Zdobądź wiedzę i doświadczenie potrzebne do pracy w tej fascynującej dziedzinie.",
-    image: "/assets/studentka.png",
-    loading: "priority",
-    badges: [
-      { text: "Studia podyplomowe", color: "bg-[#1660C7]" },
-      { text: "100% online", color: "bg-[#9E5AE2]" },
-    ],
-    detail:
-      "Nasz program oferuje kompleksowe podejście do nauczania seksuologii, łącząc teorię z praktyką. Przygotuj się do pracy w różnorodnych środowiskach, pomagając innym lepiej zrozumieć i zarządzać swoją seksualnością. Zdobądź kwalifikacje, które otworzą przed Tobą nowe możliwości kariery zawodowej.",
-  },
-  {
-    title: "Psychologia uzależnień z terapią uzależnień",
-    description:
-      "Poznaj najnowsze metody terapii uzależnień. Nasz program oferuje zaawansowaną wiedzę teoretyczną i praktyczne umiejętności.",
-    image: "/assets/studentka2.png",
-    loading: "lazy",
-    badges: [
-      { text: "Studia podyplomowe", color: "bg-[#1660C7]" },
-      { text: "100% online", color: "bg-[#9E5AE2]" },
-    ],
-    detail:
-      "Zdobądź specjalistyczną wiedzę i umiejętności w zakresie psychologii uzależnień. Nasze studia przygotują Cię do pracy z osobami borykającymi się z różnymi rodzajami uzależnień. Dowiedz się, jak skutecznie prowadzić terapię i wsparcie, aby pomagać pacjentom w ich drodze do zdrowia i stabilności.",
-  },
-  {
-    title: "Diagnoza i strategie terapeutyczne w leczeniu hiperseksualności",
-    description:
-      "Poznaj najnowsze metody terapii uzależnień. Nasz program oferuje zaawansowaną wiedzę teoretyczną i praktyczne umiejętności.",
-    image: "/assets/studentka2.png",
-    loading: "lazy",
-    badges: [
-      { text: "Studia podyplomowe", color: "bg-[#1660C7]" },
-      { text: "100% online", color: "bg-[#9E5AE2]" },
-    ],
-    detail:
-      "Zdobądź specjalistyczną wiedzę i umiejętności w zakresie psychologii uzależnień. Nasze studia przygotują Cię do pracy z osobami borykającymi się z różnymi rodzajami uzależnień. Dowiedz się, jak skutecznie prowadzić terapię i wsparcie, aby pomagać pacjentom w ich drodze do zdrowia i stabilności.",
-  },
-  {
-    title: "Cyberpsychologia",
-    description:
-      "Poznaj najnowsze metody terapii uzależnień. Nasz program oferuje zaawansowaną wiedzę teoretyczną i praktyczne umiejętności.",
-    image: "/assets/studentka2.png",
-    loading: "lazy",
-    badges: [
-      { text: "Studia podyplomowe", color: "bg-[#1660C7]" },
-      { text: "100% online", color: "bg-[#9E5AE2]" },
-    ],
-    detail:
-      "Zdobądź specjalistyczną wiedzę i umiejętności w zakresie psychologii uzależnień. Nasze studia przygotują Cię do pracy z osobami borykającymi się z różnymi rodzajami uzależnień. Dowiedz się, jak skutecznie prowadzić terapię i wsparcie, aby pomagać pacjentom w ich drodze do zdrowia i stabilności.",
-  },
-  {
-    title: "Trening umiejętności społecznych",
-    description:
-      "Poznaj najnowsze metody terapii uzależnień. Nasz program oferuje zaawansowaną wiedzę teoretyczną i praktyczne umiejętności.",
-    image: "/assets/studentka2.png",
-    loading: "lazy",
-    badges: [
-      { text: "Studia podyplomowe", color: "bg-[#1660C7]" },
-      { text: "100% online", color: "bg-[#9E5AE2]" },
-    ],
-    detail:
-      "Zdobądź specjalistyczną wiedzę i umiejętności w zakresie psychologii uzależnień. Nasze studia przygotują Cię do pracy z osobami borykającymi się z różnymi rodzajami uzależnień. Dowiedz się, jak skutecznie prowadzić terapię i wsparcie, aby pomagać pacjentom w ich drodze do zdrowia i stabilności.",
-  },
-  {
-    title: "Psychologia uzależnień - uzależnienia behawioralne",
-    description:
-      "Poznaj najnowsze metody terapii uzależnień. Nasz program oferuje zaawansowaną wiedzę teoretyczną i praktyczne umiejętności.",
-    image: "/assets/studentka2.png",
-    loading: "lazy",
-    badges: [
-      { text: "Studia podyplomowe", color: "bg-[#1660C7]" },
-      { text: "100% online", color: "bg-[#9E5AE2]" },
-    ],
-    detail:
-      "Zdobądź specjalistyczną wiedzę i umiejętności w zakresie psychologii uzależnień. Nasze studia przygotują Cię do pracy z osobami borykającymi się z różnymi rodzajami uzależnień. Dowiedz się, jak skutecznie prowadzić terapię i wsparcie, aby pomagać pacjentom w ich drodze do zdrowia i stabilności.",
-  },
-];
+import { courses } from "@/utils/Kierunki";
+import Markdown from "markdown-to-jsx";
 
 export default function HeroSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [carouselApi, setCarouselApi] = useState<CarouselApi | null>(null);
+  const [isPaused, setIsPaused] = useState(false);
   const { fontSize, highContrast } = useUserPreferences();
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   const fontSizeStyles = {
     small: "text-sm",
@@ -112,14 +40,15 @@ export default function HeroSection() {
 
   const linkContrastStyles = highContrast
     ? "bg-black hover:bg-gray-800 text-white"
-    : "bg-blue-600 hover:bg-blue-500 text-white";
+    : "bg-blue-400 hover:bg-blue-500 text-white";
+
+  const badgeContrastStyles = highContrast
+    ? "bg-black text-[#FFFF00]"
+    : "bg-purple-500 text-white";
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 10000); // Zmiana co 10 sekund
-
-    return () => clearInterval(interval);
+    startAutoSlide();
+    return () => stopAutoSlide();
   }, []);
 
   useEffect(() => {
@@ -128,101 +57,169 @@ export default function HeroSection() {
     }
   }, [currentIndex, carouselApi]);
 
+  const startAutoSlide = () => {
+    stopAutoSlide();
+    if (!isPaused) {
+      intervalRef.current = setInterval(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % courses.length);
+      }, 10000); // Change every 10 seconds
+    }
+  };
+
+  const stopAutoSlide = () => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
+  };
+
+  const handleNext = () => {
+    stopAutoSlide();
+    setCurrentIndex((currentIndex + 1) % courses.length);
+    startAutoSlide();
+  };
+
+  const handlePrevious = () => {
+    stopAutoSlide();
+    setCurrentIndex((currentIndex - 1 + courses.length) % courses.length);
+    startAutoSlide();
+  };
+
+  const handleDotClick = (index: number) => {
+    stopAutoSlide();
+    setCurrentIndex(index);
+    startAutoSlide();
+  };
+
+  const togglePause = () => {
+    setIsPaused(!isPaused);
+    if (isPaused) {
+      startAutoSlide();
+    } else {
+      stopAutoSlide();
+    }
+  };
+
   return (
     <div
-      className={`relative isolate overflow-hidden py-16 sm:py-24 lg:py-32 ${contrastStyles}`}
+      className={`relative isolate overflow-hidden h-[85vh] w-full ${contrastStyles}`}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-full h-full mx-auto">
         <Carousel setApi={setCarouselApi}>
-          <CarouselContent>
-            {slides.map((slide, index) => (
+          <CarouselContent className="h-[85vh]">
+            {courses.map((course, index) => (
               <CarouselItem
                 key={index}
-                className="flex flex-col-reverse lg:flex-row items-center gap-8"
+                className="relative flex items-center justify-center h-full w-full"
               >
-                <div
-                  className={`w-full lg:w-1/2 text-center lg:text-left ${fontSizeStyles[fontSize]}`}
-                >
-                  <div className="mb-4 flex flex-wrap justify-center lg:justify-start gap-2">
-                    {slide.badges.map((badge, i) => (
+                <Image
+                  src={`/assets/${course.id}.jpg`}
+                  alt={course.title}
+                  layout="fill"
+                  objectFit="cover"
+                  priority={index === 0} // Prioritize the first image
+                  className="absolute inset-0 w-full h-full z-0"
+                />
+                <div className="relative z-10 w-full h-full flex items-center">
+                  <div
+                    className={`w-full lg:w-1/2 p-6 space-y-6 rounded-xl ${
+                      fontSizeStyles[fontSize]
+                    } lg:ml-16 bg-opacity-85 ${
+                      highContrast ? "bg-gray-900" : "bg-blue-700"
+                    }`}
+                  >
+                    <div className="mb-4 flex flex-wrap justify-center lg:justify-start gap-2">
                       <Badge
-                        key={i}
-                        className={`text-white ${
-                          highContrast ? "bg-black text-[#FFFF00]" : badge.color
-                        }`}
+                        className={`text-white ${badgeContrastStyles} flex items-center gap-2`}
                       >
-                        {badge.text}
+                        <FaGraduationCap />
+                        Studia podyplomowe
                       </Badge>
-                    ))}
-                  </div>
-                  <h1
-                    className={`text-4xl font-extrabold bg-clip-text bg-gradient-to-br from-black to-blue-500 tracking-tighter text-transparent sm:text-5xl lg:text-6xl ${
-                      highContrast ? "text-black" : ""
-                    }`}
-                  >
-                    {slide.title}
-                  </h1>
-                  <p
-                    className={`mt-6 leading-6 ${
-                      highContrast ? "text-black" : "text-gray-600"
-                    }`}
-                  >
-                    {slide.description}
-                  </p>
-                  <p
-                    className={`mt-4 leading-6 ${
-                      highContrast ? "text-black" : "text-gray-500"
-                    }`}
-                  >
-                    {slide.detail}
-                  </p>
-                  <div className="mt-8 flex justify-center lg:justify-start gap-2">
-                    <Link
-                      href="#rekrutacja"
-                      className={`flex items-center gap-2 rounded-md px-5 py-3 font-semibold ${linkContrastStyles}`}
-                    >
-                      Zapisz się na studia <FaArrowRight />
-                    </Link>
-                    <Link
-                      href="/oferta"
-                      className={`flex items-center gap-2 rounded-md px-5 py-3 font-semibold ${
-                        highContrast
-                          ? "bg-black hover:bg-gray-800 text-white"
-                          : "bg-gray-900 hover:bg-gray-700 text-white"
+                      <Badge
+                        className={`text-white ${
+                          highContrast
+                            ? "bg-black text-[#FFFF00]"
+                            : "bg-purple-600"
+                        } flex items-center gap-2`}
+                      >
+                        <FaLaptopHouse />
+                        100% online
+                      </Badge>
+                    </div>
+                    <h1
+                      className={`text-4xl font-extrabold tracking-tighter sm:text-5xl lg:text-5xl ${
+                        highContrast ? "text-white" : "text-white"
                       }`}
                     >
-                      Zapoznaj się z ofertą{" "}
-                      <FaArrowRight className="rotate-[-45deg]" />
-                    </Link>
+                      {course.title}
+                    </h1>
+                    <p
+                      className={`mt-6 leading-7 tracking-tight font-medium ${
+                        highContrast ? "text-white" : "text-gray-200"
+                      }`}
+                    >
+                      <Markdown>
+                        {course.description.substring(0, 250) + "[...]"}
+                      </Markdown>
+                    </p>
+                    <div className="mt-8 flex justify-center lg:justify-start gap-2">
+                      <Link
+                        href="#rekrutacja"
+                        className={`flex items-center gap-2 rounded-xl px-5 py-3 font-semibold ${linkContrastStyles}`}
+                      >
+                        Zapisz się na studia <FaArrowRight />
+                      </Link>
+                      <Link
+                        href={`/oferta/${course.id}`}
+                        className={`flex items-center gap-2 rounded-xl px-5 py-3 font-semibold ${
+                          highContrast
+                            ? "bg-black hover:bg-gray-800 text-white"
+                            : "bg-gray-900 hover:bg-gray-700 text-white"
+                        }`}
+                      >
+                        Dowiedz się więcej o kierunku{" "}
+                        <FaArrowRight className="rotate-[-45deg]" />
+                      </Link>
+                    </div>
                   </div>
-                </div>
-                <div className="w-full lg:w-1/2">
-                  <Image
-                    src={slide.image}
-                    alt={slide.title}
-                    width={500}
-                    height={500}
-                    priority={slide.loading === "priority"}
-                    loading={slide.loading === "lazy" ? "lazy" : undefined}
-                    className={`mx-auto w-full rounded-lg shadow-lg ${
-                      highContrast ? "border-black" : ""
-                    }`}
-                  />
+                  <div className="hidden lg:block lg:w-1/2"></div>
                 </div>
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious
-            onClick={() =>
-              setCurrentIndex(
-                (currentIndex - 1 + slides.length) % slides.length
-              )
-            }
-          />
-          <CarouselNext
-            onClick={() => setCurrentIndex((currentIndex + 1) % slides.length)}
-          />
         </Carousel>
+        <div className="absolute bottom-10 right-4 flex items-center space-x-4 p-2 rounded-full bg-zinc-800/40">
+          <button
+            onClick={handlePrevious}
+            className={`p-2 rounded-full bg-[#9E5AE2] text-white hover:bg-blue-500 focus:outline-none`}
+          >
+            <FaArrowRight className="rotate-180" />
+          </button>
+
+          <div className="flex space-x-2">
+            {courses.map((_, index) => (
+              <FaCircle
+                key={index}
+                onClick={() => handleDotClick(index)}
+                className={`cursor-pointer ${
+                  index === currentIndex ? "text-[#9E5AE2]" : "text-gray-100"
+                }`}
+                size={12}
+              />
+            ))}
+          </div>
+          <button
+            onClick={handleNext}
+            className={`p-2 rounded-full bg-[#9E5AE2] text-white hover:bg-blue-500 focus:outline-none`}
+          >
+            <FaArrowRight />
+          </button>
+          <button
+            onClick={togglePause}
+            className={`p-2 rounded-full bg-zinc-700 text-white hover:bg-blue-500 focus:outline-none`}
+          >
+            {isPaused ? <FaPlay /> : <FaPause />}
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -1,22 +1,7 @@
-import {
-  Accordion,
-  AccordionItem,
-  AccordionTrigger,
-  AccordionContent,
-} from "./ui/accordion";
-import { Card, CardHeader, CardTitle, CardContent } from "./ui/card";
-import { FaBook, FaChalkboardTeacher, FaUserGraduate } from "react-icons/fa";
-import Link from "next/link";
 import { Course } from "@/utils/Kierunki";
 import { Poppins } from "next/font/google";
 import Markdown from "markdown-to-jsx";
-import {
-  TbArrowBigDownFilled,
-  TbArrowBigRightFilled,
-  TbTargetArrow,
-} from "react-icons/tb";
-import { BiAward } from "react-icons/bi";
-import { GiDiploma } from "react-icons/gi";
+
 import Image from "next/image";
 
 const poppins = Poppins({ weight: ["400", "500", "600"], subsets: ["latin"] });
@@ -110,10 +95,10 @@ const AboutSpecialty = ({ course }: Practices) => {
 
       {/* Section 4 */}
       <section
-        id="mozliwosci-zatrudnienia"
-        className="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-7xl "
+        id="kadra"
+        className="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-7xl"
       >
-        <div className="flex items-center justify-center px-10 py-28 order-2 md:order-1 ">
+        <div className="flex items-center justify-center px-10 py-28 order-2 md:order-1">
           <Image
             src="/assets/studentka2.png"
             alt="Zdjęcie studentki"
@@ -124,9 +109,9 @@ const AboutSpecialty = ({ course }: Practices) => {
         </div>
         <div className="flex flex-col justify-center px-10 py-28 order-1 md:order-2">
           <h2 className="text-5xl font-semibold tracking-tighter mt-2">
-            Możliwości zatrudnienia
+            Mozliwość zatrudnienia
           </h2>
-          <div className="text-zinc-800 mt-8">
+          <div className="text-zinc-800 mt-8 rounded-xl">
             <p className={`tracking-tight leading-7 ${poppins.className}`}>
               <Markdown>{course.jobOpportunities}</Markdown>
             </p>

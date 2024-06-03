@@ -33,275 +33,147 @@ export type Course = {
 
 export const courses: Course[] = [
   {
-    id: "psychologia-uzaleznien-z-terapia-uzaleznien",
-    title: "Psychologia uzależnień z terapią uzależnień",
-    description: `Studia podyplomowe kierowane są do&nbsp;osób, które chcą zdobyć kwalifikacje, umożliwiające podjęcie pracy w&nbsp;roli terapeuty w&nbsp;instytucjach i&nbsp;organizacjach zajmujących się przeciwdziałaniem uzależnieniom w&nbsp;szczególności do&nbsp;pracowników poradni leczenia uzależnień, oddziałów terapii leczenia uzależnień – całodobowych i&nbsp;dziennych, oddziałów leczenia alkoholowych zespołów abstynencyjnych, placówek leczenia uzależnień dzieci i&nbsp;młodzieży, poradni dla osób z&nbsp;problemami alkoholowymi, oddziałów terapeutycznych w&nbsp;instytucjach totalnych, tj. areszty śledcze, zakłady karne, punkty konsultacyjne działających na&nbsp;terenach gmin i&nbsp;powiatów.`,
-    description2:
-      "Celem studiów jest przygotowanie do pracy w obszarze profilaktyki społecznej oraz terapii uzależnień. Studia rozwijają wiedzę oraz praktyczne umiejętności wychowawcze. Ponadto, pozwalają zdobyć wiedzę o działaniach terapeutycznych z wykorzystaniem najnowocześniejszych technik i metod do pracy z dziećmi, młodzieżą niedostosowaną społecznie i/lub uzależnioną od narkotyków lub środków psychotropowych.",
-    description3:
-      "Studia  przygotowują absolwentów do diagnozowania niedostosowania społecznego oraz prowadzenia zajęć terapeutycznych (grupowych i indywidualnych) z dziećmi i młodzieżą z tzw. grup ryzyka (dzieci i młodzież wychowywana w rodzinach dysfunkcyjnych, z diagnozą zaburzeń emocjonalnych, zaburzeń zachowania i z pogranicza niedostosowania społecznego).",
-    description4:
-      "Studia mają charakter kwalifikacyjny, program tego kierunku jest zgodny z przepisami prawa, uwzględnia wymagania określone Rozporządzeniem Ministra Nauki i Szkolnictwa Wyższego z dnia 25 lipca 2019 r. w sprawie standardu kształcenia przygotowującego do wykonywania zawodu nauczyciela (Dz. U. 2019 poz. 1450 ze zm.). Warunkiem ukończenia studiów podyplomowych jest uzyskanie zaliczeń w tym zaliczenia z praktyki  (90 h) oraz zdaniem egzaminu dyplomowego.",
+    id: "seksuologia-praktyczna",
+    title: "Seksuologia praktyczna",
+    description: `Studia podyplomowe na kierunku "Seksuologia" mają na celu przekazanie wiedzy dotyczącej biologicznych podstaw seksualności człowieka, psychofizjologii seksualności, norm w zachowaniach seksualnych, dysfunkcji i zaburzeń seksualnych, metod diagnostycznych i metod leczenia stosowanych w klinice seksuologicznej, seksuologii sądowej i społecznej, filozofii kultury i etyki seksualności człowieka.`,
+    description2: `Program studiów obejmuje także wykształcenie praktycznych umiejętności: seksuologicznego badania podmiotowego, diagnozy, różnicowania i leczenia zaburzeń seksualnych oraz kompetencji społecznych.`,
+    description3: `Absolwenci będą przygotowani do pracy w zakresie diagnostyki i terapii zaburzeń seksualnych w poradniach seksuologicznych, klinikach i szpitalach psychiatrycznych.`,
+    description4: ``,
     duration: "3 semestry",
-    price: "8000zł",
-    payments: "10x800zł",
+    practicalHours: "100h",
+    price: "6000zł",
+    payments: "",
     form: "100% online",
-    practicalHours: "90h",
     modules: [
       {
-        title: "Wprowadzenie do&nbsp;psychologii uzależnień",
+        title: "Podstawy seksuologii",
         topics: [
           {
-            title: "Wprowadzenie do psychologii",
-            subtopics: [
-              { title: "Historia psychologii" },
-              { title: "Główne nurty i szkoły psychologiczne" },
-              { title: "Metody badawcze w psychologii" },
-            ],
+            title: "Norma i patologia",
           },
           {
-            title: "Podstawy biologii uzależnień",
-            subtopics: [
-              { title: "Neurobiologia uzależnień" },
-              { title: "Neuroprzekaźniki i ich rola w uzależnieniach" },
-              { title: "Genetyka uzależnień" },
-            ],
+            title: "Biologiczne podstawy seksualności",
           },
           {
-            title: "Wprowadzenie do psychologii klinicznej",
-            subtopics: [
-              { title: "Podstawowe pojęcia i teorie" },
-              { title: "Psychopatologia i klasyfikacja zaburzeń" },
-              { title: "Diagnoza kliniczna" },
-            ],
+            title: "Etyka w pracy seksuologa",
           },
           {
-            title: "Metody badawcze w psychologii",
-            subtopics: [
-              { title: "Podstawy metodologii badań" },
-              { title: "Statystyka w psychologii" },
-              { title: "Przeprowadzanie i analiza badań" },
-            ],
+            title: "Seksualność u dzieci i nastolatków",
+          },
+          {
+            title: "Seksualność u osób dorosłych",
+          },
+          {
+            title: "Różnicowanie płci",
+          },
+          {
+            title: "Modele seksualności",
+          },
+          {
+            title: "Metody i narzędzia badania seksualności",
+          },
+          {
+            title:
+              "Wpływ technologii na seksualność. Seksualność w erze cyfrowej, wpływ mediów i technologii",
           },
         ],
       },
       {
-        title: "Wprowadzenie do terapii uzależnień",
+        title: "Neurobiologia seksualności",
         topics: [
           {
-            title: "Teorie uzależnień",
-            subtopics: [
-              { title: "Modele i teorie uzależnień" },
-              { title: "Biopsychospołeczny model uzależnień" },
-              { title: "Czynniki ryzyka i czynniki ochronne" },
-            ],
+            title: "Mechanizmy neurobiologiczne wpływające na seksualność",
           },
           {
-            title: "Wprowadzenie do terapii uzależnień",
-            subtopics: [
-              { title: "Podstawowe zasady terapii" },
-              { title: "Modele interwencji terapeutycznych" },
-              { title: "Etapy terapii uzależnień" },
-            ],
+            title:
+              "Zaburzenia seksualne - Klasyfikacja, diagnoza i terapie zaburzeń seksualnych",
           },
           {
-            title: "Psychopatologia uzależnień",
-            subtopics: [
-              { title: "Zaburzenia współwystępujące z uzależnieniami" },
-              { title: "Zaburzenia nastroju, lękowe, osobowości" },
-              { title: "Diagnoza różnicowa" },
-            ],
+            title: "Hiperseksualność",
           },
           {
-            title: "Etyka i prawo w pracy terapeuty uzależnień",
-            subtopics: [
-              { title: "Etyka zawodowa" },
-              { title: "Prawne aspekty terapii uzależnień" },
-              { title: "Prawa pacjenta" },
-            ],
+            title: "Współuzależnienie",
+          },
+          {
+            title:
+              "Terapia kompulsywnych zachowań seksualnych (podejście poznawczo-behawioralne, psychodynamiczne, humanistyczne i integracyjne w leczeniu zaburzeń seksualnych i relacji)",
+          },
+          {
+            title: "Praca z parą/związkiem/relacją po doświadczeniu zdrady",
+          },
+          {
+            title: "Praca z seksualnością i płciową różnorodnością",
+          },
+          {
+            title: "Praca z nastolatkami",
+          },
+          {
+            title: "Praca z dziećmi",
           },
         ],
       },
-
       {
-        title: "Psychoterapia poznawczo-behawioralna",
+        title: "Podstawy seksuologii sądowej",
         topics: [
           {
-            title: "Psychoterapia poznawczo-behawioralna",
-            subtopics: [
-              { title: "Teoria i techniki" },
-              { title: "Terapia uzależnień w kontekście CBT" },
-              { title: "Praktyczne zastosowanie CBT" },
-            ],
+            title: "Dziecko jako ofiara przemocy seksualnej",
           },
           {
-            title: "Terapia motywacyjna",
-            subtopics: [
-              { title: "Teoria motywacji i zmiany" },
-              { title: "Techniki wywiadu motywacyjnego" },
-              { title: "Case studies" },
-            ],
+            title: "Osoba dorosła jako ofiara przemocy seksualnej",
           },
           {
-            title: "Terapia grupowa",
-            subtopics: [
-              { title: "Dynamika grupowa" },
-              { title: "Techniki prowadzenia grup terapeutycznych" },
-              { title: "Praktyka grupowa" },
-            ],
+            title:
+              "Mechanizmy seksualnego wykorzystania dziecka w rodzinie i poza rodziną",
           },
           {
-            title: "Terapia rodzin",
-            subtopics: [
-              { title: "Teorie systemów rodzinnych" },
-              { title: "Techniki terapii rodzin" },
-              { title: "Praca z rodzinami osób uzależnionych" },
-            ],
+            title: "Diagnoza i terapia ofiar przemocy seksualnej",
+          },
+          {
+            title: "Seksuologia kliniczna",
+          },
+          {
+            title: "Organiczne przyczyny problemów seksualnych i ich leczenie",
+          },
+          {
+            title: "Diagnoza nadużyć seksualnych wobec dzieci",
+          },
+          {
+            title: "Rodzina kazirodcza",
+          },
+          {
+            title: "Seksualność osób z niepełnosprawnościami",
+          },
+          {
+            title: "Nietypowa seksualność",
+          },
+          {
+            title:
+              "Trendy seksualne i współczesne kierunki pracy z seksualnością",
+          },
+          {
+            title: "Praca interwencyjna",
           },
         ],
       },
-
       {
-        title: "Terapie alternatywne i&nbsp;uzupełniające",
+        title: "Warsztaty / praktyka",
         topics: [
           {
-            title: "Terapie alternatywne i uzupełniające",
-            subtopics: [
-              { title: "Terapia poznawczo-behawioralna (CBT)" },
-              { title: "Terapia dialektyczno-behawioralna (DBT)" },
-              {
-                title:
-                  "Terapie wspomagające (np. terapia sztuką, terapia zajęciowa)",
-              },
-            ],
+            title: "Poradnie seksuologiczne",
           },
           {
-            title: "Praktyki I",
-            subtopics: [
-              { title: "Praktyka w placówkach leczenia uzależnień" },
-              { title: "Superwizja kliniczna" },
-              { title: "Refleksja i analiza przypadków" },
-            ],
-          },
-          {
-            title: "Interwencje kryzysowe",
-            subtopics: [
-              { title: "Teorie i techniki interwencji kryzysowej" },
-              { title: "Praca z osobami w sytuacjach kryzysowych" },
-              { title: "Techniki radzenia sobie z sytuacjami kryzysowymi" },
-            ],
-          },
-          {
-            title: "Współpraca międzysektorowa",
-            subtopics: [
-              { title: "Praca w zespole interdyscyplinarnym" },
-              {
-                title:
-                  "Współpraca z instytucjami publicznymi i organizacjami pozarządowymi",
-              },
-              { title: "Budowanie sieci wsparcia dla osób uzależnionych" },
-            ],
-          },
-        ],
-      },
-
-      {
-        title: "Zaawansowane techniki terapeutyczne",
-        topics: [
-          {
-            title: "Zaawansowane techniki terapeutyczne ",
-            subtopics: [
-              { title: "Terapia poznawczo-behawioralna (CBT)" },
-              { title: "Terapia dialektyczno-behawioralna (DBT)" },
-              {
-                title: "Terapia akceptacji i zaangażowania (ACT)",
-              },
-            ],
-          },
-          {
-            title: "Profilaktyka uzależnień ",
-            subtopics: [
-              { title: "Programy profilaktyczne" },
-              { title: "Edukacja zdrowotna i promocja zdrowia" },
-              { title: "Analiza skuteczności programów profilaktycznych" },
-            ],
-          },
-          {
-            title: "Badania w psychologii uzależnień",
-            subtopics: [
-              { title: "Metodologia badań uzależnień" },
-              { title: "Przeprowadzanie badań własnych" },
-              { title: "Analiza i prezentacja wyników" },
-            ],
-          },
-          {
-            title: "Praktyki kliniczne II ",
-            subtopics: [
-              { title: "Pogłębiona praktyka kliniczna" },
-              {
-                title: "Zaawansowana superwizja",
-              },
-              { title: "Studium przypadków" },
-            ],
-          },
-        ],
-      },
-
-      {
-        title: "Praca dyplomowa",
-        topics: [
-          {
-            title: "Projekt dyplomowy",
-            subtopics: [
-              { title: "Przygotowanie projektu badawczego" },
-              { title: "Przeprowadzenie badania" },
-              {
-                title: "Prezentacja wyników i obrona pracy dyplomowej",
-              },
-            ],
-          },
-          {
-            title: "Profilaktyka uzależnień ",
-            subtopics: [
-              { title: "Programy profilaktyczne" },
-              { title: "Edukacja zdrowotna i promocja zdrowia" },
-              { title: "Analiza skuteczności programów profilaktycznych" },
-            ],
-          },
-          {
-            title: "Terapia uzależnień behawioralnych",
-            subtopics: [
-              { title: "Uzależnienia behawioralne (hazard, gry komputerowe)" },
-              { title: "Specyfika terapii uzależnień behawioralnych" },
-              { title: "Przypadki kliniczne" },
-            ],
-          },
-          {
-            title: "Praktyki specjalistyczne",
-            subtopics: [
-              { title: "Intensywna praktyka w wybranej placówce" },
-              {
-                title: "Kompleksowa superwizja",
-              },
-              { title: "Ocena i analiza efektów terapeutycznych" },
-              { title: "Podsumowanie zdobytej wiedzy i umiejętności" },
-              { title: "Przygotowanie do egzaminu końcowego" },
-              { title: "Case studies i symulacje terapeutyczne" },
-            ],
+            title:
+              "Instytucje prowadzące działalność w obszarze zdrowia seksualnego",
           },
         ],
       },
     ],
-    faculty:
-      "Program będzie prowadzony przez wykwalifikowaną kadrę specjalistów z dziedziny psychologii, psychiatrii, terapii uzależnień oraz innych pokrewnych dziedzin. W skład kadry wejdą zarówno wykładowcy akademiccy, jak i praktycy z wieloletnim doświadczeniem klinicznym.",
-    practices:
-      "Każdy semestr zawiera moduły praktyk klinicznych, które pozwalają studentom na bezpośrednią pracę z pacjentami pod okiem doświadczonych terapeutów. Praktyki te są integralną częścią programu i mają na celu rozwinięcie umiejętności praktycznych oraz zastosowanie wiedzy teoretycznej w rzeczywistych sytuacjach klinicznych.",
-    evaluation:
-      "Ocena studentów będzie opierać się na wynikach egzaminów pisemnych, prac pisemnych, projektów badawczych, a także ocenie praktyk klinicznych. Regularne ewaluacje programu będą przeprowadzane w celu zapewnienia najwyższej jakości kształcenia i dostosowania programu do aktualnych potrzeb rynku pracy oraz postępu naukowego w dziedzinie psychologii uzależnień.",
-
-    jobOpportunities:
-      "Absolwenci kierunku 'Psychologia uzależnień z terapią uzależnień' będą przygotowani do pracy w różnorodnych placówkach terapeutycznych, takich jak ośrodki leczenia uzależnień, poradnie zdrowia psychicznego, szpitale psychiatryczne, a także w organizacjach pozarządowych zajmujących się profilaktyką i terapią uzależnień. Dodatkowo, będą mogli prowadzić własną praktykę terapeutyczną oraz uczestniczyć w badaniach naukowych i programach profilaktycznych.",
+    faculty: `Program będzie prowadzony przez wykwalifikowaną kadrę specjalistów z dziedziny seksuologii, psychologii, psychiatrii i terapii.`,
+    practices: `Program studiów obejmuje 100 godzin praktyk, które są zorganizowane przez uczelnię i realizowane w poradniach, instytucjach oraz centrach świadczących pomoc seksuologiczną.`,
+    evaluation: `Ocena studentów będzie opierać się na obecności na minimum 80 proc. zajęć, merytorycznej aktywności podczas zajęć oraz pracy praktycznej/projektowej.`,
+    jobOpportunities: `Absolwenci będą przygotowani do pracy w zakresie diagnostyki i terapii zaburzeń seksualnych w poradniach seksuologicznych, klinikach i szpitalach psychiatrycznych.`,
   },
+
   {
     id: "trener-umiejetnosci-spolecznych",
     title: "Trener Umiejętności Społecznych",
@@ -311,7 +183,7 @@ export const courses: Course[] = [
     description4: ``,
     duration: "2 semestry",
     practicalHours: "90h",
-    price: "2400zł",
+    price: "2500zł",
     payments: "",
     form: "100% online",
     modules: [
@@ -515,13 +387,15 @@ export const courses: Course[] = [
     E-learning: Platformy internetowe do nauki zdalnej i wymiany doświadczeń.`,
     evaluation: `Ocena studentów będzie opierać się na wynikach egzaminów pisemnych, prac pisemnych, projektów badawczych, a także ocenie praktyk klinicznych. Regularne ewaluacje programu będą przeprowadzane w celu zapewnienia najwyższej jakości kształcenia i dostosowania programu do aktualnych potrzeb rynku pracy oraz postępu naukowego w dziedzinie umiejętności społecznych.`,
     jobOpportunities: `Absolwenci programu będą przygotowani do pracy jako:
-    - Trenerzy umiejętności społecznych w placówkach edukacyjnych, terapeutycznych i biznesowych
-    - Konsultanci w firmach szkoleniowych
-    - Specjaliści ds. rozwoju osobistego i zawodowego
-    - Pracownicy w organizacjach pozarządowych zajmujących się edukacją i wsparciem społecznym
-    - Coachowie i mentorzy
-    - Mediatorzy i specjaliści ds. zarządzania konfliktami
-    - Liderzy zespołów w różnych branżach.`,
+    <ul className="space-y-3 list-disc ml-6">
+      <li>Trenerzy umiejętności społecznych w placówkach edukacyjnych, terapeutycznych i biznesowych</li>
+      <li>Konsultanci w firmach szkoleniowych</li>
+      <li>Specjaliści ds. rozwoju osobistego i zawodowego</li>
+      <li>Pracownicy w organizacjach pozarządowych zajmujących się edukacją i wsparciem społecznym</li>
+      <li>Coachowie i mentorzy</li>
+      <li>Mediatorzy i specjaliści ds. zarządzania konfliktami</li>
+      <li>Liderzy zespołów w różnych branżach</li>
+    </ul>`,
   },
   {
     id: "cyberpsychologia",
@@ -1170,5 +1044,275 @@ export const courses: Course[] = [
     practices: `Każdy semestr zawiera moduły praktyk, które pozwalają studentom na bezpośrednią pracę z pacjentami pod okiem doświadczonych terapeutów. Praktyki te są integralną częścią programu i mają na celu rozwinięcie umiejętności praktycznych oraz zastosowanie wiedzy teoretycznej w rzeczywistych sytuacjach klinicznych.`,
     evaluation: `Ocena studentów będzie opierać się na wynikach egzaminów pisemnych, prac pisemnych, projektów badawczych, a także ocenie praktyk klinicznych. Regularne ewaluacje programu będą przeprowadzane w celu zapewnienia najwyższej jakości kształcenia i dostosowania programu do aktualnych potrzeb rynku pracy oraz postępu naukowego w dziedzinie uzależnień behawioralnych.`,
     jobOpportunities: `Absolwenci kierunku "Uzależnienia Behawioralne" będą przygotowani do pracy w różnorodnych placówkach terapeutycznych, takich jak ośrodki leczenia uzależnień, poradnie zdrowia psychicznego, szpitale psychiatryczne, a także w organizacjach pozarządowych zajmujących się profilaktyką i terapią uzależnień.`,
+  },
+  {
+    id: "psychologia-uzaleznien-z-terapia-uzaleznien",
+    title: "Psychologia uzależnień z terapią uzależnień",
+    description: `Studia podyplomowe kierowane są do&nbsp;osób, które chcą zdobyć kwalifikacje, umożliwiające podjęcie pracy w&nbsp;roli terapeuty w&nbsp;instytucjach i&nbsp;organizacjach zajmujących się przeciwdziałaniem uzależnieniom w&nbsp;szczególności do&nbsp;pracowników poradni leczenia uzależnień, oddziałów terapii leczenia uzależnień – całodobowych i&nbsp;dziennych, oddziałów leczenia alkoholowych zespołów abstynencyjnych, placówek leczenia uzależnień dzieci i&nbsp;młodzieży, poradni dla osób z&nbsp;problemami alkoholowymi, oddziałów terapeutycznych w&nbsp;instytucjach totalnych, tj. areszty śledcze, zakłady karne, punkty konsultacyjne działających na&nbsp;terenach gmin i&nbsp;powiatów.`,
+    description2:
+      "Celem studiów jest przygotowanie do pracy w obszarze profilaktyki społecznej oraz terapii uzależnień. Studia rozwijają wiedzę oraz praktyczne umiejętności wychowawcze. Ponadto, pozwalają zdobyć wiedzę o działaniach terapeutycznych z wykorzystaniem najnowocześniejszych technik i metod do pracy z dziećmi, młodzieżą niedostosowaną społecznie i/lub uzależnioną od narkotyków lub środków psychotropowych.",
+    description3:
+      "Studia  przygotowują absolwentów do diagnozowania niedostosowania społecznego oraz prowadzenia zajęć terapeutycznych (grupowych i indywidualnych) z dziećmi i młodzieżą z tzw. grup ryzyka (dzieci i młodzież wychowywana w rodzinach dysfunkcyjnych, z diagnozą zaburzeń emocjonalnych, zaburzeń zachowania i z pogranicza niedostosowania społecznego).",
+    description4:
+      "Studia mają charakter kwalifikacyjny, program tego kierunku jest zgodny z przepisami prawa, uwzględnia wymagania określone Rozporządzeniem Ministra Nauki i Szkolnictwa Wyższego z dnia 25 lipca 2019 r. w sprawie standardu kształcenia przygotowującego do wykonywania zawodu nauczyciela (Dz. U. 2019 poz. 1450 ze zm.). Warunkiem ukończenia studiów podyplomowych jest uzyskanie zaliczeń w tym zaliczenia z praktyki  (90 h) oraz zdaniem egzaminu dyplomowego.",
+    duration: "3 semestry",
+    price: "8000zł",
+    payments: "10x800zł",
+    form: "100% online",
+    practicalHours: "90h",
+    modules: [
+      {
+        title: "Wprowadzenie do&nbsp;psychologii uzależnień",
+        topics: [
+          {
+            title: "Wprowadzenie do psychologii",
+            subtopics: [
+              { title: "Historia psychologii" },
+              { title: "Główne nurty i szkoły psychologiczne" },
+              { title: "Metody badawcze w psychologii" },
+            ],
+          },
+          {
+            title: "Podstawy biologii uzależnień",
+            subtopics: [
+              { title: "Neurobiologia uzależnień" },
+              { title: "Neuroprzekaźniki i ich rola w uzależnieniach" },
+              { title: "Genetyka uzależnień" },
+            ],
+          },
+          {
+            title: "Wprowadzenie do psychologii klinicznej",
+            subtopics: [
+              { title: "Podstawowe pojęcia i teorie" },
+              { title: "Psychopatologia i klasyfikacja zaburzeń" },
+              { title: "Diagnoza kliniczna" },
+            ],
+          },
+          {
+            title: "Metody badawcze w psychologii",
+            subtopics: [
+              { title: "Podstawy metodologii badań" },
+              { title: "Statystyka w psychologii" },
+              { title: "Przeprowadzanie i analiza badań" },
+            ],
+          },
+        ],
+      },
+      {
+        title: "Wprowadzenie do terapii uzależnień",
+        topics: [
+          {
+            title: "Teorie uzależnień",
+            subtopics: [
+              { title: "Modele i teorie uzależnień" },
+              { title: "Biopsychospołeczny model uzależnień" },
+              { title: "Czynniki ryzyka i czynniki ochronne" },
+            ],
+          },
+          {
+            title: "Wprowadzenie do terapii uzależnień",
+            subtopics: [
+              { title: "Podstawowe zasady terapii" },
+              { title: "Modele interwencji terapeutycznych" },
+              { title: "Etapy terapii uzależnień" },
+            ],
+          },
+          {
+            title: "Psychopatologia uzależnień",
+            subtopics: [
+              { title: "Zaburzenia współwystępujące z uzależnieniami" },
+              { title: "Zaburzenia nastroju, lękowe, osobowości" },
+              { title: "Diagnoza różnicowa" },
+            ],
+          },
+          {
+            title: "Etyka i prawo w pracy terapeuty uzależnień",
+            subtopics: [
+              { title: "Etyka zawodowa" },
+              { title: "Prawne aspekty terapii uzależnień" },
+              { title: "Prawa pacjenta" },
+            ],
+          },
+        ],
+      },
+
+      {
+        title: "Psychoterapia poznawczo-behawioralna",
+        topics: [
+          {
+            title: "Psychoterapia poznawczo-behawioralna",
+            subtopics: [
+              { title: "Teoria i techniki" },
+              { title: "Terapia uzależnień w kontekście CBT" },
+              { title: "Praktyczne zastosowanie CBT" },
+            ],
+          },
+          {
+            title: "Terapia motywacyjna",
+            subtopics: [
+              { title: "Teoria motywacji i zmiany" },
+              { title: "Techniki wywiadu motywacyjnego" },
+              { title: "Case studies" },
+            ],
+          },
+          {
+            title: "Terapia grupowa",
+            subtopics: [
+              { title: "Dynamika grupowa" },
+              { title: "Techniki prowadzenia grup terapeutycznych" },
+              { title: "Praktyka grupowa" },
+            ],
+          },
+          {
+            title: "Terapia rodzin",
+            subtopics: [
+              { title: "Teorie systemów rodzinnych" },
+              { title: "Techniki terapii rodzin" },
+              { title: "Praca z rodzinami osób uzależnionych" },
+            ],
+          },
+        ],
+      },
+
+      {
+        title: "Terapie alternatywne i&nbsp;uzupełniające",
+        topics: [
+          {
+            title: "Terapie alternatywne i uzupełniające",
+            subtopics: [
+              { title: "Terapia poznawczo-behawioralna (CBT)" },
+              { title: "Terapia dialektyczno-behawioralna (DBT)" },
+              {
+                title:
+                  "Terapie wspomagające (np. terapia sztuką, terapia zajęciowa)",
+              },
+            ],
+          },
+          {
+            title: "Praktyki I",
+            subtopics: [
+              { title: "Praktyka w placówkach leczenia uzależnień" },
+              { title: "Superwizja kliniczna" },
+              { title: "Refleksja i analiza przypadków" },
+            ],
+          },
+          {
+            title: "Interwencje kryzysowe",
+            subtopics: [
+              { title: "Teorie i techniki interwencji kryzysowej" },
+              { title: "Praca z osobami w sytuacjach kryzysowych" },
+              { title: "Techniki radzenia sobie z sytuacjami kryzysowymi" },
+            ],
+          },
+          {
+            title: "Współpraca międzysektorowa",
+            subtopics: [
+              { title: "Praca w zespole interdyscyplinarnym" },
+              {
+                title:
+                  "Współpraca z instytucjami publicznymi i organizacjami pozarządowymi",
+              },
+              { title: "Budowanie sieci wsparcia dla osób uzależnionych" },
+            ],
+          },
+        ],
+      },
+
+      {
+        title: "Zaawansowane techniki terapeutyczne",
+        topics: [
+          {
+            title: "Zaawansowane techniki terapeutyczne ",
+            subtopics: [
+              { title: "Terapia poznawczo-behawioralna (CBT)" },
+              { title: "Terapia dialektyczno-behawioralna (DBT)" },
+              {
+                title: "Terapia akceptacji i zaangażowania (ACT)",
+              },
+            ],
+          },
+          {
+            title: "Profilaktyka uzależnień ",
+            subtopics: [
+              { title: "Programy profilaktyczne" },
+              { title: "Edukacja zdrowotna i promocja zdrowia" },
+              { title: "Analiza skuteczności programów profilaktycznych" },
+            ],
+          },
+          {
+            title: "Badania w psychologii uzależnień",
+            subtopics: [
+              { title: "Metodologia badań uzależnień" },
+              { title: "Przeprowadzanie badań własnych" },
+              { title: "Analiza i prezentacja wyników" },
+            ],
+          },
+          {
+            title: "Praktyki kliniczne II ",
+            subtopics: [
+              { title: "Pogłębiona praktyka kliniczna" },
+              {
+                title: "Zaawansowana superwizja",
+              },
+              { title: "Studium przypadków" },
+            ],
+          },
+        ],
+      },
+
+      {
+        title: "Praca dyplomowa",
+        topics: [
+          {
+            title: "Projekt dyplomowy",
+            subtopics: [
+              { title: "Przygotowanie projektu badawczego" },
+              { title: "Przeprowadzenie badania" },
+              {
+                title: "Prezentacja wyników i obrona pracy dyplomowej",
+              },
+            ],
+          },
+          {
+            title: "Profilaktyka uzależnień ",
+            subtopics: [
+              { title: "Programy profilaktyczne" },
+              { title: "Edukacja zdrowotna i promocja zdrowia" },
+              { title: "Analiza skuteczności programów profilaktycznych" },
+            ],
+          },
+          {
+            title: "Terapia uzależnień behawioralnych",
+            subtopics: [
+              { title: "Uzależnienia behawioralne (hazard, gry komputerowe)" },
+              { title: "Specyfika terapii uzależnień behawioralnych" },
+              { title: "Przypadki kliniczne" },
+            ],
+          },
+          {
+            title: "Praktyki specjalistyczne",
+            subtopics: [
+              { title: "Intensywna praktyka w wybranej placówce" },
+              {
+                title: "Kompleksowa superwizja",
+              },
+              { title: "Ocena i analiza efektów terapeutycznych" },
+              { title: "Podsumowanie zdobytej wiedzy i umiejętności" },
+              { title: "Przygotowanie do egzaminu końcowego" },
+              { title: "Case studies i symulacje terapeutyczne" },
+            ],
+          },
+        ],
+      },
+    ],
+    faculty:
+      "Program będzie prowadzony przez wykwalifikowaną kadrę specjalistów z dziedziny psychologii, psychiatrii, terapii uzależnień oraz innych pokrewnych dziedzin. W skład kadry wejdą zarówno wykładowcy akademiccy, jak i praktycy z wieloletnim doświadczeniem klinicznym.",
+    practices:
+      "Każdy semestr zawiera moduły praktyk klinicznych, które pozwalają studentom na bezpośrednią pracę z pacjentami pod okiem doświadczonych terapeutów. Praktyki te są integralną częścią programu i mają na celu rozwinięcie umiejętności praktycznych oraz zastosowanie wiedzy teoretycznej w rzeczywistych sytuacjach klinicznych.",
+    evaluation:
+      "Ocena studentów będzie opierać się na wynikach egzaminów pisemnych, prac pisemnych, projektów badawczych, a także ocenie praktyk klinicznych. Regularne ewaluacje programu będą przeprowadzane w celu zapewnienia najwyższej jakości kształcenia i dostosowania programu do aktualnych potrzeb rynku pracy oraz postępu naukowego w dziedzinie psychologii uzależnień.",
+
+    jobOpportunities:
+      "Absolwenci kierunku 'Psychologia uzależnień z terapią uzależnień' będą przygotowani do pracy w różnorodnych placówkach terapeutycznych, takich jak ośrodki leczenia uzależnień, poradnie zdrowia psychicznego, szpitale psychiatryczne, a także w organizacjach pozarządowych zajmujących się profilaktyką i terapią uzależnień. Dodatkowo, będą mogli prowadzić własną praktykę terapeutyczną oraz uczestniczyć w badaniach naukowych i programach profilaktycznych.",
   },
 ];
