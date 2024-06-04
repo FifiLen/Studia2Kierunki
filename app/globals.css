@@ -145,6 +145,12 @@ html {
   background-size: cover;
   background-position: center;
 }
+.bur {
+  background-image: url("/assets/BUR.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 .imageColBaner {
   background-image: url("/assets/studentka.png");

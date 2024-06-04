@@ -3,6 +3,10 @@ import React from "react";
 import { useUserPreferences } from "./UserPreferencesContext";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
+import Image from "next/image";
+import Link from "next/link";
+import { IoMdContacts } from "react-icons/io";
+
 const Contact = () => {
   const { fontSize, highContrast } = useUserPreferences();
 
@@ -20,43 +24,35 @@ const Contact = () => {
   const inputBgStyles = highContrast ? "bg-[#333]" : "bg-gray-200";
 
   return (
-    <div
-      className={`py-16 sm:py-24 lg:py-32 ${bgContrastStyles} ${fontSizeClasses[fontSize]}`}
-    >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <h2
-          className={`text-4xl font-bold ${textContrastStyles} sm:text-5xl lg:text-6xl tracking-tighter`}
-        >
-          Kontakt
-        </h2>
-        <p className={`mt-4 leading-6 ${textContrastStyles} max-w-2xl`}>
-          Skontaktuj się z nami, aby uzyskać więcej informacji lub odpowiedzi na
-          Twoje pytania.
-        </p>
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className={`shadow-lg rounded-lg p-6 ${bgContrastStyles}`}>
-            <h3 className={`text-2xl font-semibold mb-4 ${textContrastStyles}`}>
-              Dane kontaktowe
+    <section className="w-full bg-white/90">
+      <div className="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-full">
+        <div className="relative w-full  ">
+          <Image
+            src="/assets/kontakt.jpg"
+            fill
+            alt="Rekrutacja 2024/2025"
+            className="object-cover"
+            quality={100}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        </div>
+        {/* Text Column */}
+        <div className=" px-20 py-20 flex flex-col">
+          <h4 className="text-3xl font-semibold text-blue-600 tracking-[-0.2rem] flex gap-2 items-center mb-3">
+            <IoMdContacts />
+            Kontakt
+          </h4>
+          <div className={``}>
+            <h3
+              className={`text-5xl tracking-tighter font-semibold mb-4 ${textContrastStyles}`}
+            >
+              Skontaktuj się z nami
             </h3>
-            <div className="flex items-center mb-4">
-              <FaMapMarkerAlt size={24} className="mr-4 text-blue-500" />
-              <p className={textContrastStyles}>
-                123 Ulica Główna, 00-001 Miasto
-              </p>
-            </div>
-            <div className="flex items-center mb-4">
-              <FaPhoneAlt size={24} className="mr-4 text-green-500" />
-              <p className={textContrastStyles}>+48 123 456 789</p>
-            </div>
-            <div className="flex items-center mb-4">
-              <FaEnvelope size={24} className="mr-4 text-red-500" />
-              <p className={textContrastStyles}>kontakt@uczelni.pl</p>
-            </div>
-          </div>
-          <div className={`shadow-lg rounded-lg p-6 ${bgContrastStyles}`}>
-            <h3 className={`text-2xl font-semibold mb-4 ${textContrastStyles}`}>
-              Formularz kontaktowy
-            </h3>
+            <p className=" mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              repellat natus architecto doloribus rem exercitationem tempora
+              nemo explicabo quisquam unde!
+            </p>
             <form>
               <div className="mb-4">
                 <label
@@ -106,26 +102,8 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        {/* <div className="mt-10">
-          <h3 className={`text-2xl font-semibold mb-4 ${textContrastStyles}`}>
-            Nasza lokalizacja
-          </h3>
-          <div className="w-full h-64 rounded-lg overflow-hidden shadow-lg">
-            <iframe
-              title="Uczelnia Lokalizacja"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019616842122!2d144.96305831531657!3d-37.81362797975169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727a5b376de3f0!2sVictoria%20Market%20Bistro!5e0!3m2!1sen!2sus!4v1612315686114!5m2!1sen!2sus"
-              width="100%"
-              height="100%"
-              frameBorder="0"
-              style={{ border: 0 }}
-              allowFullScreen
-              aria-hidden="false"
-              tabIndex={0}
-            ></iframe>
-          </div>
-        </div> */}
       </div>
-    </div>
+    </section>
   );
 };
 

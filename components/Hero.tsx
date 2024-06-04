@@ -166,17 +166,17 @@ export default function HeroSection() {
                         {course.description.substring(0, 250) + "[...]"}
                       </Markdown>
                     </p>
-                    <div className="mt-8 flex justify-center lg:justify-start gap-2">
+                    <div className="mt-8 flex md:flex-row flex-col justify-center lg:justify-start gap-2">
                       <Link
                         href="#rekrutacja"
-                        className={`flex items-center gap-2 rounded-xl px-5 py-3 font-semibold ${linkContrastStyles}`}
+                        className={`flex items-center gap-2 w-fit rounded-xl px-5 py-3 font-semibold ${linkContrastStyles}`}
                       >
                         Zapisz się na studia{" "}
                         <CgArrowTopRightO className=" text-2xl" />
                       </Link>
                       <Link
                         href={`/oferta/${course.id}`}
-                        className={`flex items-center gap-2 rounded-xl px-5 py-3 font-semibold ${
+                        className={`flex items-center gap-2 w-fit rounded-xl px-5 py-3 font-semibold ${
                           highContrast
                             ? "bg-black hover:bg-gray-800 text-white"
                             : "bg-gray-900 hover:bg-gray-700 text-white"

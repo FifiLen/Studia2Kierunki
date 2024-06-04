@@ -9,6 +9,7 @@ import StudentResources from "@/components/StrefaStudenta";
 import WhyUs from "@/components/WhyUs";
 import KierunkiPage from "./(oferta)/oferta/page";
 import RekrutacjaAnnouncement from "@/components/Invitation";
+import Finance from "@/components/Finance";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
 
       {/* <WhyUs /> */}
       {/* <StudentResources /> */}
+      <Finance />
 
       <Faq />
       <Contact />
