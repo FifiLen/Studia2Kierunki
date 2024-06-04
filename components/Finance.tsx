@@ -14,7 +14,7 @@ const Finance = () => {
     <section className="w-full bg-blue-950">
       <div className="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-full">
         {/* Text Column */}
-        <div className=" justify-center items-start flex px-20 py-36 flex-col">
+        <div className=" justify-center items-start flex px-8 md:px-20 py-36 flex-col">
           <h4 className="text-3xl font-semibold text-blue-600 tracking-[-0.2rem] flex gap-2 items-center">
             <GiTwoCoins />
             Dofinansowanie
@@ -44,7 +44,7 @@ const Finance = () => {
         </div>
 
         {/* Image Column */}
-        <div className=" bg-white/90 justify-center items-start flex px-20 py-36 flex-col">
+        <div className=" bg-gray-50 justify-center items-start flex px-8 md:px-20 py-36 flex-col">
           <h4 className="text-3xl font-semibold text-[#9E5AE2] tracking-[-0.2rem] flex gap-2 items-center">
             <BsInfoCircleFill />
             Informacja

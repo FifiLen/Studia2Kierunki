@@ -25,7 +25,7 @@ const Contact = () => {
   const inputBgStyles = highContrast ? "bg-[#333]" : "bg-gray-50";
 
   return (
-    <section className="w-full bg-white/90">
+    <section id="contact" className="w-full bg-white/90">
       <div className="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-full">
         <div className="relative w-full  ">
           <Image
@@ -38,7 +38,7 @@ const Contact = () => {
           />
         </div>
         {/* Text Column */}
-        <div className=" px-20 py-20 flex flex-col">
+        <div className=" px-8 md:px-20 py-20 flex flex-col">
           <h4 className="text-3xl font-semibold text-blue-600 tracking-[-0.2rem] flex gap-2 items-center mb-3">
             <IoMdContacts />
             Kontakt

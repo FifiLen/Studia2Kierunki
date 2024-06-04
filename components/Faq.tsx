@@ -1,67 +1,121 @@
-import React from 'react';
-import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "./ui/accordion";
+import React from "react";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "./ui/accordion";
+import { FaRegQuestionCircle } from "react-icons/fa";
+import { PiGavel } from "react-icons/pi";
+import { MdAccessTime, MdAttachMoney, MdEventNote } from "react-icons/md";
+import { GoTrophy } from "react-icons/go";
+
+import Link from "next/link";
+import { TbReportMoney } from "react-icons/tb";
 
 const Faq = () => {
   return (
-    <div className="bg-gray-50 py-16 sm:py-24 lg:py-32">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl tracking-tighter">Najczęściej zadawane pytania</h2>
-        <p className="mt-4 text-lg leading-6 text-gray-600">
-          Odpowiedzi na najczęściej zadawane pytania dotyczące naszych programów studiów podyplomowych.
-        </p>
-        <div className="mt-10">
-          <Accordion type="single" collapsible>
-            <AccordionItem value="item-1">
-              <AccordionTrigger>
-                Czy program jest w pełni online?
-              </AccordionTrigger>
-              <AccordionContent>
-                <p className="text-base text-gray-600">
-                  Tak, nasze programy studiów podyplomowych są w pełni dostępne online, co pozwala na elastyczność w nauce.
-                </p>
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-2">
-              <AccordionTrigger>
-                Jakie są wymagania rekrutacyjne?
-              </AccordionTrigger>
-              <AccordionContent>
-                <p className="text-base text-gray-600">
-                  Wymagania rekrutacyjne obejmują ukończone studia licencjackie lub magisterskie oraz pozytywne przejście procesu rekrutacyjnego.
-                </p>
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-3">
-              <AccordionTrigger>
-                Jak długo trwają studia podyplomowe?
-              </AccordionTrigger>
-              <AccordionContent>
-                <p className="text-base text-gray-600">
-                  Programy studiów podyplomowych trwają zazwyczaj dwa lub trzy semestry, w zależności od wybranego kierunku.
-                </p>
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-4">
-              <AccordionTrigger>
-                Czy mogę pracować podczas studiów?
-              </AccordionTrigger>
-              <AccordionContent>
-                <p className="text-base text-gray-600">
-                  Tak, nasze programy są elastyczne i zaprojektowane tak, aby można było je pogodzić z pracą zawodową.
-                </p>
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-5">
-              <AccordionTrigger>
-                Jakie są koszty studiów podyplomowych?
-              </AccordionTrigger>
-              <AccordionContent>
-                <p className="text-base text-gray-600">
-                  Koszty studiów różnią się w zależności od programu. Prosimy o kontakt z naszym biurem rekrutacyjnym w celu uzyskania szczegółowych informacji.
-                </p>
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
+    <div className="bg-gray-200 py-28">
+      <div className="max-w-full mx-auto px-6 lg:px-20">
+        <FaRegQuestionCircle className=" w-10 h-10 mb-5" />
+        <div className="flex justify-between">
+          <div className="w-1/2">
+            <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-4xl tracking-tighter">
+              Znajdź odpowiedzi na swoje pytania
+            </h2>
+            <p className="mt-4 text-lg leading-7 text-gray-600">
+              Witamy w sekcji FAQ poświęconej studiom podyplomowym! Tutaj
+              znajdziesz odpowiedzi na najczęściej zadawane pytania dotyczące
+              rekrutacji, programu studiów, opłat, organizacji zajęć i innych
+              kwestii związanych z kształceniem podyplomowym na naszej uczelni.
+            </p>
+          </div>
+          <div className="flex-col flex md:flex-row items-end gap-3">
+            <Link
+              href={"/faq"}
+              className="px-3 py-2 bg-[#9E5AE2] text-white font-medium rounded-md"
+            >
+              Zapoznaj się z FAQ
+            </Link>
+            <Link
+              href={"#contact"}
+              className="px-3 py-2 bg-white text-zinc-700 font-medium rounded-md"
+            >
+              Zadaj nam pytanie
+            </Link>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-20 lg:gap-32 mt-20">
+          <div className="">
+            <PiGavel className="w-7 h-7 mb-2" />
+            <h4 className="font-medium tracking-tight text-2xl">
+              Jakie są warunki rekrutacji na&nbsp;studia podyplomowe?
+            </h4>
+            <p className="mt-2">
+              Warunki rekrutacji na studia podyplomowe różnią się w zależności
+              od kierunku studiów. Szczegółowe informacje o warunkach rekrutacji
+              na poszczególne kierunki znajdziesz na stronie internetowej
+              uczelni.
+            </p>
+          </div>
+          <div className="">
+            <MdAttachMoney className="w-7 h-7 mb-2" />
+            <h4 className="font-medium tracking-tight text-2xl">
+              Ile kosztują studia podyplomowe?
+            </h4>
+            <p className="mt-2">
+              Ceny studiów podyplomowych różnią się w zależności od kierunku
+              studiów. Szczegółowe informacje o opłatach za studia podyplomowe
+              na poszczególne kierunki znajdziesz na stronie internetowej
+              uczelni.
+            </p>
+          </div>
+          <div className="">
+            <MdAccessTime className="w-7 h-7 mb-2" />
+            <h4 className="font-medium tracking-tight text-2xl">
+              Jak długo trwają studia podyplomowe?
+            </h4>
+            <p className="mt-2">
+              Studia podyplomowe trwają od dwóch do czterech semestrów.
+              Szczegółowe informacje o długości trwania studiów podyplomowych na
+              poszczególne kierunki znajdziesz na stronie internetowej uczelni.
+            </p>
+          </div>
+          <div className="">
+            <MdEventNote className="w-7 h-7 mb-2" />
+            <h4 className="font-medium tracking-tight text-2xl">
+              Jakie są formy prowadzenia zajęć na studiach podyplomowych?
+            </h4>
+            <p className="mt-2">
+              Zajęcia na studiach podyplomowych prowadzone są online.
+              Szczegółowe informacje o formach prowadzenia zajęć na poszczególne
+              kierunki znajdziesz na stronie internetowej uczelni.
+            </p>
+          </div>
+          <div className="">
+            <TbReportMoney className="w-7 h-7 mb-2" />
+            <h4 className="font-medium tracking-tight text-2xl">
+              Ile wynosi opłata wpisowa?
+            </h4>
+            <p className="mt-2">
+              Opłata wpisowa na studia podyplomowe wynosi 200 zł. Jest to
+              jednorazowa opłata, która musi zostać uiszczona przed rozpoczęciem
+              studiów. Opłata wpisowa pokrywa koszty związane z rekrutacją,
+              administracją i organizacją studiów.
+            </p>
+          </div>
+          <div className="">
+            <GoTrophy className="w-7 h-7 mb-2" />
+            <h4 className="font-medium tracking-tight text-2xl">
+              Co daje ukończenie studiów podyplomowych?
+            </h4>
+            <p className="mt-2">
+              Ukończenie studiów podyplomowych daje możliwość zdobycia nowych
+              kwalifikacji zawodowych, pogłębienia wiedzy i umiejętności w
+              wybranej dziedzinie, a także awansu zawodowego.
+            </p>
+          </div>
         </div>
       </div>
     </div>
