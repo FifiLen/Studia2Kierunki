@@ -42,7 +42,7 @@ export const courses: Course[] = [
     duration: "3 semestry",
     practicalHours: "100h",
     price: "6000zł",
-    payments: "",
+    payments: "10x600zł",
     form: "100% online",
     modules: [
       {
@@ -184,7 +184,7 @@ export const courses: Course[] = [
     duration: "2 semestry",
     practicalHours: "90h",
     price: "2500zł",
-    payments: "",
+    payments: "10x250zł",
     form: "100% online",
     modules: [
       {
@@ -407,7 +407,7 @@ export const courses: Course[] = [
     duration: "3 semestry",
     practicalHours: "90h",
     price: "8000zł",
-    payments: "",
+    payments: "10x800zł",
     form: "100% online",
     modules: [
       {
@@ -637,7 +637,7 @@ export const courses: Course[] = [
     duration: "2 semestry",
     practicalHours: "90h",
     price: "8000zł",
-    payments: "",
+    payments: "10x800zł",
     form: "100% online",
     modules: [
       {
@@ -806,7 +806,7 @@ export const courses: Course[] = [
     duration: "3 semestry",
     practicalHours: "90h",
     price: "4200zł",
-    payments: "",
+    payments: "10x420zł",
     form: "100% online",
     modules: [
       {

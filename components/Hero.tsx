@@ -20,6 +20,11 @@ import Image from "next/image";
 import { useUserPreferences } from "./UserPreferencesContext";
 import { courses } from "@/utils/Kierunki";
 import Markdown from "markdown-to-jsx";
+import {
+  CgArrowRightO,
+  CgArrowTopRight,
+  CgArrowTopRightO,
+} from "react-icons/cg";
 
 export default function HeroSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -40,7 +45,7 @@ export default function HeroSection() {
 
   const linkContrastStyles = highContrast
     ? "bg-black hover:bg-gray-800 text-white"
-    : "bg-blue-400 hover:bg-blue-500 text-white";
+    : "bg-blue-800 hover:bg-blue-500 text-white";
 
   const badgeContrastStyles = highContrast
     ? "bg-black text-[#FFFF00]"
@@ -121,13 +126,13 @@ export default function HeroSection() {
                 />
                 <div className="relative z-10 w-full h-full flex items-center">
                   <div
-                    className={`w-full lg:w-1/2 p-6 space-y-6 rounded-xl ${
+                    className={`w-full lg:w-1/2 mx-14 md:mx-0 p-6 space-y-6 rounded-xl ${
                       fontSizeStyles[fontSize]
                     } lg:ml-16 bg-opacity-85 ${
-                      highContrast ? "bg-gray-900" : "bg-blue-700"
+                      highContrast ? "bg-gray-900" : "bg-blue-600"
                     }`}
                   >
-                    <div className="mb-4 flex flex-wrap justify-center lg:justify-start gap-2">
+                    <div className="mb-4 flex flex-wrap justify-start lg:justify-start gap-2">
                       <Badge
                         className={`text-white ${badgeContrastStyles} flex items-center gap-2`}
                       >
@@ -153,7 +158,7 @@ export default function HeroSection() {
                       {course.title}
                     </h1>
                     <p
-                      className={`mt-6 leading-7 tracking-tight font-medium ${
+                      className={`mt-6 leading-7 text-lg tracking-tight font-medium ${
                         highContrast ? "text-white" : "text-gray-200"
                       }`}
                     >
@@ -166,7 +171,8 @@ export default function HeroSection() {
                         href="#rekrutacja"
                         className={`flex items-center gap-2 rounded-xl px-5 py-3 font-semibold ${linkContrastStyles}`}
                       >
-                        Zapisz się na studia <FaArrowRight />
+                        Zapisz się na studia{" "}
+                        <CgArrowTopRightO className=" text-2xl" />
                       </Link>
                       <Link
                         href={`/oferta/${course.id}`}
@@ -177,7 +183,7 @@ export default function HeroSection() {
                         }`}
                       >
                         Dowiedz się więcej o kierunku{" "}
-                        <FaArrowRight className="rotate-[-45deg]" />
+                        <CgArrowRightO className=" text-2xl" />
                       </Link>
                     </div>
                   </div>

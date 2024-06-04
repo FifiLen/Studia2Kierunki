@@ -139,6 +139,12 @@ html {
   background-size: cover;
   background-position: center;
 }
+.rekrutacja {
+  background-image: url("/assets/rekrutacja.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 .imageColBaner {
   background-image: url("/assets/studentka.png");

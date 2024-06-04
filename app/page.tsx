@@ -8,12 +8,14 @@ import Offer from "@/components/OfertaMain";
 import StudentResources from "@/components/StrefaStudenta";
 import WhyUs from "@/components/WhyUs";
 import KierunkiPage from "./(oferta)/oferta/page";
+import RekrutacjaAnnouncement from "@/components/Invitation";
 
 export default function Home() {
   return (
     <>
       <Baner />
       <Hero />
+      <RekrutacjaAnnouncement />
       <KierunkiPage />
 
       {/* <WhyUs /> */}
