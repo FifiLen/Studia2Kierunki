@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={dmsans.className}>
+      <body className={`${dmsans.className} overflow-x-hidden`}>
         <UserPreferencesProvider>
           <Access />
           <Navbar />

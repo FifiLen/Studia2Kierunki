@@ -32,10 +32,10 @@ const Faq = () => {
           </div>
           <div className="flex-col flex md:flex-row items-end gap-3">
             <Link
-              href={"/"}
+              href={"/faq"}
               className="px-3 py-2 bg-[#9E5AE2] text-white font-medium rounded-md"
             >
-              Powrót na stronę główną
+              Dowiedz się więcej z FAQ
             </Link>
             <Link
               href={"/kontakt"}
