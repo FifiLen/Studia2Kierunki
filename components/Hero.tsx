@@ -119,10 +119,9 @@ export default function HeroSection() {
                 <Image
                   src={`/assets/${course.id}.jpg`}
                   alt={course.title}
-                  layout="fill"
-                  objectFit="cover"
+                  fill
                   priority={index === 0} // Prioritize the first image
-                  className="absolute inset-0 w-full h-full z-0"
+                  className="absolute object-cover inset-0 w-full h-full z-0"
                 />
                 <div className="relative z-10 w-full h-full flex items-center">
                   <div

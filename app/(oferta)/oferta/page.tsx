@@ -29,12 +29,12 @@ const KierunkiPage = () => {
           {courses.map((course) => (
             <Card
               key={course.id}
-              className="bg-gray-50 border-gray-300 rounded-lg shadow-none flex flex-col"
+              className="bg-gray-100 border-gray-300 rounded-lg shadow-none flex flex-col"
             >
               <div className="relative h-48">
                 <Image
                   src={`/assets/${course.id}.jpg`}
-                  layout="fill"
+                  fill
                   alt={`${course.title}`}
                   className="object-cover rounded-t-lg"
                   quality={75}
