@@ -1,15 +1,8 @@
 import React from "react";
-import {
-  Accordion,
-  AccordionItem,
-  AccordionTrigger,
-  AccordionContent,
-} from "./ui/accordion";
 import { FaRegQuestionCircle } from "react-icons/fa";
 import { PiGavel } from "react-icons/pi";
 import { MdAccessTime, MdAttachMoney, MdEventNote } from "react-icons/md";
 import { GoTrophy } from "react-icons/go";
-
 import Link from "next/link";
 import { TbReportMoney } from "react-icons/tb";
 
@@ -17,7 +10,7 @@ const Faq = () => {
   return (
     <div className="bg-gray-200 py-28">
       <div className="max-w-full mx-auto px-6 lg:px-20">
-        <FaRegQuestionCircle className=" w-10 h-10 mb-5" />
+        <FaRegQuestionCircle className="w-10 h-10 mb-5" aria-hidden="true" />
         <div className="flex justify-between">
           <div className="w-1/2">
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-4xl tracking-tighter">
@@ -30,17 +23,17 @@ const Faq = () => {
               kwestii związanych z kształceniem podyplomowym na naszej uczelni.
             </p>
           </div>
-          <div className="flex-col flex md:flex-row items-end gap-3">
+          <div className="flex flex-col md:flex-row items-end gap-3">
             <Link
-              aria-label="dowiedz się więcej z faq"
-              href={"/faq"}
+              aria-label="Dowiedz się więcej z FAQ"
+              href="/faq"
               className="px-3 py-2 bg-[#9E5AE2] text-white font-medium rounded-md"
             >
               Dowiedz się więcej z FAQ
             </Link>
             <Link
-              aria-label="zadaj nam pytanie"
-              href={"/kontakt"}
+              aria-label="Zadaj nam pytanie"
+              href="/kontakt"
               className="px-3 py-2 bg-white text-zinc-700 font-medium rounded-md"
             >
               Zadaj nam pytanie
@@ -50,7 +43,7 @@ const Faq = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-20 lg:gap-32 mt-20">
           <div className="">
-            <PiGavel className="w-7 h-7 mb-2" />
+            <PiGavel className="w-7 h-7 mb-2" aria-hidden="true" />
             <h4 className="font-medium tracking-tight text-2xl">
               Jakie są warunki rekrutacji na&nbsp;studia podyplomowe?
             </h4>
@@ -62,7 +55,7 @@ const Faq = () => {
             </p>
           </div>
           <div className="">
-            <MdAttachMoney className="w-7 h-7 mb-2" />
+            <MdAttachMoney className="w-7 h-7 mb-2" aria-hidden="true" />
             <h4 className="font-medium tracking-tight text-2xl">
               Ile kosztują studia podyplomowe?
             </h4>
@@ -74,7 +67,7 @@ const Faq = () => {
             </p>
           </div>
           <div className="">
-            <MdAccessTime className="w-7 h-7 mb-2" />
+            <MdAccessTime className="w-7 h-7 mb-2" aria-hidden="true" />
             <h4 className="font-medium tracking-tight text-2xl">
               Jak długo trwają studia podyplomowe?
             </h4>
@@ -85,7 +78,7 @@ const Faq = () => {
             </p>
           </div>
           <div className="">
-            <MdEventNote className="w-7 h-7 mb-2" />
+            <MdEventNote className="w-7 h-7 mb-2" aria-hidden="true" />
             <h4 className="font-medium tracking-tight text-2xl">
               Jakie są formy prowadzenia zajęć na studiach podyplomowych?
             </h4>
@@ -96,7 +89,7 @@ const Faq = () => {
             </p>
           </div>
           <div className="">
-            <TbReportMoney className="w-7 h-7 mb-2" />
+            <TbReportMoney className="w-7 h-7 mb-2" aria-hidden="true" />
             <h4 className="font-medium tracking-tight text-2xl">
               Ile wynosi opłata wpisowa?
             </h4>
@@ -108,7 +101,7 @@ const Faq = () => {
             </p>
           </div>
           <div className="">
-            <GoTrophy className="w-7 h-7 mb-2" />
+            <GoTrophy className="w-7 h-7 mb-2" aria-hidden="true" />
             <h4 className="font-medium tracking-tight text-2xl">
               Co daje ukończenie studiów podyplomowych?
             </h4>

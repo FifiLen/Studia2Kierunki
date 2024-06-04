@@ -2,7 +2,6 @@
 import React from "react";
 import { useUserPreferences } from "./UserPreferencesContext";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
-
 import Image from "next/image";
 import Link from "next/link";
 import { IoMdContacts } from "react-icons/io";
@@ -27,7 +26,7 @@ const Contact = () => {
   return (
     <section id="contact" className="w-full bg-white/90">
       <div className="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-full">
-        <div className="relative w-full  ">
+        <div className="relative w-full">
           <Image
             src="/assets/kontakt.jpg"
             fill
@@ -38,18 +37,18 @@ const Contact = () => {
           />
         </div>
         {/* Text Column */}
-        <div className=" px-8 md:px-20 py-20 flex flex-col">
+        <div className="px-8 md:px-20 py-20 flex flex-col">
           <h4 className="text-3xl font-semibold text-blue-600 tracking-[-0.2rem] flex gap-2 items-center mb-3">
             <IoMdContacts />
             Kontakt
           </h4>
-          <div className={``}>
+          <div className="">
             <h3
               className={`text-5xl tracking-tighter font-semibold mb-4 ${textContrastStyles}`}
             >
               Skontaktuj się z nami
             </h3>
-            <p className=" mb-14">
+            <p className="mb-14">
               Masz pytania dotyczące studiów podyplomowych? Chcesz dowiedzieć
               się więcej o programie, procesie rekrutacji lub opłatach?
               Skontaktuj się z nami!
@@ -61,26 +60,28 @@ const Contact = () => {
                     className={`block mb-2 font-semibold ${textContrastStyles}`}
                     htmlFor="name"
                   >
-                    Imię<span className=" text-blue-500">*</span>
+                    Imię<span className="text-blue-500">*</span>
                   </label>
                   <input
                     type="text"
                     id="name"
                     placeholder="Jan"
+                    aria-required="true"
                     className={`w-full p-3 rounded-md ${inputBgStyles} ${textContrastStyles} border border-gray-300 focus:border-blue-500`}
                   />
                 </div>
                 <div>
                   <label
                     className={`block mb-2 font-semibold ${textContrastStyles}`}
-                    htmlFor="name"
+                    htmlFor="surname"
                   >
-                    Nazwisko<span className=" text-blue-500">*</span>
+                    Nazwisko<span className="text-blue-500">*</span>
                   </label>
                   <input
                     type="text"
                     id="surname"
                     placeholder="Kowalski"
+                    aria-required="true"
                     className={`w-full p-3 rounded-md ${inputBgStyles} ${textContrastStyles} border border-gray-300 focus:border-blue-500`}
                   />
                 </div>
@@ -90,24 +91,25 @@ const Contact = () => {
                   className={`block mb-2 font-semibold ${textContrastStyles}`}
                   htmlFor="email"
                 >
-                  Email<span className=" text-blue-500">*</span>
+                  Email<span className="text-blue-500">*</span>
                 </label>
                 <input
                   type="email"
                   id="email"
                   placeholder="jankowalski@mail.com"
+                  aria-required="true"
                   className={`w-full p-3 rounded-md ${inputBgStyles} ${textContrastStyles} border border-gray-300 focus:border-blue-500`}
                 />
               </div>
               <div className="mb-4">
-                <div className=" flex justify-between">
+                <div className="flex justify-between">
                   <label
                     className={`block mb-2 font-semibold ${textContrastStyles}`}
                     htmlFor="message"
                   >
                     Twoja wiadomość
                   </label>
-                  <p className=" text-sm text-zinc-400">
+                  <p className="text-sm text-zinc-400">
                     Maksymalnie 500 znaków
                   </p>
                 </div>
@@ -119,7 +121,7 @@ const Contact = () => {
                 ></textarea>
               </div>
               <button
-                aria-label="wyślij wiadomość"
+                aria-label="Wyślij wiadomość"
                 type="submit"
                 className={`w-fit py-3 px-6 flex gap-2 items-center font-medium rounded-md ${linkContrastStyles} bg-blue-500`}
               >

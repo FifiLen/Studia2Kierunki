@@ -15,7 +15,6 @@ import {
   FaChalkboardTeacher,
 } from "react-icons/fa";
 import { courses } from "@/utils/Kierunki";
-import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { CgArrowRightO } from "react-icons/cg";
 
 const KierunkiPage = () => {
@@ -35,7 +34,7 @@ const KierunkiPage = () => {
                 <Image
                   src={`/assets/${course.id}.jpg`}
                   fill
-                  alt={`${course.title}`}
+                  alt={`Zdjęcie przedstawiające kurs: ${course.title}`}
                   className="object-cover rounded-t-lg"
                   quality={75}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -69,7 +68,7 @@ const KierunkiPage = () => {
               </CardContent>
               <CardFooter className="mt-auto">
                 <Link
-                  aria-label="dowiedz się więcej o kierunku"
+                  aria-label={`Dowiedz się więcej o kierunku ${course.title}`}
                   href={`/oferta/${course.id}`}
                   className="flex items-center text-white tracking-tight font-semibold gap-2 text-sm rounded-lg p-2 bg-[#9E5AE2]"
                 >

@@ -167,7 +167,7 @@ export default function HeroSection() {
                     </p>
                     <div className="mt-8 flex md:flex-row flex-col justify-center lg:justify-start gap-2">
                       <Link
-                        aria-label="rekrutacja"
+                        aria-label="Zapisz się na studia"
                         href="/rekrutacja"
                         className={`flex items-center gap-2 w-fit rounded-xl px-5 py-3 font-semibold ${linkContrastStyles}`}
                       >
@@ -175,7 +175,7 @@ export default function HeroSection() {
                         <CgArrowTopRightO className=" text-2xl" />
                       </Link>
                       <Link
-                        aria-label="dowiedz się więcej o kierunku"
+                        aria-label={`Dowiedz się więcej o kierunku ${course.title}`}
                         href={`/oferta/${course.id}`}
                         className={`flex items-center gap-2 w-fit rounded-xl px-5 py-3 font-semibold ${
                           highContrast
@@ -196,7 +196,7 @@ export default function HeroSection() {
         </Carousel>
         <div className="absolute bottom-10 right-4 flex items-center space-x-4 p-2 rounded-full bg-zinc-800/40">
           <button
-            aria-aria-label="poprzedni slajd"
+            aria-label="Poprzedni slajd"
             onClick={handlePrevious}
             className={`p-2 rounded-full bg-[#9E5AE2] text-white hover:bg-blue-500 focus:outline-none`}
           >
@@ -212,18 +212,19 @@ export default function HeroSection() {
                   index === currentIndex ? "text-[#9E5AE2]" : "text-gray-100"
                 }`}
                 size={12}
+                aria-label={`Przejdź do slajdu ${index + 1}`}
               />
             ))}
           </div>
           <button
-            aria-label="następny slajd"
+            aria-label="Następny slajd"
             onClick={handleNext}
             className={`p-2 rounded-full bg-[#9E5AE2] text-white hover:bg-blue-500 focus:outline-none`}
           >
             <FaArrowRight />
           </button>
           <button
-            aria-label="zatrzymaj slajd"
+            aria-label={isPaused ? "Wznów slajd" : "Zatrzymaj slajd"}
             onClick={togglePause}
             className={`p-2 rounded-full bg-zinc-700 text-white hover:bg-blue-500 focus:outline-none`}
           >

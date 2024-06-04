@@ -43,11 +43,11 @@ export default function Baner() {
         />
       </div>
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-        <p className="leading-6  tracking-tight font-semibold">
+        <p className="leading-6 tracking-tight font-semibold">
           Zapraszamy do składania aplikacji na semestr zimowy 2024/2025.
         </p>
         <Link
-          aria-label="proces rekrutacji"
+          aria-label="Proces rekrutacji"
           href="#rekrutacja"
           className={`flex-none text-sm rounded-full flex items-center gap-1 px-3.5 py-1 font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
             highContrast
@@ -55,7 +55,7 @@ export default function Baner() {
               : "bg-gray-900 text-white hover:bg-gray-700 focus-visible:outline-gray-900"
           }`}
         >
-          Proces rekrutacji{" "}
+          Proces rekrutacji
           <span aria-hidden="true">
             <FaArrowRight className="h-4 w-4" />
           </span>

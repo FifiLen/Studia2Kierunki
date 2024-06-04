@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { CgArrowTopRightO } from "react-icons/cg";
@@ -14,7 +13,7 @@ const Finance = () => {
     <section className="w-full bg-blue-950">
       <div className="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-full">
         {/* Text Column */}
-        <div className=" justify-center items-start flex px-8 md:px-20 py-36 flex-col">
+        <div className="justify-center items-start flex px-8 md:px-20 py-36 flex-col">
           <h4 className="text-3xl font-semibold text-blue-600 tracking-[-0.2rem] flex gap-2 items-center">
             <GiTwoCoins />
             Dofinansowanie
@@ -35,19 +34,17 @@ const Finance = () => {
           <Link
             href="https://uslugirozwojowe.parp.gov.pl/wyszukiwarka/dostawca-uslug/podglad?id=53144"
             target="_blank"
+            aria-label="poznaj naszą ofertę Bazy Usług Rozwojowych"
           >
-            <button
-              aria-label="poznaj naszą ofertę BUR"
-              className="bg-blue-700  text-white font-semibold rounded-lg px-4 py-3 flex gap-3 items-center justify-center mt-8"
-            >
+            <button className="bg-blue-700 text-white font-semibold rounded-lg px-4 py-3 flex gap-3 items-center justify-center mt-8">
               Poznaj naszą ofertę BUR
-              <CgArrowTopRightO className=" text-2xl" />
+              <CgArrowTopRightO className="text-2xl" />
             </button>
           </Link>
         </div>
 
         {/* Image Column */}
-        <div className=" bg-gray-50 justify-center items-start flex px-8 md:px-20 py-36 flex-col">
+        <div className="bg-gray-50 justify-center items-start flex px-8 md:px-20 py-36 flex-col">
           <h4 className="text-3xl font-semibold text-[#9E5AE2] tracking-[-0.2rem] flex gap-2 items-center">
             <BsInfoCircleFill />
             Informacja
@@ -68,13 +65,14 @@ const Finance = () => {
             nieoprocentowanych pożyczek. Więcej informacji znajdą Państwo na
             stronie www.inwestujwrozwuj.pl
           </p>
-          <Link href="https://inwestujwrozwoj.pl/" target="_blank">
-            <button
-              aria-label="dowiedz się więcej o nieoprocentowanych pożyczkach"
-              className="bg-[#9E5AE2]  text-white font-semibold rounded-lg px-4 py-3 flex gap-3 items-center justify-center mt-8"
-            >
+          <Link
+            href="https://inwestujwrozwoj.pl/"
+            target="_blank"
+            aria-label="dowiedz się więcej o nieoprocentowanych pożyczkach"
+          >
+            <button className="bg-[#9E5AE2] text-white font-semibold rounded-lg px-4 py-3 flex gap-3 items-center justify-center mt-8">
               inwestujwrozwoj.pl
-              <CgArrowTopRightO className=" text-2xl" />
+              <CgArrowTopRightO className="text-2xl" />
             </button>
           </Link>
         </div>
