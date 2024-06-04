@@ -36,7 +36,10 @@ const Finance = () => {
             href="https://uslugirozwojowe.parp.gov.pl/wyszukiwarka/dostawca-uslug/podglad?id=53144"
             target="_blank"
           >
-            <button className="bg-blue-700  text-white font-semibold rounded-lg px-4 py-3 flex gap-3 items-center justify-center mt-8">
+            <button
+              aria-label="poznaj naszą ofertę BUR"
+              className="bg-blue-700  text-white font-semibold rounded-lg px-4 py-3 flex gap-3 items-center justify-center mt-8"
+            >
               Poznaj naszą ofertę BUR
               <CgArrowTopRightO className=" text-2xl" />
             </button>
@@ -66,7 +69,10 @@ const Finance = () => {
             stronie www.inwestujwrozwuj.pl
           </p>
           <Link href="https://inwestujwrozwoj.pl/" target="_blank">
-            <button className="bg-[#9E5AE2]  text-white font-semibold rounded-lg px-4 py-3 flex gap-3 items-center justify-center mt-8">
+            <button
+              aria-label="dowiedz się więcej o nieoprocentowanych pożyczkach"
+              className="bg-[#9E5AE2]  text-white font-semibold rounded-lg px-4 py-3 flex gap-3 items-center justify-center mt-8"
+            >
               inwestujwrozwoj.pl
               <CgArrowTopRightO className=" text-2xl" />
             </button>

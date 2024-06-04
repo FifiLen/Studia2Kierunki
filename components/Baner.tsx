@@ -47,6 +47,7 @@ export default function Baner() {
           Zapraszamy do składania aplikacji na semestr zimowy 2024/2025.
         </p>
         <Link
+          aria-label="proces rekrutacji"
           href="#rekrutacja"
           className={`flex-none text-sm rounded-full flex items-center gap-1 px-3.5 py-1 font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
             highContrast

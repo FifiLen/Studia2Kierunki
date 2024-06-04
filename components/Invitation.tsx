@@ -26,7 +26,10 @@ const RekrutacjaAnnouncement = () => {
             swoje horyzonty.
           </p>
           <Link href="#kierunki">
-            <button className="bg-blue-800  text-white font-semibold rounded-lg px-4 py-3 flex gap-3 items-center justify-center mt-8">
+            <button
+              aria-label="poznaj naszą ofertę"
+              className="bg-blue-800  text-white font-semibold rounded-lg px-4 py-3 flex gap-3 items-center justify-center mt-8"
+            >
               Poznaj naszą ofertę
               <CgArrowTopRightO className=" text-2xl" />
             </button>

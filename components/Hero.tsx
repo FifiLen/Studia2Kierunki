@@ -167,13 +167,15 @@ export default function HeroSection() {
                     </p>
                     <div className="mt-8 flex md:flex-row flex-col justify-center lg:justify-start gap-2">
                       <Link
-                        href="#rekrutacja"
+                        aria-label="rekrutacja"
+                        href="/rekrutacja"
                         className={`flex items-center gap-2 w-fit rounded-xl px-5 py-3 font-semibold ${linkContrastStyles}`}
                       >
                         Zapisz się na studia{" "}
                         <CgArrowTopRightO className=" text-2xl" />
                       </Link>
                       <Link
+                        aria-label="dowiedz się więcej o kierunku"
                         href={`/oferta/${course.id}`}
                         className={`flex items-center gap-2 w-fit rounded-xl px-5 py-3 font-semibold ${
                           highContrast
@@ -194,6 +196,7 @@ export default function HeroSection() {
         </Carousel>
         <div className="absolute bottom-10 right-4 flex items-center space-x-4 p-2 rounded-full bg-zinc-800/40">
           <button
+            aria-aria-label="poprzedni slajd"
             onClick={handlePrevious}
             className={`p-2 rounded-full bg-[#9E5AE2] text-white hover:bg-blue-500 focus:outline-none`}
           >
@@ -213,12 +216,14 @@ export default function HeroSection() {
             ))}
           </div>
           <button
+            aria-label="następny slajd"
             onClick={handleNext}
             className={`p-2 rounded-full bg-[#9E5AE2] text-white hover:bg-blue-500 focus:outline-none`}
           >
             <FaArrowRight />
           </button>
           <button
+            aria-label="zatrzymaj slajd"
             onClick={togglePause}
             className={`p-2 rounded-full bg-zinc-700 text-white hover:bg-blue-500 focus:outline-none`}
           >

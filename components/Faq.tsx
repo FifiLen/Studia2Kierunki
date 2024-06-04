@@ -32,12 +32,14 @@ const Faq = () => {
           </div>
           <div className="flex-col flex md:flex-row items-end gap-3">
             <Link
+              aria-label="dowiedz się więcej z faq"
               href={"/faq"}
               className="px-3 py-2 bg-[#9E5AE2] text-white font-medium rounded-md"
             >
               Dowiedz się więcej z FAQ
             </Link>
             <Link
+              aria-label="zadaj nam pytanie"
               href={"/kontakt"}
               className="px-3 py-2 bg-white text-zinc-700 font-medium rounded-md"
             >

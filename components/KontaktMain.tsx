@@ -119,6 +119,7 @@ const Contact = () => {
                 ></textarea>
               </div>
               <button
+                aria-label="wyślij wiadomość"
                 type="submit"
                 className={`w-fit py-3 px-6 flex gap-2 items-center font-medium rounded-md ${linkContrastStyles} bg-blue-500`}
               >

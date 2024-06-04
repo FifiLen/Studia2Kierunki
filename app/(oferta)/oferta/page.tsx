@@ -69,6 +69,7 @@ const KierunkiPage = () => {
               </CardContent>
               <CardFooter className="mt-auto">
                 <Link
+                  aria-label="dowiedz się więcej o kierunku"
                   href={`/oferta/${course.id}`}
                   className="flex items-center text-white tracking-tight font-semibold gap-2 text-sm rounded-lg p-2 bg-[#9E5AE2]"
                 >
