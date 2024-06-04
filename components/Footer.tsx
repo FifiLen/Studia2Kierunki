@@ -60,9 +60,9 @@ const Footer = () => {
           <div className="w-full sm:w-1/2 lg:w-1/4 mb-6 sm:mb-0">
             <h2 className="text-xl font-semibold mb-4">Kontakt</h2>
             <address className="not-italic text-sm text-gray-300">
-              Instytut Studiów Podyplomowych
+              ISP Rybnik
               <br />
-              ul. Przykładowa 123, 00-001 Rybnik
+              ul. Magnolii 25, 44-207 Rybnik
               <br />
               Telefon:{" "}
               <a href="tel:+48123456789" className="hover:text-gray-400">
@@ -71,19 +71,19 @@ const Footer = () => {
               <br />
               Email:{" "}
               <a
-                href="mailto:kontakt@isp-rybnik.pl"
+                href="mailto:nowekwalifikacjerybnik@gmail.com"
                 className="hover:text-gray-400"
               >
-                kontakt@isp-rybnik.pl
+                nowekwalifikacjerybnik@gmail.com
               </a>
             </address>
           </div>
           {/* Sekcja Informacje o Prawach Autorskich */}
           <div className="w-full sm:w-1/2 lg:w-1/4">
             <h2 className="text-xl font-semibold mb-4">Informacje</h2>
-            <p className="text-gray-400">
-              &copy; {new Date().getFullYear()} Instytut Studiów Podyplomowych.
-              Wszelkie prawa zastrzeżone.
+            <p className="text-gray-400 text-sm">
+              &copy; {new Date().getFullYear()} Instytut Studiów Podyplomowych
+              Rybnik. Wszelkie prawa zastrzeżone.
             </p>
           </div>
 
@@ -115,7 +115,7 @@ const Footer = () => {
         </div>
         <div className="mt-8 border-t border-gray-700 pt-8 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            &copy; 2024 Instytut Studiów Podyplomowych. Wszelkie prawa
+            &copy; 2024 Instytut Studiów Podyplomowych Rybnik. Wszelkie prawa
             zastrzeżone.
           </p>
           <ul className="flex space-x-4 mt-4 sm:mt-0">
