@@ -20,11 +20,11 @@ import { CgArrowRightO } from "react-icons/cg";
 const KierunkiPage = () => {
   return (
     <div id="kierunki" className="w-full baner bg-gray-200">
-      <div className="max-w-full mx-auto py-20 px-10 md:px-20">
-        <h1 className="text-6xl font-bold mb-8 tracking-tighter">
+      <div className="max-w-full mx-auto py-10 px-4 md:py-20 md:px-10 lg:px-20">
+        <h1 className="text-3xl md:text-6xl font-bold mb-8 tracking-tighter">
           Nasze Kierunki
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {courses.map((course) => (
             <Card
               key={course.id}
@@ -41,27 +41,27 @@ const KierunkiPage = () => {
                 />
               </div>
               <CardHeader>
-                <CardTitle className="text-2xl font-bold">
+                <CardTitle className="text-xl md:text-2xl font-bold">
                   {course.title}
                 </CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
-                <CardDescription className="mb-4">
+                <CardDescription className="mb-4 text-sm md:text-base">
                   {course.description.substring(0, 150)}...
                 </CardDescription>
-                <div className="flex items-center font-medium mb-2 p-2 bg-blue-100 rounded-md">
+                <div className="flex items-center font-medium mb-2 p-2 bg-blue-100 rounded-md text-sm md:text-base">
                   <FaCalendarAlt className="text-blue-500 mr-2" />
                   <span>{course.duration}</span>
                 </div>
-                <div className="flex items-center font-medium mb-2 p-2 bg-blue-200 rounded-md">
+                <div className="flex items-center font-medium mb-2 p-2 bg-blue-200 rounded-md text-sm md:text-base">
                   <FaClock className="text-blue-500 mr-2" />
                   <span>{course.practicalHours}</span>
                 </div>
-                <div className="flex items-center font-medium mb-2 p-2 bg-blue-100 rounded-md">
+                <div className="flex items-center font-medium mb-2 p-2 bg-blue-100 rounded-md text-sm md:text-base">
                   <FaMoneyBillWave className="text-blue-500 mr-2" />
                   <span>{course.price}</span>
                 </div>
-                <div className="flex items-center font-medium mb-2 p-2 bg-blue-200 rounded-md">
+                <div className="flex items-center font-medium mb-2 p-2 bg-blue-200 rounded-md text-sm md:text-base">
                   <FaChalkboardTeacher className="text-blue-500 mr-2" />
                   <span>{course.form}</span>
                 </div>

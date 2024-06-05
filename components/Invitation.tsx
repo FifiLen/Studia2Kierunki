@@ -12,14 +12,14 @@ const RekrutacjaAnnouncement = () => {
     <section className="w-full bg-blue-950">
       <div className="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-full">
         {/* Text Column */}
-        <div className="justify-center items-start flex px-20 py-36 flex-col rekrutacja">
-          <h4 className="text-3xl font-semibold text-gray-100 tracking-[-0.2rem]">
+        <div className="flex justify-center items-start px-8 md:px-20 py-16 md:py-36 flex-col rekrutacja">
+          <h4 className="text-2xl md:text-3xl font-semibold text-gray-100 tracking-[-0.2rem]">
             Rekrutacja
           </h4>
-          <h2 className="text-5xl text-white font-semibold tracking-tighter mt-3">
+          <h2 className="text-4xl md:text-5xl text-white font-semibold tracking-tighter mt-3">
             Semestr 2024/2025
           </h2>
-          <p className="text-lg text-zinc-300 mt-4">
+          <p className="text-base md:text-lg text-zinc-300 mt-4">
             Trwają zapisy na semestr 2024/2025. Dołącz do nas i rozpocznij swoją
             przygodę z nowymi studiami podyplomowymi. Oferujemy szeroki wybór
             kierunków, które pozwolą Ci zdobyć nowe umiejętności i poszerzyć
@@ -37,7 +37,7 @@ const RekrutacjaAnnouncement = () => {
         </div>
 
         {/* Image Column */}
-        <div className="relative w-full">
+        <div className="relative hidden sm:block w-full h-64 md:h-auto">
           <Image
             src="/assets/studentka.png"
             fill

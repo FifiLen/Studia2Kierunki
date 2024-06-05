@@ -26,7 +26,7 @@ const Contact = () => {
   return (
     <section id="contact" className="w-full bg-white/90">
       <div className="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-full">
-        <div className="relative w-full">
+        <div className="relative w-full h-64 md:h-auto">
           <Image
             src="/assets/kontakt.jpg"
             fill
@@ -37,24 +37,24 @@ const Contact = () => {
           />
         </div>
         {/* Text Column */}
-        <div className="px-8 md:px-20 py-20 flex flex-col">
-          <h4 className="text-3xl font-semibold text-blue-600 tracking-[-0.2rem] flex gap-2 items-center mb-3">
+        <div className="px-6 md:px-20 py-10 md:py-20 flex flex-col">
+          <h4 className="text-2xl md:text-3xl font-semibold text-blue-600 tracking-[-0.2rem] flex gap-2 items-center mb-3">
             <IoMdContacts />
             Kontakt
           </h4>
           <div className="">
             <h3
-              className={`text-5xl tracking-tighter font-semibold mb-4 ${textContrastStyles}`}
+              className={`text-3xl md:text-5xl tracking-tighter font-semibold mb-4 ${textContrastStyles}`}
             >
               Skontaktuj się z nami
             </h3>
-            <p className="mb-14">
+            <p className="mb-8 md:mb-14 text-sm md:text-base">
               Masz pytania dotyczące studiów podyplomowych? Chcesz dowiedzieć
               się więcej o programie, procesie rekrutacji lub opłatach?
               Skontaktuj się z nami!
             </p>
             <form>
-              <div className="mb-4 grid grid-cols-2 max-w-full gap-6">
+              <div className="mb-4 grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label
                     className={`block mb-2 font-semibold ${textContrastStyles}`}

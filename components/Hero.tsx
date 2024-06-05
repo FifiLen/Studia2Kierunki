@@ -20,11 +20,7 @@ import Image from "next/image";
 import { useUserPreferences } from "./UserPreferencesContext";
 import { courses } from "@/utils/Kierunki";
 import Markdown from "markdown-to-jsx";
-import {
-  CgArrowRightO,
-  CgArrowTopRight,
-  CgArrowTopRightO,
-} from "react-icons/cg";
+import { CgArrowRightO, CgArrowTopRightO } from "react-icons/cg";
 
 export default function HeroSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -125,13 +121,13 @@ export default function HeroSection() {
                 />
                 <div className="relative z-10 w-full h-full flex items-center">
                   <div
-                    className={`w-full lg:w-1/2 mx-14 md:mx-0 p-6 space-y-6 rounded-xl ${
+                    className={`w-full lg:w-1/2 mx-4 md:mx-8 p-4 md:p-6 space-y-4 md:space-y-6 rounded-xl ${
                       fontSizeStyles[fontSize]
                     } lg:ml-16 bg-opacity-85 ${
                       highContrast ? "bg-gray-900" : "bg-blue-600"
                     }`}
                   >
-                    <div className="mb-4 flex flex-wrap justify-start lg:justify-start gap-2">
+                    <div className="mb-4 flex flex-wrap justify-start gap-2">
                       <Badge
                         className={`text-white ${badgeContrastStyles} flex items-center gap-2`}
                       >
@@ -150,41 +146,41 @@ export default function HeroSection() {
                       </Badge>
                     </div>
                     <h1
-                      className={`text-4xl font-extrabold tracking-tighter sm:text-5xl lg:text-5xl ${
+                      className={`text-2xl md:text-4xl font-extrabold tracking-tighter ${
                         highContrast ? "text-white" : "text-white"
                       }`}
                     >
                       {course.title}
                     </h1>
                     <p
-                      className={`mt-6 leading-7 text-lg tracking-tight font-medium ${
+                      className={`leading-6 md:leading-7 text-sm md:text-lg tracking-tight font-medium ${
                         highContrast ? "text-white" : "text-gray-200"
                       }`}
                     >
                       <Markdown>
-                        {course.description.substring(0, 250) + "[...]"}
+                        {course.description.substring(0, 100) + "[...]"}
                       </Markdown>
                     </p>
-                    <div className="mt-8 flex md:flex-row flex-col justify-center lg:justify-start gap-2">
+                    <div className="flex flex-col md:flex-row justify-center lg:justify-start gap-2">
                       <Link
                         aria-label="Zapisz się na studia"
                         href="/rekrutacja"
-                        className={`flex items-center gap-2 w-fit rounded-xl px-5 py-3 font-semibold ${linkContrastStyles}`}
+                        className={`flex items-center gap-2 w-fit rounded-xl px-4 py-2 md:px-5 md:py-3 font-semibold ${linkContrastStyles}`}
                       >
                         Zapisz się na studia{" "}
-                        <CgArrowTopRightO className=" text-2xl" />
+                        <CgArrowTopRightO className=" text-xl md:text-2xl" />
                       </Link>
                       <Link
                         aria-label={`Dowiedz się więcej o kierunku ${course.title}`}
                         href={`/oferta/${course.id}`}
-                        className={`flex items-center gap-2 w-fit rounded-xl px-5 py-3 font-semibold ${
+                        className={`flex items-center gap-2 w-fit rounded-xl px-4 py-2 md:px-5 md:py-3 font-semibold ${
                           highContrast
                             ? "bg-black hover:bg-gray-800 text-white"
                             : "bg-gray-900 hover:bg-gray-700 text-white"
                         }`}
                       >
                         Dowiedz się więcej o kierunku{" "}
-                        <CgArrowRightO className=" text-2xl" />
+                        <CgArrowRightO className=" text-xl md:text-2xl" />
                       </Link>
                     </div>
                   </div>
@@ -194,7 +190,7 @@ export default function HeroSection() {
             ))}
           </CarouselContent>
         </Carousel>
-        <div className="absolute bottom-10 right-4 flex items-center space-x-4 p-2 rounded-full bg-zinc-800/40">
+        <div className="absolute bottom-1 md:bottom-20 right-4 flex items-center space-x-2 p-2 rounded-full bg-zinc-800/40">
           <button
             aria-label="Poprzedni slajd"
             onClick={handlePrevious}
@@ -203,7 +199,7 @@ export default function HeroSection() {
             <FaArrowRight className="rotate-180" />
           </button>
 
-          <div className="flex space-x-2">
+          <div className="flex space-x-1">
             {courses.map((_, index) => (
               <FaCircle
                 key={index}
@@ -211,7 +207,7 @@ export default function HeroSection() {
                 className={`cursor-pointer ${
                   index === currentIndex ? "text-[#9E5AE2]" : "text-gray-100"
                 }`}
-                size={12}
+                size={10}
                 aria-label={`Przejdź do slajdu ${index + 1}`}
               />
             ))}
