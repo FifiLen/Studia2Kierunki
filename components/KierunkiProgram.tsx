@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { FaBook } from "react-icons/fa";
-import { Course, Subtopic, Topic } from "@/utils/Kierunki";
+import { Course, Topic } from "@/utils/Kierunki";
 import {
   Accordion,
   AccordionItem,
@@ -31,27 +31,12 @@ const Program = ({ course }: ProgramProps) => {
     };
   }, []);
 
-  const renderSubtopics = (subtopics?: Subtopic[]) => {
-    if (!subtopics) return null;
-    return (
-      <ol className="list-none ml-1 mt-1 text-gray-900">
-        {subtopics.map((subtopic, i) => (
-          <li key={i} className="flex items-center gap-2">
-            <MdKeyboardDoubleArrowRight />
-            {subtopic.title}
-          </li>
-        ))}
-      </ol>
-    );
-  };
-
   const renderTopics = (topics: Topic[]) => {
     return (
       <ol className="list-decimal space-y-3 ml-4 mt-2 text-gray-900">
         {topics.map((topic, i) => (
-          <li key={i}>
-            <span className="font-bold tracking-tight">{topic.title}</span>
-            {topic.subtopics && renderSubtopics(topic.subtopics)}
+          <li key={i} className="font-bold tracking-tight">
+            {topic.title}
           </li>
         ))}
       </ol>

@@ -112,7 +112,7 @@ const BanerKierunki = ({ course }: BanerKierunkiProps) => {
         <div className="relative w-full h-96 md:h-auto">
           <Image
             src={`/assets/${course.id}.jpg`}
-            layout="fill"
+            fill
             alt={`${course.title}`}
             className="object-cover"
             quality={75}
