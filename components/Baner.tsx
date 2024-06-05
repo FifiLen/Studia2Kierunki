@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { useUserPreferences } from "./UserPreferencesContext";
+import { CgArrowRightO } from "react-icons/cg";
 
 export default function Baner() {
   const { fontSize, highContrast } = useUserPreferences();
@@ -48,16 +49,16 @@ export default function Baner() {
         </p>
         <Link
           aria-label="Proces rekrutacji"
-          href="#rekrutacja"
-          className={`flex-none text-sm rounded-full flex items-center gap-1 px-3.5 py-1 font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
+          href="/rekrutacja"
+          className={`flex-none text-sm rounded-full flex items-center gap-2 px-2 py-1 font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
             highContrast
               ? "bg-white text-black hover:bg-gray-300"
-              : "bg-gray-900 text-white hover:bg-gray-700 focus-visible:outline-gray-900"
+              : "bg-[#9E5AE2] text-white hover:bg-gray-700 focus-visible:outline-gray-900"
           }`}
         >
           Proces rekrutacji
           <span aria-hidden="true">
-            <FaArrowRight className="h-4 w-4" />
+            <CgArrowRightO className="h-4 w-4" />
           </span>
         </Link>
       </div>

@@ -19,7 +19,7 @@ import { CgArrowRightO } from "react-icons/cg";
 
 const KierunkiPage = () => {
   return (
-    <div id="kierunki" className="w-full baner">
+    <div id="kierunki" className="w-full baner bg-gray-200">
       <div className="max-w-full mx-auto py-20 px-10 md:px-20">
         <h1 className="text-6xl font-bold mb-8 tracking-tighter">
           Nasze Kierunki
@@ -28,7 +28,7 @@ const KierunkiPage = () => {
           {courses.map((course) => (
             <Card
               key={course.id}
-              className="bg-gray-100 border-gray-300 rounded-lg shadow-none flex flex-col"
+              className="bg-white border-gray-100 rounded-lg shadow-none flex flex-col"
             >
               <div className="relative h-48">
                 <Image

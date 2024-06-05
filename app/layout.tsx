@@ -5,6 +5,7 @@ import Navbar from "@/components/Header";
 import Footer from "@/components/Footer";
 import { UserPreferencesProvider } from "@/components/UserPreferencesContext";
 import Access from "@/components/Access";
+import TopBar from "@/components/TopNav";
 
 const dmsans = DM_Sans({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={`${dmsans.className} overflow-x-hidden`}>
         <UserPreferencesProvider>
           <Access />
+          <TopBar />
           <Navbar />
           {children}
           <Footer />

@@ -89,7 +89,7 @@ export default function Navbar() {
       >
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
-            <span className="sr-only">Your Company</span>
+            <span className="sr-only">ISP Rybnik</span>
             <FaBookOpen
               className={` ${highContrast ? "text-black" : "text-blue-400"}`}
             />
@@ -121,15 +121,12 @@ export default function Navbar() {
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center gap-4">
           <Link
-            href="#"
-            className={`text-sm flex items-center gap-1 p-1 px-3 rounded-md font-semibold leading-6 ${
+            href="/rekrutacja"
+            className={`text-sm flex items-center gap-1 p-2 px-3 rounded-lg font-semibold leading-6 ${
               highContrast ? "bg-black text-white" : "bg-white text-blue-950"
             }`}
           >
-            Zapisz się na studia{" "}
-            <span aria-hidden="true">
-              <FaArrowRight />
-            </span>
+            Zapisz się na studia
           </Link>
         </div>
       </nav>
@@ -168,17 +165,14 @@ export default function Navbar() {
               </div>
               <div className="py-6">
                 <Link
-                  href="#"
-                  className={`text-sm flex items-center gap-1 p-1 px-3 rounded-md border font-semibold leading-6 ${
+                  href="/rekrutacja"
+                  className={`text-sm flex items-center gap-1 p-1 px-3 rounded-lg border font-semibold leading-6 ${
                     highContrast
                       ? "bg-black text-white border-white"
                       : "border-white text-white"
                   }`}
                 >
-                  Zapisz się na studia{" "}
-                  <span aria-hidden="true">
-                    <FaArrowRight />
-                  </span>
+                  Zapisz się na studia
                 </Link>
               </div>
             </div>

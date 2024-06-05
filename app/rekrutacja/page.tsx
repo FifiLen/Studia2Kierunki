@@ -184,13 +184,14 @@ const RecruitmentPage = () => {
                 >
                   <p className="font-semibold">1</p>
                 </div>
-                <Link
-                  href={"/"}
+                <a
+                  href={"https://isp.rybnikonline.eu/?page_id=9713"}
+                  target="_blank"
                   className=" bg-[#9E5AE2] py-1 px-2 mb-2 text-white rounded-xl flex items-center gap-2"
                 >
                   formularz rekrutacyjny
                   <CgArrowTopRightO />
-                </Link>
+                </a>
               </div>
               <h4 className="font-medium tracking-tight text-2xl">
                 Wypełnij formularz zgłoszeniowy

@@ -23,7 +23,9 @@ const Access = () => {
 
   return (
     <div className={`${navbarBackgroundStyles}`}>
-      <div className={`max-w-7xl flex justify-end gap-4 ${navbarTextStyles}`}>
+      <div
+        className={`max-w-7xl mx-auto px-8 gap-3 flex justify-end ${navbarTextStyles}`}
+      >
         <button
           aria-label="pomniejsz tekst"
           onClick={() => setFontSize("small")}
