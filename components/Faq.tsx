@@ -47,7 +47,7 @@ const Faq = () => {
             <h4 className="font-medium tracking-tight text-xl md:text-2xl">
               Jakie są warunki rekrutacji na&nbsp;studia podyplomowe?
             </h4>
-            <p className="mt-2 text-base">
+            <p className="mt-2 text-base md:text-lg">
               Warunki rekrutacji na studia podyplomowe różnią się w zależności
               od kierunku studiów. Szczegółowe informacje o warunkach rekrutacji
               na poszczególne kierunki znajdziesz na stronie internetowej
@@ -59,7 +59,7 @@ const Faq = () => {
             <h4 className="font-medium tracking-tight text-xl md:text-2xl">
               Ile kosztują studia podyplomowe?
             </h4>
-            <p className="mt-2 text-base">
+            <p className="mt-2 text-base md:text-lg">
               Ceny studiów podyplomowych różnią się w zależności od kierunku
               studiów. Szczegółowe informacje o opłatach za studia podyplomowe
               na poszczególne kierunki znajdziesz na stronie internetowej
@@ -71,7 +71,7 @@ const Faq = () => {
             <h4 className="font-medium tracking-tight text-xl md:text-2xl">
               Jak długo trwają studia podyplomowe?
             </h4>
-            <p className="mt-2 text-base">
+            <p className="mt-2 text-base md:text-lg">
               Studia podyplomowe trwają od dwóch do czterech semestrów.
               Szczegółowe informacje o długości trwania studiów podyplomowych na
               poszczególne kierunki znajdziesz na stronie internetowej uczelni.
@@ -82,7 +82,7 @@ const Faq = () => {
             <h4 className="font-medium tracking-tight text-xl md:text-2xl">
               Jakie są formy prowadzenia zajęć na studiach podyplomowych?
             </h4>
-            <p className="mt-2 text-base">
+            <p className="mt-2 text-base md:text-lg">
               Zajęcia na studiach podyplomowych prowadzone są online.
               Szczegółowe informacje o formach prowadzenia zajęć na poszczególne
               kierunki znajdziesz na stronie internetowej uczelni.
@@ -93,7 +93,7 @@ const Faq = () => {
             <h4 className="font-medium tracking-tight text-xl md:text-2xl">
               Ile wynosi opłata wpisowa?
             </h4>
-            <p className="mt-2 text-base">
+            <p className="mt-2 text-base md:text-lg">
               Opłata wpisowa na studia podyplomowe wynosi 200 zł. Jest to
               jednorazowa opłata, która musi zostać uiszczona przed rozpoczęciem
               studiów. Opłata wpisowa pokrywa koszty związane z rekrutacją,
@@ -105,7 +105,7 @@ const Faq = () => {
             <h4 className="font-medium tracking-tight text-xl md:text-2xl">
               Co daje ukończenie studiów podyplomowych?
             </h4>
-            <p className="mt-2 text-base">
+            <p className="mt-2 text-base md:text-lg">
               Ukończenie studiów podyplomowych daje możliwość zdobycia nowych
               kwalifikacji zawodowych, pogłębienia wiedzy i umiejętności w
               wybranej dziedzinie, a także awansu zawodowego.

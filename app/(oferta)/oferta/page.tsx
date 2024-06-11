@@ -16,6 +16,7 @@ import {
 } from "react-icons/fa";
 import { courses } from "@/utils/Kierunki";
 import { CgArrowRightO } from "react-icons/cg";
+import Markdown from "markdown-to-jsx";
 
 const KierunkiPage = () => {
   return (
@@ -47,7 +48,7 @@ const KierunkiPage = () => {
               </CardHeader>
               <CardContent className="flex-grow">
                 <CardDescription className="mb-4 text-sm md:text-base">
-                  {course.description.substring(0, 150)}...
+                  <Markdown>{course.description2}</Markdown>
                 </CardDescription>
                 <div className="flex items-center font-medium mb-2 p-2 bg-blue-100 rounded-md text-sm md:text-base">
                   <FaCalendarAlt className="text-blue-500 mr-2" />

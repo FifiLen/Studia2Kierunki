@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { CgArrowTopRightO } from "react-icons/cg";
 import { Course } from "@/utils/Kierunki";
+
 interface Invite {
   course: Course;
 }
@@ -12,25 +13,24 @@ const Zapraszamy = ({ course }: Invite) => {
     <section className="w-full bg-blue-950">
       <div className="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-full">
         {/* Text Column */}
-        <div className=" justify-center items-start flex px-20 py-36 flex-col rekrutacja">
-          <h2 className="text-4xl text-white font-semibold tracking-tighter mt-3">
+        <div className="flex justify-center items-start px-6 py-16 md:px-20 md:py-36 flex-col rekrutacja">
+          <h2 className="text-3xl md:text-4xl text-white font-semibold tracking-tighter mt-3">
             Gotowy/a na nowe wyzwania?
           </h2>
-          <p className="text-lg text-zinc-300 mt-4">
-            Rozpocznij swoją przygodę z {course.title}! Zapewniamy wysoki poziom
-            kształcenia, doświadczoną kadrę i nowoczesne zaplecze. Inwestuj w
-            swoją przyszłość i zrealizuj swoje marzenia.
+          <p className="text-base md:text-lg text-zinc-300 mt-4">
+            Rozpocznij swoją zawodową przygodę jako {course.title}. Inwestuj w
+            swoją przyszłość i realizuj swoje nowe perspektywy zawodowe.
           </p>
           <Link href="/rekrutacja">
             <button className="bg-blue-800 text-white font-semibold rounded-lg px-4 py-3 flex gap-3 items-center justify-center mt-8">
               Zapisz się na wybrany kierunek
-              <CgArrowTopRightO className=" text-2xl" />
+              <CgArrowTopRightO className="text-2xl" />
             </button>
           </Link>
         </div>
 
         {/* Image Column */}
-        <div className="relative w-full">
+        <div className="relative w-full h-64 md:h-auto">
           <Image
             src="/assets/studentka2.png"
             fill

@@ -17,7 +17,7 @@ const SectionNavigation = ({ sections }: SectionNavigationProps) => {
   };
 
   const navContrastStyles = highContrast
-    ? "bg-[#ffff00] text-white"
+    ? "bg-yellow-400 text-white"
     : "bg-blue-950 text-white";
 
   const handleSmoothScroll = (
@@ -58,7 +58,7 @@ const SectionNavigation = ({ sections }: SectionNavigationProps) => {
               <a
                 href={`#${section.id}`}
                 onClick={(event) => handleSmoothScroll(event, section.id)}
-                className={`inline-flex items-center gap-2 px-2 md:px-4 py-0 md:py-2 font-medium ${
+                className={`inline-flex items-center gap-2 px-2 md:px-4 py-1 md:py-2 font-medium ${
                   fontSizeStyles[fontSize]
                 } ${
                   highContrast
