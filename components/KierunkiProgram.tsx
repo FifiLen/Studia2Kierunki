@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { FaBook } from "react-icons/fa";
 import { Course, Topic } from "@/utils/Kierunki";
 import {
   Accordion,
@@ -8,7 +7,6 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "./ui/accordion";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import Markdown from "markdown-to-jsx";
 
 interface ProgramProps {
@@ -35,7 +33,7 @@ const Program = ({ course }: ProgramProps) => {
     return (
       <ol className="list-decimal space-y-3 ml-4 mt-2 text-gray-900">
         {topics.map((topic, i) => (
-          <li key={i} className="font-bold tracking-tight">
+          <li key={i} className=" font-medium tracking-tight">
             {topic.title}
           </li>
         ))}
@@ -44,16 +42,19 @@ const Program = ({ course }: ProgramProps) => {
   };
 
   return (
-    <section id="program-studiow" className="w-full bg-blue-950 py-28 program">
-      <div className="mx-auto max-w-full px-10 lg:px-10 space-y-8">
-        <h2 className="text-5xl font-semibold tracking-tighter text-white">
+    <section
+      id="program-studiow"
+      className="w-full bg-blue-950 py-20 md:py-28 program"
+    >
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-8">
+        <h2 className="text-4xl md:text-5xl font-semibold tracking-tighter text-white">
           Program Studiów
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
           {course.modules.map((module, index) => (
             <div
               key={index}
-              className="bg-gray-100 p-2 md:p-6 rounded-lg shadow-lg"
+              className="bg-gray-100 p-4 md:p-6 rounded-lg shadow-lg"
             >
               {isLargeScreen ? (
                 <div>

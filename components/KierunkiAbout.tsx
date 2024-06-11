@@ -1,19 +1,12 @@
 "use client";
-import { FaBook, FaChalkboardTeacher, FaUserGraduate } from "react-icons/fa";
+import { FaUserGraduate } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import { Course } from "@/utils/Kierunki";
 import { Poppins } from "next/font/google";
 import Markdown from "markdown-to-jsx";
-import {
-  TbArrowBigDownFilled,
-  TbArrowBigRightFilled,
-  TbTargetArrow,
-} from "react-icons/tb";
+import { TbArrowBigDownFilled, TbTargetArrow } from "react-icons/tb";
 import { BiAward } from "react-icons/bi";
-import { GiDiploma } from "react-icons/gi";
-import { StickyScroll } from "./ui/sticky";
-import StickyScrollRevealDemo from "./Scroll";
 
 const poppins = Poppins({ weight: ["400", "500", "600"], subsets: ["latin"] });
 
@@ -24,37 +17,37 @@ interface AboutSpecialtyProps {
 const AboutSpecialty = ({ course }: AboutSpecialtyProps) => {
   return (
     <section id="opis" className="w-full h-fit bg-gray-200 about">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-auto max-w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-full">
         {/* Kolumna z tekstem */}
-        <div className="px-10 py-28 relative overflow-hidden">
-          <h3 className="text-3xl font-semibold text-zinc-700 tracking-tighter ">
+        <div className="px-4 md:px-10 py-16 md:py-28 relative overflow-hidden">
+          <h3 className="text-2xl md:text-3xl font-semibold text-zinc-700 tracking-tighter">
             {course.title}
           </h3>
-          <h2 className="text-5xl font-semibold tracking-tighter mt-2 ">
+          <h2 className="text-4xl md:text-5xl font-semibold tracking-tighter mt-2">
             Opis Kierunku
           </h2>
-          <div className=" text-zinc-800 mt-8 p-10 rounded-xl bg-gray-50 border-gray-300 border">
-            <h4 className=" pb-3 text-2xl font-semibold tracking-tighter flex items-center gap-2">
+          <div className="text-zinc-800 mt-8 p-6 md:p-10 rounded-xl bg-gray-50 border-gray-300 border">
+            <h4 className="pb-3 text-xl md:text-2xl font-semibold tracking-tighter flex items-center gap-2">
               <FaUserGraduate />
               Grupa docelowa
             </h4>
-            <p className={` tracking-tight leading-7 ${poppins.className}`}>
+            <div className={`tracking-tight leading-7 ${poppins.className}`}>
               <Markdown>{course.description}</Markdown>
-            </p>
+            </div>
           </div>
-          <div className=" text-zinc-800 mt-8 p-10 rounded-xl bg-gray-100 border-gray-300 border">
-            <h4 className=" pb-3 text-2xl font-semibold tracking-tighter flex items-center gap-2">
+          <div className="text-zinc-800 mt-8 p-6 md:p-10 rounded-xl bg-gray-100 border-gray-300 border">
+            <h4 className="pb-3 text-xl md:text-2xl font-semibold tracking-tighter flex items-center gap-2">
               <TbTargetArrow />
               Cel studiów
             </h4>
-            <p className={`  tracking-tight leading-7 ${poppins.className}`}>
+            <div className={`tracking-tight leading-7 ${poppins.className}`}>
               <Markdown>{course.description2}</Markdown>
-            </p>
+            </div>
           </div>
         </div>
 
         {/* Kolumna z obrazkiem */}
-        <div className="relative w-full  ">
+        <div className="relative w-full h-64 md:h-auto">
           <Image
             src="/assets/about1.jpg"
             fill
@@ -66,9 +59,9 @@ const AboutSpecialty = ({ course }: AboutSpecialtyProps) => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-auto max-w-full pb-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-full pb-20">
         {/* Kolumna z obrazkiem */}
-        <div className="relative w-full">
+        <div className="relative w-full h-64 md:h-auto">
           <Image
             src="/assets/about2.jpg"
             fill
@@ -79,28 +72,28 @@ const AboutSpecialty = ({ course }: AboutSpecialtyProps) => {
           />
         </div>
         {/* Kolumna z tekstem */}
-        <div className="px-10 py-5 relative overflow-hidden">
-          <div className=" text-zinc-800 mt-8 p-10 rounded-xl bg-gray-50 border-gray-300 border">
-            <h4 className=" pb-3 text-2xl font-semibold tracking-tighter flex items-center gap-2">
+        <div className="px-4 md:px-10 py-5 relative overflow-hidden">
+          <div className="text-zinc-800 mt-8 p-6 md:p-10 rounded-xl bg-gray-50 border-gray-300 border">
+            <h4 className="pb-3 text-xl md:text-2xl font-semibold tracking-tighter flex items-center gap-2">
               <BiAward />
               Przygotowanie absolwentów do pracy
             </h4>
-            <p className={`  tracking-tight leading-7 ${poppins.className}`}>
+            <div className={`tracking-tight leading-7 ${poppins.className}`}>
               <Markdown>{course.description3}</Markdown>
-            </p>
+            </div>
           </div>
-          <div className=" text-zinc-800 mt-8 p-10 rounded-xl bg-gray-50 border-gray-300 border">
-            <h4 className=" pb-3 text-2xl font-semibold tracking-tighter flex items-center gap-2">
-              <GiDiploma />
-              Kwalifikacje i Warunki Ukończenia
-            </h4>
-            <p className={`  tracking-tight leading-7 ${poppins.className}`}>
-              <Markdown>{course.description3}</Markdown>
+
+          <div className="text-zinc-800 mt-8 p-6 md:p-10 rounded-xl bg-gray-50 border-gray-300 border">
+            <p className={`tracking-tight leading-7 ${poppins.className}`}>
+              Zajęcia realizowane z wykorzystaniem metod i technik kształcenia
+              na&nbsp;odległość. (Rozporządzenie Ministra Nauki i Szkolnictwa
+              Wyższego z dnia 27 września 2018r. w sprawie studiów Dz.U.z 203.
+              poz. 2787 ze zmianami)
             </p>
           </div>
 
           <Link href={"#program-studiow"}>
-            <button className="bg-blue-900 text-white font-semibold md:w-fit w-full rounded-lg px-10 py-3 flex gap-2 items-center justify-center mt-8">
+            <button className="bg-blue-900 text-white font-semibold md:w-fit w-full rounded-lg px-6 md:px-10 py-3 flex gap-2 items-center justify-center mt-8">
               Zobacz program studiów
               <TbArrowBigDownFilled />
             </button>

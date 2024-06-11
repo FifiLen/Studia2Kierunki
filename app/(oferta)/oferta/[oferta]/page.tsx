@@ -8,6 +8,7 @@ import Program from "@/components/KierunkiProgram";
 import PraktykiKierunki from "@/components/PraktykiKierunki";
 import Faq from "@/components/Faq";
 import Zapraszamy from "@/components/Zapisz";
+import Schedule from "@/components/Harmonogram";
 
 export async function generateStaticParams() {
   return courses.map((course) => ({
@@ -29,7 +30,7 @@ const CoursePage = ({ params }: CoursePageProps) => {
     { id: "opis", title: "Opis kierunku" },
     { id: "program-studiow", title: "Program studiów" },
     { id: "praktyki", title: "Praktyki" },
-    { id: "forma-studiow", title: "Forma studiów" },
+    { id: "harmonogram", title: "Harmonogram" },
     { id: "faq", title: "Pytania i odpowiedzi" },
   ];
 
@@ -40,6 +41,7 @@ const CoursePage = ({ params }: CoursePageProps) => {
       <AboutSpecialty course={course} />
       <Program course={course} />
       <PraktykiKierunki course={course} />
+      <Schedule schedule={course.schedule} /> {/* Use the Schedule component */}
       <Zapraszamy course={course} />
       <Faq />
     </>

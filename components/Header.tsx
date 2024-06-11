@@ -26,32 +26,32 @@ interface Product {
 const products: Product[] = [
   {
     name: "Strona główna",
-    description: "Get a better understanding of your traffic",
+    description: "Strona główna",
     href: "/",
     icon: <FaChartPie />,
   },
   {
     name: "Oferta",
-    description: "Speak directly to your customers",
+    description: "Oferta studiów podyplomowych",
     href: "/oferta",
     icon: <FaICursor />,
   },
   {
     name: "Rekrutacja",
-    description: "Your customers’ data will be safe and secure",
+    description: "Rekrutacja na studia podyplomowe",
     href: "/rekrutacja",
     icon: <FaFingerprint />,
   },
   {
     name: "FAQ",
-    description: "Connect with third-party tools",
+    description: "Pytania i odpowiedzi",
     href: "/faq",
     icon: <FaPlug />,
   },
   {
     name: "Kontakt",
-    description: "Build strategic funnels that will convert",
-    href: "kontakt",
+    description: "Strona kontaktowa",
+    href: "/kontakt",
     icon: <FaRedo />,
   },
 ];
@@ -108,7 +108,7 @@ export default function Navbar() {
             <FaBars className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-x-14">
           {products.map((product) => (
             <Link
               key={product.name}
@@ -136,7 +136,7 @@ export default function Navbar() {
         >
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">ISP Rybnik</span>
               <h2 className="tracking-tighter text-2xl font-semibold">
                 ISP Rybnik
               </h2>
@@ -157,7 +157,7 @@ export default function Navbar() {
                   <a
                     key={product.name}
                     href={product.href}
-                    className={`block rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 ${linkContrastStyles} hover:bg-gray-50`}
+                    className={`block rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 ${linkContrastStyles} hover:bg-blue-500`}
                   >
                     {product.name}
                   </a>

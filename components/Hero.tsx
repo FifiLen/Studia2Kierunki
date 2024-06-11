@@ -158,7 +158,7 @@ export default function HeroSection() {
                       }`}
                     >
                       <Markdown>
-                        {course.description.substring(0, 100) + "[...]"}
+                        {course.description2.substring(0, 100) + "[...]"}
                       </Markdown>
                     </p>
                     <div className="flex flex-col md:flex-row justify-center lg:justify-start gap-2">

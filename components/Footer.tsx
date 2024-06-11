@@ -1,6 +1,13 @@
 import React from "react";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedin,
+  FaYoutube,
+} from "react-icons/fa";
 import { courses } from "@/utils/Kierunki"; // Importuj dane o kierunkach
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -62,11 +69,11 @@ const Footer = () => {
             <address className="not-italic text-sm text-gray-300">
               ISP Rybnik
               <br />
-              ul. Magnolii 25, 44-207 Rybnik
+              ul. Magnolii 25 <br /> 44-207 Rybnik
               <br />
               Telefon:{" "}
-              <a href="tel:+48123456789" className="hover:text-gray-400">
-                +48 123 456 789
+              <a href="tel:+48 797 173 501" className="hover:text-gray-400">
+                +48 797 173 501
               </a>
               <br />
               Email:{" "}
@@ -94,7 +101,7 @@ const Footer = () => {
             </h2>
             <div className="flex space-x-4">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/isprybnik"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-gray-400"
@@ -103,12 +110,32 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://instagram.com"
+                href="https://www.youtube.com/channel/UCZMSdZUXAMbS34zWr34yzAA"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-gray-400"
               >
-                <FaInstagram size={24} />
+                <FaYoutube size={24} />
+              </a>
+              <div className="border-l h-6 border-gray-400"></div>
+
+              <a
+                href="https://www.facebook.com/groups/1071990153582830"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gray-400"
+              >
+                <FaFacebook size={24} />
+              </a>
+              <div className="border-l h-6 border-gray-400"></div>
+
+              <a
+                href="https://www.facebook.com/poradnia.magnolia"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gray-400"
+              >
+                <FaFacebook size={24} />
               </a>
             </div>
           </div>
@@ -120,22 +147,22 @@ const Footer = () => {
           </p>
           <ul className="flex space-x-4 mt-4 sm:mt-0">
             <li>
-              <a
-                href="#polityka-prywatnosci"
+              <Link
+                href="/polityka-prywatnosci"
                 className="hover:text-gray-400 text-sm"
               >
                 Polityka prywatności
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#regulamin" className="hover:text-gray-400 text-sm">
+              <Link href="/regulamin" className="hover:text-gray-400 text-sm">
                 Regulamin
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#kontakt" className="hover:text-gray-400 text-sm">
+              <Link href="/kontakt" className="hover:text-gray-400 text-sm">
                 Kontakt
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
