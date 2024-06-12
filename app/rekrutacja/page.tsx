@@ -1,5 +1,6 @@
 "use client";
-import React from "react";
+import React, { useState, FormEvent } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 import Image from "next/image";
 import Link from "next/link";
 import { TiUserAdd } from "react-icons/ti";
@@ -7,8 +8,16 @@ import { CgArrowRightO, CgArrowTopRightO } from "react-icons/cg";
 import { useUserPreferences } from "@/components/UserPreferencesContext";
 import { GiFootsteps } from "react-icons/gi";
 
-const RecruitmentPage = () => {
+interface Errors {
+  name?: string;
+  surname?: string;
+  email?: string;
+}
+
+const RecruitmentPage: React.FC = () => {
   const { fontSize, highContrast } = useUserPreferences();
+  const [state, handleSubmit] = useForm("mwkggozp");
+  const [errors, setErrors] = useState<Errors>({});
 
   const textContrastStyles = highContrast ? "text-[#FFFF00]" : "text-black";
   const bgContrastStyles = highContrast ? "bg-black" : "bg-white";
@@ -16,6 +25,42 @@ const RecruitmentPage = () => {
     ? "text-[#FFFF00] hover:text-yellow-500"
     : "text-white hover:text-blue-100";
   const inputBgStyles = highContrast ? "bg-[#333]" : "bg-gray-50";
+
+  const validateForm = (data: FormData) => {
+    const newErrors: Errors = {};
+
+    if (!data.get("name")) {
+      newErrors.name = "Imię jest wymagane.";
+    }
+
+    if (!data.get("surname")) {
+      newErrors.surname = "Nazwisko jest wymagane.";
+    }
+
+    const email = data.get("email") as string;
+    if (!email) {
+      newErrors.email = "Email jest wymagany.";
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      newErrors.email = "Email jest nieprawidłowy.";
+    }
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return false;
+    }
+
+    setErrors({});
+    return true;
+  };
+
+  const handleFormSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget);
+
+    if (validateForm(formData)) {
+      handleSubmit(formData);
+    }
+  };
 
   return (
     <section id="contact" className="w-full bg-white/90">
@@ -45,12 +90,12 @@ const RecruitmentPage = () => {
             <p className="mb-8 mt-4 text-base md:text-lg leading-7 text-gray-600">
               Rekrutacja na studia podyplomowe zamyka się w kilku krokach.
               Poniżej znajdziesz instrukcję krok po kroku, która poprowadzi Cię
-              przez proces rekrutacji . W przypadku napotkania trudności
+              przez proces rekrutacji. W przypadku napotkania trudności
               zachęcamy do kontaktu poprzez formularz, a nasz zespół udzieli Ci
               pomocy.
             </p>
           </div>
-          <form>
+          <form onSubmit={handleFormSubmit}>
             <div className="mb-4 grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label
@@ -62,9 +107,18 @@ const RecruitmentPage = () => {
                 <input
                   type="text"
                   id="name"
+                  name="name"
                   placeholder="Jan"
                   aria-required="true"
                   className={`w-full p-3 rounded-md ${inputBgStyles} ${textContrastStyles} border border-gray-300 focus:border-blue-500`}
+                />
+                {errors.name && (
+                  <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+                )}
+                <ValidationError
+                  prefix="Name"
+                  field="name"
+                  errors={state.errors}
                 />
               </div>
               <div>
@@ -77,9 +131,18 @@ const RecruitmentPage = () => {
                 <input
                   type="text"
                   id="surname"
+                  name="surname"
                   placeholder="Kowalski"
                   aria-required="true"
                   className={`w-full p-3 rounded-md ${inputBgStyles} ${textContrastStyles} border border-gray-300 focus:border-blue-500`}
+                />
+                {errors.surname && (
+                  <p className="text-red-500 text-sm mt-1">{errors.surname}</p>
+                )}
+                <ValidationError
+                  prefix="Surname"
+                  field="surname"
+                  errors={state.errors}
                 />
               </div>
             </div>
@@ -93,9 +156,18 @@ const RecruitmentPage = () => {
               <input
                 type="email"
                 id="email"
+                name="email"
                 placeholder="jankowalski@mail.com"
                 aria-required="true"
                 className={`w-full p-3 rounded-md ${inputBgStyles} ${textContrastStyles} border border-gray-300 focus:border-blue-500`}
+              />
+              {errors.email && (
+                <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+              )}
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
               />
             </div>
             <div className="mb-4">
@@ -110,18 +182,39 @@ const RecruitmentPage = () => {
               </div>
               <textarea
                 id="message"
+                name="message"
                 rows={4}
                 placeholder="Jak możemy Ci pomóc?"
                 className={`w-full p-3 rounded-md ${inputBgStyles} ${textContrastStyles} border border-gray-300 focus:border-blue-500`}
               ></textarea>
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+              />
             </div>
             <button
               aria-label="Wyślij wiadomość"
               type="submit"
-              className={`w-fit py-3 px-6 flex gap-2 items-center font-medium rounded-md ${linkContrastStyles} bg-blue-500`}
+              disabled={state.submitting}
+              className={`w-fit py-3 px-6 flex gap-2 items-center font-medium rounded-md ${
+                state.succeeded
+                  ? "bg-green-500 text-white"
+                  : `${linkContrastStyles} bg-blue-500`
+              }`}
             >
-              Wyślij wiadomość
-              <CgArrowTopRightO />
+              {state.submitting ? (
+                <div className="flex items-center gap-2">
+                  <span className="loader"></span>Wysyłanie...
+                </div>
+              ) : state.succeeded ? (
+                "Dziękujemy za przesłanie wiadomości"
+              ) : (
+                <>
+                  Wyślij wiadomość
+                  <CgArrowTopRightO />
+                </>
+              )}
             </button>
           </form>
         </div>
@@ -280,4 +373,5 @@ const RecruitmentPage = () => {
     </section>
   );
 };
+
 export default RecruitmentPage;

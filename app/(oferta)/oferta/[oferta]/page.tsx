@@ -6,9 +6,11 @@ import AboutSpecialty from "@/components/KierunkiAbout";
 import ProgramStudiow from "@/components/KierunkiProgram";
 import Program from "@/components/KierunkiProgram";
 import PraktykiKierunki from "@/components/PraktykiKierunki";
-import Faq from "@/components/Faq";
+
 import Zapraszamy from "@/components/Zapisz";
 import Schedule from "@/components/Harmonogram";
+import Faq from "@/app/faq/page";
+import BannerComponent from "@/components/BanerBurKierunek";
 
 export async function generateStaticParams() {
   return courses.map((course) => ({
@@ -43,6 +45,7 @@ const CoursePage = ({ params }: CoursePageProps) => {
       <PraktykiKierunki course={course} />
       <Schedule schedule={course.schedule} /> {/* Use the Schedule component */}
       <Zapraszamy course={course} />
+      <BannerComponent />
       <Faq />
     </>
   );

@@ -1,17 +1,21 @@
-import React from "react";
-import {
-  FaFacebook,
-  FaTwitter,
-  FaInstagram,
-  FaLinkedin,
-  FaYoutube,
-} from "react-icons/fa";
-import { courses } from "@/utils/Kierunki"; // Importuj dane o kierunkach
+"use client";
+import React, { useState } from "react";
+import { FaFacebook, FaYoutube } from "react-icons/fa";
+import { courses } from "@/utils/Kierunki";
 import Link from "next/link";
+import {
+  HoverCard,
+  HoverCardTrigger,
+  HoverCardContent,
+} from "../components/ui/hover-card";
+
+const availableCourseId = "trener-umiejetnosci-spolecznych"; // Main course ID
 
 const Footer = () => {
+  const [hoveredCourse, setHoveredCourse] = useState<string | null>(null);
+
   return (
-    <footer className="bg-blue-950 text-white py-12">
+    <footer className="bg-blue-950 text-white py-12 mt-auto">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex flex-wrap justify-between">
           {/* Sekcja Nawigacja */}
@@ -19,29 +23,29 @@ const Footer = () => {
             <h2 className="text-xl font-semibold mb-4">Nawigacja</h2>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>
-                <a href="#home" className="hover:text-gray-400">
+                <Link href="/" className="hover:text-gray-400">
                   Strona główna
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#oferta" className="hover:text-gray-400">
+                <Link href="/oferta" className="hover:text-gray-400">
                   Oferta
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#rekrutacja" className="hover:text-gray-400">
+                <Link href="/rekrutacja" className="hover:text-gray-400">
                   Rekrutacja
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#faq" className="hover:text-gray-400">
+                <Link href="/faq" className="hover:text-gray-400">
                   FAQ
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#kontakt" className="hover:text-gray-400">
+                <Link href="/kontakt" className="hover:text-gray-400">
                   Kontakt
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -51,13 +55,26 @@ const Footer = () => {
             <h2 className="text-xl font-semibold mb-4">Kierunki</h2>
             <ul className="space-y-2 text-sm text-gray-300">
               {courses.map((course) => (
-                <li key={course.id}>
-                  <a
-                    href={`/oferta/${course.id}`}
-                    className="hover:text-gray-400"
-                  >
-                    {course.title}
-                  </a>
+                <li key={course.id} className="relative overflow-hidden">
+                  {course.id !== availableCourseId ? (
+                    <HoverCard>
+                      <HoverCardTrigger asChild>
+                        <span className="block cursor-not-allowed">
+                          {course.title}
+                        </span>
+                      </HoverCardTrigger>
+                      <HoverCardContent className="text-sm text-gray-500">
+                        Nowe kierunki będą dostępne już wkrótce.
+                      </HoverCardContent>
+                    </HoverCard>
+                  ) : (
+                    <Link
+                      href={`/oferta/${course.id}`}
+                      className="block hover:text-gray-400"
+                    >
+                      {course.title}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -85,6 +102,7 @@ const Footer = () => {
               </a>
             </address>
           </div>
+
           {/* Sekcja Informacje o Prawach Autorskich */}
           <div className="w-full sm:w-1/2 lg:w-1/4">
             <h2 className="text-xl font-semibold mb-4">Informacje</h2>
@@ -108,7 +126,6 @@ const Footer = () => {
               >
                 <FaFacebook size={24} />
               </a>
-
               <a
                 href="https://www.youtube.com/channel/UCZMSdZUXAMbS34zWr34yzAA"
                 target="_blank"
@@ -118,7 +135,6 @@ const Footer = () => {
                 <FaYoutube size={24} />
               </a>
               <div className="border-l h-6 border-gray-400"></div>
-
               <a
                 href="https://www.facebook.com/groups/1071990153582830"
                 target="_blank"
@@ -128,7 +144,6 @@ const Footer = () => {
                 <FaFacebook size={24} />
               </a>
               <div className="border-l h-6 border-gray-400"></div>
-
               <a
                 href="https://www.facebook.com/poradnia.magnolia"
                 target="_blank"

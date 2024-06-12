@@ -3,6 +3,8 @@ import { Course } from "./Kierunki";
 export const trenerUmiejetnosciSpolecznych: Course = {
   id: "trener-umiejetnosci-spolecznych",
   title: "Trener Umiejętności Społecznych",
+  banerDescription:
+    "Stań się ekspertem w budowaniu relacji i skutecznej komunikacji w każdej organizacji.",
   description: `<ul className="list-disc list-inside space-y-2">
   <li>
       kadra zarządzająca placówkami oświatowymi

@@ -21,6 +21,9 @@ import { useUserPreferences } from "./UserPreferencesContext";
 import { courses } from "@/utils/Kierunki";
 import Markdown from "markdown-to-jsx";
 import { CgArrowRightO, CgArrowTopRightO } from "react-icons/cg";
+import ComingSoonOverlay from "./Overlay";
+
+const availableCourseId = "trener-umiejetnosci-spolecznych"; // Main course ID
 
 export default function HeroSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -119,6 +122,8 @@ export default function HeroSection() {
                   priority={index === 0} // Prioritize the first image
                   className="absolute object-cover inset-0 w-full h-full z-0"
                 />
+                {course.id !== availableCourseId && <ComingSoonOverlay />}{" "}
+                {/* Overlay for coming soon courses */}
                 <div className="relative z-10 w-full h-full flex items-center">
                   <div
                     className={`w-full lg:w-1/2 mx-4 md:mx-8 p-4 md:p-6 space-y-4 md:space-y-6 rounded-xl ${
@@ -142,7 +147,7 @@ export default function HeroSection() {
                         } flex items-center gap-2`}
                       >
                         <FaLaptopHouse />
-                        100% online
+                        100% online w czasie rzeczywistym
                       </Badge>
                     </div>
                     <h1
@@ -157,31 +162,51 @@ export default function HeroSection() {
                         highContrast ? "text-white" : "text-gray-200"
                       }`}
                     >
-                      <Markdown>
-                        {course.description2.substring(0, 100) + "[...]"}
-                      </Markdown>
+                      <Markdown>{course.banerDescription}</Markdown>
                     </p>
                     <div className="flex flex-col md:flex-row justify-center lg:justify-start gap-2">
-                      <Link
-                        aria-label="Zapisz się na studia"
-                        href="/rekrutacja"
-                        className={`flex items-center gap-2 w-fit rounded-xl px-4 py-2 md:px-5 md:py-3 font-semibold ${linkContrastStyles}`}
-                      >
-                        Zapisz się na studia{" "}
-                        <CgArrowTopRightO className=" text-xl md:text-2xl" />
-                      </Link>
-                      <Link
-                        aria-label={`Dowiedz się więcej o kierunku ${course.title}`}
-                        href={`/oferta/${course.id}`}
-                        className={`flex items-center gap-2 w-fit rounded-xl px-4 py-2 md:px-5 md:py-3 font-semibold ${
-                          highContrast
-                            ? "bg-black hover:bg-gray-800 text-white"
-                            : "bg-gray-900 hover:bg-gray-700 text-white"
-                        }`}
-                      >
-                        Dowiedz się więcej o kierunku{" "}
-                        <CgArrowRightO className=" text-xl md:text-2xl" />
-                      </Link>
+                      {course.id === availableCourseId ? (
+                        <Link
+                          aria-label="Zapisz się na studia"
+                          href="/rekrutacja"
+                          className={`flex items-center gap-2 w-fit rounded-xl px-4 py-2 md:px-5 md:py-3 font-semibold ${linkContrastStyles}`}
+                        >
+                          Zapisz się na studia{" "}
+                          <CgArrowTopRightO className=" text-xl md:text-2xl" />
+                        </Link>
+                      ) : (
+                        <div
+                          className={`flex items-center gap-2 w-fit rounded-xl px-4 py-2 md:px-5 md:py-3 font-semibold ${linkContrastStyles} cursor-not-allowed opacity-50`}
+                        >
+                          Zapisz się na studia{" "}
+                          <CgArrowTopRightO className=" text-xl md:text-2xl" />
+                        </div>
+                      )}
+                      {course.id === availableCourseId ? (
+                        <Link
+                          aria-label={`Dowiedz się więcej o kierunku ${course.title}`}
+                          href={`/oferta/${course.id}`}
+                          className={`flex items-center gap-2 w-fit rounded-xl px-4 py-2 md:px-5 md:py-3 font-semibold ${
+                            highContrast
+                              ? "bg-black hover:bg-gray-800 text-white"
+                              : "bg-gray-900 hover:bg-gray-700 text-white"
+                          }`}
+                        >
+                          Dowiedz się więcej o kierunku{" "}
+                          <CgArrowRightO className=" text-xl md:text-2xl" />
+                        </Link>
+                      ) : (
+                        <div
+                          className={`flex items-center gap-2 w-fit rounded-xl px-4 py-2 md:px-5 md:py-3 font-semibold ${
+                            highContrast
+                              ? "bg-black hover:bg-gray-800 text-white"
+                              : "bg-gray-900 hover:bg-gray-700 text-white"
+                          } cursor-not-allowed opacity-50`}
+                        >
+                          Dowiedz się więcej o kierunku{" "}
+                          <CgArrowRightO className=" text-xl md:text-2xl" />
+                        </div>
+                      )}
                     </div>
                   </div>
                   <div className="hidden lg:block lg:w-1/2"></div>
