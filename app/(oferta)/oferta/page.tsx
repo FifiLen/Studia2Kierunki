@@ -14,9 +14,12 @@ import {
   FaMoneyBillWave,
   FaChalkboardTeacher,
 } from "react-icons/fa";
-import { courses } from "@/utils/Kierunki";
 import { CgArrowRightO } from "react-icons/cg";
 import Markdown from "markdown-to-jsx";
+import { courses } from "@/utils/Kierunki";
+import ComingSoonOverlay from "@/components/Overlay";
+
+const availableCourseId = "trener-umiejetnosci-spolecznych"; // Main course ID
 
 const KierunkiPage = () => {
   return (
@@ -29,8 +32,10 @@ const KierunkiPage = () => {
           {courses.map((course) => (
             <Card
               key={course.id}
-              className="bg-white border-gray-100 rounded-lg shadow-none flex flex-col"
+              className="bg-white border-gray-100 rounded-lg shadow-none flex flex-col relative"
             >
+              {course.id !== availableCourseId && <ComingSoonOverlay />}{" "}
+              {/* Overlay for coming soon courses */}
               <div className="relative h-48">
                 <Image
                   src={`/assets/${course.id}.jpg`}
@@ -48,7 +53,7 @@ const KierunkiPage = () => {
               </CardHeader>
               <CardContent className="flex-grow">
                 <CardDescription className="mb-4 text-sm md:text-base">
-                  <Markdown>{course.description2}</Markdown>
+                  <Markdown>{course.banerDescription}</Markdown>
                 </CardDescription>
                 <div className="flex items-center font-medium mb-2 p-2 bg-blue-100 rounded-md text-sm md:text-base">
                   <FaCalendarAlt className="text-blue-500 mr-2" />
@@ -68,14 +73,20 @@ const KierunkiPage = () => {
                 </div>
               </CardContent>
               <CardFooter className="mt-auto">
-                <Link
-                  aria-label={`Dowiedz się więcej o kierunku ${course.title}`}
-                  href={`/oferta/${course.id}`}
-                  className="flex items-center text-white tracking-tight font-semibold gap-2 text-sm rounded-lg p-2 bg-[#9E5AE2]"
-                >
-                  <p className="">Dowiedz się więcej</p>
-                  <CgArrowRightO className=" text-xl" />
-                </Link>
+                {course.id === availableCourseId ? (
+                  <Link
+                    aria-label={`Dowiedz się więcej o kierunku ${course.title}`}
+                    href={`/oferta/${course.id}`}
+                    className="flex items-center text-white tracking-tight font-semibold gap-2 text-sm rounded-lg p-2 bg-[#9E5AE2]"
+                  >
+                    <p className="">Dowiedz się więcej</p>
+                    <CgArrowRightO className=" text-xl" />
+                  </Link>
+                ) : (
+                  <div className="flex items-center text-gray-500 tracking-tight font-semibold gap-2 text-sm rounded-lg p-2 bg-gray-300 cursor-not-allowed">
+                    <p className="">Coming Soon</p>
+                  </div>
+                )}
               </CardFooter>
             </Card>
           ))}

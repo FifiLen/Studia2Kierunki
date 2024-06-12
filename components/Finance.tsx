@@ -10,10 +10,10 @@ const Finance = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-full">
         {/* Text Column */}
         <div className="flex justify-center items-start px-8 md:px-20 py-16 md:py-36 flex-col">
-          <h4 className="text-2xl md:text-3xl font-semibold text-blue-600 tracking-[-0.2rem] flex gap-2 items-center">
+          <p className="text-2xl md:text-3xl font-semibold text-blue-600 tracking-[-0.2rem] flex gap-2 items-center">
             <GiTwoCoins />
             Dofinansowanie
-          </h4>
+          </p>
           <h2 className="text-3xl md:text-5xl text-white font-semibold tracking-tighter mt-3">
             Uzyskaj dofinansowanie z&nbsp;Bazy Usług Rozwojowych
           </h2>
@@ -27,7 +27,7 @@ const Finance = () => {
             Powiatowym Urzędem Pracy oraz operatorami wojewódzkimi w celu
             złożenia wniosku o dofinansowanie.
           </p>
-          <Link
+          <a
             href="https://uslugirozwojowe.parp.gov.pl/wyszukiwarka/dostawca-uslug/podglad?id=53144"
             target="_blank"
             aria-label="poznaj naszą ofertę Bazy Usług Rozwojowych"
@@ -36,7 +36,7 @@ const Finance = () => {
               Poznaj naszą ofertę BUR
               <CgArrowTopRightO className="text-2xl" />
             </button>
-          </Link>
+          </a>
         </div>
 
         {/* Image Column */}

@@ -3,6 +3,7 @@ import { Course } from "./Kierunki";
 export const psychologiaUzaleznienUzaleznieniaBehawioralne: Course = {
   id: "psychologia-uzaleznien-uzaleznienia-behawioralne",
   title: "Psychologia uzależnień - Uzależnienia behawioralne",
+  banerDescription: "",
   description: `Studia podyplomowe: "Uzależnienia Behawioralne" ma na celu przygotowanie studentów do pracy z osobami uzależnionymi od czynności takich jak hazard, gry komputerowe, sex, zakupy, jedzenie i inne.`,
   description2: `Program łączy wiedzę teoretyczną z intensywną praktyką kliniczną, umożliwiając studentom zdobycie kompetencji niezbędnych do skutecznej pracy terapeutycznej.`,
   description3: ``,

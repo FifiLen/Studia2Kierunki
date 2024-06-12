@@ -22,6 +22,7 @@ export type Module = {
 export type Course = {
   id: string;
   title: string;
+  banerDescription: string;
   description: string;
   description2: string;
   description3: string;
@@ -40,8 +41,9 @@ export type Course = {
 };
 
 export const courses: Course[] = [
-  seksuologiaPraktyczna,
   trenerUmiejetnosciSpolecznych,
+  seksuologiaPraktyczna,
+
   cyberpsychologia,
   diagnozaStrategieTerapeutyczneLeczeniuHiperseksualnosci,
   psychologiaUzaleznienTerapiaUzaleznien,

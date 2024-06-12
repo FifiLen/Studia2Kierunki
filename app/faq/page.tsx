@@ -1,26 +1,38 @@
 import React from "react";
 import { FaRegQuestionCircle } from "react-icons/fa";
-import { PiGavel } from "react-icons/pi";
-import { MdAccessTime, MdAttachMoney, MdEventNote } from "react-icons/md";
-import { GoTrophy } from "react-icons/go";
+import {
+  MdOutlineDocumentScanner,
+  MdSchool,
+  MdSchedule,
+  MdMoneyOff,
+  MdVerifiedUser,
+  MdContactSupport,
+  MdAttachMoney,
+  MdEventNote,
+} from "react-icons/md";
+import { IoIosPaper } from "react-icons/io";
+import { HiOutlineClipboardCheck } from "react-icons/hi";
+import { RiFileUserLine } from "react-icons/ri";
 import Link from "next/link";
-import { TbReportMoney } from "react-icons/tb";
+import { LuPenLine } from "react-icons/lu";
+import { TfiFiles } from "react-icons/tfi";
 
 const Faq = () => {
   return (
-    <div className="bg-gray-200 py-12 md:py-28">
+    <div id="faq" className="bg-gray-200 py-12 md:py-28">
       <div className="max-w-full mx-auto px-4 lg:px-20">
         <FaRegQuestionCircle className="w-10 h-10 mb-5" aria-hidden="true" />
         <div className="flex flex-col md:flex-row justify-between">
           <div className="w-full md:w-1/2">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 tracking-tighter">
-              Znajdź odpowiedzi na swoje pytania
+              Znajdź odpowiedzi na swoje&nbsp;pytania
             </h2>
             <p className="mt-4 text-base md:text-lg leading-7 text-gray-600">
-              Witamy w sekcji FAQ poświęconej studiom podyplomowym! Tutaj
-              znajdziesz odpowiedzi na najczęściej zadawane pytania dotyczące
-              rekrutacji, programu studiów, opłat, organizacji zajęć i innych
-              kwestii związanych z kształceniem podyplomowym na naszej uczelni.
+              Witamy w&nbsp;sekcji FAQ poświęconej studiom podyplomowym! Tutaj
+              znajdziesz odpowiedzi na&nbsp;najczęściej zadawane pytania
+              dotyczące rekrutacji, programu studiów, opłat, organizacji zajęć
+              i&nbsp;innych kwestii związanych z&nbsp;kształceniem podyplomowym
+              na&nbsp;naszej&nbsp;uczelni.
             </p>
           </div>
           <div className="flex flex-col md:flex-row items-start md:items-end gap-3 mt-6 md:mt-0">
@@ -29,14 +41,14 @@ const Faq = () => {
               href="/oferta"
               className="px-3 py-2 bg-[#9E5AE2] text-white font-medium rounded-md"
             >
-              Przeglądaj kierunki
+              Przeglądaj&nbsp;kierunki
             </Link>
             <Link
               aria-label="Zadaj nam pytanie"
               href="/kontakt"
               className="px-3 py-2 bg-white text-zinc-700 font-medium rounded-md"
             >
-              Zadaj nam pytanie
+              Zadaj nam&nbsp;pytanie
             </Link>
           </div>
         </div>
@@ -45,75 +57,87 @@ const Faq = () => {
         </h4>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-20 text-gray-600">
           <div>
-            <PiGavel className="w-7 h-7 mb-2" aria-hidden="true" />
+            <MdOutlineDocumentScanner
+              className="w-7 h-7 mb-2"
+              aria-hidden="true"
+            />
             <h4 className="font-medium text-zinc-800 tracking-tight text-xl md:text-2xl">
-              Mogę dosłać dokumenty po wyznaczonym terminie?
+              Mogę dosłać dokumenty po&nbsp;wyznaczonym&nbsp;terminie?
             </h4>
             <p className="mt-2 text-base md:text-lg">
-              Nie, WSH-E daje nam określony czas, do którego musimy mieć
-              przygotowane Państwa dokumenty. Do tego czasu również są nadawane
-              numery albumów, które są niezbędne aby móc Państwa zakwalifikować
-              na studia – Po wyznaczonym terminie WSH-E nie generuje dodatkowych
-              numerów albumów, co wiąże się z tym, że zgłoszenia nie są
-              przyjmowane.
+              Nie, WSH-E daje nam określony czas, do&nbsp;którego musimy mieć
+              przygotowane Państwa dokumenty. Do&nbsp;tego czasu również są
+              nadawane numery albumów, które są niezbędne aby&nbsp;móc Państwa
+              zakwalifikować na&nbsp;studia – Po&nbsp;wyznaczonym terminie WSH-E
+              nie&nbsp;generuje dodatkowych numerów albumów, co&nbsp;wiąże się
+              z&nbsp;tym, że&nbsp;zgłoszenia nie są&nbsp;przyjmowane.
             </p>
           </div>
 
           <div>
-            <TbReportMoney className="w-7 h-7 mb-2" aria-hidden="true" />
+            <MdSchool className="w-7 h-7 mb-2" aria-hidden="true" />
             <h4 className="font-medium text-zinc-800 tracking-tight text-xl md:text-2xl">
-              Czy mogę kierunek, który jest trzysemetralny skończyć w dwa
-              semestry?
+              Czy mogę kierunek, który jest trzysemetralny skończyć
+              w&nbsp;dwa&nbsp;semestry?
             </h4>
             <p className="mt-2 text-base md:text-lg">
-              Tak, pod warunkiem, że wraz z dokumentami rekrutacyjnymi zostanie
-              wysłane zaświadczenie o zatrudnieniu jako nauczyciel. Na podstawie
-              tego zaświadczenia wchodzicie Państwo w indywidualny tryb
-              nauczania i dzięki temu kierunek może być „skrócony” o jeden
-              semestr.
+              Tak, pod&nbsp;warunkiem, że&nbsp;wraz z&nbsp;dokumentami
+              rekrutacyjnymi zostanie wysłane zaświadczenie o&nbsp;zatrudnieniu
+              jako nauczyciel. Na&nbsp;podstawie tego zaświadczenia wchodzicie
+              Państwo w&nbsp;indywidualny tryb nauczania i&nbsp;dzięki temu
+              kierunek może być „skrócony” o&nbsp;jeden&nbsp;semestr.
             </p>
           </div>
 
           <div>
-            <MdAccessTime className="w-7 h-7 mb-2" aria-hidden="true" />
+            <IoIosPaper className="w-7 h-7 mb-2" aria-hidden="true" />
             <h4 className="font-medium text-zinc-800 tracking-tight text-xl md:text-2xl">
-              Jak mogę potwierdzić kopię dyplomu za zgodność z oryginałem?
+              Jak mogę potwierdzić kopię dyplomu za&nbsp;zgodność
+              z&nbsp;oryginałem?
             </h4>
             <p className="mt-2 text-base md:text-lg">
-              Zgodność potwierdza się wpisując na kopii zdanie: „Potwierdzam za
-              zgodność z oryginałem” i potwierdzając to własnoręcznym podpisem.
-              Taka forma jest akceptowana przez WSH-E.
-            </p>
-          </div>
-          <div>
-            <MdEventNote className="w-7 h-7 mb-2" aria-hidden="true" />
-            <h4 className="font-medium text-zinc-800 tracking-tight text-xl md:text-2xl">
-              Czy mogę skorzystać ze zniżki na drugi kierunek?
-            </h4>
-            <p className="mt-2 text-base md:text-lg">
-              Tak, można skorzystać ze zniżki wybierając kierunki z zakładki
-              „oferta” na naszej stronie internetowej. Zniżkę 10 % na drugi
-              tańszy kierunek należy uwzględnić w płatnościach.
+              Zgodność potwierdza się wpisując na&nbsp;kopii zdanie:
+              „Potwierdzam za&nbsp;zgodność z&nbsp;oryginałem”
+              i&nbsp;potwierdzając to&nbsp;własnoręcznym&nbsp;podpisem. Taka
+              forma jest akceptowana przez&nbsp;WSH-E.
             </p>
           </div>
           <div>
             <MdAttachMoney className="w-7 h-7 mb-2" aria-hidden="true" />
+
             <h4 className="font-medium text-zinc-800 tracking-tight text-xl md:text-2xl">
-              Mogę wysłać kopię dyplomu ze studiów doktoranckich?
+              Czy mogę skorzystać ze&nbsp;zniżki na&nbsp;drugi&nbsp;kierunek?
             </h4>
             <p className="mt-2 text-base md:text-lg">
-              Niestety nie, WSH-E akceptuje jedynie kopię dyplomów I lub II
-              stopnia.
+              Tak, można skorzystać ze&nbsp;zniżki wybierając kierunki
+              z&nbsp;zakładki „oferta” na&nbsp;naszej stronie internetowej.
+              Zniżkę 10&nbsp;% na&nbsp;drugi tańszy kierunek należy uwzględnić
+              w&nbsp;płatnościach.
+            </p>
+          </div>
+          <div>
+            <MdVerifiedUser className="w-7 h-7 mb-2" aria-hidden="true" />
+            <h4 className="font-medium text-zinc-800 tracking-tight text-xl md:text-2xl">
+              Mogę wysłać kopię dyplomu ze&nbsp;studiów&nbsp;doktoranckich?
+            </h4>
+            <p className="mt-2 text-base md:text-lg">
+              Niestety nie, WSH-E akceptuje jedynie kopię dyplomów
+              I&nbsp;lub&nbsp;II&nbsp;stopnia.
             </p>
           </div>
 
           <div>
-            <GoTrophy className="w-7 h-7 mb-2" aria-hidden="true" />
+            <HiOutlineClipboardCheck
+              className="w-7 h-7 mb-2"
+              aria-hidden="true"
+            />
             <h4 className="font-medium text-zinc-800 tracking-tight text-xl md:text-2xl">
-              Czy kierunek, który ma 2 semestry mogę skończyć w jeden?
+              Czy kierunek, który ma&nbsp;2&nbsp;semestry mogę skończyć
+              w&nbsp;jeden?
             </h4>
             <p className="mt-2 text-base md:text-lg">
-              Absolutnie nie, kierunek dwusemestralny nie podlega skróceniom.
+              Absolutnie nie, kierunek dwusemestralny
+              nie&nbsp;podlega&nbsp;skróceniom.
             </p>
           </div>
         </div>
@@ -123,72 +147,78 @@ const Faq = () => {
         </h4>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-20 text-gray-600">
           <div>
-            <PiGavel className="w-7 h-7 mb-2" aria-hidden="true" />
+            <LuPenLine className="w-7 h-7 mb-2" aria-hidden="true" />
             <h4 className="font-medium text-zinc-800 tracking-tight text-xl md:text-2xl">
-              Kto powinien podpisać arkusz obserwacji?
+              Kto powinien podpisać arkusz&nbsp;obserwacji?
             </h4>
             <p className="mt-2 text-base md:text-lg">
-              Praktykant prowadzi zajęcia, które obserwuje Opiekun Praktyk i
-              ocenia praktykanta. Tak więc podpisuje dokument opiekun praktyk.
+              Praktykant prowadzi zajęcia, które obserwuje Opiekun Praktyk
+              i&nbsp;ocenia praktykanta. Tak więc podpisuje dokument
+              opiekun&nbsp;praktyk.
             </p>
           </div>
 
           <div>
-            <TbReportMoney className="w-7 h-7 mb-2" aria-hidden="true" />
+            <RiFileUserLine className="w-7 h-7 mb-2" aria-hidden="true" />
             <h4 className="font-medium text-zinc-800 tracking-tight text-xl md:text-2xl">
-              Do którego modułu muszę dołączyć arkusz obserwacji?
+              Do którego modułu muszę dołączyć arkusz&nbsp;obserwacji?
             </h4>
             <p className="mt-2 text-base md:text-lg">
-              Arkusz obserwacji dołącza się do modułu, w którym praktykant ma
-              obowiązek samodzielnego prowadzenia zajęć.
+              Arkusz obserwacji dołącza się do&nbsp;modułu, w&nbsp;którym
+              praktykant ma&nbsp;obowiązek samodzielnego prowadzenia&nbsp;zajęć.
             </p>
           </div>
 
           <div>
-            <MdAccessTime className="w-7 h-7 mb-2" aria-hidden="true" />
+            <MdSchedule className="w-7 h-7 mb-2" aria-hidden="true" />
             <h4 className="font-medium text-zinc-800 tracking-tight text-xl md:text-2xl">
-              Do kiedy muszę oddać praktyki?
+              Do kiedy muszę oddać&nbsp;praktyki?
             </h4>
             <p className="mt-2 text-base md:text-lg">
-              Praktyki oddajemy następująco dla naboru: Październikowego: 30
-              marzec następnego roku marcowego: 30 stycznia następnego roku.
+              Praktyki oddajemy następująco dla&nbsp;naboru: Październikowego:
+              30&nbsp;marzec następnego roku marcowego: 30&nbsp;stycznia
+              następnego&nbsp;roku.
             </p>
           </div>
           <div>
             <MdEventNote className="w-7 h-7 mb-2" aria-hidden="true" />
             <h4 className="font-medium text-zinc-800 tracking-tight text-xl md:text-2xl">
-              Co oznacza termin oddania/rozliczenia praktyk?
+              Co oznacza termin oddania/rozliczenia&nbsp;praktyk?
             </h4>
             <p className="mt-2 text-base md:text-lg">
-              Oznacza to, że jeśli termin rozliczenia jest przykładowo do 30
-              marca to dokumenty maksymalnie do 30 marca muszą być w dziekanacie
-              aby móc rozliczyć się z praktyk w terminie.
+              Oznacza to, że&nbsp;jeśli termin rozliczenia jest przykładowo
+              do&nbsp;30&nbsp;marca to&nbsp;dokumenty maksymalnie
+              do&nbsp;30&nbsp;marca muszą być w&nbsp;dziekanacie aby&nbsp;móc
+              rozliczyć się z&nbsp;praktyk w&nbsp;terminie.
             </p>
           </div>
           <div>
-            <MdAttachMoney className="w-7 h-7 mb-2" aria-hidden="true" />
+            <TfiFiles className="w-7 h-7 mb-2" aria-hidden="true" />
             <h4 className="font-medium text-zinc-800 tracking-tight text-xl md:text-2xl">
-              Dlaczego muszę wszystkie dokumenty z praktyk wysłać w komplecie?
+              Dlaczego muszę wszystkie dokumenty z&nbsp;praktyk wysłać
+              w&nbsp;komplecie?
             </h4>
             <p className="mt-2 text-base md:text-lg">
-              Przez wzgląd na ilość słuchaczy bardzo ważne jest by dokumenty z
-              praktyk były wysyłane w komplecie zgodnie z plikiem „zaliczenie
-              praktyk specjalistycznych”. Państwa dokumenty są wysyłane do WSH-E
-              i tam sprawdzane pod względem merytorycznym – im więcej będzie
-              braków tym dłużej będziecie Państwo czekać na świadectwo.
+              Przez wzgląd na&nbsp;ilość słuchaczy bardzo ważne jest
+              by&nbsp;dokumenty z&nbsp;praktyk były wysyłane w&nbsp;komplecie
+              zgodnie z&nbsp;plikiem „zaliczenie praktyk specjalistycznych”.
+              Państwa dokumenty są&nbsp;wysyłane do&nbsp;WSH-E i&nbsp;tam
+              sprawdzane pod&nbsp;względem merytorycznym – im&nbsp;więcej będzie
+              braków tym dłużej będziecie Państwo czekać na&nbsp;świadectwo.
             </p>
           </div>
 
           <div>
-            <GoTrophy className="w-7 h-7 mb-2" aria-hidden="true" />
+            <MdContactSupport className="w-7 h-7 mb-2" aria-hidden="true" />
             <h4 className="font-medium text-zinc-800 tracking-tight text-xl md:text-2xl">
-              Nie mam odpowiedzi czy wszystko w porządku z moimi dokumentami z
-              praktyk, co to oznacza?
+              Nie mam odpowiedzi czy&nbsp;wszystko w&nbsp;porządku z&nbsp;moimi
+              dokumentami z&nbsp;praktyk, co to&nbsp;oznacza?
             </h4>
             <p className="mt-2 text-base md:text-lg">
-              Najczęściej oznacza to, że WSH-E sprawdziło dokumenty i nie ma do
-              nich uwag. Uwagi są wysyłane do słuchaczy mailowo. Zawsze w tym
-              przypadku jednak warto się z nami skontaktować i dopytać.
+              Najczęściej oznacza to, że&nbsp;WSH-E sprawdziło dokumenty
+              i&nbsp;nie ma do&nbsp;nich&nbsp;uwag. Uwagi są&nbsp;wysyłane
+              do&nbsp;słuchaczy mailowo. Zawsze w&nbsp;tym przypadku jednak
+              warto się z&nbsp;nami skontaktować i&nbsp;dopytać.
             </p>
           </div>
         </div>
