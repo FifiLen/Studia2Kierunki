@@ -11,8 +11,8 @@ export const seksuologiaPraktyczna: Course = {
   description4: ``,
   duration: "3 semestry",
   practicalHours: "100h",
-  price: "7500zł",
-  payments: "10x750zł",
+  price: "6000zł",
+  payments: "10x600zł",
   form: "100% online w czasie rzeczywistym",
   scheduleInfo: "Trzeci semestr przewidziany został na wykonanie praktyk",
   schedule: [
@@ -160,7 +160,17 @@ export const seksuologiaPraktyczna: Course = {
     },
   ],
   faculty: `Program będzie prowadzony przez wykwalifikowaną kadrę specjalistów z dziedziny seksuologii, psychologii, psychiatrii i terapii.`,
-  practices: `Program studiów obejmuje 100 godzin praktyk, które są zorganizowane przez uczelnię i realizowane w poradniach, instytucjach oraz centrach świadczących pomoc seksuologiczną.`,
+  practices: `<ul className="list-disc list-inside space-y-2">
+  <li>50% - możliwość zrealizowania praktyk w formule zdalnej w Poradni Psychologiczno - Pedagogicznej MAGNOLIA</li>
+  <li>Pozostałe 50% można zrealizować:
+    <ul className="list-disc list-inside space-y-1 ml-4">
+      <li>w placówkach macierzystych w formie zajęć dodatkowych lub wykonywanych w pensum,</li>
+      <li>w placówkach oświatowych,</li>
+      <li>w poradniach,</li>
+      <li>inne.</li>
+    </ul>
+  </li>
+</ul>`,
   evaluation: `Ocena studentów będzie opierać się na obecności na minimum 80 proc. zajęć, merytorycznej aktywności podczas zajęć oraz pracy praktycznej/projektowej.`,
   jobOpportunities: `Absolwenci będą przygotowani do pracy w zakresie diagnostyki i terapii zaburzeń seksualnych w poradniach seksuologicznych, klinikach i szpitalach psychiatrycznych.`,
 };

@@ -42,10 +42,11 @@ export type Course = {
 };
 
 export const courses: Course[] = [
-  trenerUmiejetnosciSpolecznych,
-  seksuologiaPraktyczna,
-  cyberpsychologia,
-  diagnozaStrategieTerapeutyczneLeczeniuHiperseksualnosci,
   psychologiaUzaleznienTerapiaUzaleznien,
   psychologiaUzaleznienUzaleznieniaBehawioralne,
+  diagnozaStrategieTerapeutyczneLeczeniuHiperseksualnosci,
+  cyberpsychologia,
+
+  seksuologiaPraktyczna,
+  trenerUmiejetnosciSpolecznych,
 ];

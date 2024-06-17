@@ -13,8 +13,8 @@ export const psychologiaUzaleznienTerapiaUzaleznien: Course = {
   description4:
     "Studia mają charakter kwalifikacyjny, program tego kierunku jest zgodny z przepisami prawa, uwzględnia wymagania określone Rozporządzeniem Ministra Nauki i Szkolnictwa Wyższego z dnia 25 lipca 2019 r. w sprawie standardu kształcenia przygotowującego do wykonywania zawodu nauczyciela (Dz. U. 2019 poz. 1450 ze zm.). Warunkiem ukończenia studiów podyplomowych jest uzyskanie zaliczeń w tym zaliczenia z praktyki  (90 h) oraz zdaniem egzaminu dyplomowego.",
   duration: "3 semestry",
-  price: "8000zł",
-  payments: "10x800zł",
+  price: "7500zł",
+  payments: "10x750zł",
   form: "100% online w czasie rzeczywistym",
   scheduleInfo: "Trzeci semestr przewidziany został na wykonanie praktyk",
   schedule: [
@@ -285,8 +285,17 @@ export const psychologiaUzaleznienTerapiaUzaleznien: Course = {
   ],
   faculty:
     "Program będzie prowadzony przez wykwalifikowaną kadrę specjalistów z dziedziny psychologii, psychiatrii, terapii uzależnień oraz innych pokrewnych dziedzin. W skład kadry wejdą zarówno wykładowcy akademiccy, jak i praktycy z wieloletnim doświadczeniem klinicznym.",
-  practices:
-    "Każdy semestr zawiera moduły praktyk klinicznych, które pozwalają studentom na bezpośrednią pracę z pacjentami pod okiem doświadczonych terapeutów. Praktyki te są integralną częścią programu i mają na celu rozwinięcie umiejętności praktycznych oraz zastosowanie wiedzy teoretycznej w rzeczywistych sytuacjach klinicznych.",
+  practices: `<ul className="list-disc list-inside space-y-2">
+    <li>50% - możliwość zrealizowania praktyk w formule zdalnej w Poradni Psychologiczno - Pedagogicznej MAGNOLIA</li>
+    <li>Pozostałe 50% można zrealizować:
+      <ul className="list-disc list-inside space-y-1 ml-4">
+        <li>w placówkach macierzystych w formie zajęć dodatkowych lub wykonywanych w pensum,</li>
+        <li>w placówkach oświatowych,</li>
+        <li>w poradniach,</li>
+        <li>inne.</li>
+      </ul>
+    </li>
+  </ul>`,
   evaluation:
     "Ocena studentów będzie opierać się na wynikach egzaminów pisemnych, prac pisemnych, projektów badawczych, a także ocenie praktyk klinicznych. Regularne ewaluacje programu będą przeprowadzane w celu zapewnienia najwyższej jakości kształcenia i dostosowania programu do aktualnych potrzeb rynku pracy oraz postępu naukowego w dziedzinie psychologii uzależnień.",
 

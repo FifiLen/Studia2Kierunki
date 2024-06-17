@@ -249,7 +249,17 @@ export const cyberpsychologia: Course = {
     },
   ],
   faculty: `Program będzie prowadzony przez wykwalifikowaną kadrę specjalistów z dziedziny psychologii, informatyki, cyberbezpieczeństwa oraz innych pokrewnych dziedzin. W skład kadry wejdą zarówno wykładowcy akademiccy, jak i praktycy z wieloletnim doświadczeniem w pracy z technologiami cyfrowymi.`,
-  practices: `Każdy semestr zawiera moduły praktyk zawodowych, które pozwalają studentom na bezpośrednią pracę z technologiami i użytkownikami pod okiem doświadczonych specjalistów. Praktyki te są integralną częścią programu i mają na celu rozwinięcie umiejętności praktycznych oraz zastosowanie wiedzy teoretycznej w rzeczywistych sytuacjach zawodowych.`,
+  practices: `<ul className="list-disc list-inside space-y-2">
+  <li>50% - możliwość zrealizowania praktyk w formule zdalnej w Poradni Psychologiczno - Pedagogicznej MAGNOLIA</li>
+  <li>Pozostałe 50% można zrealizować:
+    <ul className="list-disc list-inside space-y-1 ml-4">
+      <li>w placówkach macierzystych w formie zajęć dodatkowych lub wykonywanych w pensum,</li>
+      <li>w placówkach oświatowych,</li>
+      <li>w poradniach,</li>
+      <li>inne.</li>
+    </ul>
+  </li>
+</ul>`,
   evaluation: `Ocena studentów będzie opierać się na wynikach egzaminów pisemnych, prac pisemnych, projektów badawczych, a także ocenie praktyk zawodowych. Regularne ewaluacje programu będą przeprowadzane w celu zapewnienia najwyższej jakości kształcenia i dostosowania programu do aktualnych potrzeb rynku pracy oraz postępu naukowego w dziedzinie cyberpsychologii.`,
   jobOpportunities: `Absolwenci kierunku "Cyberpsychologia" będą przygotowani do pracy w różnorodnych sektorach, takich jak badania naukowe, edukacja, przemysł technologiczny, zdrowie psychiczne, marketing cyfrowy oraz sektor publiczny. Mogą pracować jako specjaliści ds. UX, analitycy danych, terapeuci online, badacze psychologii mediów oraz konsultanci ds. technologii i bezpieczeństwa cyfrowego.`,
 };
