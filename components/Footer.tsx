@@ -9,7 +9,14 @@ import {
   HoverCardContent,
 } from "../components/ui/hover-card";
 
-const availableCourseId = "trener-umiejetnosci-spolecznych"; // Main course ID
+const availableCourseId = [
+  "trener-umiejetnosci-spolecznych",
+  "seksuologia-praktyczna",
+  "cyberpsychologia",
+  "diagnoza-i-strategie-terapeutyczne-w-leczeniu-hiperseksualnosci",
+  "psychologia-uzaleznien-z-terapia-uzaleznien",
+  "psychologia-uzaleznien-uzaleznienia-behawioralne",
+];
 
 const Footer = () => {
   const [hoveredCourse, setHoveredCourse] = useState<string | null>(null);
@@ -56,7 +63,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-gray-300">
               {courses.map((course) => (
                 <li key={course.id} className="relative overflow-hidden">
-                  {course.id !== availableCourseId ? (
+                  {!availableCourseId.includes(course.id) ? (
                     <HoverCard>
                       <HoverCardTrigger asChild>
                         <span className="block cursor-not-allowed">
@@ -89,8 +96,13 @@ const Footer = () => {
               ul. Magnolii 25 <br /> 44-207 Rybnik
               <br />
               Telefon:{" "}
-              <a href="tel:+48 797 173 501" className="hover:text-gray-400">
-                +48 797 173 501
+              <a href="tel:797 173 501" className="hover:text-gray-400">
+                797 173 501
+              </a>
+              <br />
+              Tel/Whatsapp:{" "}
+              <a href="tel:502 162 365" className="hover:text-gray-400">
+                502 162 365
               </a>
               <br />
               Email:{" "}
@@ -107,8 +119,8 @@ const Footer = () => {
           <div className="w-full sm:w-1/2 lg:w-1/4">
             <h2 className="text-xl font-semibold mb-4">Informacje</h2>
             <p className="text-gray-400 text-sm">
-              &copy; {new Date().getFullYear()} Instytut Studiów Podyplomowych
-              Rybnik. Wszelkie prawa zastrzeżone.
+              &copy; {new Date().getFullYear()} ISP Global College. Wszelkie
+              prawa zastrzeżone.
             </p>
           </div>
 
@@ -157,10 +169,9 @@ const Footer = () => {
         </div>
         <div className="mt-8 border-t border-gray-700 pt-8 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            &copy; 2024 Instytut Studiów Podyplomowych Rybnik. Wszelkie prawa
-            zastrzeżone.
+            &copy; 2024 ISP Global College. Wszelkie prawa zastrzeżone.
           </p>
-          <ul className="flex space-x-4 mt-4 sm:mt-0">
+          {/* <ul className="flex space-x-4 mt-4 sm:mt-0">
             <li>
               <Link
                 href="/polityka-prywatnosci"
@@ -179,7 +190,7 @@ const Footer = () => {
                 Kontakt
               </Link>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </footer>

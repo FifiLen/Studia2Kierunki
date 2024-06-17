@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa";
-import { useUserPreferences } from "./UserPreferencesContext";
+
 import { CgArrowRightO } from "react-icons/cg";
+import { useUserPreferences } from "./UserPreferencesContext";
 
 export default function Baner() {
   const { fontSize, highContrast } = useUserPreferences();
@@ -15,7 +15,7 @@ export default function Baner() {
 
   return (
     <div
-      className={`hidden sm:flex relative isolate  items-center gap-x-6 overflow-hidden px-6 py-2.5 sm:px-3.5 sm:before:flex-1 ${
+      className={`hidden sm:flex relative isolate items-center gap-x-6 overflow-hidden px-6 py-2.5 sm:px-3.5 sm:before:flex-1 ${
         highContrast ? "bg-black text-white" : "bg-blue-200 text-gray-900"
       } ${fontSizeStyles[fontSize]}`}
     >

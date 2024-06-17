@@ -32,6 +32,7 @@ export const trenerUmiejetnosciSpolecznych: Course = {
   price: "2500zł",
   payments: "5x500zł",
   form: "100% online w czasie rzeczywistym",
+  scheduleInfo: "",
   schedule: [
     "26.10.2024",
     "16.11.2024",
@@ -244,13 +245,12 @@ export const trenerUmiejetnosciSpolecznych: Course = {
     },
   ],
   faculty: `Program realizowany będzie przez doświadczonych specjalistów z zakresu psychologii, pedagogiki, socjologii oraz profesjonalnych trenerów umiejętności społecznych posiadających wieloletnie doświadczenie kliniczne oraz szkoleniowe. Kadra składa się z ekspertów posiadających praktyczne doświadczenie w pracy trenerskiej i coachingowej, co zapewni wysoki poziom kształcenia i wsparcia dla studentów.`,
-  practices: `Wykłady: Podstawowe informacje teoretyczne przekazywane przez ekspertów z różnych dziedzin.
-    Warsztaty: Praktyczne ćwiczenia i trening umiejętności.
-    Seminaria: Dyskusje i analiza przypadków klinicznych.
-    Praktyki zawodowe: Bezpośrednia praca z klientem, pacjentem oraz grupami terapeutycznymi pod nadzorem doświadczonych trenerów.
-    Superwizje: Regularne sesje superwizyjne mające na celu wsparcie rozwoju kompetencji zawodowych.
-    Ilość godzin praktyk
-    E-learning: Platformy internetowe do nauki zdalnej i wymiany doświadczeń.`,
+  practices: `50% - możliwość zrealizowania praktyk w formule zdalnej w Poradni Psychologiczno - Pedagogicznej MAGNOLIA
+  Pozostałe 50% można zrealizować:
+  - w placówkach macierzystych w formie zajęć dodatkowych lub wykonywanych w pensum,
+  - w placówkach oświatowych, 
+  - w poradniach,
+  - inne.`,
   evaluation: `Ocena efektów krztałcenia będzie opierać się na: przygotowaniu pracy projektowej w obszarze TUS.`,
   jobOpportunities: `<span className="text-lg font-semibold">Absolwenci programu będą przygotowani do pracy jako:</span>
  

@@ -23,7 +23,14 @@ import Markdown from "markdown-to-jsx";
 import { CgArrowRightO, CgArrowTopRightO } from "react-icons/cg";
 import ComingSoonOverlay from "./Overlay";
 
-const availableCourseId = "trener-umiejetnosci-spolecznych"; // Main course ID
+const availableCourseId = [
+  "trener-umiejetnosci-spolecznych",
+  "seksuologia-praktyczna",
+  "cyberpsychologia",
+  "diagnoza-i-strategie-terapeutyczne-w-leczeniu-hiperseksualnosci",
+  "psychologia-uzaleznien-z-terapia-uzaleznien",
+  "psychologia-uzaleznien-uzaleznienia-behawioralne",
+];
 
 export default function HeroSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -122,7 +129,9 @@ export default function HeroSection() {
                   priority={index === 0} // Prioritize the first image
                   className="absolute object-cover inset-0 w-full h-full z-0"
                 />
-                {course.id !== availableCourseId && <ComingSoonOverlay />}{" "}
+                {!availableCourseId.includes(course.id) && (
+                  <ComingSoonOverlay />
+                )}{" "}
                 {/* Overlay for coming soon courses */}
                 <div className="relative z-10 w-full h-full flex items-center">
                   <div
@@ -165,7 +174,7 @@ export default function HeroSection() {
                       <Markdown>{course.banerDescription}</Markdown>
                     </p>
                     <div className="flex flex-col md:flex-row justify-center lg:justify-start gap-2">
-                      {course.id === availableCourseId ? (
+                      {availableCourseId.includes(course.id) ? (
                         <Link
                           aria-label="Zapisz się na studia"
                           href="/rekrutacja"
@@ -182,7 +191,7 @@ export default function HeroSection() {
                           <CgArrowTopRightO className=" text-xl md:text-2xl" />
                         </div>
                       )}
-                      {course.id === availableCourseId ? (
+                      {availableCourseId.includes(course.id) ? (
                         <Link
                           aria-label={`Dowiedz się więcej o kierunku ${course.title}`}
                           href={`/oferta/${course.id}`}

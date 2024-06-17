@@ -43,7 +43,10 @@ const CoursePage = ({ params }: CoursePageProps) => {
       <AboutSpecialty course={course} />
       <Program course={course} />
       <PraktykiKierunki course={course} />
-      <Schedule schedule={course.schedule} /> {/* Use the Schedule component */}
+      <Schedule
+        schedule={course.schedule}
+        scheduleInfo={course.scheduleInfo}
+      />{" "}
       <Zapraszamy course={course} />
       <BannerComponent />
       <Faq />

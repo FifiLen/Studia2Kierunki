@@ -3,7 +3,8 @@ import { Course } from "./Kierunki";
 export const psychologiaUzaleznienUzaleznieniaBehawioralne: Course = {
   id: "psychologia-uzaleznien-uzaleznienia-behawioralne",
   title: "Psychologia uzależnień - Uzależnienia behawioralne",
-  banerDescription: "",
+  banerDescription:
+    "Zgłębiaj psychologiczne aspekty uzależnień behawioralnych i&nbsp;ucz się skutecznych metod terapii i&nbsp;wsparcia dla osób z&nbsp;tymi problemami.",
   description: `Studia podyplomowe: "Uzależnienia Behawioralne" ma na celu przygotowanie studentów do pracy z osobami uzależnionymi od czynności takich jak hazard, gry komputerowe, sex, zakupy, jedzenie i inne.`,
   description2: `Program łączy wiedzę teoretyczną z intensywną praktyką kliniczną, umożliwiając studentom zdobycie kompetencji niezbędnych do skutecznej pracy terapeutycznej.`,
   description3: ``,
@@ -12,7 +13,8 @@ export const psychologiaUzaleznienUzaleznieniaBehawioralne: Course = {
   practicalHours: "90h",
   price: "4200zł",
   payments: "10x420zł",
-  form: "100% online",
+  form: "100% online w czasie rzeczywistym",
+  scheduleInfo: "Trzeci semestr przewidziany został na wykonanie praktyk",
   schedule: [
     "26.10.2024",
     "16.11.2024",

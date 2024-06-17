@@ -3,7 +3,8 @@ import { Course } from "./Kierunki";
 export const diagnozaStrategieTerapeutyczneLeczeniuHiperseksualnosci: Course = {
   id: "diagnoza-i-strategie-terapeutyczne-w-leczeniu-hiperseksualnosci",
   title: "Diagnoza i strategie terapeutyczne w leczeniu hiperseksualności",
-  banerDescription: "",
+  banerDescription:
+    "Poznaj zaawansowane metody diagnozy i&nbsp;terapii hiperseksualności, oferujące praktyczne narzędzia i&nbsp;strategie terapeutyczne.",
   description: `Celem programu studiów jest przygotowanie specjalistów w zakresie diagnozy oraz terapii osób zmagających się z hiperseksualnością. Program kładzie nacisk na interdyscyplinarne podejście, łącząc wiedzę z zakresu psychologii, seksuologii, psychiatrii, medycyny i terapii behawioralnej.`,
   description2: `Studenci zdobędą zarówno teoretyczną wiedzę, jak i praktyczne umiejętności, które pozwolą im efektywnie pomagać pacjentom.`,
   description3: `Program studiów jest podzielony na dwa semestry, obejmując teoretyczne wykłady, warsztaty praktyczne, seminaria oraz praktyki zawodowe.`,
@@ -12,7 +13,8 @@ export const diagnozaStrategieTerapeutyczneLeczeniuHiperseksualnosci: Course = {
   practicalHours: "90h",
   price: "8000zł",
   payments: "10x800zł",
-  form: "100% online",
+  form: "100% online w czasie rzeczywistym",
+  scheduleInfo: "",
   schedule: [
     "26.10.2024",
     "16.11.2024",

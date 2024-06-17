@@ -18,14 +18,15 @@ const Finance = () => {
             Uzyskaj dofinansowanie z&nbsp;Bazy Usług Rozwojowych
           </h2>
           <p className="text-base md:text-lg text-zinc-300 mt-4">
-            Niniejszym informujemy, że pojawiła się możliwość skorzystania z
-            dofinansowania studiów podyplomowych, kursów, szkoleń z Bazy Usług
-            Rozwojowych. Dofinansowanie może wynosić 80-100% kosztu usług
-            edukacyjnych <br />
+            Niniejszym informujemy, że&nbsp;pojawiła się możliwość skorzystania
+            z&nbsp;dofinansowania studiów podyplomowych, kursów,
+            szkoleń&nbsp;z&nbsp;Bazy Usług Rozwojowych. Dofinansowanie może
+            wynosić 80-100% kosztu usług edukacyjnych. <br />
             <br />
-            Zachęcamy przedsiębiorców oraz organy prowadzące do kontaktu z
-            Powiatowym Urzędem Pracy oraz operatorami wojewódzkimi w celu
-            złożenia wniosku o dofinansowanie.
+            Zachęcamy przedsiębiorców oraz organy prowadzące
+            do&nbsp;kontaktu&nbsp;z&nbsp;Powiatowym Urzędem Pracy oraz
+            operatorami wojewódzkimi w&nbsp;celu złożenia
+            wniosku&nbsp;o&nbsp;dofinansowanie.
           </p>
           <a
             href="https://uslugirozwojowe.parp.gov.pl/wyszukiwarka/dostawca-uslug/podglad?id=53144"
@@ -50,21 +51,21 @@ const Finance = () => {
           </h2>
           <p className="text-base md:text-lg text-zinc-600 mt-4">
             Ministerstwo Rozwoju uruchomiło nieoprocentowane pożyczki
-            na&nbsp;kształcenie obejmujące m.in. studia podyplomowe, kursy,
+            na&nbsp;kształcenie obejmujące m.in.&nbsp;studia podyplomowe, kursy,
             szkolenia. W&nbsp;ramach Programu Operacyjnego Wiedza Edukacja
-            Rozwój możesz otrzymać nawet do&nbsp;30 000 zł pomocy zwrotnej bez
-            żadnych dodatkowych kosztów. <br />
-            Co ważne, istnieje możliwość umorzenia 20–25% przyznanej kwoty.
+            Rozwój możesz otrzymać nawet do&nbsp;30&nbsp;000&nbsp;zł&nbsp;pomocy
+            zwrotnej bez żadnych dodatkowych kosztów. <br />
+            Co&nbsp;ważne, istnieje możliwość umorzenia 20–25% przyznanej kwoty.
             <br />
             <br />
-            Zachęcamy do zapoznania się z informacjami odnośnie
-            nieoprocentowanych pożyczek. Więcej informacji znajdą Państwo na
-            stronie www.inwestujwrozwoj.pl
+            Zachęcamy do&nbsp;zapoznania się&nbsp;z&nbsp;informacjami odnośnie
+            nieoprocentowanych pożyczek. Więcej informacji znajdą Państwo
+            na&nbsp;stronie www.inwestujwrozwoj.pl
           </p>
           <Link
             href="https://inwestujwrozwoj.pl/"
             target="_blank"
-            aria-label="dowiedz się więcej o nieoprocentowanych pożyczkach"
+            aria-label="dowiedz się więcej&nbsp;o&nbsp;nieoprocentowanych pożyczkach"
           >
             <button className="bg-[#9E5AE2] text-white font-semibold rounded-lg px-4 py-3 flex gap-3 items-center justify-center mt-8">
               inwestujwrozwoj.pl
