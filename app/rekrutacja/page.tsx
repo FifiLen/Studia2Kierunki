@@ -236,6 +236,9 @@ const RecruitmentPage: React.FC = () => {
                 Przygotowaliśmy szczegółową instrukcję, która pozwoli Ci przejść
                 przez cały proces bez problemów.
               </p>
+              <p className="mt-3 text-purple-600 font-medium tracking-tight">
+                *Opłata wpisowa wynosi 200zł.
+              </p>
             </div>
             <div className="flex flex-col md:flex-row items-start md:items-end gap-3 mt-6 md:mt-0">
               <Link
@@ -294,7 +297,8 @@ const RecruitmentPage: React.FC = () => {
               </h4>
               <p className="mt-2 text-base">
                 Do formularza zgłoszeniowego należy dołączyć kopię dyplomu
-                ukończenia studiów wyższych, potwierdzenie przelewu wpisowego.
+                ukończenia studiów wyższych, potwierdzenie przelewu wpisowego
+                oraz kopię umowy, którą otrzymasz po wypełnieniu formularza.
                 Upewnij się, że wszystkie dokumenty są aktualne.
               </p>
             </div>
@@ -314,22 +318,7 @@ const RecruitmentPage: React.FC = () => {
                 naszej siedzibie przy ul. Magnolii 25, 44-207 Rybnik.
               </p>
             </div>
-            <div>
-              <div
-                className="flex items-center justify-center border-[1.5px] border-black h-7 w-7 rounded-full mb-2"
-                aria-hidden="true"
-              >
-                <p className="font-semibold">4</p>
-              </div>
-              <h4 className="font-medium tracking-tight text-xl md:text-2xl">
-                Opłata rekrutacyjna
-              </h4>
-              <p className="mt-2 text-base">
-                Po złożeniu dokumentów, należy uiścić opłatę rekrutacyjną na
-                podane konto bankowe. Szczegółowe informacje o płatności
-                otrzymasz w mailu potwierdzającym zgłoszenie.
-              </p>
-            </div>
+
             <div>
               <div
                 className="flex items-center justify-center border-[1.5px] border-black h-7 w-7 rounded-full mb-2"
