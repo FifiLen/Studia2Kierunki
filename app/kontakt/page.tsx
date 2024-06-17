@@ -104,7 +104,7 @@ const ContactPage: React.FC = () => {
               </p>
               <p className="flex gap-2 items-center mb-2 text-base md:text-lg leading-7 text-gray-600  tracking-tight">
                 <FaPhoneAlt className="text-blue-600" />
-                Telefon: +48 123 456 789
+                Telefon: +48 797 173 501
               </p>
               <p className="flex gap-2 items-center mb-2 text-base md:text-lg leading-7 text-gray-600  tracking-tight">
                 <FaEnvelope className="text-blue-600" />
@@ -114,16 +114,6 @@ const ContactPage: React.FC = () => {
                   className="underline hover:no-underline text-gray-800"
                 >
                   nowekwalifikacjerybnik@gmail.com
-                </a>
-              </p>
-              <p className="flex gap-2 items-center text-base md:text-lg leading-7 text-gray-600  tracking-tight">
-                <FaEnvelope className="text-blue-600" />
-                Dział Rekrutacji:{" "}
-                <a
-                  href="mailto:rekrutacja@isp-rybnik.pl"
-                  className="underline hover:no-underline text-gray-800"
-                >
-                  rekrutacja@isp-rybnik.pl
                 </a>
               </p>
             </div>

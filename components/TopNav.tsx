@@ -14,6 +14,10 @@ const TopBar = () => {
             <span>+48 797 173 501</span>
           </div>
           <div className="flex items-center text-sm ">
+            <FaPhoneAlt className="mr-2" />
+            <span>+48 502 162 365</span>
+          </div>
+          <div className="flex items-center text-sm ">
             <FaEnvelope className="mr-2" />
             <a
               href="mailto:nowekwalifikacjerybnik@gmail.com"
