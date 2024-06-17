@@ -116,16 +116,6 @@ const ContactPage: React.FC = () => {
                   nowekwalifikacjerybnik@gmail.com
                 </a>
               </p>
-              <p className="flex gap-2 items-center text-base md:text-lg leading-7 text-gray-600  tracking-tight">
-                <FaEnvelope className="text-blue-600" />
-                Dział Rekrutacji:{" "}
-                <a
-                  href="mailto:rekrutacja@isp-rybnik.pl"
-                  className="underline hover:no-underline text-gray-800"
-                >
-                  rekrutacja@isp-rybnik.pl
-                </a>
-              </p>
             </div>
 
             <form onSubmit={handleFormSubmit}>

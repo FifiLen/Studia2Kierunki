@@ -39,7 +39,7 @@ const AdditionalInfo = ({ course }: Practices) => {
       </section>
 
       {/* Section 2 */}
-      <section
+      {/* <section
         id="kadra"
         className="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-7xl"
       >
@@ -62,7 +62,7 @@ const AdditionalInfo = ({ course }: Practices) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Section 3 */}
       <section
