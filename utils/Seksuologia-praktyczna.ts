@@ -171,6 +171,6 @@ export const seksuologiaPraktyczna: Course = {
     </ul>
   </li>
 </ul>`,
-  evaluation: `Ocena studentów będzie opierać się na obecności na minimum 80 proc. zajęć, merytorycznej aktywności podczas zajęć oraz pracy praktycznej/projektowej.`,
+  evaluation: `Ocena efektów krztałcenia będzie opierać się na: przygotowaniu pracy projektowej w obszarze Seksuologi praktycznej.`,
   jobOpportunities: `Absolwenci będą przygotowani do pracy w zakresie diagnostyki i terapii zaburzeń seksualnych w poradniach seksuologicznych, klinikach i szpitalach psychiatrycznych.`,
 };
