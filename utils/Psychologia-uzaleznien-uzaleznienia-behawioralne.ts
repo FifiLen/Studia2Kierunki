@@ -5,8 +5,26 @@ export const psychologiaUzaleznienUzaleznieniaBehawioralne: Course = {
   title: "Psychologia uzależnień - Uzależnienia behawioralne",
   banerDescription:
     "Zgłębiaj psychologiczne aspekty uzależnień behawioralnych i&nbsp;ucz się skutecznych metod terapii i&nbsp;wsparcia dla osób z&nbsp;tymi problemami.",
-  description: `Studia podyplomowe: "Uzależnienia Behawioralne" ma na celu przygotowanie studentów do pracy z osobami uzależnionymi od czynności takich jak hazard, gry komputerowe, sex, zakupy, jedzenie i inne.`,
-  description2: `Program łączy wiedzę teoretyczną z intensywną praktyką kliniczną, umożliwiając studentom zdobycie kompetencji niezbędnych do skutecznej pracy terapeutycznej.`,
+  description: `<ul className="list-disc list-inside space-y-2">
+    <li>
+        kadra zarządzająca placówkami oświatowymi
+        <br>
+        <span className="ml-4">(szkoły, przedszkola, żłobki, poradnie, ośrodki wychowawcze, inne)</span>
+    </li>
+    <li>pedagogów</li>
+    <li>psychologów</li>
+    <li>logopedów</li>
+    <li>terapeutów</li>
+    <li>nauczycieli</li>
+    <li>rodziców</li>
+    <li>opiekunów prawnych</li>
+    <li>wychowawców</li>
+    <li>osób pracujących z dziećmi, młodzieżą, osobami dorosłymi, seniorami</li>
+    <li>
+        osób pracujących z dziećmi, młodzieżą i osobami dorosłymi z&nbsp;<span className="ml-2">niepełnosprawnościami, powodującymi brak lub ograniczenie możliwości komunikacji i funkcjonowania w społeczeństwie</span>
+    </li>
+  </ul>`,
+  description2: `Studia podyplomowe: "Uzależnienia Behawioralne" mają na celu przygotowanie studentów do pracy z osobami uzależnionymi od czynności takich jak hazard, gry komputerowe, sex, zakupy, jedzenie i inne. Program łączy wiedzę teoretyczną z intensywną praktyką kliniczną, umożliwiając studentom zdobycie kompetencji niezbędnych do skutecznej pracy terapeutycznej.`,
   description3: ``,
   description4: ``,
   duration: "3 semestry",

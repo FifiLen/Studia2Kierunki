@@ -5,8 +5,26 @@ export const diagnozaStrategieTerapeutyczneLeczeniuHiperseksualnosci: Course = {
   title: "Diagnoza i strategie terapeutyczne w leczeniu hiperseksualności",
   banerDescription:
     "Poznaj zaawansowane metody diagnozy i&nbsp;terapii hiperseksualności, oferujące praktyczne narzędzia i&nbsp;strategie terapeutyczne.",
-  description: `Celem programu studiów jest przygotowanie specjalistów w zakresie diagnozy oraz terapii osób zmagających się z hiperseksualnością. Program kładzie nacisk na interdyscyplinarne podejście, łącząc wiedzę z zakresu psychologii, seksuologii, psychiatrii, medycyny i terapii behawioralnej.`,
-  description2: `Studenci zdobędą zarówno teoretyczną wiedzę, jak i praktyczne umiejętności, które pozwolą im efektywnie pomagać pacjentom.`,
+  description: `<ul className="list-disc list-inside space-y-2">
+    <li>
+        kadra zarządzająca placówkami oświatowymi
+        <br>
+        <span className="ml-4">(szkoły, przedszkola, żłobki, poradnie, ośrodki wychowawcze, inne)</span>
+    </li>
+    <li>pedagogów</li>
+    <li>psychologów</li>
+    <li>logopedów</li>
+    <li>terapeutów</li>
+    <li>nauczycieli</li>
+    <li>rodziców</li>
+    <li>opiekunów prawnych</li>
+    <li>wychowawców</li>
+    <li>osób pracujących z dziećmi, młodzieżą, osobami dorosłymi, seniorami</li>
+    <li>
+        osób pracujących z dziećmi, młodzieżą i osobami dorosłymi z&nbsp;<span className="ml-2">niepełnosprawnościami, powodującymi brak lub ograniczenie możliwości komunikacji i funkcjonowania w społeczeństwie</span>
+    </li>
+  </ul>`,
+  description2: `Celem programu studiów jest przygotowanie specjalistów w zakresie diagnozy oraz terapii osób zmagających się z hiperseksualnością. Program kładzie nacisk na interdyscyplinarne podejście, łącząc wiedzę z zakresu psychologii, seksuologii, psychiatrii, medycyny i terapii behawioralnej. Studenci zdobędą zarówno teoretyczną wiedzę, jak i praktyczne umiejętności, które pozwolą im efektywnie pomagać pacjentom.`,
   description3: `Program studiów jest podzielony na dwa semestry, obejmując teoretyczne wykłady, warsztaty praktyczne, seminaria oraz praktyki zawodowe.`,
   description4: ``,
   duration: "2 semestry",

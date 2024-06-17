@@ -5,8 +5,26 @@ export const cyberpsychologia: Course = {
   title: "Cyberpsychologia",
   banerDescription:
     "Poznaj psychologiczne aspekty korzystania z&nbsp;technologii cyfrowych oraz&nbsp;wpływ Internetu na&nbsp;zachowanie i&nbsp;emocje.",
-  description: `Studia podyplomowe: "Cyberpsychologia" koncentrują się na badaniu interakcji pomiędzy ludźmi a technologią, ze szczególnym uwzględnieniem wpływu technologii cyfrowych na zachowanie, emocje i społeczeństwo.`,
-  description2: `Program ma na celu przygotowanie studentów do pracy w obszarze badawczym, klinicznym oraz przemysłowym związanym z technologiami informacyjno-komunikacyjnymi (ICT).`,
+  description: `<ul className="list-disc list-inside space-y-2">
+    <li>
+        kadra zarządzająca placówkami oświatowymi
+        <br>
+        <span className="ml-4">(szkoły, przedszkola, żłobki, poradnie, ośrodki wychowawcze, inne)</span>
+    </li>
+    <li>pedagogów</li>
+    <li>psychologów</li>
+    <li>logopedów</li>
+    <li>terapeutów</li>
+    <li>nauczycieli</li>
+    <li>rodziców</li>
+    <li>opiekunów prawnych</li>
+    <li>wychowawców</li>
+    <li>osób pracujących z dziećmi, młodzieżą, osobami dorosłymi, seniorami</li>
+    <li>
+        osób pracujących z dziećmi, młodzieżą i osobami dorosłymi z&nbsp;<span className="ml-2">niepełnosprawnościami, powodującymi brak lub ograniczenie możliwości komunikacji i funkcjonowania w społeczeństwie</span>
+    </li>
+  </ul>`,
+  description2: `Studia podyplomowe: "Cyberpsychologia" koncentrują się na badaniu interakcji pomiędzy ludźmi a technologią, ze szczególnym uwzględnieniem wpływu technologii cyfrowych na zachowanie, emocje i społeczeństwo. Program ma na celu przygotowanie studentów do pracy w obszarze badawczym, klinicznym oraz przemysłowym, związanym z technologiami informacyjno-komunikacyjnymi (ICT).`,
   description3: `Program studiów jest podzielony na trzy semestry, obejmując wykłady teoretyczne, warsztaty praktyczne, seminaria oraz praktyki zawodowe.`,
   description4: ``,
   duration: "3 semestry",
