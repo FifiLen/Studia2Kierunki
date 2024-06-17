@@ -16,8 +16,9 @@ import {
 } from "react-icons/fa";
 import { CgArrowRightO } from "react-icons/cg";
 import Markdown from "markdown-to-jsx";
-import { courses } from "@/utils/Kierunki";
+import { courses, Course } from "@/utils/Kierunki";
 import ComingSoonOverlay from "@/components/Overlay";
+import PsychotherapyCard from "@/components/Psychoterapia";
 
 const availableCourseId = [
   "trener-umiejetnosci-spolecznych",
@@ -26,7 +27,8 @@ const availableCourseId = [
   "diagnoza-i-strategie-terapeutyczne-w-leczeniu-hiperseksualnosci",
   "psychologia-uzaleznien-z-terapia-uzaleznien",
   "psychologia-uzaleznien-uzaleznienia-behawioralne",
-]; // Main course ID
+  "psychoterapia",
+];
 
 const KierunkiPage = () => {
   return (
@@ -36,67 +38,78 @@ const KierunkiPage = () => {
           Nasze Kierunki
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {courses.map((course) => (
-            <Card
-              key={course.id}
-              className="bg-white border-gray-100 rounded-lg shadow-none flex flex-col relative"
-            >
-              {!availableCourseId.includes(course.id) && <ComingSoonOverlay />}{" "}
-              {/* Overlay for coming soon courses */}
-              <div className="relative h-48">
-                <Image
-                  src={`/assets/${course.id}.jpg`}
-                  fill
-                  alt={`Zdjęcie przedstawiające kurs: ${course.title}`}
-                  className="object-cover rounded-t-lg"
-                  quality={75}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
+          {courses.map((course) =>
+            course.id === "psychoterapia" ? (
+              <div
+                key={course.id}
+                className="col-span-1 md:col-span-2 lg:col-span-3"
+              >
+                <PsychotherapyCard course={course} />
               </div>
-              <CardHeader>
-                <CardTitle className="text-xl md:text-2xl font-bold">
-                  {course.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="flex-grow">
-                <CardDescription className="mb-4 text-sm md:text-base">
-                  <Markdown>{course.banerDescription}</Markdown>
-                </CardDescription>
-                <div className="flex items-center font-medium mb-2 p-2 bg-blue-100 rounded-md text-sm md:text-base">
-                  <FaCalendarAlt className="text-blue-500 mr-2" />
-                  <span>{course.duration}</span>
+            ) : (
+              <Card
+                key={course.id}
+                className="bg-white border-gray-100 rounded-lg shadow-none flex flex-col relative"
+              >
+                {!availableCourseId.includes(course.id) && (
+                  <ComingSoonOverlay />
+                )}{" "}
+                {/* Overlay for coming soon courses */}
+                <div className="relative h-48">
+                  <Image
+                    src={`/assets/${course.id}.jpg`}
+                    fill
+                    alt={`Zdjęcie przedstawiające kurs: ${course.title}`}
+                    className="object-cover rounded-t-lg"
+                    quality={75}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
                 </div>
-                <div className="flex items-center font-medium mb-2 p-2 bg-blue-200 rounded-md text-sm md:text-base">
-                  <FaClock className="text-blue-500 mr-2" />
-                  <span>{course.practicalHours}</span>
-                </div>
-                <div className="flex items-center font-medium mb-2 p-2 bg-blue-100 rounded-md text-sm md:text-base">
-                  <FaMoneyBillWave className="text-blue-500 mr-2" />
-                  <span>{course.price}</span>
-                </div>
-                <div className="flex items-center font-medium mb-2 p-2 bg-blue-200 rounded-md text-sm md:text-base">
-                  <FaChalkboardTeacher className="text-blue-500 mr-2" />
-                  <span>{course.form}</span>
-                </div>
-              </CardContent>
-              <CardFooter className="mt-auto">
-                {availableCourseId.includes(course.id) ? (
-                  <Link
-                    aria-label={`Dowiedz się więcej o kierunku ${course.title}`}
-                    href={`/oferta/${course.id}`}
-                    className="flex items-center text-white tracking-tight font-semibold gap-2 text-sm rounded-lg p-2 bg-[#9E5AE2]"
-                  >
-                    <p className="">Dowiedz się więcej</p>
-                    <CgArrowRightO className=" text-xl" />
-                  </Link>
-                ) : (
-                  <div className="flex items-center text-gray-500 tracking-tight font-semibold gap-2 text-sm rounded-lg p-2 bg-gray-300 cursor-not-allowed">
-                    <p className="">Coming Soon</p>
+                <CardHeader>
+                  <CardTitle className="text-xl md:text-2xl font-bold">
+                    {course.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <CardDescription className="mb-4 text-sm md:text-base">
+                    <Markdown>{course.banerDescription}</Markdown>
+                  </CardDescription>
+                  <div className="flex items-center font-medium mb-2 p-2 bg-blue-100 rounded-md text-sm md:text-base">
+                    <FaCalendarAlt className="text-blue-500 mr-2" />
+                    <span>{course.duration}</span>
                   </div>
-                )}
-              </CardFooter>
-            </Card>
-          ))}
+                  <div className="flex items-center font-medium mb-2 p-2 bg-blue-200 rounded-md text-sm md:text-base">
+                    <FaClock className="text-blue-500 mr-2" />
+                    <span>{course.practicalHours}</span>
+                  </div>
+                  <div className="flex items-center font-medium mb-2 p-2 bg-blue-100 rounded-md text-sm md:text-base">
+                    <FaMoneyBillWave className="text-blue-500 mr-2" />
+                    <span>{course.price}</span>
+                  </div>
+                  <div className="flex items-center font-medium mb-2 p-2 bg-blue-200 rounded-md text-sm md:text-base">
+                    <FaChalkboardTeacher className="text-blue-500 mr-2" />
+                    <span>{course.form}</span>
+                  </div>
+                </CardContent>
+                <CardFooter className="mt-auto">
+                  {availableCourseId.includes(course.id) ? (
+                    <Link
+                      aria-label={`Dowiedz się więcej o kierunku ${course.title}`}
+                      href={`/oferta/${course.id}`}
+                      className="flex items-center text-white tracking-tight font-semibold gap-2 text-sm rounded-lg p-2 bg-[#9E5AE2]"
+                    >
+                      <p className="">Dowiedz się więcej</p>
+                      <CgArrowRightO className=" text-xl" />
+                    </Link>
+                  ) : (
+                    <div className="flex items-center text-gray-500 tracking-tight font-semibold gap-2 text-sm rounded-lg p-2 bg-gray-300 cursor-not-allowed">
+                      <p className="">Coming Soon</p>
+                    </div>
+                  )}
+                </CardFooter>
+              </Card>
+            )
+          )}
         </div>
       </div>
     </div>

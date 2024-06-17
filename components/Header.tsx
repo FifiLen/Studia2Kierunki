@@ -89,12 +89,12 @@ export default function Navbar() {
       >
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
-            <span className="sr-only">ISP Global College</span>
+            <span className="sr-only">ISP Global</span>
             <FaBookOpen
               className={` ${highContrast ? "text-black" : "text-blue-400"}`}
             />
             <h2 className="tracking-tighter text-xl font-semibold">
-              ISP Global College
+              ISP Global
             </h2>
           </Link>
         </div>
@@ -136,9 +136,9 @@ export default function Navbar() {
         >
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">ISP Rybnik</span>
+              <span className="sr-only">ISP Global</span>
               <h2 className="tracking-tighter text-2xl font-semibold">
-                ISP Rybnik
+                ISP Global
               </h2>
             </a>
             <button

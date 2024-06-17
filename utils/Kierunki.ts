@@ -2,6 +2,7 @@ import { cyberpsychologia } from "./Cyberpsychologia";
 import { diagnozaStrategieTerapeutyczneLeczeniuHiperseksualnosci } from "./Diagnoza-i-strategie-terapeutyczne-w-leczeniu-hiperseksualnosci";
 import { psychologiaUzaleznienUzaleznieniaBehawioralne } from "./Psychologia-uzaleznien-uzaleznienia-behawioralne";
 import { psychologiaUzaleznienTerapiaUzaleznien } from "./Psychologia-uzaleznien-z-terapia-uzaleznien";
+import { psychoterapia } from "./Psychoterapia";
 import { seksuologiaPraktyczna } from "./Seksuologia-praktyczna";
 import { trenerUmiejetnosciSpolecznych } from "./Trener-umiejetnosci-spolecznych";
 
@@ -42,6 +43,7 @@ export type Course = {
 };
 
 export const courses: Course[] = [
+  // psychoterapia,
   psychologiaUzaleznienTerapiaUzaleznien,
   psychologiaUzaleznienUzaleznieniaBehawioralne,
   diagnozaStrategieTerapeutyczneLeczeniuHiperseksualnosci,
