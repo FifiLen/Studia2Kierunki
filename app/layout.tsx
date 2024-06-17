@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { UserPreferencesProvider } from "@/components/UserPreferencesContext";
 import Access from "@/components/Access";
 import TopBar from "@/components/TopNav";
+import { Analytics } from "@vercel/analytics/react";
 
 const dmsans = DM_Sans({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
           <TopBar />
           <Navbar />
           {children}
+          <Analytics />
           <Footer />
         </UserPreferencesProvider>
       </body>
