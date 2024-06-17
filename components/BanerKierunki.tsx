@@ -11,6 +11,7 @@ import {
 } from "react-icons/tb";
 import { GrWorkshop } from "react-icons/gr";
 import { Course } from "@/utils/Kierunki";
+import { FaRegCircleCheck } from "react-icons/fa6";
 
 interface BanerKierunkiProps {
   course: Course;
@@ -75,13 +76,7 @@ const BanerKierunki = ({ course }: BanerKierunkiProps) => {
               </h4>
               <p className="text-zinc-800 font-medium">{course.duration}</p>
             </div>
-            <div className="bg-blue-300 rounded-lg p-5">
-              <TbDeviceLaptop className="w-8 h-8" />
-              <h4 className="text-lg md:text-xl font-semibold tracking-tight">
-                Forma studiów
-              </h4>
-              <p className="text-zinc-800 font-medium">{course.form}</p>
-            </div>
+
             <div className="bg-purple-300 rounded-lg p-5">
               <TbReportMoney className="w-8 h-8" />
               <h4 className="text-lg md:text-xl font-semibold tracking-tight">
@@ -98,9 +93,25 @@ const BanerKierunki = ({ course }: BanerKierunkiProps) => {
                 {course.practicalHours}
               </p>
             </div>
+            <div className="bg-blue-300 rounded-lg p-5">
+              <TbDeviceLaptop className="w-8 h-8" />
+              <h4 className="text-lg md:text-xl font-semibold tracking-tight">
+                Forma studiów
+              </h4>
+              <p className="text-zinc-800 font-medium">{course.form}</p>
+            </div>
+            <div className="bg-blue-100 rounded-lg p-5">
+              <FaRegCircleCheck className="w-8 h-8" />
+              <h4 className="text-lg md:text-xl font-semibold tracking-tight">
+                Mniej formalności
+              </h4>
+              <p className="text-zinc-800 font-medium">
+                Bez egzaminów i pracy dyplomowej
+              </p>
+            </div>
           </div>
           {/* buttons */}
-          <Link href="/rejestracja">
+          <Link href="/rekrutacja">
             <button className="bg-blue-900 text-white font-semibold md:w-fit w-full rounded-lg px-6 md:px-10 py-3 flex gap-2 items-center justify-center mt-4">
               Zapisz się na wybrany kierunek
               <TbArrowBigRightFilled />

@@ -1,7 +1,9 @@
+import { courses } from "@/utils/Kierunki";
 import React from "react";
 
 interface ScheduleProps {
   schedule: string[];
+  scheduleInfo: string;
 }
 
 const groupDatesByMonth = (dates: string[]): Record<string, string[]> => {
@@ -34,15 +36,18 @@ const groupDatesByMonth = (dates: string[]): Record<string, string[]> => {
   }, {});
 };
 
-const Schedule: React.FC<ScheduleProps> = ({ schedule }) => {
+const Schedule: React.FC<ScheduleProps> = ({ schedule, scheduleInfo }) => {
   const groupedSchedule = groupDatesByMonth(schedule);
 
   return (
     <section id="harmonogram" className="w-full bg-gray-100 py-20">
-      <div className="mx-auto max-w-7xl px-6 lg:px-10 space-y-8">
-        <h2 className="text-4xl md:text-5xl font-semibold tracking-tighter text-zinc-800">
+      <div className="mx-auto max-w-7xl px-6 lg:px-10">
+        <h2 className=" mb-3 text-4xl md:text-5xl font-semibold tracking-tighter text-zinc-800">
           Harmonogram
         </h2>
+        <p className="text-xl text-zinc-700 tracking-tighter mb-8">
+          {scheduleInfo}
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {Object.keys(groupedSchedule).map((month, index) => (
             <div key={index} className="space-y-4">

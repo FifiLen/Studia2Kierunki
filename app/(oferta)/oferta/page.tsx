@@ -19,7 +19,14 @@ import Markdown from "markdown-to-jsx";
 import { courses } from "@/utils/Kierunki";
 import ComingSoonOverlay from "@/components/Overlay";
 
-const availableCourseId = "trener-umiejetnosci-spolecznych"; // Main course ID
+const availableCourseId = [
+  "trener-umiejetnosci-spolecznych",
+  "seksuologia-praktyczna",
+  "cyberpsychologia",
+  "diagnoza-i-strategie-terapeutyczne-w-leczeniu-hiperseksualnosci",
+  "psychologia-uzaleznien-z-terapia-uzaleznien",
+  "psychologia-uzaleznien-uzaleznienia-behawioralne",
+]; // Main course ID
 
 const KierunkiPage = () => {
   return (
@@ -34,7 +41,7 @@ const KierunkiPage = () => {
               key={course.id}
               className="bg-white border-gray-100 rounded-lg shadow-none flex flex-col relative"
             >
-              {course.id !== availableCourseId && <ComingSoonOverlay />}{" "}
+              {!availableCourseId.includes(course.id) && <ComingSoonOverlay />}{" "}
               {/* Overlay for coming soon courses */}
               <div className="relative h-48">
                 <Image
@@ -73,7 +80,7 @@ const KierunkiPage = () => {
                 </div>
               </CardContent>
               <CardFooter className="mt-auto">
-                {course.id === availableCourseId ? (
+                {availableCourseId.includes(course.id) ? (
                   <Link
                     aria-label={`Dowiedz się więcej o kierunku ${course.title}`}
                     href={`/oferta/${course.id}`}

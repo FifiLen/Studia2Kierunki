@@ -20,10 +20,10 @@ const RekrutacjaAnnouncement = () => {
             Semestr 2024/2025
           </h2>
           <p className="text-base md:text-lg text-zinc-300 mt-4">
-            Trwają zapisy na semestr 2024/2025. Dołącz do nas i rozpocznij swoją
-            przygodę z nowymi studiami podyplomowymi. Oferujemy szeroki wybór
-            kierunków, które pozwolą Ci zdobyć nowe umiejętności i poszerzyć
-            swoje horyzonty.
+            Trwają zapisy na&nbsp;semestr 2024/2025. Dołącz do&nbsp;nas
+            i&nbsp;rozpocznij swoją przygodę z&nbsp;nowymi studiami
+            podyplomowymi. Oferujemy szeroki wybór kierunków, które pozwolą Ci
+            zdobyć nowe umiejętności i&nbsp;poszerzyć swoje horyzonty.
           </p>
           <Link href="#kierunki">
             <button

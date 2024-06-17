@@ -32,6 +32,7 @@ export type Course = {
   price: string;
   payments: string;
   form: string;
+  scheduleInfo: string;
   schedule: string[];
   modules: Module[];
   faculty: string;
@@ -43,7 +44,6 @@ export type Course = {
 export const courses: Course[] = [
   trenerUmiejetnosciSpolecznych,
   seksuologiaPraktyczna,
-
   cyberpsychologia,
   diagnozaStrategieTerapeutyczneLeczeniuHiperseksualnosci,
   psychologiaUzaleznienTerapiaUzaleznien,

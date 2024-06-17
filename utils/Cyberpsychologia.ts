@@ -3,7 +3,8 @@ import { Course } from "./Kierunki";
 export const cyberpsychologia: Course = {
   id: "cyberpsychologia",
   title: "Cyberpsychologia",
-  banerDescription: "",
+  banerDescription:
+    "Poznaj psychologiczne aspekty korzystania z&nbsp;technologii cyfrowych oraz&nbsp;wpływ Internetu na&nbsp;zachowanie i&nbsp;emocje.",
   description: `Studia podyplomowe: "Cyberpsychologia" koncentrują się na badaniu interakcji pomiędzy ludźmi a technologią, ze szczególnym uwzględnieniem wpływu technologii cyfrowych na zachowanie, emocje i społeczeństwo.`,
   description2: `Program ma na celu przygotowanie studentów do pracy w obszarze badawczym, klinicznym oraz przemysłowym związanym z technologiami informacyjno-komunikacyjnymi (ICT).`,
   description3: `Program studiów jest podzielony na trzy semestry, obejmując wykłady teoretyczne, warsztaty praktyczne, seminaria oraz praktyki zawodowe.`,
@@ -12,7 +13,8 @@ export const cyberpsychologia: Course = {
   practicalHours: "90h",
   price: "8000zł",
   payments: "10x800zł",
-  form: "100% online",
+  form: "100% online w czasie rzeczywistym",
+  scheduleInfo: "Trzeci semestr przewidziany został na wykonanie praktyk",
   schedule: [
     "26.10.2024",
     "16.11.2024",

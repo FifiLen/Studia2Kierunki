@@ -89,12 +89,12 @@ export default function Navbar() {
       >
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
-            <span className="sr-only">ISP Rybnik</span>
+            <span className="sr-only">ISP Global College</span>
             <FaBookOpen
               className={` ${highContrast ? "text-black" : "text-blue-400"}`}
             />
             <h2 className="tracking-tighter text-xl font-semibold">
-              ISP Rybnik
+              ISP Global College
             </h2>
           </Link>
         </div>

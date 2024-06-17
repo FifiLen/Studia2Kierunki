@@ -3,7 +3,8 @@ import { Course } from "./Kierunki";
 export const psychologiaUzaleznienTerapiaUzaleznien: Course = {
   id: "psychologia-uzaleznien-z-terapia-uzaleznien",
   title: "Psychologia uzależnień z terapią uzależnień",
-  banerDescription: "",
+  banerDescription:
+    "Zdobywaj wiedzę i&nbsp;umiejętności niezbędne do&nbsp;efektywnej pracy z&nbsp;osobami uzależnionymi, oferując dogłębne zrozumienie mechanizmów uzależnień.",
   description: `Studia podyplomowe kierowane są do&nbsp;osób, które chcą zdobyć kwalifikacje, umożliwiające podjęcie pracy w&nbsp;roli terapeuty w&nbsp;instytucjach i&nbsp;organizacjach zajmujących się przeciwdziałaniem uzależnieniom w&nbsp;szczególności do&nbsp;pracowników poradni leczenia uzależnień, oddziałów terapii leczenia uzależnień – całodobowych i&nbsp;dziennych, oddziałów leczenia alkoholowych zespołów abstynencyjnych, placówek leczenia uzależnień dzieci i&nbsp;młodzieży, poradni dla osób z&nbsp;problemami alkoholowymi, oddziałów terapeutycznych w&nbsp;instytucjach totalnych, tj. areszty śledcze, zakłady karne, punkty konsultacyjne działających na&nbsp;terenach gmin i&nbsp;powiatów.`,
   description2:
     "Celem studiów jest przygotowanie do pracy w obszarze profilaktyki społecznej oraz terapii uzależnień. Studia rozwijają wiedzę oraz praktyczne umiejętności wychowawcze. Ponadto, pozwalają zdobyć wiedzę o działaniach terapeutycznych z wykorzystaniem najnowocześniejszych technik i metod do pracy z dziećmi, młodzieżą niedostosowaną społecznie i/lub uzależnioną od narkotyków lub środków psychotropowych.",
@@ -14,7 +15,8 @@ export const psychologiaUzaleznienTerapiaUzaleznien: Course = {
   duration: "3 semestry",
   price: "8000zł",
   payments: "10x800zł",
-  form: "100% online",
+  form: "100% online w czasie rzeczywistym",
+  scheduleInfo: "Trzeci semestr przewidziany został na wykonanie praktyk",
   schedule: [
     "26.10.2024",
     "16.11.2024",
