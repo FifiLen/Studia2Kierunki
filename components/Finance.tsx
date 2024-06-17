@@ -53,8 +53,9 @@ const Finance = () => {
             Ministerstwo Rozwoju uruchomiło nieoprocentowane pożyczki
             na&nbsp;kształcenie obejmujące m.in.&nbsp;studia podyplomowe, kursy,
             szkolenia. W&nbsp;ramach Programu Operacyjnego Wiedza Edukacja
-            Rozwój możesz otrzymać nawet do&nbsp;30&nbsp;000&nbsp;zł&nbsp;pomocy
+            Rozwój możesz otrzymać nawet do&nbsp;50&nbsp;000&nbsp;zł&nbsp;pomocy
             zwrotnej bez żadnych dodatkowych kosztów. <br />
+            <br />
             Co&nbsp;ważne, istnieje możliwość umorzenia 20–25% przyznanej kwoty.
             <br />
             <br />

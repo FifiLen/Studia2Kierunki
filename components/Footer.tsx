@@ -91,7 +91,7 @@ const Footer = () => {
           <div className="w-full sm:w-1/2 lg:w-1/4 mb-6 sm:mb-0">
             <h2 className="text-xl font-semibold mb-4">Kontakt</h2>
             <address className="not-italic text-sm text-gray-300">
-              ISP Rybnik
+              ISP Global
               <br />
               ul. Magnolii 25 <br /> 44-207 Rybnik
               <br />
@@ -119,8 +119,8 @@ const Footer = () => {
           <div className="w-full sm:w-1/2 lg:w-1/4">
             <h2 className="text-xl font-semibold mb-4">Informacje</h2>
             <p className="text-gray-400 text-sm">
-              &copy; {new Date().getFullYear()} ISP Global College. Wszelkie
-              prawa zastrzeżone.
+              &copy; {new Date().getFullYear()} ISP Global. Wszelkie prawa
+              zastrzeżone.
             </p>
           </div>
 
@@ -169,7 +169,7 @@ const Footer = () => {
         </div>
         <div className="mt-8 border-t border-gray-700 pt-8 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            &copy; 2024 ISP Global College. Wszelkie prawa zastrzeżone.
+            &copy; 2024 ISP Global. Wszelkie prawa zastrzeżone.
           </p>
           {/* <ul className="flex space-x-4 mt-4 sm:mt-0">
             <li>
