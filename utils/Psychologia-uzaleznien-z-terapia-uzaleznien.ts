@@ -5,9 +5,27 @@ export const psychologiaUzaleznienTerapiaUzaleznien: Course = {
   title: "Psychologia uzależnień z terapią uzależnień",
   banerDescription:
     "Zdobywaj wiedzę i&nbsp;umiejętności niezbędne do&nbsp;efektywnej pracy z&nbsp;osobami uzależnionymi, oferując dogłębne zrozumienie mechanizmów uzależnień.",
-  description: `Studia podyplomowe kierowane są do&nbsp;osób, które chcą zdobyć kwalifikacje, umożliwiające podjęcie pracy w&nbsp;roli terapeuty w&nbsp;instytucjach i&nbsp;organizacjach zajmujących się przeciwdziałaniem uzależnieniom w&nbsp;szczególności do&nbsp;pracowników poradni leczenia uzależnień, oddziałów terapii leczenia uzależnień – całodobowych i&nbsp;dziennych, oddziałów leczenia alkoholowych zespołów abstynencyjnych, placówek leczenia uzależnień dzieci i&nbsp;młodzieży, poradni dla osób z&nbsp;problemami alkoholowymi, oddziałów terapeutycznych w&nbsp;instytucjach totalnych, tj. areszty śledcze, zakłady karne, punkty konsultacyjne działających na&nbsp;terenach gmin i&nbsp;powiatów.`,
+  description: `<ul className="list-disc list-inside space-y-2">
+    <li>
+        kadra zarządzająca placówkami oświatowymi
+        <br>
+        <span className="ml-4">(szkoły, przedszkola, żłobki, poradnie, ośrodki wychowawcze, inne)</span>
+    </li>
+    <li>pedagogów</li>
+    <li>psychologów</li>
+    <li>logopedów</li>
+    <li>terapeutów</li>
+    <li>nauczycieli</li>
+    <li>rodziców</li>
+    <li>opiekunów prawnych</li>
+    <li>wychowawców</li>
+    <li>osób pracujących z dziećmi, młodzieżą, osobami dorosłymi, seniorami</li>
+    <li>
+        osób pracujących z dziećmi, młodzieżą i osobami dorosłymi z&nbsp;<span className="ml-2">niepełnosprawnościami, powodującymi brak lub ograniczenie możliwości komunikacji i funkcjonowania w społeczeństwie</span>
+    </li>
+  </ul>`,
   description2:
-    "Celem studiów jest przygotowanie do pracy w obszarze profilaktyki społecznej oraz terapii uzależnień. Studia rozwijają wiedzę oraz praktyczne umiejętności wychowawcze. Ponadto, pozwalają zdobyć wiedzę o działaniach terapeutycznych z wykorzystaniem najnowocześniejszych technik i metod do pracy z dziećmi, młodzieżą niedostosowaną społecznie i/lub uzależnioną od narkotyków lub środków psychotropowych.",
+    "Celem studiów jest przygotowanie do pracy w obszarze profilaktyki społecznej oraz terapii uzależnień. Studia rozwijają wiedzę oraz praktyczne umiejętności wychowawcze. Ponadto, pozwalają zdobyć wiedzę o działaniach terapeutycznych z wykorzystaniem najnowocześniejszych technik i metod do pracy z dziećmi, młodzieżą niedostosowaną społecznie i/lub uzależnioną od narkotyków lub środków psychotropowych.<br/><br />Studia  przygotowują absolwentów do diagnozowania niedostosowania społecznego oraz prowadzenia zajęć terapeutycznych (grupowych i&nbsp;indywidualnych) z dziećmi i młodzieżą z tzw. grup ryzyka (dzieci i młodzież wychowywana w rodzinach dysfunkcyjnych, z diagnozą zaburzeń emocjonalnych, zaburzeń zachowania i z pogranicza niedostosowania społecznego). ",
   description3:
     "Studia  przygotowują absolwentów do diagnozowania niedostosowania społecznego oraz prowadzenia zajęć terapeutycznych (grupowych i indywidualnych) z dziećmi i młodzieżą z tzw. grup ryzyka (dzieci i młodzież wychowywana w rodzinach dysfunkcyjnych, z diagnozą zaburzeń emocjonalnych, zaburzeń zachowania i z pogranicza niedostosowania społecznego).",
   description4:

@@ -5,7 +5,25 @@ export const seksuologiaPraktyczna: Course = {
   title: "Seksuologia praktyczna",
   banerDescription:
     "Zdobądź praktyczne umiejętności i&nbsp;wiedzę z&nbsp;zakresu seksuologii, które pozwolą Ci&nbsp;pracować w&nbsp;różnych kontekstach terapeutycznych",
-  description: `Studia podyplomowe na kierunku "Seksuologia" mają na celu przekazanie wiedzy dotyczącej biologicznych podstaw seksualności człowieka, psychofizjologii seksualności, norm w zachowaniach seksualnych, dysfunkcji i zaburzeń seksualnych, metod diagnostycznych i metod leczenia stosowanych w klinice seksuologicznej, seksuologii sądowej i społecznej, filozofii kultury i etyki seksualności człowieka.`,
+  description: `<ul className="list-disc list-inside space-y-2">
+    <li>
+        kadra zarządzająca placówkami oświatowymi
+        <br>
+        <span className="ml-4">(szkoły, przedszkola, żłobki, poradnie, ośrodki wychowawcze, inne)</span>
+    </li>
+    <li>pedagogów</li>
+    <li>psychologów</li>
+    <li>logopedów</li>
+    <li>terapeutów</li>
+    <li>nauczycieli</li>
+    <li>rodziców</li>
+    <li>opiekunów prawnych</li>
+    <li>wychowawców</li>
+    <li>osób pracujących z dziećmi, młodzieżą, osobami dorosłymi, seniorami</li>
+    <li>
+        osób pracujących z dziećmi, młodzieżą i osobami dorosłymi z&nbsp;<span className="ml-2">niepełnosprawnościami, powodującymi brak lub ograniczenie możliwości komunikacji i funkcjonowania w społeczeństwie</span>
+    </li>
+  </ul>`,
   description2: `Program studiów obejmuje także wykształcenie praktycznych umiejętności: seksuologicznego badania podmiotowego, diagnozy, różnicowania i leczenia zaburzeń seksualnych oraz kompetencji społecznych.`,
   description3: `Absolwenci będą przygotowani do pracy w zakresie diagnostyki i terapii zaburzeń seksualnych w poradniach seksuologicznych, klinikach i szpitalach psychiatrycznych.`,
   description4: ``,

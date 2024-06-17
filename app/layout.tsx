@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${dmsans.className} overflow-x-hidden`}>
         <UserPreferencesProvider>
-          <Access />
+          {/* <Access /> */}
           <TopBar />
           <Navbar />
           {children}

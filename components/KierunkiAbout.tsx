@@ -72,8 +72,8 @@ const AboutSpecialty = ({ course }: AboutSpecialtyProps) => {
           />
         </div>
         {/* Kolumna z tekstem */}
-        <div className="px-4 md:px-10 py-5 relative overflow-hidden">
-          <div className="text-zinc-800 mt-8 p-6 md:p-10 rounded-xl bg-gray-50 border-gray-300 border">
+        <div className="px-4 md:px-10 relative overflow-hidden py-20">
+          {/* <div className="text-zinc-800 mt-8 p-6 md:p-10 rounded-xl bg-gray-50 border-gray-300 border">
             <h4 className="pb-3 text-xl md:text-2xl font-semibold tracking-tighter flex items-center gap-2">
               <BiAward />
               Przygotowanie absolwentów do pracy
@@ -81,7 +81,7 @@ const AboutSpecialty = ({ course }: AboutSpecialtyProps) => {
             <div className={`tracking-tight leading-7 ${poppins.className}`}>
               <Markdown>{course.description3}</Markdown>
             </div>
-          </div>
+          </div> */}
 
           <div className="text-zinc-800 mt-8 p-6 md:p-10 rounded-xl bg-gray-50 border-gray-300 border">
             <p className={`tracking-tight leading-7 ${poppins.className}`}>

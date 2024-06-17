@@ -324,7 +324,7 @@ const RecruitmentPage: React.FC = () => {
                 className="flex items-center justify-center border-[1.5px] border-black h-7 w-7 rounded-full mb-2"
                 aria-hidden="true"
               >
-                <p className="font-semibold">5</p>
+                <p className="font-semibold">4</p>
               </div>
               <h4 className="font-medium tracking-tight text-xl md:text-2xl">
                 Potwierdzenie przyjęcia
@@ -339,7 +339,7 @@ const RecruitmentPage: React.FC = () => {
                 className="flex items-center justify-center border-[1.5px] border-black h-7 w-7 rounded-full mb-2"
                 aria-hidden="true"
               >
-                <p className="font-semibold">6</p>
+                <p className="font-semibold">5</p>
               </div>
               <h4 className="font-medium tracking-tight text-xl md:text-2xl">
                 Pojawił się problem?
