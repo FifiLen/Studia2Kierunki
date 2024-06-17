@@ -260,6 +260,6 @@ export const cyberpsychologia: Course = {
     </ul>
   </li>
 </ul>`,
-  evaluation: `Ocena studentów będzie opierać się na wynikach egzaminów pisemnych, prac pisemnych, projektów badawczych, a także ocenie praktyk zawodowych. Regularne ewaluacje programu będą przeprowadzane w celu zapewnienia najwyższej jakości kształcenia i dostosowania programu do aktualnych potrzeb rynku pracy oraz postępu naukowego w dziedzinie cyberpsychologii.`,
+  evaluation: `Ocena efektów krztałcenia będzie opierać się na: przygotowaniu pracy projektowej w obszarze Cyberpsychologii.`,
   jobOpportunities: `Absolwenci kierunku "Cyberpsychologia" będą przygotowani do pracy w różnorodnych sektorach, takich jak badania naukowe, edukacja, przemysł technologiczny, zdrowie psychiczne, marketing cyfrowy oraz sektor publiczny. Mogą pracować jako specjaliści ds. UX, analitycy danych, terapeuci online, badacze psychologii mediów oraz konsultanci ds. technologii i bezpieczeństwa cyfrowego.`,
 };

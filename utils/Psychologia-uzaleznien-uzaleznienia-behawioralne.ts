@@ -279,6 +279,6 @@ export const psychologiaUzaleznienUzaleznieniaBehawioralne: Course = {
     </ul>
   </li>
 </ul>`,
-  evaluation: `Ocena studentów będzie opierać się na wynikach egzaminów pisemnych, prac pisemnych, projektów badawczych, a także ocenie praktyk klinicznych. Regularne ewaluacje programu będą przeprowadzane w celu zapewnienia najwyższej jakości kształcenia i dostosowania programu do aktualnych potrzeb rynku pracy oraz postępu naukowego w dziedzinie uzależnień behawioralnych.`,
+  evaluation: `Ocena efektów krztałcenia będzie opierać się na: przygotowaniu pracy projektowej w obszarze Psychologii uzależnień - uzależnienia behawioralne.`,
   jobOpportunities: `Absolwenci kierunku "Uzależnienia Behawioralne" będą przygotowani do pracy w różnorodnych placówkach terapeutycznych, takich jak ośrodki leczenia uzależnień, poradnie zdrowia psychicznego, szpitale psychiatryczne, a także w organizacjach pozarządowych zajmujących się profilaktyką i terapią uzależnień.`,
 };
