@@ -245,12 +245,17 @@ export const trenerUmiejetnosciSpolecznych: Course = {
     },
   ],
   faculty: `Program realizowany będzie przez doświadczonych specjalistów z zakresu psychologii, pedagogiki, socjologii oraz profesjonalnych trenerów umiejętności społecznych posiadających wieloletnie doświadczenie kliniczne oraz szkoleniowe. Kadra składa się z ekspertów posiadających praktyczne doświadczenie w pracy trenerskiej i coachingowej, co zapewni wysoki poziom kształcenia i wsparcia dla studentów.`,
-  practices: `50% - możliwość zrealizowania praktyk w formule zdalnej w Poradni Psychologiczno - Pedagogicznej MAGNOLIA
-  Pozostałe 50% można zrealizować:
-  - w placówkach macierzystych w formie zajęć dodatkowych lub wykonywanych w pensum,
-  - w placówkach oświatowych, 
-  - w poradniach,
-  - inne.`,
+  practices: `<ul className="list-disc list-inside space-y-2">
+    <li>50% - możliwość zrealizowania praktyk w formule zdalnej w Poradni Psychologiczno - Pedagogicznej MAGNOLIA</li>
+    <li>Pozostałe 50% można zrealizować:
+      <ul className="list-disc list-inside space-y-1 ml-4">
+        <li>w placówkach macierzystych w formie zajęć dodatkowych lub wykonywanych w pensum,</li>
+        <li>w placówkach oświatowych,</li>
+        <li>w poradniach,</li>
+        <li>inne.</li>
+      </ul>
+    </li>
+  </ul>`,
   evaluation: `Ocena efektów krztałcenia będzie opierać się na: przygotowaniu pracy projektowej w obszarze TUS.`,
   jobOpportunities: `<span className="text-lg font-semibold">Absolwenci programu będą przygotowani do pracy jako:</span>
  

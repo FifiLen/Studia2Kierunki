@@ -10,9 +10,9 @@ export const diagnozaStrategieTerapeutyczneLeczeniuHiperseksualnosci: Course = {
   description3: `Program studiów jest podzielony na dwa semestry, obejmując teoretyczne wykłady, warsztaty praktyczne, seminaria oraz praktyki zawodowe.`,
   description4: ``,
   duration: "2 semestry",
-  practicalHours: "90h",
-  price: "8000zł",
-  payments: "10x800zł",
+  practicalHours: "35h",
+  price: "6000zł",
+  payments: "10x600zł",
   form: "100% online w czasie rzeczywistym",
   scheduleInfo: "",
   schedule: [
@@ -180,11 +180,17 @@ export const diagnozaStrategieTerapeutyczneLeczeniuHiperseksualnosci: Course = {
     },
   ],
   faculty: `Program realizowany przez doświadczonych specjalistów z zakresu psychologii, seksuologii, psychiatrii i terapii, posiadających wieloletnie doświadczenie kliniczne oraz naukowe.`,
-  practices: `Wykłady: Podstawowe informacje teoretyczne przekazywane przez ekspertów z różnych dziedzin.
-    Warsztaty: Praktyczne ćwiczenia i trening umiejętności.
-    Seminaria: Dyskusje i analiza przypadków klinicznych.
-    Praktyki zawodowe: Bezpośrednia praca z pacjentami pod nadzorem doświadczonych terapeutów.
-    Superwizje: Regularne sesje superwizyjne mające na celu wsparcie rozwoju kompetencji zawodowych.`,
+  practices: `<ul className="list-disc list-inside space-y-2">
+    <li>50% - możliwość zrealizowania praktyk w formule zdalnej w Poradni Psychologiczno - Pedagogicznej MAGNOLIA</li>
+    <li>Pozostałe 50% można zrealizować:
+      <ul className="list-disc list-inside space-y-1 ml-4">
+        <li>w placówkach macierzystych w formie zajęć dodatkowych lub wykonywanych w pensum,</li>
+        <li>w placówkach oświatowych,</li>
+        <li>w poradniach,</li>
+        <li>inne.</li>
+      </ul>
+    </li>
+  </ul>`,
   evaluation: `Ocena studentów będzie opierać się na wynikach egzaminów pisemnych, prac pisemnych, projektów badawczych, a także ocenie praktyk zawodowych.`,
   jobOpportunities: `Absolwenci programu będą przygotowani do pracy jako:
     - Terapeuci specjalizujący się w leczeniu zaburzeń seksualnych
