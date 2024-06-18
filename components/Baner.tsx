@@ -56,7 +56,7 @@ export default function Baner() {
               : "bg-[#9E5AE2] text-white hover:bg-gray-700 focus-visible:outline-gray-900"
           }`}
         >
-          Proces rekrutacji
+          Rekrutacja
           <span aria-hidden="true">
             <CgArrowRightO className="h-4 w-4" />
           </span>
