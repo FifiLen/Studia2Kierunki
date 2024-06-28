@@ -10,6 +10,7 @@ import {
 } from "../components/ui/hover-card";
 
 const availableCourseId = [
+  "psychoterapia",
   "trener-umiejetnosci-spolecznych",
   "seksuologia-praktyczna",
   "cyberpsychologia",

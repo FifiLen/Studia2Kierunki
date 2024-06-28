@@ -27,11 +27,12 @@ export const seksuologiaPraktyczna: Course = {
   description2: `Program studiów obejmuje także wykształcenie praktycznych umiejętności: seksuologicznego badania podmiotowego, diagnozy, różnicowania i leczenia zaburzeń seksualnych oraz kompetencji społecznych.`,
   description3: `Absolwenci będą przygotowani do pracy w zakresie diagnostyki i terapii zaburzeń seksualnych w poradniach seksuologicznych, klinikach i szpitalach psychiatrycznych.`,
   description4: ``,
+  descriptionP1: "",
   duration: "3 semestry",
-  practicalHours: "100h",
+  practicalHours: "100h praktyk",
   price: "6000zł",
   payments: "10x600zł",
-  form: "100% online w czasie rzeczywistym",
+  form: "100% wykłady online w&nbsp;czasie rzeczywistym",
   scheduleInfo: "Trzeci semestr przewidziany został na wykonanie praktyk",
   schedule: [
     "26.10.2024",
@@ -191,4 +192,6 @@ export const seksuologiaPraktyczna: Course = {
 </ul>`,
   evaluation: `Ocena efektów krztałcenia będzie opierać się na: przygotowaniu pracy projektowej w obszarze Seksuologi praktycznej.`,
   jobOpportunities: `Absolwenci będą przygotowani do pracy w zakresie diagnostyki i terapii zaburzeń seksualnych w poradniach seksuologicznych, klinikach i szpitalach psychiatrycznych.`,
+  invite:
+    "<div class=''> <p class='text-gray-100'>Zdobądź praktyczne umiejętności i wiedzę z zakresu <strong class='font-semibold'>seksuologii klinicznej</strong>, które pozwolą Ci pracować w różnych kontekstach terapeutycznych.<br /> Inwestuj w swoją przyszłość i realizuj swoje nowe perspektywy zawodowe.</p></div>",
 };

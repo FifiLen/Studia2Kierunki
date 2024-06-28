@@ -4,13 +4,13 @@ import BanerKierunki from "@/components/BanerKierunki";
 import SectionNavigation from "@/components/KierunkiNav";
 import AboutSpecialty from "@/components/KierunkiAbout";
 import ProgramStudiow from "@/components/KierunkiProgram";
-import Program from "@/components/KierunkiProgram";
 import PraktykiKierunki from "@/components/PraktykiKierunki";
 
 import Zapraszamy from "@/components/Zapisz";
 import Schedule from "@/components/Harmonogram";
 import Faq from "@/app/faq/page";
 import BannerComponent from "@/components/BanerBurKierunek";
+import Modules from "@/components/Modules";
 
 export async function generateStaticParams() {
   return courses.map((course) => ({
@@ -41,12 +41,12 @@ const CoursePage = ({ params }: CoursePageProps) => {
       <BanerKierunki course={course} />
       <SectionNavigation sections={sections} />
       <AboutSpecialty course={course} />
-      <Program course={course} />
+      {course.id !== "psychoterapia" && <ProgramStudiow course={course} />}
+      {course.id === "psychoterapia" && <Modules modules={course.modules} />}
       <PraktykiKierunki course={course} />
-      <Schedule
-        schedule={course.schedule}
-        scheduleInfo={course.scheduleInfo}
-      />{" "}
+      {/* {course.id !== "psychoterapia" && ( */}
+      <Schedule schedule={course.schedule} scheduleInfo={course.scheduleInfo} />
+      {/* )} */}
       <Zapraszamy course={course} />
       <BannerComponent />
       <Faq />

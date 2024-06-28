@@ -27,11 +27,12 @@ export const diagnozaStrategieTerapeutyczneLeczeniuHiperseksualnosci: Course = {
   description2: `Celem programu studiów jest przygotowanie specjalistów w zakresie diagnozy oraz terapii osób zmagających się z hiperseksualnością. Program kładzie nacisk na interdyscyplinarne podejście, łącząc wiedzę z zakresu psychologii, seksuologii, psychiatrii, medycyny i terapii behawioralnej. Studenci zdobędą zarówno teoretyczną wiedzę, jak i praktyczne umiejętności, które pozwolą im efektywnie pomagać pacjentom.`,
   description3: `Program studiów jest podzielony na dwa semestry, obejmując teoretyczne wykłady, warsztaty praktyczne, seminaria oraz praktyki zawodowe.`,
   description4: ``,
+  descriptionP1: "",
   duration: "2 semestry",
-  practicalHours: "35h",
+  practicalHours: "35h praktyk",
   price: "6000zł",
   payments: "10x600zł",
-  form: "100% online w czasie rzeczywistym",
+  form: "100% wykłady online w&nbsp;czasie rzeczywistym",
   scheduleInfo: "",
   schedule: [
     "26.10.2024",
@@ -215,4 +216,6 @@ export const diagnozaStrategieTerapeutyczneLeczeniuHiperseksualnosci: Course = {
     - Konsultanci w poradniach zdrowia psychicznego i seksualnego
     - Naukowcy i badacze w dziedzinie seksuologii i psychoterapii
     - Specjaliści w ośrodkach terapeutycznych i rehabilitacyjnych.`,
+  invite:
+    "<div class=''> <p class='text-gray-100'> Poznaj zaawansowane metody diagnostyki i terapii hiperseksualności, oferując praktyczne narzędzia i strategie terapeutyczne.</p></div>",
 };

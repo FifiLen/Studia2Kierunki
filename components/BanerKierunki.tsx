@@ -12,6 +12,7 @@ import {
 import { GrWorkshop } from "react-icons/gr";
 import { Course } from "@/utils/Kierunki";
 import { FaRegCircleCheck } from "react-icons/fa6";
+import Markdown from "markdown-to-jsx";
 
 interface BanerKierunkiProps {
   course: Course;
@@ -98,15 +99,8 @@ const BanerKierunki = ({ course }: BanerKierunkiProps) => {
               <h4 className="text-lg md:text-xl font-semibold tracking-tight">
                 Forma studiów
               </h4>
-              <p className="text-zinc-800 font-medium">{course.form}</p>
-            </div>
-            <div className="bg-blue-100 rounded-lg p-5">
-              <FaRegCircleCheck className="w-8 h-8" />
-              <h4 className="text-lg md:text-xl font-semibold tracking-tight">
-                Mniej formalności
-              </h4>
               <p className="text-zinc-800 font-medium">
-                Bez egzaminów i pracy dyplomowej
+                <Markdown>{course.form}</Markdown>
               </p>
             </div>
           </div>
