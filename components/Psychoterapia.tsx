@@ -23,39 +23,41 @@ const PsychotherapyCard = ({ course }: { course: Course }) => {
       <div className="flex flex-col md:flex-row">
         <div className="flex-1 p-4">
           <CardHeader>
-            <CardTitle className="text-2xl md:text-5xl font-bold text-purple-800">
+            <CardTitle className="text-2xl md:text-5xl h-10  tracking-tight font-bold text-zinc-900">
               {course.title}
             </CardTitle>
           </CardHeader>
           <CardContent className="flex-grow">
-            <CardDescription className="mb-4 text-base md:text-lg text-purple-700">
+            <CardDescription className="mb-5 text-base md:text-lg tracking-tight text-zinc-700">
               <Markdown>{course.banerDescription}</Markdown>
             </CardDescription>
-            <div className="flex items-center font-medium mb-2 p-2 bg-purple-200 rounded-md text-base md:text-lg">
+            <div className="flex items-center font-medium mb-2 p-2 bg-purple-100 rounded-md text-base md:text-base">
               <FaCalendarAlt className="text-purple-500 mr-2" />
               <span>{course.duration}</span>
             </div>
-            <div className="flex items-center font-medium mb-2 p-2 bg-purple-300 rounded-md text-base md:text-lg">
+            <div className="flex items-center font-medium mb-2 p-2 bg-purple-200 rounded-md text-base md:text-base">
               <FaClock className="text-purple-500 mr-2" />
               <span>{course.practicalHours}</span>
             </div>
-            <div className="flex items-center font-medium mb-2 p-2 bg-purple-200 rounded-md text-base md:text-lg">
+            <div className="flex items-center font-medium mb-2 p-2 bg-purple-100 rounded-md text-base md:text-base">
               <FaMoneyBillWave className="text-purple-500 mr-2" />
               <span>{course.price}</span>
             </div>
-            <div className="flex items-center font-medium mb-2 p-2 bg-purple-300 rounded-md text-base md:text-lg">
+            <div className="flex items-center font-medium mb-2 p-2 bg-purple-200 rounded-md text-base md:text-base">
               <FaChalkboardTeacher className="text-purple-500 mr-2" />
-              <span>{course.form}</span>
+              <span>
+                <Markdown>{course.form}</Markdown>
+              </span>
             </div>
           </CardContent>
-          <CardFooter className="mt-auto">
+          <CardFooter className="mt-auto h-12">
             <Link
               aria-label={`Dowiedz się więcej o kierunku ${course.title}`}
               href={`/oferta/${course.id}`}
-              className="flex items-center text-white tracking-tight font-semibold gap-2 text-lg rounded-lg p-2 bg-purple-600"
+              className="flex items-center text-white tracking-tight font-semibold gap-2 rounded-lg p-2 bg-purple-600"
             >
               <p className="">Dowiedz się więcej</p>
-              <CgArrowRightO className=" text-2xl" />
+              <CgArrowRightO className=" text-xl" />
             </Link>
           </CardFooter>
         </div>

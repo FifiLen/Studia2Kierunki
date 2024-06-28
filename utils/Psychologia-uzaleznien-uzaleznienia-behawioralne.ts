@@ -27,11 +27,12 @@ export const psychologiaUzaleznienUzaleznieniaBehawioralne: Course = {
   description2: `Studia podyplomowe: "Uzależnienia Behawioralne" mają na celu przygotowanie studentów do pracy z osobami uzależnionymi od czynności takich jak hazard, gry komputerowe, sex, zakupy, jedzenie i inne. Program łączy wiedzę teoretyczną z intensywną praktyką kliniczną, umożliwiając studentom zdobycie kompetencji niezbędnych do skutecznej pracy terapeutycznej.`,
   description3: ``,
   description4: ``,
+  descriptionP1: "",
   duration: "3 semestry",
-  practicalHours: "90h",
+  practicalHours: "90h praktyk",
   price: "4200zł",
   payments: "10x420zł",
-  form: "100% online w czasie rzeczywistym",
+  form: "100% wykłady online w&nbsp;czasie rzeczywistym",
   scheduleInfo: "Trzeci semestr przewidziany został na wykonanie praktyk",
   schedule: [
     "26.10.2024",
@@ -299,4 +300,6 @@ export const psychologiaUzaleznienUzaleznieniaBehawioralne: Course = {
 </ul>`,
   evaluation: `Ocena efektów krztałcenia będzie opierać się na: przygotowaniu pracy projektowej w obszarze Psychologii uzależnień - uzależnienia behawioralne.`,
   jobOpportunities: `Absolwenci kierunku "Uzależnienia Behawioralne" będą przygotowani do pracy w różnorodnych placówkach terapeutycznych, takich jak ośrodki leczenia uzależnień, poradnie zdrowia psychicznego, szpitale psychiatryczne, a także w organizacjach pozarządowych zajmujących się profilaktyką i terapią uzależnień.`,
+  invite:
+    "<div class=''> <p class='text-gray-100'> Zgłębiaj psychologiczne aspekty uzależnień behawioralnych i ucz się skutecznych metod terapii oraz wsparcia dla osób z tymi problemami.</p></div>",
 };

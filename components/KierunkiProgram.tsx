@@ -41,6 +41,30 @@ const Program = ({ course }: ProgramProps) => {
     );
   };
 
+  const renderModuleContent = (module: any, index: number) => {
+    return (
+      <div key={index} className="bg-gray-100 p-4 md:p-6 rounded-lg shadow-lg">
+        {isLargeScreen ? (
+          <div>
+            <h3 className="text-lg md:text-xl mb-3 font-semibold tracking-tight text-blue-800">
+              <Markdown>{module.title}</Markdown>
+            </h3>
+            {renderTopics(module.topics)}
+          </div>
+        ) : (
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value={`module-${index}`}>
+              <AccordionTrigger className="text-lg font-semibold text-blue-800 flex items-center">
+                <Markdown>{module.title}</Markdown>
+              </AccordionTrigger>
+              <AccordionContent>{renderTopics(module.topics)}</AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        )}
+      </div>
+    );
+  };
+
   return (
     <section
       id="program-studiow"
@@ -51,32 +75,36 @@ const Program = ({ course }: ProgramProps) => {
           Program Studiów
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
-          {course.modules.map((module, index) => (
-            <div
-              key={index}
-              className="bg-gray-100 p-4 md:p-6 rounded-lg shadow-lg"
-            >
-              {isLargeScreen ? (
-                <div>
-                  <h3 className="text-lg md:text-xl mb-3 font-semibold tracking-tight text-blue-800">
-                    <Markdown>{module.title}</Markdown>
-                  </h3>
-                  {renderTopics(module.topics)}
-                </div>
-              ) : (
-                <Accordion type="single" collapsible className="w-full">
-                  <AccordionItem value={`module-${index}`}>
-                    <AccordionTrigger className="text-lg font-semibold text-blue-800 flex items-center">
-                      <Markdown>{module.title}</Markdown>
-                    </AccordionTrigger>
-                    <AccordionContent>
+          {course.id === "psychoterapia"
+            ? course.modules.map((module, index) =>
+                renderModuleContent(module, index)
+              )
+            : course.modules.map((module, index) => (
+                <div
+                  key={index}
+                  className="bg-gray-100 p-4 md:p-6 rounded-lg shadow-lg"
+                >
+                  {isLargeScreen ? (
+                    <div>
+                      <h3 className="text-lg md:text-xl mb-3 font-semibold tracking-tight text-blue-800">
+                        <Markdown>{module.title}</Markdown>
+                      </h3>
                       {renderTopics(module.topics)}
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
-              )}
-            </div>
-          ))}
+                    </div>
+                  ) : (
+                    <Accordion type="single" collapsible className="w-full">
+                      <AccordionItem value={`module-${index}`}>
+                        <AccordionTrigger className="text-lg font-semibold text-blue-800 flex items-center">
+                          <Markdown>{module.title}</Markdown>
+                        </AccordionTrigger>
+                        <AccordionContent>
+                          {renderTopics(module.topics)}
+                        </AccordionContent>
+                      </AccordionItem>
+                    </Accordion>
+                  )}
+                </div>
+              ))}
         </div>
       </div>
     </section>

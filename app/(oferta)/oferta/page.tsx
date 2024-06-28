@@ -21,13 +21,13 @@ import ComingSoonOverlay from "@/components/Overlay";
 import PsychotherapyCard from "@/components/Psychoterapia";
 
 const availableCourseId = [
+  "psychoterapia",
   "trener-umiejetnosci-spolecznych",
   "seksuologia-praktyczna",
   "cyberpsychologia",
   "diagnoza-i-strategie-terapeutyczne-w-leczeniu-hiperseksualnosci",
   "psychologia-uzaleznien-z-terapia-uzaleznien",
   "psychologia-uzaleznien-uzaleznienia-behawioralne",
-  "psychoterapia",
 ];
 
 const KierunkiPage = () => {
@@ -35,7 +35,7 @@ const KierunkiPage = () => {
     <div id="kierunki" className="w-full baner bg-gray-200">
       <div className="max-w-full mx-auto py-10 px-4 md:py-20 md:px-10 lg:px-20">
         <h1 className="text-3xl md:text-6xl font-bold mb-8 tracking-tighter">
-          Nasze Kierunki
+          Nasze kierunki
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {courses.map((course) =>
@@ -80,7 +80,9 @@ const KierunkiPage = () => {
                   </div>
                   <div className="flex items-center font-medium mb-2 p-2 bg-blue-200 rounded-md text-sm md:text-base">
                     <FaClock className="text-blue-500 mr-2" />
-                    <span>{course.practicalHours}</span>
+                    <span>
+                      <Markdown>{course.practicalHours}</Markdown>
+                    </span>
                   </div>
                   <div className="flex items-center font-medium mb-2 p-2 bg-blue-100 rounded-md text-sm md:text-base">
                     <FaMoneyBillWave className="text-blue-500 mr-2" />
@@ -88,7 +90,9 @@ const KierunkiPage = () => {
                   </div>
                   <div className="flex items-center font-medium mb-2 p-2 bg-blue-200 rounded-md text-sm md:text-base">
                     <FaChalkboardTeacher className="text-blue-500 mr-2" />
-                    <span>{course.form}</span>
+                    <span>
+                      <Markdown>{course.form}</Markdown>
+                    </span>
                   </div>
                 </CardContent>
                 <CardFooter className="mt-auto">

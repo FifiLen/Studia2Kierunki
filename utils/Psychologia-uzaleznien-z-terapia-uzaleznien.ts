@@ -30,10 +30,11 @@ export const psychologiaUzaleznienTerapiaUzaleznien: Course = {
     "Studia  przygotowują absolwentów do diagnozowania niedostosowania społecznego oraz prowadzenia zajęć terapeutycznych (grupowych i indywidualnych) z dziećmi i młodzieżą z tzw. grup ryzyka (dzieci i młodzież wychowywana w rodzinach dysfunkcyjnych, z diagnozą zaburzeń emocjonalnych, zaburzeń zachowania i z pogranicza niedostosowania społecznego).",
   description4:
     "Studia mają charakter kwalifikacyjny, program tego kierunku jest zgodny z przepisami prawa, uwzględnia wymagania określone Rozporządzeniem Ministra Nauki i Szkolnictwa Wyższego z dnia 25 lipca 2019 r. w sprawie standardu kształcenia przygotowującego do wykonywania zawodu nauczyciela (Dz. U. 2019 poz. 1450 ze zm.). Warunkiem ukończenia studiów podyplomowych jest uzyskanie zaliczeń w tym zaliczenia z praktyki  (90 h) oraz zdaniem egzaminu dyplomowego.",
+  descriptionP1: "",
   duration: "3 semestry",
   price: "7500zł",
   payments: "10x750zł",
-  form: "100% online w czasie rzeczywistym",
+  form: "100% wykłady online w&nbsp;czasie rzeczywistym",
   scheduleInfo: "Trzeci semestr przewidziany został na wykonanie praktyk",
   schedule: [
     "26.10.2024",
@@ -55,7 +56,7 @@ export const psychologiaUzaleznienTerapiaUzaleznien: Course = {
     "17.05.2025",
     "24.05.2025",
   ],
-  practicalHours: "90h",
+  practicalHours: "90h praktyk",
   modules: [
     {
       title: "Wprowadzenie do&nbsp;psychologii uzależnień",
@@ -319,4 +320,6 @@ export const psychologiaUzaleznienTerapiaUzaleznien: Course = {
 
   jobOpportunities:
     "Absolwenci kierunku 'Psychologia uzależnień z terapią uzależnień' będą przygotowani do pracy w różnorodnych placówkach terapeutycznych, takich jak ośrodki leczenia uzależnień, poradnie zdrowia psychicznego, szpitale psychiatryczne, a także w organizacjach pozarządowych zajmujących się profilaktyką i terapią uzależnień. Dodatkowo, będą mogli prowadzić własną praktykę terapeutyczną oraz uczestniczyć w badaniach naukowych i programach profilaktycznych.",
+  invite:
+    "<div class=''> <p class='text-gray-100'>Zdobądź wiedzę i umiejętności niezbędne do efektywnej pracy z osobami uzależnionymi, oferując dogłębne zrozumienie mechanizmów uzależnień.</p></div>",
 };

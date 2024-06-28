@@ -27,11 +27,12 @@ export const cyberpsychologia: Course = {
   description2: `Studia podyplomowe: "Cyberpsychologia" koncentrują się na badaniu interakcji pomiędzy ludźmi a technologią, ze szczególnym uwzględnieniem wpływu technologii cyfrowych na zachowanie, emocje i społeczeństwo. Program ma na celu przygotowanie studentów do pracy w obszarze badawczym, klinicznym oraz przemysłowym, związanym z technologiami informacyjno-komunikacyjnymi (ICT).`,
   description3: `Program studiów jest podzielony na trzy semestry, obejmując wykłady teoretyczne, warsztaty praktyczne, seminaria oraz praktyki zawodowe.`,
   description4: ``,
+  descriptionP1: "",
   duration: "3 semestry",
-  practicalHours: "90h",
+  practicalHours: "90h praktyk",
   price: "8000zł",
   payments: "10x800zł",
-  form: "100% online w czasie rzeczywistym",
+  form: "100% wykłady online w&nbsp;czasie rzeczywistym",
   scheduleInfo: "Trzeci semestr przewidziany został na wykonanie praktyk",
   schedule: [
     "26.10.2024",
@@ -280,4 +281,6 @@ export const cyberpsychologia: Course = {
 </ul>`,
   evaluation: `Ocena efektów krztałcenia będzie opierać się na: przygotowaniu pracy projektowej w obszarze Cyberpsychologii.`,
   jobOpportunities: `Absolwenci kierunku "Cyberpsychologia" będą przygotowani do pracy w różnorodnych sektorach, takich jak badania naukowe, edukacja, przemysł technologiczny, zdrowie psychiczne, marketing cyfrowy oraz sektor publiczny. Mogą pracować jako specjaliści ds. UX, analitycy danych, terapeuci online, badacze psychologii mediów oraz konsultanci ds. technologii i bezpieczeństwa cyfrowego.`,
+  invite:
+    "<div class=''> <p class='text-gray-100'>Poznaj psychologiczne aspekty korzystania z technologii cyfrowych oraz wpływ Internetu na zachowania i emocje.</p></div>",
 };

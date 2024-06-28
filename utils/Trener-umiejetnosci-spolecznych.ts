@@ -27,11 +27,12 @@ export const trenerUmiejetnosciSpolecznych: Course = {
   description2: `Celem studiów jest kompleksowe przygotowanie specjalistów do pracy w&nbsp;zakresie kształtowania i rozwijania umiejętności społecznych. Program kładzie nacisk na zrozumienie teorii społecznych, praktyczne podejście do&nbsp;nauczania umiejętności interpersonalnych, oraz rozwijanie kompetencji trenerskich. Studenci będą zdobywać wiedzę z zakresu psychologii, pedagogiki, socjologii oraz coachingowych technik szkoleniowych, co pozwoli im efektywnie wspierać rozwój kompetencji społecznych w różnych grupach wiekowych i środowiskach`,
   description3: `Program studiów jest podzielony na dwa semestry, obejmuje wykłady, warsztaty praktyczne, seminarium oraz praktyki zawodowe. Możliwość zrealizowania 30h w formule zdalnej w Poradni Psychologiczno - Pedagogicznej MAGNOLIA. `,
   description4: ``,
+  descriptionP1: "",
   duration: "2 semestry",
-  practicalHours: "60h",
+  practicalHours: "60h praktyk",
   price: "2500zł",
   payments: "5x500zł",
-  form: "100% online w czasie rzeczywistym",
+  form: "100% wykłady online w&nbsp;czasie rzeczywistym",
   scheduleInfo: "",
   schedule: [
     "26.10.2024",
@@ -267,4 +268,6 @@ export const trenerUmiejetnosciSpolecznych: Course = {
   <span className="block mb-2">-Mediatorzy i specjaliści ds. zarządzania konfliktami</span>
   <span className="block mb-2">-Liderzy zespołów w różnych branżach</span>
   `,
+  invite:
+    "<div class=''> <p class='text-gray-100'>Stań się ekspertem w budowaniu relacji i skutecznej komunikacji w&nbsp;każdej organizacji.</p></div>",
 };

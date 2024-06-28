@@ -28,6 +28,7 @@ export type Course = {
   description2: string;
   description3: string;
   description4: string;
+  descriptionP1: string;
   duration: string;
   practicalHours: string;
   price: string;
@@ -40,10 +41,11 @@ export type Course = {
   practices: string;
   evaluation: string;
   jobOpportunities: string;
+  invite: string;
 };
 
 export const courses: Course[] = [
-  // psychoterapia,
+  psychoterapia,
   psychologiaUzaleznienTerapiaUzaleznien,
   psychologiaUzaleznienUzaleznieniaBehawioralne,
   diagnozaStrategieTerapeutyczneLeczeniuHiperseksualnosci,

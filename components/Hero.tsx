@@ -24,6 +24,7 @@ import { CgArrowRightO, CgArrowTopRightO } from "react-icons/cg";
 import ComingSoonOverlay from "./Overlay";
 
 const availableCourseId = [
+  "psychoterapia",
   "trener-umiejetnosci-spolecznych",
   "seksuologia-praktyczna",
   "cyberpsychologia",
@@ -156,7 +157,7 @@ export default function HeroSection() {
                         } flex items-center gap-2`}
                       >
                         <FaLaptopHouse />
-                        100% online w czasie rzeczywistym
+                        100% wykłady online w czasie rzeczywistym
                       </Badge>
                     </div>
                     <h1

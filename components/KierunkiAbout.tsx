@@ -83,6 +83,14 @@ const AboutSpecialty = ({ course }: AboutSpecialtyProps) => {
             </div>
           </div> */}
 
+          {course.descriptionP1 && (
+            <div className="text-zinc-800 mt-8 p-6 md:p-10 rounded-xl bg-gray-50 border-gray-300 border">
+              <p className={`tracking-tight leading-7 ${poppins.className}`}>
+                <Markdown>{course.descriptionP1}</Markdown>
+              </p>
+            </div>
+          )}
+
           <div className="text-zinc-800 mt-8 p-6 md:p-10 rounded-xl bg-gray-50 border-gray-300 border">
             <p className={`tracking-tight leading-7 ${poppins.className}`}>
               Zajęcia realizowane z wykorzystaniem metod i technik kształcenia

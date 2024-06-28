@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { CgArrowTopRightO } from "react-icons/cg";
 import { Course } from "@/utils/Kierunki";
+import Markdown from "markdown-to-jsx";
 
 interface Invite {
   course: Course;
@@ -17,10 +18,9 @@ const Zapraszamy = ({ course }: Invite) => {
           <h2 className="text-3xl md:text-4xl text-white font-semibold tracking-tighter mt-3">
             Gotowy/a na nowe wyzwania?
           </h2>
-          <p className="text-base md:text-lg text-zinc-300 mt-4">
-            Rozpocznij swoją zawodową przygodę jako {course.title}. Inwestuj w
-            swoją przyszłość i realizuj swoje nowe perspektywy zawodowe.
-          </p>
+          <div className="text-base md:text-lg text-zinc-300 mt-4">
+            <Markdown>{course.invite}</Markdown>
+          </div>
           <Link href="/rekrutacja">
             <button className="bg-blue-800 text-white font-semibold rounded-lg px-4 py-3 flex gap-3 items-center justify-center mt-8">
               Zapisz się na wybrany kierunek
