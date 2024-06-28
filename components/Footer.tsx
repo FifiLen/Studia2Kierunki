@@ -119,6 +119,9 @@ const Footer = () => {
           {/* Sekcja Informacje o Prawach Autorskich */}
           <div className="w-full sm:w-1/2 lg:w-1/4">
             <h2 className="text-xl font-semibold mb-4">Informacje</h2>
+            <Link className="pb-4 text-sm text-gray-200" href="/credits">
+              Grafiki
+            </Link>
             <p className="text-gray-400 text-sm">
               &copy; {new Date().getFullYear()} ISP Global. Wszelkie prawa
               zastrzeżone.
