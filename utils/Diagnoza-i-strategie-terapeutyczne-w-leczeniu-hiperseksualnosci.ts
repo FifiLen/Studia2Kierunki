@@ -210,7 +210,7 @@ export const diagnozaStrategieTerapeutyczneLeczeniuHiperseksualnosci: Course = {
       </ul>
     </li>
   </ul>`,
-  evaluation: `Ocena efektów krztałcenia będzie opierać się na: przygotowaniu pracy projektowej w obszarze Diagnozy i strategii terapeutycznych w leczeniu hiperseksualności.`,
+  evaluation: `Ocena efektów kształcenia będzie opierać się na: przygotowaniu pracy projektowej w obszarze Diagnozy i strategii terapeutycznych w leczeniu hiperseksualności.`,
   jobOpportunities: `Absolwenci programu będą przygotowani do pracy jako:
     - Terapeuci specjalizujący się w leczeniu zaburzeń seksualnych
     - Konsultanci w poradniach zdrowia psychicznego i seksualnego

@@ -316,7 +316,7 @@ export const psychologiaUzaleznienTerapiaUzaleznien: Course = {
     </li>
   </ul>`,
   evaluation:
-    "Ocena efektów krztałcenia będzie opierać się na: przygotowaniu pracy projektowej w obszarze Psychologii uzależnien z terapią uzależnień",
+    "Ocena efektów kształcenia będzie opierać się na: przygotowaniu pracy projektowej w obszarze Psychologii uzależnien z terapią uzależnień",
 
   jobOpportunities:
     "Absolwenci kierunku 'Psychologia uzależnień z terapią uzależnień' będą przygotowani do pracy w różnorodnych placówkach terapeutycznych, takich jak ośrodki leczenia uzależnień, poradnie zdrowia psychicznego, szpitale psychiatryczne, a także w organizacjach pozarządowych zajmujących się profilaktyką i terapią uzależnień. Dodatkowo, będą mogli prowadzić własną praktykę terapeutyczną oraz uczestniczyć w badaniach naukowych i programach profilaktycznych.",

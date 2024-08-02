@@ -190,7 +190,7 @@ export const seksuologiaPraktyczna: Course = {
     </ul>
   </li>
 </ul>`,
-  evaluation: `Ocena efektów krztałcenia będzie opierać się na: przygotowaniu pracy projektowej w obszarze Seksuologi praktycznej.`,
+  evaluation: `Ocena efektów kształcenia będzie opierać się na: przygotowaniu pracy projektowej w obszarze Seksuologi praktycznej.`,
   jobOpportunities: `Absolwenci będą przygotowani do pracy w zakresie diagnostyki i terapii zaburzeń seksualnych w poradniach seksuologicznych, klinikach i szpitalach psychiatrycznych.`,
   invite:
     "<div class=''> <p class='text-gray-100'>Zdobądź praktyczne umiejętności i wiedzę z zakresu <strong class='font-semibold'>seksuologii klinicznej</strong>, które pozwolą Ci pracować w różnych kontekstach terapeutycznych.<br /> Inwestuj w swoją przyszłość i realizuj swoje nowe perspektywy zawodowe.</p></div>",

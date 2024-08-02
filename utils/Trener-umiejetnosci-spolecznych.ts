@@ -257,7 +257,7 @@ export const trenerUmiejetnosciSpolecznych: Course = {
       </ul>
     </li>
   </ul>`,
-  evaluation: `Ocena efektów krztałcenia będzie opierać się na: przygotowaniu pracy projektowej w obszarze TUS.`,
+  evaluation: `Ocena efektów kształcenia będzie opierać się na: przygotowaniu pracy projektowej w obszarze TUS.`,
   jobOpportunities: `<span className="text-lg font-semibold">Absolwenci programu będą przygotowani do pracy jako:</span>
  
   <span className="block mb-2 mt-2">-Trenerzy umiejętności społecznych w placówkach edukacyjnych, terapeutycznych i biznesowych</span>
