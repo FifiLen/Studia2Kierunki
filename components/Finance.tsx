@@ -3,6 +3,7 @@ import React from "react";
 import { CgArrowTopRightO } from "react-icons/cg";
 import { BsInfoCircleFill } from "react-icons/bs";
 import { GiTwoCoins } from "react-icons/gi";
+import { FaPhone } from "react-icons/fa";
 
 const Finance = () => {
   return (
@@ -23,11 +24,20 @@ const Finance = () => {
             szkoleń&nbsp;z&nbsp;Bazy Usług Rozwojowych. Dofinansowanie może
             wynosić 80-100% kosztu usług edukacyjnych. <br />
             <br />
-            Zachęcamy przedsiębiorców oraz organy prowadzące
-            do&nbsp;kontaktu&nbsp;z&nbsp;Powiatowym Urzędem Pracy oraz
-            operatorami wojewódzkimi w&nbsp;celu złożenia
-            wniosku&nbsp;o&nbsp;dofinansowanie.
+            Zapraszamy wszystkich zainteresowanych
+            do&nbsp;kontaktu&nbsp;z&nbsp;nami w&nbsp;celu uzyskania informacji,
+            gdzie należy złożyć wniosek&nbsp;.
           </p>
+          <div className=" flex items-center gap-5">
+            <button className="bg-blue-600 text-white font-semibold rounded-lg px-4 py-3 flex gap-3 items-center justify-center mt-8">
+              516 826 025
+              <FaPhone className="text-xl" />
+            </button>
+            <button className="bg-blue-600 text-white font-semibold rounded-lg px-4 py-3 flex gap-3 items-center justify-center mt-8">
+              502 162 365
+              <FaPhone className="text-xl" />
+            </button>
+          </div>
           <a
             href="https://uslugirozwojowe.parp.gov.pl/wyszukiwarka/dostawca-uslug/podglad?id=53144"
             target="_blank"

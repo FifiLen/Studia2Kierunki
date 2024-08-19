@@ -237,7 +237,7 @@ const RecruitmentPage: React.FC = () => {
                 przez cały proces bez problemów.
               </p>
               <p className="mt-3 text-purple-600 font-medium tracking-tight">
-                *Opłata wpisowa wynosi 200zł.
+                *Opłata wpisowa wynosi 150zł.
               </p>
             </div>
             <div className="flex flex-col md:flex-row items-start md:items-end gap-3 mt-6 md:mt-0">
