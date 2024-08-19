@@ -81,11 +81,9 @@ const Faq = () => {
               w&nbsp;dwa&nbsp;semestry?
             </h4>
             <p className="mt-2 text-base md:text-lg">
-              Tak, pod&nbsp;warunkiem, że&nbsp;wraz z&nbsp;dokumentami
-              rekrutacyjnymi zostanie wysłane zaświadczenie o&nbsp;zatrudnieniu
-              jako nauczyciel. Na&nbsp;podstawie tego zaświadczenia wchodzicie
-              Państwo w&nbsp;indywidualny tryb nauczania i&nbsp;dzięki temu
-              kierunek może być „skrócony” o&nbsp;jeden&nbsp;semestr.
+              Tak, pod warunkiem, że&nbsp;zrealizujesz praktyki, które
+              są&nbsp;przewidziane na&nbsp;semestr trzeci, w&nbsp;trakcie
+              trwania dwóch semestrów.
             </p>
           </div>
 
