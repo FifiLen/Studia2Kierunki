@@ -29,7 +29,7 @@ export const diagnozaStrategieTerapeutyczneLeczeniuHiperseksualnosci: Course = {
   description4: ``,
   descriptionP1: "",
   duration: "2 semestry",
-  practicalHours: "35h praktyk",
+  practicalHours: "30h praktyk",
   price: "6000zł",
   payments: "10x600zł",
   form: "100% wykłady online w&nbsp;czasie rzeczywistym",
