@@ -109,7 +109,7 @@ const Faq = () => {
             <p className="mt-2 text-base md:text-lg">
               Tak, można skorzystać ze&nbsp;zniżki wybierając kierunki
               z&nbsp;zakładki „oferta” na&nbsp;naszej stronie internetowej.
-              Zniżkę 10&nbsp;% na&nbsp;drugi tańszy kierunek należy uwzględnić
+              Zniżkę 50&nbsp;% na&nbsp;drugi tańszy kierunek należy uwzględnić
               w&nbsp;płatnościach.
             </p>
           </div>
