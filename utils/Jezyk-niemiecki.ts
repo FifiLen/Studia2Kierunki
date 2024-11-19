@@ -1,0 +1,101 @@
+import { Course } from "./Kierunki";
+
+export const dydaktykaJezykaObcegoNiemiecki: Course = {
+  category: "zarzadzanie i dydaktyka edukacyjna",
+
+  id: "dydaktyka-jezyka-obcego-niemiecki",
+  title: "Dydaktyka języka obcego (język niemiecki)",
+  banerDescription:
+    "Zdobądź kwalifikacje do nauczania języka niemieckiego na poziomie szkoły podstawowej i ponadpodstawowej, rozwijając swoje kompetencje metodyczne i dydaktyczne.",
+  description: `<ul className="list-disc list-inside space-y-2">
+    <li>Nauczycieli pragnących zdobyć uprawnienia do nauczania języka niemieckiego na drugim i trzecim etapie edukacyjnym</li>
+    <li>Osób zainteresowanych metodyką nauczania języka niemieckiego</li>
+    <li>Specjalistów pragnących poszerzyć swoje kompetencje w zakresie dydaktyki języka niemieckiego</li>
+  </ul>`,
+  description2: `Studia podyplomowe na kierunku „Dydaktyka i metodyka języka obcego – język niemiecki” są specjalnie zaprojektowane dla nauczycieli, którzy pragną zdobyć umiejętności niezbędne do nauczania języka niemieckiego na drugim i trzecim etapie edukacyjnym. Głównym celem tych studiów jest rozwinięcie kompetencji metodycznych i dydaktycznych, które umożliwią skuteczne nauczanie języka niemieckiego.`,
+  description3: `Program obejmuje zdobycie wiedzy metodycznej z zakresu różnorodnych metod i technik nauczania języka niemieckiego, które można dostosować do pracy z uczniami klas IV-VIII w szkołach podstawowych oraz szkołach ponadpodstawowych. Kształcenie na tych studiach obejmuje także pogłębianie wiedzy i umiejętności z dziedziny psychologii i pedagogiki, które są istotne dla efektywnej pracy dydaktyczno-wychowawczej.`,
+  description4: `Absolwenci programu zdobędą nie tylko kwalifikacje, ale również praktyczne kompetencje niezbędne do nauczania języka niemieckiego na poziomach szkoły podstawowej i ponadpodstawowej.`,
+  descriptionP1: "",
+  duration: "3 semestry",
+  practicalHours: "90h praktyk",
+  price: "3000zł",
+  payments: "10 x 300zł",
+  // form: "100% wykłady online w czasie rzeczywistym",
+  scheduleInfo: "",
+  schedule: [
+    "26.10.2024",
+    "16.11.2024",
+    "23.11.2024",
+    "30.11.2024",
+    "07.12.2024",
+    "14.12.2024",
+    "11.01.2025",
+    "18.01.2025",
+    "25.01.2025",
+    "15.02.2025",
+    "01.03.2025",
+    "15.03.2025",
+    "22.03.2025",
+    "05.04.2025",
+    "12.04.2025",
+    "10.05.2025",
+    "17.05.2025",
+    "24.05.2025",
+  ],
+  modules: [
+    {
+      title: "Moduł kształcenia specjalistycznego",
+      topics: [
+        { title: "Podstawy prawa oświatowego", subtopics: [] },
+        { title: "Podstawy psychologii i pedagogiki", subtopics: [] },
+        { title: "Podstawy aktywizacji języka niemieckiego", subtopics: [] },
+        {
+          title: "Teorie uczenia się i nauczania języka niemieckiego",
+          subtopics: [],
+        },
+        { title: "Dydaktyka języka obcego - język niemiecki", subtopics: [] },
+        {
+          title:
+            "Metodyka nauczania języka obcego na drugim etapie edukacyjnym",
+          subtopics: [],
+        },
+        {
+          title:
+            "Metodyka nauczania języka obcego na trzecim etapie edukacyjnym",
+          subtopics: [],
+        },
+        {
+          title: "Wiedza o krajach niemieckiego obszaru językowego",
+          subtopics: [],
+        },
+        { title: "Technologie informacyjne w nauczaniu", subtopics: [] },
+        {
+          title: "Rozwój zawodowy nauczycieli języków obcych",
+          subtopics: [],
+        },
+        { title: "Higiena i emisja głosu", subtopics: [] },
+        { title: "Praktyka zawodowa – 90 godzin", subtopics: [] },
+      ],
+    },
+  ],
+  faculty: `Zajęcia prowadzone są przez doświadczonych praktyków w dziedzinie metodyki nauczania języka niemieckiego, posiadających wieloletnie doświadczenie w pracy z uczniami na różnych etapach edukacyjnych.`,
+  practices: `<ul className="list-disc list-inside space-y-2">
+    <li>Praktyka zawodowa obejmuje 90 godzin i umożliwia zdobycie doświadczenia w nauczaniu języka niemieckiego.</li>
+    <li>Praktyki mogą być realizowane w szkołach podstawowych i ponadpodstawowych.</li>
+  </ul>`,
+  evaluation: `Ocena efektów kształcenia opiera się na aktywności podczas zajęć, zaliczeniach poszczególnych modułów, realizacji praktyk oraz przygotowaniu pracy dyplomowej.`,
+  jobOpportunities: `
+  <div>
+    <p className="text-lg font-semibold">Absolwenci programu będą przygotowani do pracy jako:</p>
+    <ul className="list-disc list-inside mt-2 space-y-2">
+      <li>Nauczyciele języka niemieckiego w szkołach podstawowych i ponadpodstawowych</li>
+      <li>Lektorzy języka niemieckiego w szkołach językowych</li>
+      <li>Specjaliści ds. edukacji językowej</li>
+      <li>Konsultanci metodyczni w zakresie nauczania języka niemieckiego</li>
+      <li>Pracownicy instytucji kultury promujących język i kulturę niemiecką</li>
+    </ul>
+  </div>
+`,
+
+  invite: `<div class=''> <p class='text-gray-100'>Zdobądź kwalifikacje i umiejętności niezbędne do nauczania języka niemieckiego i inspiruj uczniów do odkrywania nowego języka i kultury.</p></div>`,
+};
