@@ -1,6 +1,7 @@
 import { Course } from "./Kierunki";
 
 export const cyberpsychologia: Course = {
+  category: "psychologia i psychoterapia",
   id: "cyberpsychologia",
   title: "Cyberpsychologia",
   banerDescription:
@@ -32,7 +33,7 @@ export const cyberpsychologia: Course = {
   practicalHours: "90h praktyk",
   price: "8000zł",
   payments: "10x800zł",
-  form: "100% wykłady online w&nbsp;czasie rzeczywistym",
+  // form: "100% wykłady online w czasie rzeczywistym",
   scheduleInfo: "Trzeci semestr przewidziany został na wykonanie praktyk",
   schedule: [
     "26.10.2024",

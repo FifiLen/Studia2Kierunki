@@ -1,6 +1,7 @@
 import { Course } from "./Kierunki";
 
 export const diagnozaStrategieTerapeutyczneLeczeniuHiperseksualnosci: Course = {
+  category: "psychologia i psychoterapia",
   id: "diagnoza-i-strategie-terapeutyczne-w-leczeniu-hiperseksualnosci",
   title: "Diagnoza i strategie terapeutyczne w leczeniu hiperseksualności",
   banerDescription:
@@ -32,7 +33,7 @@ export const diagnozaStrategieTerapeutyczneLeczeniuHiperseksualnosci: Course = {
   practicalHours: "30h praktyk",
   price: "6000zł",
   payments: "10x600zł",
-  form: "100% wykłady online w&nbsp;czasie rzeczywistym",
+  // form: "100% wykłady online w czasie rzeczywistym",
   scheduleInfo: "",
   schedule: [
     "26.10.2024",
@@ -211,11 +212,15 @@ export const diagnozaStrategieTerapeutyczneLeczeniuHiperseksualnosci: Course = {
     </li>
   </ul>`,
   evaluation: `Ocena efektów kształcenia będzie opierać się na: przygotowaniu pracy projektowej w obszarze Diagnozy i strategii terapeutycznych w leczeniu hiperseksualności.`,
-  jobOpportunities: `Absolwenci programu będą przygotowani do pracy jako:
-    - Terapeuci specjalizujący się w leczeniu zaburzeń seksualnych
-    - Konsultanci w poradniach zdrowia psychicznego i seksualnego
-    - Naukowcy i badacze w dziedzinie seksuologii i psychoterapii
-    - Specjaliści w ośrodkach terapeutycznych i rehabilitacyjnych.`,
+  jobOpportunities: `
+  <ul className="list-disc list-inside">
+    <li className="mb-2">Terapeuci specjalizujący się w leczeniu zaburzeń seksualnych</li>
+    <li className="mb-2">Konsultanci w poradniach zdrowia psychicznego i seksualnego</li>
+    <li className="mb-2">Naukowcy i badacze w dziedzinie seksuologii i psychoterapii</li>
+    <li className="mb-2">Specjaliści w ośrodkach terapeutycznych i rehabilitacyjnych</li>
+  </ul>
+`,
+
   invite:
     "<div class=''> <p class='text-gray-100'> Poznaj zaawansowane metody diagnostyki i terapii hiperseksualności, oferując praktyczne narzędzia i strategie terapeutyczne.</p></div>",
 };

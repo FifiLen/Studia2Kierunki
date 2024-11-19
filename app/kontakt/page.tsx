@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoMdContacts } from "react-icons/io";
 import { CgArrowTopRightO } from "react-icons/cg";
-import { useUserPreferences } from "@/components/UserPreferencesContext";
+import { useUserPreferences } from "@/components/providers/UserPreferencesContext";
 
 interface Errors {
   name?: string;
