@@ -1,6 +1,8 @@
 import { Course } from "./Kierunki";
 
 export const trenerUmiejetnosciSpolecznych: Course = {
+  category: "pedagogika specjalna i korekcyjna",
+
   id: "trener-umiejetnosci-spolecznych",
   title: "Trener Umiejętności Społecznych",
   banerDescription:
@@ -32,7 +34,7 @@ export const trenerUmiejetnosciSpolecznych: Course = {
   practicalHours: "60h praktyk",
   price: "2500zł",
   payments: "5x500zł",
-  form: "100% wykłady online w&nbsp;czasie rzeczywistym",
+  // form: "100% wykłady online w czasie rzeczywistym",
   scheduleInfo: "",
   schedule: [
     "26.10.2024",

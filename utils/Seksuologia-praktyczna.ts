@@ -1,6 +1,7 @@
 import { Course } from "./Kierunki";
 
 export const seksuologiaPraktyczna: Course = {
+  category: "psychologia i psychoterapia",
   id: "seksuologia-praktyczna",
   title: "Seksuologia praktyczna",
   banerDescription:
@@ -32,7 +33,7 @@ export const seksuologiaPraktyczna: Course = {
   practicalHours: "100h praktyk",
   price: "6000zł",
   payments: "10x600zł",
-  form: "100% wykłady online w&nbsp;czasie rzeczywistym",
+  // form: "100% wykłady online w czasie rzeczywistym",
   scheduleInfo: "Trzeci semestr przewidziany został na wykonanie praktyk",
   schedule: [
     "26.10.2024",

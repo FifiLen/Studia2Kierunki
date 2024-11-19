@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Header";
-import Footer from "@/components/Footer";
-import { UserPreferencesProvider } from "@/components/UserPreferencesContext";
-import Access from "@/components/Access";
-import TopBar from "@/components/TopNav";
+import Navbar from "@/components/layout-components/root-navbar";
+import { UserPreferencesProvider } from "@/components/providers/UserPreferencesContext";
 import { Analytics } from "@vercel/analytics/react";
+import { TopBar } from "@/components/layout-components/contact-info-baner-top";
+import { FooterComponent } from "@/components/layout-components/footer-component";
+import { Toaster } from "@/components/ui/toaster"
+
+
 
 const dmsans = DM_Sans({ subsets: ["latin"] });
 
@@ -28,8 +30,9 @@ export default function RootLayout({
           <TopBar />
           <Navbar />
           {children}
+          <Toaster />
           <Analytics />
-          <Footer />
+          <FooterComponent />
         </UserPreferencesProvider>
       </body>
     </html>

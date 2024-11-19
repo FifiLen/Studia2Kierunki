@@ -1,6 +1,7 @@
 import { Course } from "./Kierunki";
 
 export const psychologiaUzaleznienTerapiaUzaleznien: Course = {
+  category: "psychologia i psychoterapia",
   id: "psychologia-uzaleznien-z-terapia-uzaleznien",
   title: "Psychologia uzależnień z terapią uzależnień",
   banerDescription:
@@ -34,7 +35,7 @@ export const psychologiaUzaleznienTerapiaUzaleznien: Course = {
   duration: "3 semestry",
   price: "7500zł",
   payments: "10x750zł",
-  form: "100% wykłady online w&nbsp;czasie rzeczywistym",
+  // form: "100% wykłady online w czasie rzeczywistym",
   scheduleInfo: "Trzeci semestr przewidziany został na wykonanie praktyk",
   schedule: [
     "26.10.2024",

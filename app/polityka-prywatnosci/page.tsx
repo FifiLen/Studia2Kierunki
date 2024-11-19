@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useUserPreferences } from "@/components/UserPreferencesContext";
+import { useUserPreferences } from "@/components/providers/UserPreferencesContext";
 
 const PrivacyPolicyPage = () => {
   const { highContrast } = useUserPreferences();

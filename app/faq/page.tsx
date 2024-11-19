@@ -4,7 +4,6 @@ import {
   MdOutlineDocumentScanner,
   MdSchool,
   MdSchedule,
-  MdMoneyOff,
   MdVerifiedUser,
   MdContactSupport,
   MdAttachMoney,
@@ -17,7 +16,7 @@ import Link from "next/link";
 import { LuPenLine } from "react-icons/lu";
 import { TfiFiles } from "react-icons/tfi";
 
-const Faq = () => {
+const FaqSection = () => {
   return (
     <div id="faq" className="bg-gray-200 py-12 md:py-28">
       <div className="max-w-full mx-auto px-4 lg:px-20">
@@ -38,7 +37,7 @@ const Faq = () => {
           <div className="flex flex-col md:flex-row items-start md:items-end gap-3 mt-6 md:mt-0">
             <Link
               aria-label="Przeglądaj kierunki"
-              href="/oferta"
+              href="/kierunek"
               className="px-3 py-2 bg-[#9E5AE2] text-white font-medium rounded-md"
             >
               Przeglądaj&nbsp;kierunki
@@ -224,5 +223,4 @@ const Faq = () => {
     </div>
   );
 };
-
-export default Faq;
+export default FaqSection;

@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { TiUserAdd } from "react-icons/ti";
 import { CgArrowRightO, CgArrowTopRightO } from "react-icons/cg";
-import { useUserPreferences } from "@/components/UserPreferencesContext";
+import { useUserPreferences } from "@/components/providers/UserPreferencesContext";
 import { GiFootsteps } from "react-icons/gi";
 
 interface Errors {
@@ -243,7 +243,7 @@ const RecruitmentPage: React.FC = () => {
             <div className="flex flex-col md:flex-row items-start md:items-end gap-3 mt-6 md:mt-0">
               <Link
                 aria-label="Dowiedz się więcej z FAQ"
-                href="/oferta"
+                href="/kierunek"
                 className="px-3 py-2 bg-[#9E5AE2] text-white font-medium rounded-md"
               >
                 Zapoznaj się z kierunkami

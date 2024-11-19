@@ -1,6 +1,7 @@
 import { Course } from "./Kierunki";
 
 export const psychologiaUzaleznienUzaleznieniaBehawioralne: Course = {
+  category: "psychologia i psychoterapia",
   id: "psychologia-uzaleznien-uzaleznienia-behawioralne",
   title: "Psychologia uzależnień - Uzależnienia behawioralne",
   banerDescription:
@@ -32,7 +33,7 @@ export const psychologiaUzaleznienUzaleznieniaBehawioralne: Course = {
   practicalHours: "90h praktyk",
   price: "4200zł",
   payments: "10x420zł",
-  form: "100% wykłady online w&nbsp;czasie rzeczywistym",
+  // form: "100% wykłady online w czasie rzeczywistym",
   scheduleInfo: "Trzeci semestr przewidziany został na wykonanie praktyk",
   schedule: [
     "26.10.2024",
