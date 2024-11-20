@@ -11,7 +11,8 @@ import {
   GraduationCap,
   CircleArrowRight,
 } from "lucide-react";
-import { courses, Course } from "@/utils/Kierunki";
+import { Course } from "@/utils/types";
+import {  courses } from "@/utils/Kierunki"
 import { PsychotherapyInfoCard } from "@/components/psychotherapy-info-card";
 import ComingSoonOverlay from "@/components/coming-soon-component";
 import Markdown from "markdown-to-jsx";

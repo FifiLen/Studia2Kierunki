@@ -1,4 +1,4 @@
-import { Course } from "./Kierunki";
+import { Course } from "./types";
 
 export const edukacjaIntegracyjnaWlaczajaca: Course = {
   category: "pedagogika specjalna i korekcyjna",

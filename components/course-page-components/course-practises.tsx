@@ -1,6 +1,6 @@
 "use client"
 
-import { Course } from "@/utils/Kierunki"
+import { Course } from "@/utils/types"
 import { Poppins } from "next/font/google"
 import Markdown from "markdown-to-jsx"
 import Image from "next/image"

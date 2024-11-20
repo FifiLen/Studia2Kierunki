@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { CgArrowTopRightO } from "react-icons/cg";
-import { Course } from "@/utils/Kierunki";
+import { Course } from "@/utils/types";
 import Markdown from "markdown-to-jsx";
 
 interface Invite {

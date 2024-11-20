@@ -1,4 +1,4 @@
-import { Course } from "./Kierunki";
+import { Course } from "@/utils/types";
 
 export const seksuologiaPraktyczna: Course = {
   category: "psychologia i psychoterapia",

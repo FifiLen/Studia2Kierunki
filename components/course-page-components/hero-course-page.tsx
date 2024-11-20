@@ -10,7 +10,7 @@ import {
   TbReportMoney,
 } from "react-icons/tb";
 import { GrWorkshop } from "react-icons/gr";
-import { Course } from "@/utils/Kierunki";
+import { Course } from "@/utils/types";
 import { FaRegCircleCheck } from "react-icons/fa6";
 import Markdown from "markdown-to-jsx";
 import {CircleArrowRight} from "lucide-react";
