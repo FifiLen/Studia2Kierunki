@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
 import { courses } from "@/utils/Kierunki";
-import { CoursePageProps, Course } from "@/utils/types";
 import { ScheduleCourseSection } from "@/components/course-page-components/schedule-course-section";
 import { CtaCoursePageSection } from "@/components/course-page-components/cta-course-page-section";
 import { HeroCoursePage } from "@/components/course-page-components/hero-course-page";
@@ -18,8 +17,18 @@ export async function generateStaticParams() {
     }));
 }
 
-const CoursePage = ({ params }: CoursePageProps) => {
-    const course = courses.find((course) => course.id === params.kierunek);
+type Params = Promise<{
+    kierunek: string;
+}>;
+
+interface CoursePageProps {
+    params: Params;
+}
+
+const CoursePage = async ({ params }: CoursePageProps) => {
+    // Rozwiązanie params przy użyciu await
+    const resolvedParams = await params;
+    const course = courses.find((course) => course.id === resolvedParams.kierunek);
 
     if (!course) {
         notFound();
