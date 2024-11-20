@@ -1,4 +1,4 @@
-import { Course } from "./Kierunki";
+import { Course } from "@/utils/types";
 
 export const wychowanieFizyczneWSzkole: Course = {
   category: "zarzadzanie i dydaktyka edukacyjna",

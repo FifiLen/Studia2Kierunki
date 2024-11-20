@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useEffect, useState } from "react"
-import { Course, Topic } from "@/utils/Kierunki"
+import { Course, Topic } from "@/utils/types"
 import {
   Accordion,
   AccordionItem,

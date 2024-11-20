@@ -1,7 +1,7 @@
 "use client"
 
 import React from "react"
-import { Module } from "@/utils/Kierunki"
+import { Module } from "@/utils/types"
 import {
   Accordion,
   AccordionItem,

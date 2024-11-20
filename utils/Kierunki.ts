@@ -27,45 +27,7 @@ import { edukacjaDlaBezpieczenstwa } from "./Edukacja-dla-bezpieczenstwa";
 import { wychowanieFizyczneWSzkole } from "./Wychowanie-fizyczne-w-szkole";
 import { chemiaWSzkole } from "./Chemia-w-szkole";
 import { jezykAngielskiWWychowaniuPrzedszkolnymIEdukacjiWczesnoszkolnej } from "./Jezyk-angielski";
-
-export type Subtopic = {
-  title: string;
-};
-
-export type Topic = {
-  title: string;
-  subtopics?: Subtopic[];
-};
-
-export type Module = {
-  title: string;
-  topics: Topic[];
-};
-
-export type Course = {
-  category: string;
-  id: string;
-  title: string;
-  banerDescription: string;
-  description: string;
-  description2: string;
-  description3: string;
-  description4: string;
-  descriptionP1: string;
-  duration: string;
-  practicalHours: string;
-  price: string;
-  payments: string;
-  // form: string;
-  scheduleInfo: string;
-  schedule: string[];
-  modules: Module[];
-  faculty: string;
-  practices: string;
-  evaluation: string;
-  jobOpportunities: string;
-  invite: string;
-};
+import {Course} from "@/utils/types";
 
 export const courses: Course[] = [
   //   category: "psychologia i psychoterapia",

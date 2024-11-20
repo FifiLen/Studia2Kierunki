@@ -1,5 +1,5 @@
 // Psychoterapia.ts
-import { Course } from "./Kierunki";
+import { Course } from "./types";
 
 export const psychoterapia: Course = {
   category: "psychologia i psychoterapia",

@@ -7,12 +7,13 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter }
 import { FaCalendarAlt, FaClock, FaMoneyBillWave, FaChalkboardTeacher } from "react-icons/fa"
 import { CgArrowRightO } from "react-icons/cg"
 import Markdown from "markdown-to-jsx"
-import { courses, Course } from "@/utils/Kierunki"
+import { courses } from "@/utils/Kierunki"
 import ComingSoonOverlay from "@/components/coming-soon-component"
 import { PsychotherapyInfoCard } from "@/components/psychotherapy-info-card"
 import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Button } from "@/components/ui/button"
+import { Course } from "@/utils/types"
 
 const availableCourseId = [
   "psychoterapia",

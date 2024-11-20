@@ -19,7 +19,7 @@ import {
   GraduationCapIcon,
   CircleArrowRight,
 } from "lucide-react";
-import { Course } from "@/utils/Kierunki";
+import { Course } from "@/utils/types";
 
 interface InfoItem {
   icon: React.ReactNode;
