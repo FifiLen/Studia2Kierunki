@@ -33,6 +33,13 @@
     --ring: 240 10% 3.9%;
 
     --radius: 0.5rem;
+
+    /* Accessibility variables */
+    --font-size-multiplier: 100%;
+    --line-height: 1.5;
+    --letter-spacing: 0px;
+    --word-spacing: 0px;
+    --font-family: inherit;
   }
 
   .dark {
@@ -75,92 +82,120 @@
   }
 }
 
-/* styles/globals.css */
-
-html.high-contrast {
-  background-color: black !important;
-  color: yellow !important;
-}
-
-html.plain-background {
-  background-color: white !important;
-  color: black !important;
-}
-
+/* Accessibility styles */
 html {
-  font-size: 1em; /* Base font size */
+  font-size: calc(16px * var(--font-size-multiplier) / 100);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  word-spacing: var(--word-spacing);
+  font-family: var(--font-family);
 }
 
-.container {
-  overflow-x: hidden;
-  width: 100vw;
-  height: 100vh;
+body {
+  font-size: 1rem;
 }
 
-.horizontal-scroll {
-  display: flex;
-  width: 200%; /* Adjust based on your content width */
+.high-contrast {
+  --background: 0 0% 0%;
+  --foreground: 0 0% 100%;
+  --primary: 0 0% 100%;
+  --primary-foreground: 0 0% 0%;
+  --secondary: 0 0% 20%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 0 0% 20%;
+  --muted-foreground: 0 0% 80%;
+  --accent: 0 0% 20%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 100% 50%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 0% 40%;
+  --input: 0 0% 40%;
+  --ring: 0 0% 100%;
 }
 
-.content {
-  flex: 1;
-  min-width: 100vw; /* Each item takes up the full viewport width */
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
+.high-contrast a {
+  color: hsl(60, 100%, 50%);
 }
 
+.high-contrast button {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
+}
+
+.invert-colors {
+  filter: invert(100%);
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.underline-links a {
+  text-decoration: underline !important;
+}
+
+.highlight-links a {
+  background-color: yellow;
+  color: black;
+}
+
+.large-cursor,
+.large-cursor * {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="%23000000"><path d="M13 1L0 14h11v9l2-2v-7h11L13 1z"/></svg>') 24 24, auto !important;
+}
+
+/* Existing custom styles */
 .baner {
-  background-image: url("/assets/banerTlo.png");
+  background-image: url("/public/assets/rekrutacja.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .about {
-  background-image: url("/assets/AboutTlo.png");
+  background-image: url("/public/assets/AboutTlo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .program {
-  background-image: url("/assets/ProgramTlo.png");
+  background-image: url("/public/assets/ProgramTlo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .praktyki {
-  background-image: url("/assets/PraktykiTlo.png");
+  background-image: url("/public/assets/PraktykiTlo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
 .rekrutacja {
-  background-image: url("/assets/rekrutacja.png");
+  background-image: url("/public/assets/rekrutacja.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
 .bur {
-  background-image: url("/assets/BUR.png");
+  background-image: url("/public/assets/BUR.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .imageColBaner {
-  background-image: url("/assets/studentka.png");
+  background-image: url("/public/assets/studentka.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .imageColAbout {
-  background-image: url("/assets/studentka.png");
+  background-image: url("/public/assets/studentka.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -182,5 +217,16 @@ html {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+
+:root {
+  --navbar-height: 180px; /* Adjust this value based on your navbar's actual height */
+}
+
+@media (max-width: 640px) {
+  :root {
+    --navbar-height: 150px; /* Adjust for mobile */
   }
 }

@@ -10,8 +10,7 @@ import CoursesPage from "@/components/home-page-components/courses-home-page";
 export default function Home() {
   return (
     <>
-      {/* Baner zachęcający do rejestracji na studia */}
-      <BanerIviteHomePage />
+
       {/* Sekcja hero dla strony głównej */}
       <HeroHomePage />
       {/* Sekcja cta dla strony główej */}

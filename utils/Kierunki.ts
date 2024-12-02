@@ -27,7 +27,9 @@ import { edukacjaDlaBezpieczenstwa } from "./Edukacja-dla-bezpieczenstwa";
 import { wychowanieFizyczneWSzkole } from "./Wychowanie-fizyczne-w-szkole";
 import { chemiaWSzkole } from "./Chemia-w-szkole";
 import { jezykAngielskiWWychowaniuPrzedszkolnymIEdukacjiWczesnoszkolnej } from "./Jezyk-angielski";
-import {Course} from "@/utils/types";
+import { Course } from "@/utils/types";
+import { edukacjaZdrowotna } from "./Edukacja-zdrowotna";
+import { jezykPolski } from "./Jezyk-polski";
 
 export const courses: Course[] = [
   //   category: "psychologia i psychoterapia",
@@ -69,7 +71,7 @@ export const courses: Course[] = [
   etyka,
   // zrobione
 
-  wychowanieDoZyciaWRodzinie,
+  // wychowanieDoZyciaWRodzinie,
   informatyka,
   dydaktykaJezykaObcegoNiemiecki,
 
@@ -85,6 +87,8 @@ export const courses: Course[] = [
   // zrobione
   chemiaWSzkole,
   jezykAngielskiWWychowaniuPrzedszkolnymIEdukacjiWczesnoszkolnej,
+  edukacjaZdrowotna,
+  jezykPolski,
 
   // category: "zarządzanie i dydaktyka edukacyjna",
 ];

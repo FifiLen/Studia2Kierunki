@@ -7,6 +7,8 @@ import { Analytics } from "@vercel/analytics/react";
 import { TopBar } from "@/components/layout-components/contact-info-baner-top";
 import { FooterComponent } from "@/components/layout-components/footer-component";
 import { Toaster } from "@/components/ui/toaster"
+import {AccessibilityPanel} from "@/components/providers/accessibility-panel";
+import BanerIviteHomePage from "@/components/home-page-components/baner-invite-home-page";
 
 
 
@@ -29,7 +31,9 @@ export default function RootLayout({
           {/* <Access /> */}
           <TopBar />
           <Navbar />
-          {children}
+          <BanerIviteHomePage/>
+          <main>{children}</main>
+          <AccessibilityPanel />
           <Toaster />
           <Analytics />
           <FooterComponent />

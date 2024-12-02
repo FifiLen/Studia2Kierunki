@@ -1,4 +1,3 @@
-// DanePodstawowe.tsx
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import {
@@ -8,27 +7,10 @@ import {
     SelectTrigger,
     SelectValue,
 } from '@/components/ui/select';
-
-interface DataUrodzenia {
-    dzien: string;
-    miesiac: string;
-    rok: string;
-}
-
-interface FormData {
-    kierunek: string;
-    imiona: string;
-    nazwisko: string;
-    dataUrodzenia: DataUrodzenia;
-    miejsceUrodzenia: string;
-    wojewodztwo: string;
-    kraj: string;
-    obywatelstwo: string;
-    pesel: string;
-}
+import { RecruitmentFormData } from './registration-form'; // Adjust the import path
 
 interface Props {
-    formData: FormData;
+    formData: RecruitmentFormData;
     handleInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     handleDateChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     handleKeyDown: (e: React.KeyboardEvent<HTMLInputElement>) => void;

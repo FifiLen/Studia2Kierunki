@@ -1,68 +1,90 @@
 'use client';
 
 import { useState } from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { z } from 'zod';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ID, Permission, Role, AppwriteException } from 'appwrite';
-import { useToast } from "@/hooks/use-toast"
+import { useToast } from '@/hooks/use-toast';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { storage, databases } from '@/appwrite';
 
-// Import the subcomponents
+// Import podkomponentów
 import DanePodstawowe from './base-data';
 import DaneKontaktowe from './contact-data';
 import AdresKorespondencyjny from './mailing-adress-data';
 import Wyksztalcenie from './education-data';
 import ZgodyIOswiadczenia from './agreements-data';
 
-// Import Appwrite configuration
-import { storage, databases } from '@/appwrite';
+// Definicja schematu formularza za pomocą zod
+const formSchema = z.object({
+    kierunek: z.string().min(1, 'Kierunek jest wymagany'),
+    imiona: z.string().min(2, 'Imię musi mieć co najmniej 2 znaki'),
+    nazwisko: z.string().min(2, 'Nazwisko musi mieć co najmniej 2 znaki'),
+    dataUrodzenia: z.object({
+        dzien: z.string().regex(/^(0?[1-9]|[12][0-9]|3[01])$/, 'Nieprawidłowy dzień'),
+        miesiac: z.string().regex(/^(0?[1-9]|1[012])$/, 'Nieprawidłowy miesiąc'),
+        rok: z.string().regex(/^[12][0-9]{3}$/, 'Nieprawidłowy rok'),
+    }),
+    miejsceUrodzenia: z.string().min(1, 'Miejsce urodzenia jest wymagane'),
+    wojewodztwo: z.string().min(1, 'Województwo jest wymagane'),
+    kraj: z.string().min(1, 'Kraj jest wymagany'),
+    obywatelstwo: z.string().min(1, 'Obywatelstwo jest wymagane'),
+    pesel: z.string().regex(/^[0-9]{11}$/, 'PESEL musi składać się z 11 cyfr'),
+    numerTelefonu: z.string().regex(/^[0-9]{9}$/, 'Numer telefonu musi składać się z 9 cyfr'),
+    email: z.string().email('Nieprawidłowy format adresu email'),
+    innyAdresKorespondencyjny: z.boolean(),
+    ulica: z.string().min(1, 'Ulica jest wymagana'),
+    numerBudynku: z.string().min(1, 'Numer budynku jest wymagany'),
+    miejscowosc: z.string().min(1, 'Miejscowość jest wymagana'),
+    wojewodztwoAdres: z.string().min(1, 'Województwo jest wymagane'),
+    kodPocztowy: z.string().regex(/^[0-9]{2}-[0-9]{3}$/, 'Nieprawidłowy format kodu pocztowego'),
+    ulicaKorespondencyjna: z.string().min(1, 'Ulica korespondencyjna jest wymagana').optional(),
+    numerBudynkuKorespondencyjny: z
+        .string()
+        .min(1, 'Numer budynku korespondencyjny jest wymagany')
+        .optional(),
+    miejscowoscKorespondencyjna: z
+        .string()
+        .min(1, 'Miejscowość korespondencyjna jest wymagana')
+        .optional(),
+    wojewodztwoKorespondencyjne: z
+        .string()
+        .min(1, 'Województwo korespondencyjne jest wymagane')
+        .optional(),
+    kodPocztowyKorespondencyjny: z
+        .string()
+        .regex(/^[0-9]{2}-[0-9]{3}$/, 'Nieprawidłowy format kodu pocztowego')
+        .optional(),
+    tytulZawodowy: z.string().min(1, 'Tytuł zawodowy jest wymagany'),
+    nazwaUczelni: z.string().min(1, 'Nazwa uczelni jest wymagana'),
+    rokUkonczenia: z.string().regex(/^[12][0-9]{3}$/, 'Nieprawidłowy rok'),
+    numerDyplomu: z.string().min(1, 'Numer dyplomu jest wymagany'),
+    dyplomPlik: z.any().optional(),
+    inneDokumentyPlik: z.any().optional(),
+    oswiadczenieWpisowe: z.boolean().refine((val) => val === true, {
+        message: 'Musisz zaakceptować oświadczenie o wpisowym.',
+    }),
+    oswiadczenieRegulaminy: z.boolean().refine((val) => val === true, {
+        message: 'Musisz zaakceptować oświadczenie o regulaminach.',
+    }),
+    zgodaPrzetwarzanieDanych: z.boolean().refine((val) => val === true, {
+        message: 'Musisz wyrazić zgodę na przetwarzanie danych.',
+    }),
+    zgodaMarketing: z.boolean(),
+    zgodaInformacjeHandlowe: z.boolean(),
+    zgodaKomunikacjaBezposrednia: z.boolean().refine((val) => val === true, {
+        message: 'Musisz wyrazić zgodę na komunikację bezpośrednią.',
+    }),
+});
 
-// Define interfaces
-interface DataUrodzenia {
-    dzien: string;
-    miesiac: string;
-    rok: string;
-}
-
-export interface RecruitmentFormData {
-    kierunek: string;
-    imiona: string;
-    nazwisko: string;
-    dataUrodzenia: DataUrodzenia;
-    miejsceUrodzenia: string;
-    wojewodztwo: string;
-    kraj: string;
-    obywatelstwo: string;
-    pesel: string;
-    numerTelefonu: string;
-    email: string;
-    innyAdresKorespondencyjny: boolean;
-    ulica: string;
-    numerBudynku: string;
-    miejscowosc: string;
-    wojewodztwoAdres: string;
-    kodPocztowy: string;
-    ulicaKorespondencyjna: string;
-    numerBudynkuKorespondencyjny: string;
-    miejscowoscKorespondencyjna: string;
-    wojewodztwoKorespondencyjne: string;
-    kodPocztowyKorespondencyjny: string;
-    tytulZawodowy: string;
-    nazwaUczelni: string;
-    rokUkonczenia: string;
-    numerDyplomu: string;
-    dyplomPlik: File | null;
-    inneDokumentyPlik: File | null;
-    oswiadczenieWpisowe: boolean;
-    oswiadczenieRegulaminy: boolean;
-    zgodaPrzetwarzanieDanych: boolean;
-    zgodaMarketing: boolean;
-    zgodaInformacjeHandlowe: boolean;
-    zgodaKomunikacjaBezposrednia: boolean;
-}
+export type RecruitmentFormData = z.infer<typeof formSchema> & {
+    dyplomPlik?: File | null;
+    inneDokumentyPlik?: File | null;
+};
 
 export default function FormularzRekrutacyjny() {
-    const { toast } = useToast()
+    const { toast } = useToast();
     const [currentSection, setCurrentSection] = useState(0);
     const [formData, setFormData] = useState<RecruitmentFormData>({
         kierunek: '',
@@ -82,11 +104,11 @@ export default function FormularzRekrutacyjny() {
         miejscowosc: '',
         wojewodztwoAdres: '',
         kodPocztowy: '',
-        ulicaKorespondencyjna: '',
-        numerBudynkuKorespondencyjny: '',
-        miejscowoscKorespondencyjna: '',
-        wojewodztwoKorespondencyjne: '',
-        kodPocztowyKorespondencyjny: '',
+        ulicaKorespondencyjna: undefined, // Zmieniono na undefined
+        numerBudynkuKorespondencyjny: undefined,
+        miejscowoscKorespondencyjna: undefined,
+        wojewodztwoKorespondencyjne: undefined,
+        kodPocztowyKorespondencyjny: undefined,
         tytulZawodowy: '',
         nazwaUczelni: '',
         rokUkonczenia: '',
@@ -101,13 +123,7 @@ export default function FormularzRekrutacyjny() {
         zgodaKomunikacjaBezposrednia: false,
     });
 
-    // Function to handle Enter key in inputs
-    const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-        if (e.key === 'Enter') {
-            e.preventDefault();
-        }
-    };
-
+    // Funkcje obsługi formularza
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         setFormData((prev) => ({
@@ -142,48 +158,92 @@ export default function FormularzRekrutacyjny() {
         }
     };
 
-    // Validation function for current section
-    const validateCurrentSection = () => {
-        switch (currentSection) {
-            case 0:
-                return formData.kierunek && formData.imiona && formData.nazwisko && formData.pesel;
-            case 1:
-                return (
-                    formData.ulica &&
-                    formData.numerBudynku &&
-                    formData.miejscowosc &&
-                    formData.numerTelefonu &&
-                    formData.email
-                );
-            case 2:
-                if (formData.innyAdresKorespondencyjny) {
-                    return (
-                        formData.ulicaKorespondencyjna &&
-                        formData.numerBudynkuKorespondencyjny &&
-                        formData.miejscowoscKorespondencyjna
-                    );
-                }
-                return true;
-            case 3:
-                return (
-                    formData.tytulZawodowy &&
-                    formData.nazwaUczelni &&
-                    formData.rokUkonczenia &&
-                    formData.numerDyplomu &&
-                    formData.dyplomPlik
-                );
-            case 4:
-                return (
-                    formData.oswiadczenieWpisowe &&
-                    formData.oswiadczenieRegulaminy &&
-                    formData.zgodaKomunikacjaBezposrednia
-                );
-            default:
-                return true;
+    const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
         }
     };
 
-    // Handle form submission
+    const validateCurrentSection = () => {
+        try {
+            switch (currentSection) {
+                case 0:
+                    formSchema
+                        .pick({
+                            kierunek: true,
+                            imiona: true,
+                            nazwisko: true,
+                            dataUrodzenia: true,
+                            miejsceUrodzenia: true,
+                            wojewodztwo: true,
+                            kraj: true,
+                            obywatelstwo: true,
+                            pesel: true,
+                        })
+                        .parse(formData);
+                    break;
+                case 1:
+                    formSchema
+                        .pick({
+                            numerTelefonu: true,
+                            email: true,
+                            ulica: true,
+                            numerBudynku: true,
+                            miejscowosc: true,
+                            wojewodztwoAdres: true,
+                            kodPocztowy: true,
+                        })
+                        .parse(formData);
+                    break;
+                case 2:
+                    if (formData.innyAdresKorespondencyjny) {
+                        formSchema
+                            .pick({
+                                ulicaKorespondencyjna: true,
+                                numerBudynkuKorespondencyjny: true,
+                                miejscowoscKorespondencyjna: true,
+                                wojewodztwoKorespondencyjne: true,
+                                kodPocztowyKorespondencyjny: true,
+                            })
+                            .parse(formData);
+                    }
+                    break;
+                case 3:
+                    formSchema
+                        .pick({
+                            tytulZawodowy: true,
+                            nazwaUczelni: true,
+                            rokUkonczenia: true,
+                            numerDyplomu: true,
+                            dyplomPlik: true,
+                        })
+                        .parse(formData);
+                    break;
+                case 4:
+                    formSchema
+                        .pick({
+                            oswiadczenieWpisowe: true,
+                            oswiadczenieRegulaminy: true,
+                            zgodaPrzetwarzanieDanych: true,
+                            zgodaKomunikacjaBezposrednia: true,
+                        })
+                        .parse(formData);
+                    break;
+            }
+            return true;
+        } catch (error) {
+            if (error instanceof z.ZodError) {
+                const errorMessages = error.errors.map((err) => err.message);
+                toast({
+                    title: 'Błąd walidacji',
+                    description: errorMessages.join(', '),
+                    variant: 'destructive',
+                });
+            }
+            return false;
+        }
+    };
+
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
@@ -191,130 +251,98 @@ export default function FormularzRekrutacyjny() {
             return;
         }
 
-        // Final validation
         if (!validateCurrentSection()) {
+            return;
+        }
+
+        if (
+            !process.env.NEXT_PUBLIC_APPWRITE_BUCKET_ID ||
+            !process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID ||
+            !process.env.NEXT_PUBLIC_APPWRITE_COLLECTION_ID
+        ) {
+            console.error('Brakuje wymaganych zmiennych środowiskowych.');
             toast({
-                title: "Błąd walidacji",
-                description: "Proszę wypełnić wszystkie wymagane pola przed złożeniem wniosku.",
-                variant: "destructive",
-            })
+                title: 'Błąd konfiguracji',
+                description: 'Brakuje wymaganych zmiennych środowiskowych.',
+                variant: 'destructive',
+            });
             return;
         }
 
         try {
-            // Upload files to Storage if they exist
             let dyplomFileUrl: string | null = null;
             let inneDokumentyFileUrl: string | null = null;
 
-            // Upload dyplomPlik (diploma file) and get its URL
             if (formData.dyplomPlik) {
                 const dyplomResponse = await storage.createFile(
-                    process.env.NEXT_PUBLIC_APPWRITE_BUCKET_ID as string,
+                    process.env.NEXT_PUBLIC_APPWRITE_BUCKET_ID,
                     ID.unique(),
                     formData.dyplomPlik,
-                    [
-                        // Set permissions as needed
-                        Permission.read(Role.any()), // Allow public read access
-                        Permission.update(Role.any()), // Allow public update access (adjust as needed)
-                    ]
+                    [Permission.read(Role.any()), Permission.update(Role.any())]
                 );
-                const dyplomFileId = dyplomResponse.$id;
-
-                // Get the file view URL
                 dyplomFileUrl = storage.getFileView(
-                    process.env.NEXT_PUBLIC_APPWRITE_BUCKET_ID as string,
-                    dyplomFileId
+                    process.env.NEXT_PUBLIC_APPWRITE_BUCKET_ID,
+                    dyplomResponse.$id
                 );
             }
 
-            // Upload inneDokumentyPlik (other documents file) and get its URL
             if (formData.inneDokumentyPlik) {
                 const inneDokumentyResponse = await storage.createFile(
-                    process.env.NEXT_PUBLIC_APPWRITE_BUCKET_ID as string,
+                    process.env.NEXT_PUBLIC_APPWRITE_BUCKET_ID,
                     ID.unique(),
                     formData.inneDokumentyPlik,
-                    [
-                        // Set permissions as needed
-                        Permission.read(Role.any()), // Allow public read access
-                        Permission.update(Role.any()), // Allow public update access (adjust as needed)
-                    ]
+                    [Permission.read(Role.any()), Permission.update(Role.any())]
                 );
-                const inneDokumentyFileId = inneDokumentyResponse.$id;
-
-                // Get the file view URL
                 inneDokumentyFileUrl = storage.getFileView(
-                    process.env.NEXT_PUBLIC_APPWRITE_BUCKET_ID as string,
-                    inneDokumentyFileId
+                    process.env.NEXT_PUBLIC_APPWRITE_BUCKET_ID,
+                    inneDokumentyResponse.$id
                 );
             }
 
-            // Construct dataUrodzenia (date of birth) as ISO 8601 string
-            const day = parseInt(formData.dataUrodzenia.dzien);
-            const month = parseInt(formData.dataUrodzenia.miesiac) - 1; // Months are zero-indexed
-            const year = parseInt(formData.dataUrodzenia.rok);
+            const { dyplomPlik, inneDokumentyPlik, dataUrodzenia, ...otherFormData } = formData;
+            const { dzien, miesiac, rok } = dataUrodzenia;
 
-            if (isNaN(day) || isNaN(month) || isNaN(year)) {
+            // Tworzenie daty urodzenia w formacie ISO
+            const dateOfBirth = new Date(`${rok}-${miesiac}-${dzien}`);
+            if (isNaN(dateOfBirth.getTime())) {
                 toast({
-                    title: "Błąd walidacji",
-                    description: "Nieprawidłowa data urodzenia.",
-                    variant: "destructive",
-                })
+                    title: 'Błąd',
+                    description: 'Data urodzenia jest nieprawidłowa.',
+                    variant: 'destructive',
+                });
                 return;
             }
+            const dataUrodzeniaISO = dateOfBirth.toISOString().split('T')[0];
 
-            const dateOfBirth = new Date(year, month, day);
-            const dataUrodzeniaISO = dateOfBirth.toISOString().split('T')[0]; // Format as 'YYYY-MM-DD'
-
-            // Prepare data to match the schema
-            const {
-                dataUrodzenia,
-                dyplomPlik,
-                inneDokumentyPlik,
-                ...otherFormData
-            } = formData;
-
-            const documentData: { [key: string]: any } = {
+            // Przygotowanie danych do przesłania
+            const documentData: Record<string, any> = {
                 ...otherFormData,
                 dataUrodzenia: dataUrodzeniaISO,
                 dyplomPlik: dyplomFileUrl,
                 inneDokumentyPlik: inneDokumentyFileUrl,
             };
 
-            // Remove any fields that are null or undefined
+            // Usuwanie pól null lub undefined
             Object.keys(documentData).forEach((key) => {
                 if (documentData[key] === null || documentData[key] === undefined) {
                     delete documentData[key];
                 }
             });
 
-            // Ensure boolean values are actual booleans
-            [
-                'innyAdresKorespondencyjny',
-                'oswiadczenieWpisowe',
-                'oswiadczenieRegulaminy',
-                'zgodaPrzetwarzanieDanych',
-                'zgodaMarketing',
-                'zgodaInformacjeHandlowe',
-                'zgodaKomunikacjaBezposrednia',
-            ].forEach((field) => {
-                documentData[field] = Boolean(documentData[field]);
-            });
-
-            // Create document in the Appwrite database
             const response = await databases.createDocument(
-                process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID as string,
-                process.env.NEXT_PUBLIC_APPWRITE_COLLECTION_ID as string,
+                process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID,
+                process.env.NEXT_PUBLIC_APPWRITE_COLLECTION_ID,
                 ID.unique(),
                 documentData
             );
 
             console.log('Form submitted successfully:', response);
             toast({
-                title: "Sukces",
-                description: "Formularz został pomyślnie wysłany!",
-            })
+                title: 'Sukces',
+                description: 'Formularz został pomyślnie wysłany!',
+            });
 
-            // Optionally, reset the form data
+            // Resetowanie formularza i powrót do pierwszej sekcji
             setFormData({
                 kierunek: '',
                 imiona: '',
@@ -333,11 +361,11 @@ export default function FormularzRekrutacyjny() {
                 miejscowosc: '',
                 wojewodztwoAdres: '',
                 kodPocztowy: '',
-                ulicaKorespondencyjna: '',
-                numerBudynkuKorespondencyjny: '',
-                miejscowoscKorespondencyjna: '',
-                wojewodztwoKorespondencyjne: '',
-                kodPocztowyKorespondencyjny: '',
+                ulicaKorespondencyjna: undefined,
+                numerBudynkuKorespondencyjny: undefined,
+                miejscowoscKorespondencyjna: undefined,
+                wojewodztwoKorespondencyjne: undefined,
+                kodPocztowyKorespondencyjny: undefined,
                 tytulZawodowy: '',
                 nazwaUczelni: '',
                 rokUkonczenia: '',
@@ -351,23 +379,22 @@ export default function FormularzRekrutacyjny() {
                 zgodaInformacjeHandlowe: false,
                 zgodaKomunikacjaBezposrednia: false,
             });
-
-            // Reset to the first section of the form
             setCurrentSection(0);
         } catch (error) {
             console.error('Error submitting form:', error);
             if (error instanceof AppwriteException) {
                 toast({
-                    title: "Błąd",
+                    title: 'Błąd',
                     description: `Wystąpił błąd podczas przesyłania formularza: ${error.message}`,
-                    variant: "destructive",
-                })
+                    variant: 'destructive',
+                });
             } else {
                 toast({
-                    title: "Błąd",
-                    description: "Wystąpił nieznany błąd podczas przesyłania formularza. Spróbuj ponownie później.",
-                    variant: "destructive",
-                })
+                    title: 'Błąd',
+                    description:
+                        'Wystąpił nieznany błąd podczas przesyłania formularza. Spróbuj ponownie później.',
+                    variant: 'destructive',
+                });
             }
         }
     };
@@ -375,11 +402,11 @@ export default function FormularzRekrutacyjny() {
     return (
         <Card className="w-full max-w-4xl mx-auto shadow-lg">
             <CardHeader className="border-b border-blue-100">
-                <CardTitle className="text-3xl font-semibold text-blue-700 tracking-tight">
+                <CardTitle className="text-3xl font-semibold text-blue-600">
                     Formularz Rekrutacyjny
                 </CardTitle>
             </CardHeader>
-            <CardContent className="pt-6">
+            <CardContent className="p-8">
                 <AnimatePresence mode="wait">
                     <motion.div
                         key={currentSection}
@@ -392,16 +419,16 @@ export default function FormularzRekrutacyjny() {
                             <DanePodstawowe
                                 formData={formData}
                                 handleInputChange={handleInputChange}
-                                handleKeyDown={handleKeyDown}
                                 handleDateChange={handleDateChange}
+                                handleKeyDown={handleKeyDown}
                             />
                         )}
                         {currentSection === 1 && (
                             <DaneKontaktowe
                                 formData={formData}
                                 handleInputChange={handleInputChange}
-                                handleKeyDown={handleKeyDown}
                                 handleRadioChange={handleRadioChange}
+                                handleKeyDown={handleKeyDown}
                             />
                         )}
                         {currentSection === 2 && formData.innyAdresKorespondencyjny && (
@@ -415,21 +442,23 @@ export default function FormularzRekrutacyjny() {
                             <Wyksztalcenie
                                 formData={formData}
                                 handleInputChange={handleInputChange}
-                                handleKeyDown={handleKeyDown}
                                 handleFileChange={handleFileChange}
+                                handleKeyDown={handleKeyDown}
                             />
                         )}
                         {currentSection === 4 && (
-                            <form onSubmit={handleSubmit} className="space-y-6">
+                            <form onSubmit={handleSubmit}>
                                 <ZgodyIOswiadczenia
                                     formData={formData}
                                     handleCheckboxChange={handleCheckboxChange}
+                                    handleKeyDown={handleKeyDown}
                                 />
                                 <div className="flex justify-between mt-6">
                                     <Button
                                         type="button"
                                         onClick={() => setCurrentSection(currentSection - 1)}
-                                        className="bg-blue-600 hover:bg-blue-700 text-white"
+                                        className="bg-blue-100 hover:bg-blue-200 text-blue-600"
+                                        variant="ghost"
                                     >
                                         Wstecz
                                     </Button>
@@ -441,13 +470,15 @@ export default function FormularzRekrutacyjny() {
                         )}
                     </motion.div>
                 </AnimatePresence>
+
                 {currentSection !== 4 && (
                     <div className="flex justify-between mt-6">
                         <Button
                             type="button"
                             onClick={() => setCurrentSection(currentSection - 1)}
                             disabled={currentSection === 0}
-                            className="bg-blue-600 hover:bg-blue-700 text-white"
+                            className="bg-blue-100 hover:bg-blue-200 text-blue-600"
+                            variant="ghost"
                         >
                             Wstecz
                         </Button>
@@ -456,12 +487,6 @@ export default function FormularzRekrutacyjny() {
                             onClick={() => {
                                 if (validateCurrentSection()) {
                                     setCurrentSection(currentSection + 1);
-                                } else {
-                                    toast({
-                                        title: "Błąd walidacji",
-                                        description: "Proszę wypełnić wszystkie wymagane pola przed przejściem dalej.",
-                                        variant: "destructive",
-                                    })
                                 }
                             }}
                             className="bg-blue-600 hover:bg-blue-700 text-white"
