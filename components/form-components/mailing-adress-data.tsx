@@ -1,17 +1,10 @@
 // AdresKorespondencyjny.tsx
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
-
-interface FormData {
-    ulicaKorespondencyjna: string;
-    numerBudynkuKorespondencyjny: string;
-    miejscowoscKorespondencyjna: string;
-    wojewodztwoKorespondencyjne: string;
-    kodPocztowyKorespondencyjny: string;
-}
+import { RecruitmentFormData } from './registration-form';
 
 interface Props {
-    formData: FormData;
+    formData: RecruitmentFormData;
     handleInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     handleKeyDown: (e: React.KeyboardEvent<HTMLInputElement>) => void;
 }
@@ -32,7 +25,7 @@ export default function AdresKorespondencyjny({
                     <Input
                         id="ulicaKorespondencyjna"
                         name="ulicaKorespondencyjna"
-                        value={formData.ulicaKorespondencyjna}
+                        value={formData.ulicaKorespondencyjna || ''}
                         onChange={handleInputChange}
                         onKeyDown={handleKeyDown}
                         className="border-blue-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
@@ -48,7 +41,7 @@ export default function AdresKorespondencyjny({
                     <Input
                         id="numerBudynkuKorespondencyjny"
                         name="numerBudynkuKorespondencyjny"
-                        value={formData.numerBudynkuKorespondencyjny}
+                        value={formData.numerBudynkuKorespondencyjny || ''}
                         onChange={handleInputChange}
                         onKeyDown={handleKeyDown}
                         className="border-blue-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
@@ -67,7 +60,7 @@ export default function AdresKorespondencyjny({
                     <Input
                         id="miejscowoscKorespondencyjna"
                         name="miejscowoscKorespondencyjna"
-                        value={formData.miejscowoscKorespondencyjna}
+                        value={formData.miejscowoscKorespondencyjna || ''}
                         onChange={handleInputChange}
                         onKeyDown={handleKeyDown}
                         className="border-blue-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
@@ -83,7 +76,7 @@ export default function AdresKorespondencyjny({
                     <Input
                         id="wojewodztwoKorespondencyjne"
                         name="wojewodztwoKorespondencyjne"
-                        value={formData.wojewodztwoKorespondencyjne}
+                        value={formData.wojewodztwoKorespondencyjne || ''}
                         onChange={handleInputChange}
                         onKeyDown={handleKeyDown}
                         className="border-blue-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
@@ -98,7 +91,7 @@ export default function AdresKorespondencyjny({
                 <Input
                     id="kodPocztowyKorespondencyjny"
                     name="kodPocztowyKorespondencyjny"
-                    value={formData.kodPocztowyKorespondencyjny}
+                    value={formData.kodPocztowyKorespondencyjny || ''}
                     onChange={handleInputChange}
                     onKeyDown={handleKeyDown}
                     className="border-blue-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"

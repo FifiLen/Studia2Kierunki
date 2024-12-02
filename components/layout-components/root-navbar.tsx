@@ -109,7 +109,7 @@ export default function RootNavbar() {
 
         timeoutId = setTimeout(() => {
           controlNavbar();
-        }, 50); // 100ms delay
+        }, 200); // 100ms delay
       };
 
       window.addEventListener("scroll", handleScroll);

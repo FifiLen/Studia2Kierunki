@@ -1,22 +1,14 @@
-// ZgodyIOswiadczenia.tsx
 import { Label } from '@/components/ui/label';
 import { Checkbox } from '@/components/ui/checkbox';
-
-interface FormData {
-    oswiadczenieWpisowe: boolean;
-    oswiadczenieRegulaminy: boolean;
-    zgodaPrzetwarzanieDanych: boolean;
-    zgodaMarketing: boolean;
-    zgodaInformacjeHandlowe: boolean;
-    zgodaKomunikacjaBezposrednia: boolean;
-}
+import { RecruitmentFormData } from './registration-form';
 
 interface Props {
-    formData: FormData;
-    handleCheckboxChange: (name: string, checked: boolean | 'indeterminate') => void;
+    formData: RecruitmentFormData;
+    handleCheckboxChange: (name: keyof RecruitmentFormData, checked: boolean | 'indeterminate') => void;
+    handleKeyDown: React.KeyboardEventHandler<HTMLElement>;
 }
 
-export default function ZgodyIOswiadczenia({ formData, handleCheckboxChange }: Props) {
+export default function ZgodyIOswiadczenia({ formData, handleCheckboxChange, handleKeyDown }: Props) {
     return (
         <div className="space-y-6">
             {/* Oświadczenia */}
@@ -30,10 +22,12 @@ export default function ZgodyIOswiadczenia({ formData, handleCheckboxChange }: P
                     />
                     <Label htmlFor="oswiadczenieWpisowe" className="text-sm text-gray-700">
                         Zobowiązuję się do wniesienia wpisowego przy składaniu dokumentów oraz opłat czesnego
-                        zgodnie z umową o zasadach odpłatności za studia w wysokości 150zł. *
+                        zgodnie z umową o zasadach odpłatności za studia w wysokości 150zł. <span
+                        className="text-red-500">*</span>
                     </Label>
                 </div>
             </div>
+
 
             <div className="space-y-2">
                 <div className="flex items-start space-x-2">
@@ -42,11 +36,12 @@ export default function ZgodyIOswiadczenia({ formData, handleCheckboxChange }: P
                         name="oswiadczenieRegulaminy"
                         checked={formData.oswiadczenieRegulaminy}
                         onCheckedChange={(checked) => handleCheckboxChange('oswiadczenieRegulaminy', checked)}
+
                     />
                     <Label htmlFor="oswiadczenieRegulaminy" className="text-sm text-gray-700">
                         Zobowiązuję się do przestrzegania wszelkich regulaminów obowiązujących w Wyższej Szkole
                         Humanistyczno-Ekonomicznej w Brzegu oraz ISP w Rybniku, ul. Magnolii 25, 44-207 Rybnik.
-                        *
+                        <span className="text-red-500">*</span>
                     </Label>
                 </div>
             </div>
@@ -58,11 +53,12 @@ export default function ZgodyIOswiadczenia({ formData, handleCheckboxChange }: P
                         name="zgodaPrzetwarzanieDanych"
                         checked={formData.zgodaPrzetwarzanieDanych}
                         onCheckedChange={(checked) => handleCheckboxChange('zgodaPrzetwarzanieDanych', checked)}
+
                     />
                     <Label htmlFor="zgodaPrzetwarzanieDanych" className="text-sm text-gray-700">
                         Wyrażam zgodę na przetwarzanie swoich danych osobowych przez Wyższą Szkołę
                         Humanistyczno-Ekonomiczną w Brzegu do celów związanych z realizacją studiów, zgodnie z
-                        art. 6 ust. 1 lit. a, RODO.
+                        art. 6 ust. 1 lit. a, RODO.<span className="text-red-500">*</span>
                     </Label>
                 </div>
             </div>
@@ -75,6 +71,7 @@ export default function ZgodyIOswiadczenia({ formData, handleCheckboxChange }: P
                         name="zgodaMarketing"
                         checked={formData.zgodaMarketing}
                         onCheckedChange={(checked) => handleCheckboxChange('zgodaMarketing', checked)}
+
                     />
                     <Label htmlFor="zgodaMarketing" className="text-sm text-gray-700">
                         Wyrażam zgodę na przetwarzanie moich danych osobowych przez administratora danych
@@ -93,6 +90,7 @@ export default function ZgodyIOswiadczenia({ formData, handleCheckboxChange }: P
                         onCheckedChange={(checked) =>
                             handleCheckboxChange('zgodaInformacjeHandlowe', checked)
                         }
+
                     />
                     <Label htmlFor="zgodaInformacjeHandlowe" className="text-sm text-gray-700">
                         Wyrażam zgodę na otrzymywanie od administratora danych osobowych informacji handlowej i
@@ -111,11 +109,12 @@ export default function ZgodyIOswiadczenia({ formData, handleCheckboxChange }: P
                         onCheckedChange={(checked) =>
                             handleCheckboxChange('zgodaKomunikacjaBezposrednia', checked)
                         }
+
                     />
                     <Label htmlFor="zgodaKomunikacjaBezposrednia" className="text-sm text-gray-700">
                         Wyrażam zgodę na kontakt ze strony administratora danych osobowych, z użyciem
                         telekomunikacyjnych urządzeń końcowych oraz automatycznych systemów wywołujących,
-                        zgodnie z art. 172 par. 1. Prawa telekomunikacyjnego. *
+                        zgodnie z art. 172 par. 1. Prawa telekomunikacyjnego.<span className="text-red-500">*</span>
                     </Label>
                 </div>
             </div>
@@ -132,3 +131,4 @@ export default function ZgodyIOswiadczenia({ formData, handleCheckboxChange }: P
         </div>
     );
 }
+

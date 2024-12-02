@@ -1,18 +1,9 @@
-// Wyksztalcenie.tsx
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
-
-interface FormData {
-    tytulZawodowy: string;
-    nazwaUczelni: string;
-    rokUkonczenia: string;
-    numerDyplomu: string;
-    dyplomPlik: File | null;
-    inneDokumentyPlik: File | null;
-}
+import { RecruitmentFormData } from './registration-form';
 
 interface Props {
-    formData: FormData;
+    formData: RecruitmentFormData;
     handleInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     handleFileChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     handleKeyDown: (e: React.KeyboardEvent<HTMLInputElement>) => void;
