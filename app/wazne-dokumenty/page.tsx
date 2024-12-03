@@ -2,7 +2,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className=" container max-w-6xl mx-auto py-16 flex flex-col space-y-4">
+    <div className="max-w-6xl mx-auto py-16 flex flex-col space-y-4">
       <h2 className=" text-3xl tracking-tight font-bold">Ważne pliki</h2>
       <div className=" flex flex-col space-y-4 text-blue-500 underline underline-offset-1">
         <a href="/assets/wazne-dokumenty/rodo.pdf">Polityka RODO</a>
