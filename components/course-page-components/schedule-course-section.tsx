@@ -1,5 +1,6 @@
 import { courses } from "@/utils/Kierunki";
 import React from "react";
+import TKA from "./tka-certyficate";
 
 interface ScheduleProps {
   schedule: string[];
@@ -79,6 +80,7 @@ export const ScheduleCourseSection: React.FC<ScheduleProps> = ({
           ))}
         </div>
       </div>
+      <TKA />
     </section>
   );
 };

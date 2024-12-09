@@ -3,18 +3,16 @@
 import { useState, useEffect, useCallback } from "react";
 import {
   FaBars,
-  FaTimes,
-  FaChartPie,
-  FaICursor,
-  FaFingerprint,
-  FaPlug,
-  FaRedo,
+  FaHome,
+  FaGraduationCap,
+  FaUserPlus,
+  FaQuestionCircle,
+  FaEnvelope,
   FaBookOpen,
-  FaAdjust,
-  FaTextHeight,
 } from "react-icons/fa";
 import Link from "next/link";
 import { useUserPreferences } from "../providers/UserPreferencesContext";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 interface Product {
   name: string;
@@ -28,31 +26,31 @@ const products: Product[] = [
     name: "Strona główna",
     description: "Strona główna",
     href: "/",
-    icon: <FaChartPie />,
+    icon: <FaHome />,
   },
   {
     name: "Kierunki",
     description: "Oferta studiów podyplomowych",
     href: "/kierunek",
-    icon: <FaICursor />,
+    icon: <FaGraduationCap />,
   },
   {
     name: "Rekrutacja",
     description: "Rekrutacja na studia podyplomowe",
     href: "/rekrutacja",
-    icon: <FaFingerprint />,
+    icon: <FaUserPlus />,
   },
   {
     name: "FAQ",
     description: "Pytania i odpowiedzi",
     href: "/faq",
-    icon: <FaPlug />,
+    icon: <FaQuestionCircle />,
   },
   {
     name: "Kontakt",
     description: "Strona kontaktowa",
     href: "/kontakt",
-    icon: <FaRedo />,
+    icon: <FaEnvelope />,
   },
 ];
 
@@ -86,14 +84,11 @@ export default function RootNavbar() {
       const currentScrollY = window.scrollY;
 
       if (currentScrollY > lastScrollY) {
-        // Scrolling down
-        setIsVisible(false);
+        setIsVisible(false); // Scrolling down
       } else {
-        // Scrolling up
-        setIsVisible(true);
+        setIsVisible(true); // Scrolling up
       }
 
-      // Update last scroll position
       setLastScrollY(currentScrollY);
     }
   }, [lastScrollY]);
@@ -109,7 +104,7 @@ export default function RootNavbar() {
 
         timeoutId = setTimeout(() => {
           controlNavbar();
-        }, 200); // 100ms delay
+        }, 200); // 200ms delay
       };
 
       window.addEventListener("scroll", handleScroll);
@@ -137,24 +132,77 @@ export default function RootNavbar() {
       >
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
-            <span className="sr-only">ISP Global</span>
+            <span className="sr-only">ISP Rybnik</span>
             <FaBookOpen
-              className={` ${highContrast ? "text-black" : "text-blue-400"}`}
+              className={`${highContrast ? "text-black" : "text-blue-400"}`}
             />
             <h2 className="tracking-tighter text-xl font-semibold">
-              ISP Global
+              ISP Rybnik
             </h2>
           </Link>
         </div>
         <div className="flex lg:hidden">
-          <button
-            type="button"
-            className={`-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 ${linkContrastStyles}`}
-            onClick={() => setMobileMenuOpen(true)}
-          >
-            <span className="sr-only">Open main menu</span>
-            <FaBars className="h-6 w-6" aria-hidden="true" />
-          </button>
+          <Sheet>
+            <SheetTrigger asChild>
+              <button
+                type="button"
+                className={`-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 ${linkContrastStyles}`}
+              >
+                <span className="sr-only">Open main menu</span>
+                <FaBars className="h-6 w-6" aria-hidden="true" />
+              </button>
+            </SheetTrigger>
+            <SheetContent
+              side="right"
+              className={`${
+                highContrast
+                  ? "bg-[#FFFF00] text-black"
+                  : "bg-blue-950 text-white"
+              }`}
+            >
+              <div className="flex items-center justify-between mb-6">
+                <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
+                  <span className="sr-only">ISP Rybnik</span>
+                  <FaBookOpen
+                    className={`${
+                      highContrast ? "text-black" : "text-blue-400"
+                    }`}
+                  />
+                  <h2 className="tracking-tighter text-xl font-semibold">
+                    ISP Rybnik
+                  </h2>
+                </Link>
+              </div>
+              <div className="mt-6 flow-root">
+                <div className="-my-6 divide-y divide-gray-500/10">
+                  <div className="space-y-2 py-6">
+                    {products.map((product) => (
+                      <Link
+                        key={product.name}
+                        href={product.href}
+                        className={`flex items-center rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 ${linkContrastStyles} hover:bg-blue-500`}
+                      >
+                        <span className="mr-3 text-xl">{product.icon}</span>
+                        {product.name}
+                      </Link>
+                    ))}
+                  </div>
+                  <div className="py-6">
+                    <Link
+                      href="/rekrutacja"
+                      className={`text-sm flex items-center gap-1 p-1 px-3 rounded-lg border font-semibold leading-6 ${
+                        highContrast
+                          ? "bg-black text-white border-white"
+                          : "border-white text-white"
+                      }`}
+                    >
+                      Zapisz się na studia
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
         <div className="hidden lg:flex lg:gap-x-14">
           {products.map((product) => (
@@ -178,83 +226,6 @@ export default function RootNavbar() {
           </Link>
         </div>
       </nav>
-      <div className={`lg:hidden ${mobileMenuOpen ? "block" : "hidden"}`}>
-        <div
-          className={`fixed inset-0 z-10 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 ${navbarContrastStyles}`}
-        >
-          <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">ISP Global</span>
-              <h2 className="tracking-tighter text-2xl font-semibold">
-                ISP Global
-              </h2>
-            </a>
-            <button
-              type="button"
-              className={`-m-2.5 rounded-md p-2.5 ${linkContrastStyles}`}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              <span className="sr-only">Close menu</span>
-              <FaTimes className="h-6 w-6" aria-hidden="true" />
-            </button>
-          </div>
-          <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6">
-                {products.map((product) => (
-                  <a
-                    key={product.name}
-                    href={product.href}
-                    className={`block rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 ${linkContrastStyles} hover:bg-blue-500`}
-                  >
-                    {product.name}
-                  </a>
-                ))}
-              </div>
-              <div className="py-6">
-                <Link
-                  href="/rekrutacja"
-                  className={`text-sm flex items-center gap-1 p-1 px-3 rounded-lg border font-semibold leading-6 ${
-                    highContrast
-                      ? "bg-black text-white border-white"
-                      : "border-white text-white"
-                  }`}
-                >
-                  Zapisz się na studia
-                </Link>
-              </div>
-            </div>
-            <div className="py-6 flex gap-4">
-              <button
-                onClick={() => setFontSize("small")}
-                className={`p-2 ${linkContrastStyles}`}
-              >
-                <FaTextHeight />
-                A-
-              </button>
-              <button
-                onClick={() => setFontSize("medium")}
-                className={`p-2 ${linkContrastStyles}`}
-              >
-                <FaTextHeight />A
-              </button>
-              <button
-                onClick={() => setFontSize("large")}
-                className={`p-2 ${linkContrastStyles}`}
-              >
-                <FaTextHeight />
-                A+
-              </button>
-              <button
-                onClick={() => setHighContrast(!highContrast)}
-                className={`p-2 ${linkContrastStyles}`}
-              >
-                <FaAdjust />
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
     </header>
   );
 }
