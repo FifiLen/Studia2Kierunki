@@ -1,0 +1,65 @@
+{
+  "category": "special and corrective pedagogy",
+  "id": "pedagogika-marii-montessori",
+  "title": "Maria Montessori Pedagogy",
+  "banerDescription": "Gain the knowledge and skills necessary to apply Maria Montessori's pedagogy in working with children, creating an inspiring educational environment that supports the individual development of students.",
+  "description": "<ul className=\"list-disc list-inside space-y-2\"><li>Teachers wishing to learn and apply Maria Montessori's pedagogical methods</li><li>Individuals interested in innovative educational methods</li><li>Educators wanting to expand their competencies in alternative teaching methods</li></ul>",
+  "description2": "The postgraduate studies aim to prepare teachers to apply Maria Montessori's pedagogy in working with children. The main goal of the program is to provide participants with the knowledge and skills to effectively use Montessori methods and principles in educational practice.",
+  "description3": "The program focuses on learning didactic methods and educational techniques characteristic of the Montessori approach, adapted to working with the youngest students. Participants will also gain a deeper understanding of the psychological and pedagogical aspects necessary for working with children of this age, as well as the ability to create an inspiring environment that supports the individual development of each student, in line with Maria Montessori's philosophy.",
+  "description4": "The aim of the \"Maria Montessori Pedagogy\" study program is to deepen understanding and practical knowledge of the innovative teaching method created by Maria Montessori. Through this program, we strive to prepare participants for the effective implementation of Montessori principles in educational practice.",
+  "descriptionP1": "",
+  "duration": "2 semesters",
+  "practicalHours": "",
+  "price": "4400 PLN",
+  "payments": "10 x 440 PLN",
+  "scheduleInfo": "",
+  "schedule": [
+    "26.10.2024",
+    "16.11.2024",
+    "23.11.2024",
+    "30.11.2024",
+    "07.12.2024",
+    "14.12.2024",
+    "11.01.2025",
+    "18.01.2025",
+    "25.01.2025",
+    "15.02.2025",
+    "01.03.2025",
+    "15.03.2025",
+    "22.03.2025",
+    "05.04.2025",
+    "12.04.2025",
+    "10.05.2025",
+    "17.05.2025",
+    "24.05.2025"
+  ],
+  "modules": [
+    {
+      "title": "Specialized Education Module",
+      "topics": [
+        { "title": "Practical Life Exercises", "subtopics": [] },
+        { "title": "Language Education 1,2,3", "subtopics": [] },
+        { "title": "Cosmic Education 1,2", "subtopics": [] },
+        { "title": "Mathematics Education 1,2,3,4", "subtopics": [] },
+        { "title": "Voice Emission", "subtopics": [] },
+        { "title": "Ethics of the Teaching Profession", "subtopics": [] },
+        { "title": "Observations in Montessori Institutions", "subtopics": [] },
+        { "title": "Basics of Didactics", "subtopics": [] },
+        { "title": "Foundations of Special Education", "subtopics": [] },
+        { "title": "Internship", "subtopics": [] },
+        { "title": "Developing Sensory Abilities", "subtopics": [] },
+        { "title": "Information Technologies in Education", "subtopics": [] },
+        {
+          "title": "Theoretical Introduction to Maria Montessori's Pedagogy",
+          "subtopics": []
+        },
+        { "title": "Religious Education", "subtopics": [] }
+      ]
+    }
+  ],
+  "faculty": "Classes are conducted by experienced practitioners in the field of Maria Montessori pedagogy, with many years of experience working with children using the Montessori method.",
+  "practices": "<ul className=\"list-disc list-inside space-y-2\"><li>The internship allows gaining experience in applying Maria Montessori's pedagogical methods in working with children.</li><li>Internships can be carried out in educational institutions using the Montessori method.</li></ul>",
+  "evaluation": "Assessment of learning outcomes is based on activity during classes, completion of individual modules, and preparation of a diploma thesis.",
+  "jobOpportunities": "<div><p className=\"text-lg font-semibold\">Graduates of the program will be prepared to work as:</p><ul className=\"list-disc list-inside mt-2 space-y-2\"><li>Teachers in educational institutions using the Maria Montessori method</li><li>Specialists in alternative preschools and schools</li><li>Consultants in Montessori pedagogy</li><li>Creators of didactic materials consistent with the Montessori method</li><li>Educators interested in implementing innovative teaching methods</li></ul></div>",
+  "invite": "<div class=''> <p class='text-gray-100'>Gain the knowledge and skills necessary to apply Maria Montessori's pedagogy and create an inspiring educational environment that supports children's development.</p></div>"
+}

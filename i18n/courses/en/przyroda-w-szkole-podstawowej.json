@@ -1,0 +1,68 @@
+{
+  "category": "educational management and didactics",
+  "id": "przyroda-w-szkole-podstawowej",
+  "title": "Nature in Primary School",
+  "banerDescription": "Gain qualifications to teach nature in primary school, developing your competencies in natural sciences and didactics.",
+  "description": "<ul className=\"list-disc list-inside space-y-2\"><li>Teachers wishing to obtain qualifications to teach nature in primary school</li><li>Individuals interested in teaching natural science subjects at the primary school level</li><li>Teachers wanting to expand their competencies in biology, chemistry, physics, and geography</li></ul>",
+  "description2": "The aim of the postgraduate studies in Nature in Primary School is to prepare teachers to conduct nature classes at the primary education level. The study program aims to develop didactic and methodological competencies in teaching nature, enabling effective knowledge transfer and developing students' interests in the field of natural sciences.",
+  "description3": "The studies allow for deepening theoretical knowledge in the fields of biology, chemistry, geography, and physics, which will enable a comprehensive approach to teaching nature in primary school. Participants will understand the processes occurring in nature and their impact on the natural environment and human life, including issues related to environmental protection and sustainable development.",
+  "description4": "The study program emphasizes shaping pro-ecological attitudes among students by introducing practical issues related to environmental protection and sustainable use of natural resources. Participants will gain skills in conducting practical classes that engage students in nature research and experiments.",
+  "descriptionP1": "",
+  "duration": "3 semesters",
+  "practicalHours": "60 hours of internship",
+  "price": "3600 PLN",
+  "payments": "10 x 360 PLN",
+  "scheduleInfo": "",
+  "schedule": [
+    "26.10.2024",
+    "16.11.2024",
+    "23.11.2024",
+    "30.11.2024",
+    "07.12.2024",
+    "14.12.2024",
+    "11.01.2025",
+    "18.01.2025",
+    "25.01.2025",
+    "15.02.2025",
+    "01.03.2025",
+    "15.03.2025",
+    "22.03.2025",
+    "05.04.2025",
+    "12.04.2025",
+    "10.05.2025",
+    "17.05.2025",
+    "24.05.2025"
+  ],
+  "modules": [
+    {
+      "title": "Specialized Education Module",
+      "topics": [
+        { "title": "Structure and Life Functions of Animals", "subtopics": [] },
+        { "title": "Structure and Life Functions of Plants", "subtopics": [] },
+        { "title": "Inorganic Chemistry", "subtopics": [] },
+        { "title": "Organic Chemistry", "subtopics": [] },
+        { "title": "Physical Geography", "subtopics": [] },
+        { "title": "Ecology", "subtopics": [] },
+        { "title": "Basics of Genetics", "subtopics": [] },
+        { "title": "Mechanics", "subtopics": [] },
+        { "title": "Structure and Properties of Matter", "subtopics": [] },
+        { "title": "Electricity, Magnetism, and Optics", "subtopics": [] },
+        { "title": "Socio-economic Geography", "subtopics": [] },
+        { "title": "Nature Conservation", "subtopics": [] },
+        { "title": "Basics of Evolutionism", "subtopics": [] }
+      ]
+    },
+    {
+      "title": "Didactic and Practical Module",
+      "topics": [
+        { "title": "Didactics of Teaching Nature", "subtopics": [] },
+        { "title": "Internship (60 hours)", "subtopics": [] }
+      ]
+    }
+  ],
+  "faculty": "Classes are conducted by experienced practitioners in the field of natural sciences and didactics of natural science subjects.",
+  "practices": "<ul className=\"list-disc list-inside space-y-2\"><li>The internship includes 60 hours and allows gaining experience in teaching nature in primary school.</li><li>Internships can be carried out in primary schools under the supervision of experienced teachers.</li></ul>",
+  "evaluation": "Assessment of learning outcomes is based on activity during classes, completion of individual modules, implementation of internships, and preparation of a diploma thesis.",
+  "jobOpportunities": "<div><p className=\"text-lg font-semibold\">Graduates of the program will be prepared to work as:</p><ul className=\"list-disc list-inside mt-2 space-y-2\"><li>Nature teachers in primary schools</li><li>Specialists in natural science education</li><li>Consultants in teaching natural science subjects</li><li>Animators of nature and ecological activities</li><li>Employees of educational institutions promoting ecological education</li></ul></div>",
+  "invite": "<div class=''> <p class='text-gray-100'>Gain the qualifications and skills necessary to teach nature in primary school and inspire students to discover the fascinating world of natural sciences.</p></div>"
+}

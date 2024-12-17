@@ -1,0 +1,91 @@
+{
+  "category": "educational management and didactics",
+  "id": "jezyk-angielski-w-wychowaniu-przedszkolnym-i-edukacji-wczesnoszkolnej",
+  "title": "English in Preschool Education and Early School Education",
+  "banerDescription": "Gain qualifications to teach English in preschools and grades I-III, developing methodological and language competencies.",
+  "description": "<ul className=\"list-disc list-inside space-y-2\"><li>Teachers wishing to obtain qualifications to teach English in preschool and grades I-III</li><li>Individuals with pedagogical preparation who want to obtain methodological preparation for teaching English at the first educational stage</li><li>Individuals interested in the methodology of teaching English to preschool and early school children</li></ul>",
+  "description2": "The postgraduate studies are aimed at teachers who want to gain qualifications to teach English in preschool and primary school in grades I-III. The aim of the studies is to acquire methodological competencies for teaching English, knowledge of teaching methods and techniques adapted to working with children in preschool and at the first educational stage, as well as improving psychological and pedagogical knowledge and skills necessary in didactic and educational work.",
+  "description3": "The postgraduate studies are directed at teachers and individuals with pedagogical preparation who want to obtain methodological preparation for teaching English in preschools and primary schools in grades I-III.",
+  "description4": "Graduates will receive a certificate of completion of postgraduate studies, prepared in accordance with the template and guidelines of the Ministry of Education and Science. The postgraduate studies are conducted based on current educational standards.",
+  "descriptionP1": "<p className=\"mt-4\"><strong>Promotion for language course:</strong></p><p>For students of the \"English in Preschool Education and Early School Education\" program, the price for the course preparing for the international Telc B2 exam is <strong>3500 PLN</strong> including the exam.</p><p>If you have any questions, please feel free to contact us.</p>",
+  "duration": "3 semesters",
+  "practicalHours": "60h of internship",
+  "price": "3600 PLN",
+  "payments": "10 x 360 PLN",
+  "scheduleInfo": "",
+  "schedule": [
+    "26.10.2024",
+    "16.11.2024",
+    "23.11.2024",
+    "30.11.2024",
+    "07.12.2024",
+    "14.12.2024",
+    "11.01.2025",
+    "18.01.2025",
+    "25.01.2025",
+    "15.02.2025",
+    "01.03.2025",
+    "15.03.2025",
+    "22.03.2025",
+    "05.04.2025",
+    "12.04.2025",
+    "10.05.2025",
+    "17.05.2025",
+    "24.05.2025"
+  ],
+  "modules": [
+    {
+      "title": "Specialized Education Module",
+      "topics": [
+        { "title": "Basics of Didactics", "subtopics": [] },
+        { "title": "Voice Emission", "subtopics": [] },
+        { "title": "Ethics of the Teaching Profession", "subtopics": [] },
+        { "title": "Information Technologies in Education", "subtopics": [] },
+        {
+          "title": "Vocabulary, Phraseology, Elements of Word Formation",
+          "subtopics": []
+        },
+        { "title": "Reading Comprehension Skills", "subtopics": [] },
+        {
+          "title": "Methodology of Work in the Textbook-free Period",
+          "subtopics": []
+        },
+        { "title": "Knowledge of Grammatical Structures", "subtopics": [] },
+        {
+          "title": "Knowledge about English-speaking Countries",
+          "subtopics": []
+        },
+        { "title": "Writing Skills (Elementary Level)", "subtopics": [] },
+        {
+          "title": "Didactics of Teaching English in Preschool",
+          "subtopics": []
+        },
+        {
+          "title": "Didactics of Teaching English in Grades I-III",
+          "subtopics": []
+        },
+        {
+          "title": "Didactics of Teaching English to Children with Dyslexia",
+          "subtopics": []
+        },
+        { "title": "Phonetics - Example Techniques", "subtopics": [] },
+        { "title": "Developing Speaking Skills", "subtopics": [] },
+        { "title": "Audiovisual Aids in Teaching English", "subtopics": [] },
+        {
+          "title": "Creative Teacher Workshop - Innovations and Creative Methodological Solutions",
+          "subtopics": []
+        },
+        {
+          "title": "Early Support of Children's Language Development",
+          "subtopics": []
+        },
+        { "title": "Professional Practice (60 h)", "subtopics": [] }
+      ]
+    }
+  ],
+  "faculty": "Classes are conducted by experienced practitioners in the field of English language teaching methodology, with many years of experience working with preschool and early school children.",
+  "practices": "<ul className=\"list-disc list-inside space-y-2\"><li>The professional practice includes 60 hours and allows gaining experience in teaching English to preschool and early school children.</li><li>Internships can be carried out in preschools and primary schools in grades I-III.</li></ul>",
+  "evaluation": "Assessment of learning outcomes is based on activity during classes, completion of individual modules, implementation of internships, and preparation of a diploma thesis.",
+  "jobOpportunities": "<ul className=\"list-disc list-inside\"><li className=\"mb-2 mt-2 font-semibold\">English teachers in preschools</li><li className=\"mb-2\">English teachers in grades I-III of primary schools</li><li className=\"mb-2\">Specialists in early English language teaching</li><li className=\"mb-2\">Methodological consultants in the field of teaching English to children</li><li className=\"mb-2\">Employees of language schools specializing in teaching children</li></ul>",
+  "invite": "<div className=''> <p className='text-gray-100'>Gain the qualifications and skills necessary to teach English to the youngest students and develop their passion for foreign languages.</p></div>"
+}

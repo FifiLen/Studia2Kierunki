@@ -1,0 +1,83 @@
+{
+  "category": "educational management and didactics",
+  "id": "etyka",
+  "title": "Ethics",
+  "banerDescription": "Gain knowledge and skills in ethics, preparing yourself to teach this subject.",
+  "description": "<ul className=\"list-disc list-inside space-y-2\"><li>Teachers wishing to obtain qualifications to teach ethics</li><li>Individuals interested in deepening their knowledge of ethics and philosophy</li><li>Specialists wanting to expand their competencies in professional ethics</li></ul>",
+  "description2": "Graduates of the postgraduate studies will be familiar with selected facts, theories, methods, and complex relationships between them, also in connection with other fields. They will understand the fundamental dilemmas of modern civilization; economic, legal, and other significant conditions of research activities. They will also be able to communicate on specialist topics with diverse audiences; lead debates; manage team work, independently plan and act for their own development, and inspire and organize the development of others, develop education or training programs and implement them using modern methods and tools.",
+  "description3": "During the studies, the student will gain practical knowledge and skills related to efficient communication on ethical topics, thanks to appropriately selected and available means, proper diagnosis, and therapy.",
+  "description4": "",
+  "descriptionP1": "",
+  "duration": "3 semesters",
+  "practicalHours": "120h of internship",
+  "price": "3600 PLN",
+  "payments": "10 x 360 PLN",
+  "scheduleInfo": "",
+  "schedule": [
+    "26.10.2024",
+    "16.11.2024",
+    "23.11.2024",
+    "30.11.2024",
+    "07.12.2024",
+    "14.12.2024",
+    "11.01.2025",
+    "18.01.2025",
+    "25.01.2025",
+    "15.02.2025",
+    "01.03.2025",
+    "15.03.2025",
+    "22.03.2025",
+    "05.04.2025",
+    "12.04.2025",
+    "10.05.2025",
+    "17.05.2025",
+    "24.05.2025"
+  ],
+  "modules": [
+    {
+      "title": "Specialized Education Module",
+      "topics": [
+        { "title": "Basics of Didactics", "subtopics": [] },
+        { "title": "Voice Emission", "subtopics": [] },
+        { "title": "Ethics of the Teaching Profession", "subtopics": [] },
+        { "title": "Information Technologies in Education", "subtopics": [] },
+        { "title": "General Ethics", "subtopics": [] },
+        { "title": "Bioethics", "subtopics": [] },
+        {
+          "title": "Didactics of Teaching Ethics in Primary School",
+          "subtopics": []
+        },
+        {
+          "title": "Didactics of Teaching Ethics in Secondary School",
+          "subtopics": []
+        },
+        { "title": "Neuroethics", "subtopics": [] },
+        {
+          "title": "Human in the Sphere of Personal Dignity (Social Ethics)",
+          "subtopics": []
+        },
+        {
+          "title": "Human in the Sphere of Economic Values (Business Ethics)",
+          "subtopics": []
+        },
+        {
+          "title": "Syneideziology - The Science of Conscience",
+          "subtopics": []
+        },
+        { "title": "Multimedia Didactics of Ethics", "subtopics": [] },
+        { "title": "Ethics of Sexual Life", "subtopics": [] },
+        { "title": "History of Ethics", "subtopics": [] },
+        { "title": "Children's Rights", "subtopics": [] },
+        { "title": "Human in the Perspective of Happiness", "subtopics": [] },
+        { "title": "Normative Ethics", "subtopics": [] },
+        { "title": "Anti-discrimination Training", "subtopics": [] },
+        { "title": "Internship (120 h)", "subtopics": [] }
+      ]
+    }
+  ],
+  "faculty": "Classes are conducted by experienced practitioners and theorists in the fields of ethics, philosophy, and pedagogy, with many years of experience in teaching and research.",
+  "practices": "<ul className=\"list-disc list-inside space-y-2\"><li>Internships include 120 hours and are carried out in primary and secondary schools.</li><li>Internships aim to gain experience in teaching ethics and apply the acquired knowledge in practice.</li></ul>",
+  "evaluation": "Assessment of learning outcomes is based on activity during classes, completion of individual modules, and preparation of a diploma thesis.",
+  "jobOpportunities": "<div><p className=\"text-lg font-semibold\">Graduates of the program will be prepared to work as:</p><ul className=\"list-disc list-inside mt-2 space-y-2\"><li>Ethics teachers in primary and secondary schools</li><li>Ethics specialists in educational and cultural institutions</li><li>Ethical advisors in organizations and companies</li><li>Consultants in the field of professional ethics</li><li>Employees of institutions promoting ethics and moral values</li></ul></div>",
+  "invite": "<div class=''> <p class='text-gray-100'>Expand your knowledge of ethics and prepare yourself to teach this important subject.</p></div>"
+}

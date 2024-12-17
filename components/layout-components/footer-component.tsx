@@ -14,6 +14,7 @@ import {
   HoverCardTrigger,
   HoverCardContent,
 } from "@/components/ui/hover-card";
+import { useTranslations } from "next-intl";
 
 const availableCourseId = [
   "psychoterapia",
@@ -28,7 +29,7 @@ const availableCourseId = [
 const courseCategories = [
   {
     id: "psychologia-psychoterapia",
-    name: "Psychologia i Psychoterapia",
+    nameKey: "courseCategories.psychologyAndPsychotherapy",
     courses: courses.filter((course) =>
       [
         "psychoterapia",
@@ -42,7 +43,7 @@ const courseCategories = [
   },
   {
     id: "pedagogika-specjalna-korekcyjna",
-    name: "Pedagogika Specjalna i Korekcyjna",
+    nameKey: "courseCategories.specialAndCorrectivePedagogy",
     courses: courses.filter((course) =>
       [
         "logopedia",
@@ -62,7 +63,7 @@ const courseCategories = [
   },
   {
     id: "zarzadzanie-dydaktyka-edukacyjna",
-    name: "Zarządzanie i Dydaktyka Edukacyjna",
+    nameKey: "courseCategories.educationalManagementAndDidactics",
     courses: courses.filter((course) =>
       [
         "zarzadzanie-oswiata",
@@ -82,6 +83,7 @@ const courseCategories = [
 
 export const FooterComponent = () => {
   const [openCategories, setOpenCategories] = useState<string[]>([]);
+  const t = useTranslations("FooterComponent");
 
   const toggleCategory = (categoryId: string) => {
     setOpenCategories((prev) =>
@@ -95,57 +97,57 @@ export const FooterComponent = () => {
     <footer className="bg-blue-950 text-white py-12 mt-auto">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex flex-wrap justify-between mb-8">
-          {/* Sekcja Nawigacja */}
+          {/* Navigation Section */}
           <div className="w-full sm:w-1/2 lg:w-1/5 mb-6 sm:mb-0">
-            <h2 className="text-xl font-semibold mb-4">Nawigacja</h2>
+            <h2 className="text-xl font-semibold mb-4">{t("navigation")}</h2>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>
                 <Link href="/" className="hover:text-gray-400">
-                  Strona główna
+                  {t("home")}
                 </Link>
               </li>
               <li>
                 <Link href="/oferta" className="hover:text-gray-400">
-                  Oferta
+                  {t("offer")}
                 </Link>
               </li>
               <li>
                 <Link href="/rekrutacja" className="hover:text-gray-400">
-                  Rekrutacja
+                  {t("recruitment")}
                 </Link>
               </li>
               <li>
                 <Link href="/faq" className="hover:text-gray-400">
-                  FAQ
+                  {t("faq")}
                 </Link>
               </li>
               <li>
                 <Link href="/kontakt" className="hover:text-gray-400">
-                  Kontakt
+                  {t("contact")}
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Sekcja Kontakt */}
+          {/* Contact Section */}
           <div className="w-full sm:w-1/2 lg:w-1/4 mb-6 sm:mb-0">
-            <h2 className="text-xl font-semibold mb-4">Kontakt</h2>
+            <h2 className="text-xl font-semibold mb-4">{t("contact")}</h2>
             <address className="not-italic text-sm text-gray-300">
               ISP Global
               <br />
               ul. Magnolii 25 <br /> 44-207 Rybnik
               <br />
-              Telefon:{" "}
+              {t("phone")}:{" "}
               <a href="tel:797 173 501" className="hover:text-gray-400">
                 797 173 501
               </a>
               <br />
-              Tel/Whatsapp:{" "}
+              {t("phoneWhatsapp")}:{" "}
               <a href="tel:502 162 365" className="hover:text-gray-400">
                 502 162 365
               </a>
               <br />
-              Email:{" "}
+              {t("email")}:{" "}
               <a
                 href="mailto:nowekwalifikacjerybnik@gmail.com"
                 className="hover:text-gray-400"
@@ -155,64 +157,62 @@ export const FooterComponent = () => {
             </address>
           </div>
 
-          {/* Sekcja Informacje o Prawach Autorskich */}
+          {/* Information Section */}
           <div className="w-full sm:w-1/2 lg:w-1/4 flex flex-col">
-            <h2 className="text-xl font-semibold mb-4">Informacje</h2>
+            <h2 className="text-xl font-semibold mb-4">{t("information")}</h2>
             <Link className="pb-1 text-sm text-gray-200" href="/wykladowcy">
-              Wykładowcy
+              {t("lecturers")}
             </Link>
             <Link className="pb-1 text-sm text-gray-200" href="/referencje">
-              Referencje
+              {t("references")}
             </Link>
             <a
               className="pb-1 text-sm text-gray-200"
               href="/assets/referencje/CertyfikatDekra.pdf"
               target="_blank"
             >
-              Certyfikat DEKRA
+              {t("dekraCertificate")}
             </a>
             <a
               className="pb-1 text-sm text-gray-200"
               href="/assets/referencje/CertyfikatTGLS.pdf"
               target="_blank"
             >
-              Certyfikat TGLS
+              {t("tglsCertificate")}
             </a>
             <Link
               className="pb-1 text-sm text-gray-200"
               href="/polityka-prywatnosci"
             >
-              Polityka prywatności
+              {t("privacyPolicy")}
             </Link>
             <Link
               className="pb-1 text-sm text-gray-200"
               href="/odbior-dokumentow"
             >
-              Odbiór dokumentów
+              {t("documentCollection")}
             </Link>
             <a
               target="_blank"
               className="pb-1 text-sm text-gray-200"
               href="https://uslugirozwojowe.parp.gov.pl/wyszukiwarka/dostawca-uslug/podglad?id=53144"
             >
-              Dofinansowanie
+              {t("funding")}
             </a>
             <Link
               className="pb-1 text-sm text-gray-200"
               href="/standardy-ochrony-maloletnich-w-placowkach-oswiatowych"
             >
-              Standardy ochrony małoletnich <br />w placówkach oświatowych
+              {t("minorProtectionStandards")}
             </Link>
             <Link className="pb-1 text-sm text-gray-200" href="/credits">
-              Grafiki
+              {t("graphics")}
             </Link>
           </div>
 
-          {/* Sekcja Media Społecznościowe */}
+          {/* Social Media Section */}
           <div className="w-full sm:w-1/2 lg:w-1/4 mb-6 sm:mb-0">
-            <h2 className="text-xl font-semibold mb-4">
-              Media Społecznościowe
-            </h2>
+            <h2 className="text-xl font-semibold mb-4">{t("socialMedia")}</h2>
             <div className="flex space-x-4">
               <a
                 href="https://www.facebook.com/isprybnik"
@@ -252,9 +252,9 @@ export const FooterComponent = () => {
           </div>
         </div>
 
-        {/* New row for Courses Accordion */}
+        {/* Courses Accordion */}
         <div className="border-t border-gray-700 pt-8">
-          <h2 className="text-xl font-semibold mb-4">Kierunki</h2>
+          <h2 className="text-xl font-semibold mb-4">{t("courses")}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {courseCategories.map((category) => (
               <div key={category.id} className="mb-4">
@@ -262,7 +262,7 @@ export const FooterComponent = () => {
                   onClick={() => toggleCategory(category.id)}
                   className="flex justify-between items-center w-full text-left py-2 focus:outline-none"
                 >
-                  <span className="font-medium">{category.name}</span>
+                  <span className="font-medium">{t(category.nameKey)}</span>
                   {openCategories.includes(category.id) ? (
                     <FaChevronUp className="text-gray-400" />
                   ) : (
@@ -281,12 +281,12 @@ export const FooterComponent = () => {
                               </span>
                             </HoverCardTrigger>
                             <HoverCardContent className="text-sm text-gray-500">
-                              Nowe kierunki będą dostępne już wkrótce.
+                              {t("comingSoon")}
                             </HoverCardContent>
                           </HoverCard>
                         ) : (
                           <Link
-                            href={`/oferta/${course.id}`}
+                            href={`/kierunek/${course.id}`}
                             className="block hover:text-gray-400"
                           >
                             {course.title}
@@ -303,7 +303,7 @@ export const FooterComponent = () => {
 
         <div className="mt-8 border-t border-gray-700 pt-8 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            &copy; 2024 ISP Rybnik. Wszelkie prawa zastrzeżone.
+            {t("copyright", { year: new Date().getFullYear() })}
           </p>
         </div>
       </div>

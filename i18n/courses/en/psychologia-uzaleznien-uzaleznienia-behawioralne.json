@@ -1,0 +1,267 @@
+{
+  "category": "psychology and psychotherapy",
+  "id": "psychologia-uzaleznien-uzaleznienia-behawioralne",
+  "title": "Psychology of Addictions - Behavioral Addictions",
+  "banerDescription": "Explore the psychological aspects of behavioral addictions and learn effective therapy methods and support for individuals with these problems.",
+  "description": "<ul className=\"list-disc list-inside space-y-2\"><li>management staff of educational institutions<br><span className=\"ml-4\">(schools, kindergartens, nurseries, counseling centers, educational centers, others)</span></li><li>pedagogues</li><li>psychologists</li><li>speech therapists</li><li>therapists</li><li>teachers</li><li>parents</li><li>legal guardians</li><li>educators</li><li>people working with children, youth, adults, seniors</li><li>people working with children, youth and adults with&nbsp;<span className=\"ml-2\">disabilities that cause lack or limitation of communication and functioning in society</span></li></ul>",
+  "description2": "The postgraduate studies in \"Behavioral Addictions\" aim to prepare students to work with individuals addicted to activities such as gambling, computer games, sex, shopping, eating, and others. The program combines theoretical knowledge with intensive clinical practice, enabling students to acquire the competencies necessary for effective therapeutic work.",
+  "description3": "",
+  "description4": "",
+  "descriptionP1": "",
+  "duration": "3 semesters",
+  "practicalHours": "90h of internship",
+  "price": "4200 PLN",
+  "payments": "10x420 PLN",
+  "scheduleInfo": "The third semester is dedicated to internships",
+  "schedule": [
+    "26.10.2024",
+    "16.11.2024",
+    "23.11.2024",
+    "30.11.2024",
+    "07.12.2024",
+    "14.12.2024",
+    "11.01.2025",
+    "18.01.2025",
+    "25.01.2025",
+    "15.02.2025",
+    "01.03.2025",
+    "15.03.2025",
+    "22.03.2025",
+    "05.04.2025",
+    "12.04.2025",
+    "10.05.2025",
+    "17.05.2025",
+    "24.05.2025"
+  ],
+  "modules": [
+    {
+      "title": "Introduction to Psychology - Biological Foundations of Addictions",
+      "topics": [
+        {
+          "title": "Introduction to Psychology",
+          "subtopics": [
+            { "title": "History and foundations of psychology" },
+            { "title": "Major psychological schools and trends" },
+            { "title": "Research methods in psychology" }
+          ]
+        },
+        {
+          "title": "Biological Foundations of Addictions",
+          "subtopics": [
+            { "title": "Neurobiology of addictions" },
+            { "title": "Genetics and biological predispositions" },
+            { "title": "Reward and motivation mechanisms" }
+          ]
+        },
+        {
+          "title": "Psychopathology of Behavioral Addictions",
+          "subtopics": [
+            { "title": "Types of behavioral addictions" },
+            { "title": "Symptoms and diagnostic criteria" },
+            { "title": "Comorbidity with other disorders" }
+          ]
+        },
+        {
+          "title": "Research Methods in Psychology",
+          "subtopics": [
+            { "title": "Methodology of psychological research" },
+            { "title": "Statistics in psychology" },
+            { "title": "Conducting and analyzing research" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Diagnosis and Assessment of Behavioral Addictions",
+      "topics": [
+        {
+          "title": "Theories of Behavioral Addictions",
+          "subtopics": [
+            { "title": "Models and theories of behavioral addictions" },
+            { "title": "Risk factors and protective factors" },
+            { "title": "Neuropsychological perspectives" }
+          ]
+        },
+        {
+          "title": "Diagnosis and Assessment of Behavioral Addictions",
+          "subtopics": [
+            { "title": "Diagnostic tools" },
+            { "title": "Clinical diagnosis process" },
+            { "title": "Case studies" }
+          ]
+        },
+        {
+          "title": "Cognitive-Behavioral Therapies",
+          "subtopics": [
+            { "title": "Fundamentals of CBT" },
+            {
+              "title": "Techniques and interventions in behavioral addiction therapy"
+            },
+            { "title": "Practical application of CBT" }
+          ]
+        },
+        {
+          "title": "Ethics and Law in Addiction Therapy",
+          "subtopics": [
+            { "title": "Professional ethics" },
+            { "title": "Legal aspects of addiction therapy" },
+            { "title": "Patient rights" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Social Psychology",
+      "topics": [
+        {
+          "title": "Social Psychology",
+          "subtopics": [
+            { "title": "Group processes and social influence" },
+            { "title": "Interpersonal communication and media" },
+            { "title": "Social context of behavioral addictions" }
+          ]
+        },
+        {
+          "title": "Group Therapy",
+          "subtopics": [
+            { "title": "Group dynamics" },
+            { "title": "Techniques for conducting therapeutic groups" },
+            { "title": "Group practice" }
+          ]
+        },
+        {
+          "title": "Motivational Therapy",
+          "subtopics": [
+            { "title": "Theory of motivation and change" },
+            { "title": "Motivational interviewing techniques" },
+            { "title": "Case studies" }
+          ]
+        },
+        {
+          "title": "Family Therapy",
+          "subtopics": [
+            { "title": "Family systems theories" },
+            { "title": "Family therapy techniques" },
+            { "title": "Working with families of addicted individuals" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Alternative and Complementary Therapies",
+      "topics": [
+        {
+          "title": "Alternative and Complementary Therapies",
+          "subtopics": [
+            { "title": "Dialectical Behavior Therapy (DBT)" },
+            { "title": "Acceptance and Commitment Therapy (ACT)" },
+            {
+              "title": "Supportive therapies (e.g., art therapy, occupational therapy)"
+            }
+          ]
+        },
+        {
+          "title": "Internship I",
+          "subtopics": [
+            { "title": "Practice in addiction treatment facilities" },
+            { "title": "Clinical supervision" },
+            { "title": "Reflection and case analysis" }
+          ]
+        },
+        {
+          "title": "Crisis Interventions",
+          "subtopics": [
+            { "title": "Theories and techniques of crisis intervention" },
+            { "title": "Working with individuals in crisis situations" },
+            { "title": "Techniques for coping with crisis situations" }
+          ]
+        },
+        {
+          "title": "Intersectoral Cooperation",
+          "subtopics": [
+            { "title": "Working in an interdisciplinary team" },
+            {
+              "title": "Cooperation with public institutions and non-governmental organizations"
+            },
+            { "title": "Building support networks for addicted individuals" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Research in Behavioral Addictions",
+      "topics": [
+        {
+          "title": "Research in Behavioral Addictions",
+          "subtopics": [
+            { "title": "Addiction research methodology" },
+            { "title": "Conducting own research" },
+            { "title": "Analysis and presentation of results" }
+          ]
+        },
+        {
+          "title": "Prevention of Behavioral Addictions",
+          "subtopics": [
+            { "title": "Prevention programs" },
+            { "title": "Health education and health promotion" },
+            { "title": "Analysis of the effectiveness of prevention programs" }
+          ]
+        },
+        {
+          "title": "Cyber Addictions",
+          "subtopics": [
+            { "title": "Specifics of internet and computer game addictions" },
+            { "title": "Diagnosis and therapy of cyber addictions" },
+            { "title": "Clinical cases" }
+          ]
+        },
+        {
+          "title": "Internship II",
+          "subtopics": [
+            { "title": "Advanced practice" },
+            { "title": "Advanced supervision" },
+            { "title": "Case studies" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Diploma Project",
+      "topics": [
+        {
+          "title": "Diploma Project",
+          "subtopics": [
+            { "title": "Project preparation" },
+            { "title": "Diploma thesis presentation" },
+            { "title": "Behavioral addiction therapies" }
+          ]
+        },
+        {
+          "title": "Behavioral Addiction Therapies",
+          "subtopics": [
+            {
+              "title": "Therapy for gambling, shopping, eating addictions, etc."
+            },
+            {
+              "title": "Specifics of therapy for various types of behavioral addictions"
+            },
+            { "title": "Practical application of therapeutic techniques" }
+          ]
+        },
+        {
+          "title": "Internship III",
+          "subtopics": [
+            { "title": "Intensive practice in a chosen facility" },
+            { "title": "Comprehensive supervision" },
+            { "title": "Assessment and analysis of therapeutic effects" }
+          ]
+        }
+      ]
+    }
+  ],
+  "faculty": "The program will be conducted by a qualified team of specialists in the fields of psychology, psychiatry, addiction therapy, and other related disciplines. The faculty will include both academic lecturers and practitioners with many years of clinical experience.",
+  "practices": "<ul className=\"list-disc list-inside space-y-2\"><li>50% - possibility to complete internships remotely at the MAGNOLIA Psychological and Pedagogical Counseling Center</li><li>The remaining 50% can be completed:<ul className=\"list-disc list-inside space-y-1 ml-4\"><li>in home institutions in the form of additional classes or performed within the teaching load,</li><li>in educational institutions,</li><li>in counseling centers,</li><li>other.</li></ul></li></ul>",
+  "evaluation": "The assessment of learning outcomes will be based on: preparation of a project work in the area of Psychology of Addictions - Behavioral Addictions.",
+  "jobOpportunities": "Graduates of the \"Behavioral Addictions\" program will be prepared to work in various therapeutic institutions, such as addiction treatment centers, mental health clinics, psychiatric hospitals, as well as in non-governmental organizations dealing with addiction prevention and therapy.",
+  "invite": "<div class=''> <p class='text-gray-100'> Explore the psychological aspects of behavioral addictions and learn effective therapy methods and support for individuals with these problems.</p></div>"
+}

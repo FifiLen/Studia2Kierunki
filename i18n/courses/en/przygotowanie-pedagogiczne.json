@@ -1,0 +1,107 @@
+{
+  "category": "special and corrective pedagogy",
+  "id": "przygotowanie-pedagogiczne",
+  "title": "Pedagogical Preparation",
+  "banerDescription": "Gain pedagogical qualifications and prepare for a career in teaching.",
+  "description": "<ul className=\"list-disc list-inside space-y-2\"><li>Individuals wanting to obtain pedagogical qualifications</li><li>Specialists wishing to start a career in teaching</li><li>Those interested in gaining knowledge in pedagogy, psychology, and didactics</li></ul>",
+  "description2": "The aim of the postgraduate studies is to obtain preparation in the field of psychology, pedagogy, and specific didactics, guaranteeing the acquisition of knowledge and practical skills necessary to perform the teaching profession in accordance with the provisions of the Act of July 20, 2018 on Higher Education and Science (Journal of Laws 2018, item 1668, as amended) and the Regulation of the Minister of Science and Higher Education of July 25, 2019 on the standards of education preparing for the teaching profession (Journal of Laws, item 1450 of August 2, 2019).",
+  "description3": "The studies prepare for work as a teacher, vocational teacher, trainer, lecturer, language instructor, pedagogue, school psychologist, day-care center educator, dormitory/boarding school/day-care center supervisor, instructor, and librarian.",
+  "description4": "",
+  "descriptionP1": "",
+  "duration": "3 semesters",
+  "practicalHours": "150h of internship",
+  "price": "3600 PLN",
+  "payments": "10 x 360 PLN",
+  "scheduleInfo": "",
+  "schedule": [
+    "26.10.2024",
+    "16.11.2024",
+    "23.11.2024",
+    "30.11.2024",
+    "07.12.2024",
+    "14.12.2024",
+    "11.01.2025",
+    "18.01.2025",
+    "25.01.2025",
+    "15.02.2025",
+    "01.03.2025",
+    "15.03.2025",
+    "22.03.2025",
+    "05.04.2025",
+    "12.04.2025",
+    "10.05.2025",
+    "17.05.2025",
+    "24.05.2025"
+  ],
+  "modules": [
+    {
+      "title": "Specialized Education Module",
+      "topics": [
+        { "title": "Psychology of Children's Learning", "subtopics": [] },
+        { "title": "Basics of Didactics", "subtopics": [] },
+        {
+          "title": "Developmental and Personality Psychology",
+          "subtopics": []
+        },
+        { "title": "Basics of Pedagogical Diagnosis", "subtopics": [] },
+        {
+          "title": "Formal and Legal Foundations of School/Institution Functioning",
+          "subtopics": []
+        },
+        { "title": "Voice Emission", "subtopics": [] },
+        { "title": "Ethics of the Teaching Profession", "subtopics": [] },
+        { "title": "Information Technologies in Education", "subtopics": [] },
+        { "title": "Basics of Special Education", "subtopics": [] },
+        { "title": "Social Pedagogy", "subtopics": [] },
+        { "title": "Educational Law", "subtopics": [] },
+        { "title": "General Psychology", "subtopics": [] },
+        { "title": "General Pedagogy", "subtopics": [] },
+        { "title": "School as an Educational Institution", "subtopics": [] },
+        {
+          "title": "Core Curriculum for Preschool and General Education",
+          "subtopics": []
+        },
+        {
+          "title": "Core Curriculum for Vocational Education",
+          "subtopics": []
+        },
+        {
+          "title": "Methodology of Teaching General Subjects",
+          "subtopics": []
+        },
+        {
+          "title": "Methodology of Teaching Vocational Subjects",
+          "subtopics": []
+        },
+        {
+          "title": "Diagnosis, Control, and Evaluation of Learning Outcomes",
+          "subtopics": []
+        },
+        { "title": "Cultural Foundations of Education", "subtopics": [] },
+        { "title": "Prevention in School", "subtopics": [] },
+        {
+          "title": "Personal and Professional Development of Teachers",
+          "subtopics": []
+        },
+        {
+          "title": "Effective Communication and Assertiveness Training",
+          "subtopics": []
+        },
+        { "title": "Social Skills Training", "subtopics": [] },
+        { "title": "Educational Skills Training", "subtopics": [] },
+        {
+          "title": "Principles of Safety and Hygiene in Educational Institutions",
+          "subtopics": []
+        },
+        { "title": "First Aid in Educational Institutions", "subtopics": [] },
+        { "title": "Good Start Method", "subtopics": [] },
+        { "title": "Professional Practice (150 h)", "subtopics": [] }
+      ]
+    }
+  ],
+  "faculty": "Classes are conducted by experienced practitioners in the fields of pedagogy, psychology, and didactics, with many years of experience in educational work.",
+  "practices": "<ul className=\"list-disc list-inside space-y-2\"><li>The professional practice includes 150 hours and allows gaining experience in teaching work.</li><li>Internships can be carried out in educational institutions at various educational levels.</li></ul>",
+  "evaluation": "Assessment of learning outcomes is based on activity during classes, completion of individual modules, implementation of internships, and preparation of a diploma thesis.",
+  "jobOpportunities": "<div><p className=\"text-lg font-semibold\">Graduates of the program will be prepared to work as:</p><ul className=\"list-disc list-inside mt-2 space-y-2\"><li>Teachers in schools and educational institutions</li><li>Vocational teachers, trainers, lecturers, language instructors</li><li>Pedagogues, school psychologists</li><li>Day-care center educators, dormitory/boarding school supervisors</li><li>Instructors, librarians</li></ul></div>",
+  "invite": "<div class=''> <p class='text-gray-100'>Gain pedagogical preparation and start your career in education.</p></div>"
+}

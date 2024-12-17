@@ -2,11 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { CgArrowTopRightO } from "react-icons/cg";
+import { useTranslations } from "next-intl";
 
 export const CtaHomePage = () => {
-  const fontSizeStyles = "text-base"; // Możesz zmienić na inne wartości: text-sm, text-lg
-  const contrastStyles = "bg-gray-50 text-gray-900";
-  const linkContrastStyles = "bg-[#1660C7] hover:bg-blue-500 text-white";
+  const t = useTranslations("CtaHomePage");
 
   return (
     <section className="w-full bg-blue-950">
@@ -14,24 +13,20 @@ export const CtaHomePage = () => {
         {/* Text Column */}
         <div className="flex justify-center items-start px-8 md:px-20 py-16 md:py-36 flex-col rekrutacja">
           <h4 className="text-2xl md:text-3xl font-semibold text-gray-100 tracking-[-0.2rem]">
-            Rekrutacja
+            {t("recruitmentTitle")}
           </h4>
           <h2 className="text-4xl md:text-5xl text-white font-semibold tracking-tighter mt-3">
-            Semestr 2024/2025
+            {t("semesterTitle")}
           </h2>
           <p className="text-base md:text-lg text-zinc-300 mt-4">
-            Trwają zapisy na&nbsp;semestr 2024/2025. Dołącz do&nbsp;nas
-            i&nbsp;rozpocznij swoją przygodę ze&nbsp;studiami podyplomowymi.
-            Przygotowaliśmy wyjątkową ofertę kierunków, które pozwolą zdobyć Ci
-            pożądane umiejętności na&nbsp;rynku pracy i otworzą przed Tobą nowe
-            perspektywy.
+            {t("description")}
           </p>
           <Link href="#kierunki">
             <button
-              aria-label="poznaj naszą ofertę"
+              aria-label={t("exploreOfferAriaLabel")}
               className="bg-blue-800 text-white font-semibold rounded-lg px-4 py-3 flex gap-3 items-center justify-center mt-8"
             >
-              Poznaj naszą ofertę
+              {t("exploreOfferButton")}
               <CgArrowTopRightO className="text-2xl" />
             </button>
           </Link>
@@ -42,7 +37,7 @@ export const CtaHomePage = () => {
           <Image
             src="/assets/studentka.png"
             fill
-            alt="Studentka przy komputerze, rekrutacja 2024/2025"
+            alt={t("imageAlt")}
             className="object-cover"
             quality={75}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

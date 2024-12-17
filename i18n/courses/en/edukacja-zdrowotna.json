@@ -1,0 +1,100 @@
+{
+  "category": "educational management and didactics",
+  "id": "edukacja-zdrowotna",
+  "title": "Health Education",
+  "banerDescription": "Develop your competencies in health promotion, prevention, and health education to inspire others to lead a healthy lifestyle.",
+  "description": "<ul className=\"list-disc list-inside space-y-2\"><li>Individuals interested in public health and health education</li><li>Teachers wishing to expand their didactic and substantive competencies</li><li>Specialists involved in health promotion and disease prevention</li></ul>",
+  "description2": "The aim of the studies is to provide knowledge and skills necessary to conduct educational activities in the field of health and prevention. Participants gain solid foundations in areas such as health psychology, public health, sexual education, and shaping a healthy lifestyle.",
+  "description3": "The program is based on theoretical and practical classes conducted by experienced lecturers and specialists. The classes enable the acquisition of both knowledge and practical skills necessary in the work of a health educator.",
+  "description4": "Our studies offer the opportunity for professional development and gaining qualifications to conduct activities in the field of health education and health promotion. Graduates are prepared to work in various environments, inspiring others to lead a healthy lifestyle.",
+  "descriptionP1": "",
+  "duration": "3 semesters",
+  "practicalHours": "Pedagogical practice (90 hours)",
+  "price": "3000 PLN",
+  "payments": "10 x 300 PLN",
+  "scheduleInfo": "",
+  "schedule": [
+    "26.10.2024",
+    "16.11.2024",
+    "23.11.2024",
+    "30.11.2024",
+    "07.12.2024",
+    "14.12.2024",
+    "11.01.2025",
+    "18.01.2025",
+    "25.01.2025",
+    "15.02.2025",
+    "01.03.2025",
+    "15.03.2025",
+    "22.03.2025",
+    "05.04.2025",
+    "12.04.2025",
+    "10.05.2025",
+    "17.05.2025",
+    "24.05.2025"
+  ],
+  "modules": [
+    {
+      "title": "Substantive Preparation Module",
+      "topics": [
+        {
+          "title": "Psychology, Sociology, and Pedagogy of Health",
+          "subtopics": []
+        },
+        { "title": "Public Health - Selected Issues", "subtopics": [] },
+        { "title": "Health Policy", "subtopics": [] },
+        {
+          "title": "Organization and Management in Healthcare",
+          "subtopics": []
+        },
+        { "title": "Basics of Human Anatomy and Physiology", "subtopics": [] },
+        {
+          "title": "Epidemiology of Infectious and Non-infectious Diseases",
+          "subtopics": []
+        },
+        {
+          "title": "Social Diseases, Civilization Diseases, and Social Pathologies",
+          "subtopics": []
+        },
+        { "title": "Sexual Education", "subtopics": [] },
+        {
+          "title": "Food and Nutrition with Elements of Psychodietetics",
+          "subtopics": []
+        },
+        { "title": "Health Promotion and Disease Prevention", "subtopics": [] }
+      ]
+    },
+    {
+      "title": "Didactic and Methodological Module",
+      "topics": [
+        {
+          "title": "Shaping a Healthy Lifestyle in Various Environments",
+          "subtopics": []
+        },
+        {
+          "title": "Methods and Forms of Physical Activity and Movement Recreation",
+          "subtopics": []
+        },
+        { "title": "Addiction Prevention", "subtopics": [] },
+        {
+          "title": "Health Education in the Core Curriculum of General Education and Various Subjects",
+          "subtopics": []
+        },
+        {
+          "title": "Methodology of Conducting Health Education Classes",
+          "subtopics": []
+        },
+        {
+          "title": "Methodology of Conducting Preventive Classes",
+          "subtopics": []
+        },
+        { "title": "Pedagogical Practice (90 hours)", "subtopics": [] }
+      ]
+    }
+  ],
+  "faculty": "Classes are conducted by experienced specialists in the fields of public health, health psychology, and education.",
+  "practices": "<ul className=\"list-disc list-inside space-y-2\"><li>Pedagogical practice enables gaining experience in health education.</li><li>Internships take place in schools and institutions related to health promotion.</li></ul>",
+  "evaluation": "Assessment of learning outcomes includes activity during classes, completion of modules, implementation of internships, and preparation of a diploma thesis.",
+  "jobOpportunities": "<div><p className=\"text-lg font-semibold\">Graduates of the program will be prepared to work as:</p><ul className=\"list-disc list-inside mt-2 space-y-2\"><li>Health educators in educational and medical institutions</li><li>Health promotion specialists</li><li>Consultants in the field of health education</li><li>Employees of institutions dealing with public health</li><li>Creators of educational programs and teaching materials</li></ul></div>",
+  "invite": "<div class=''> <p class='text-gray-100'>Inspire others to lead a healthy lifestyle and develop your competencies through our postgraduate studies in health education.</p></div>"
+}

@@ -1,0 +1,123 @@
+{
+  "category": "special and corrective pedagogy",
+  "id": "pedagogika-korekcyjna",
+  "title": "Corrective Pedagogy (Pedagogical Therapy)",
+  "banerDescription": "Prepare yourself to work with children and youth requiring pedagogical therapy, gaining practical skills and knowledge.",
+  "description": "<ul className=\"list-disc list-inside space-y-2\"><li>Teachers wishing to obtain qualifications in pedagogical therapy</li><li>Individuals working with children and youth with learning difficulties</li><li>Pedagogues, psychologists, speech therapists wanting to expand their competencies</li><li>Those interested in diagnostic and therapeutic work with children and youth</li></ul>",
+  "description2": "Pedagogical therapy is a process of long-term pedagogical interventions. The aim of the therapy is to eliminate negative consequences, increase self-esteem, and motivate further actions, especially in terms of fulfilling school obligations. It focuses on eliminating problems related to writing, reading, drawing, and speaking.",
+  "description3": "The studies aim to provide knowledge in the field of psycho-pedagogical foundations of diagnosis and therapy of learning difficulties and behavior of preschool and school-age children. They familiarize the student with methods of supporting the child's psychosocial development, teach how to recognize symptoms of behavioral and learning disorders, and how to take appropriate actions.",
+  "description4": "You will learn about various developmental dysfunctions in children and youth that manifest as problems with learning and knowledge acquisition. You will learn the principles and techniques used in diagnosing these problems and methods of their therapy.",
+  "descriptionP1": "",
+  "duration": "3 semesters",
+  "practicalHours": "170h of internship",
+  "price": "4200 PLN",
+  "payments": "10 x 420 PLN",
+  "scheduleInfo": "",
+  "schedule": [
+    "26.10.2024",
+    "16.11.2024",
+    "23.11.2024",
+    "30.11.2024",
+    "07.12.2024",
+    "14.12.2024",
+    "11.01.2025",
+    "18.01.2025",
+    "25.01.2025",
+    "15.02.2025",
+    "01.03.2025",
+    "15.03.2025",
+    "22.03.2025",
+    "05.04.2025",
+    "12.04.2025",
+    "10.05.2025",
+    "17.05.2025",
+    "24.05.2025"
+  ],
+  "modules": [
+    {
+      "title": "Module A: Compulsory Subjects",
+      "topics": [
+        { "title": "Special Didactics", "subtopics": [] },
+        { "title": "Diagnostics in Special Education", "subtopics": [] },
+        { "title": "Internship I (60 h)", "subtopics": [] }
+      ]
+    },
+    {
+      "title": "Module B: Substantive Preparation",
+      "topics": [
+        { "title": "Foundations of Special Education", "subtopics": [] },
+        {
+          "title": "Elements of Clinical Psychology and Psychopathology",
+          "subtopics": []
+        },
+        {
+          "title": "ADHD and Behavioral Disorders - Pedagogical and Therapeutic Perspective",
+          "subtopics": []
+        },
+        {
+          "title": "Selected Issues in Speech Therapy and Speech Development Disorders",
+          "subtopics": []
+        },
+        { "title": "Basics of Neuropsychology", "subtopics": [] },
+        {
+          "title": "Anatomy and Physiology of the Nervous System with Elements of Neurology",
+          "subtopics": []
+        },
+        {
+          "title": "Psychological Conditions of Cognitive Processes",
+          "subtopics": []
+        },
+        {
+          "title": "Legal Aspects of Care for Students with Special Educational Needs",
+          "subtopics": []
+        },
+        {
+          "title": "Causes and Prevention of Difficulties in Learning to Read and Write",
+          "subtopics": []
+        },
+        { "title": "Organization of the Therapeutic Process", "subtopics": [] },
+        {
+          "title": "Developmental Conditions in Children - Diagnosis and Principles of Management",
+          "subtopics": []
+        },
+        { "title": "Methods of Non-directive Child Therapy", "subtopics": [] },
+        { "title": "Good Start Method", "subtopics": [] }
+      ]
+    },
+    {
+      "title": "Module C: Didactic-Methodological Preparation and Internships",
+      "topics": [
+        {
+          "title": "Diagnosis of Children with Special Educational Needs",
+          "subtopics": []
+        },
+        {
+          "title": "Methodology of Corrective and Compensatory Classes for Children with Motor Development Disorders",
+          "subtopics": []
+        },
+        {
+          "title": "Methodology of Therapeutic Classes for Children with Emotional and Social Development Disorders",
+          "subtopics": []
+        },
+        {
+          "title": "Methodology of Corrective and Compensatory Classes for Children with Specific Difficulties in Learning Mathematics",
+          "subtopics": []
+        },
+        {
+          "title": "Methodology of Corrective and Compensatory Classes for Children with Specific Difficulties in Learning to Read and Write",
+          "subtopics": []
+        },
+        {
+          "title": "Selected Issues in Early Childhood Education Methodology",
+          "subtopics": []
+        },
+        { "title": "Internship II (120 h)", "subtopics": [] }
+      ]
+    }
+  ],
+  "faculty": "Classes are conducted by experienced practitioners in the field of pedagogical therapy, special educators, psychologists, and speech therapists with many years of experience working with children and youth with learning difficulties.",
+  "practices": "<ul className=\"list-disc list-inside space-y-2\"><li>Internship I includes 60 hours and is carried out in semester 1.</li><li>Internship II includes 120 hours and is carried out in semester 3.</li><li>Internships can be carried out in educational institutions, psychological and pedagogical counseling centers, and other institutions dealing with pedagogical therapy.</li></ul>",
+  "evaluation": "Assessment of learning outcomes is based on activity during classes, completion of individual modules, implementation of internships, and preparation of a diploma thesis.",
+  "jobOpportunities": "<div><p className=\"text-lg font-semibold\">Graduates of the program will be prepared to work as:</p><ul className=\"list-disc list-inside mt-2 space-y-2\"><li>Pedagogical therapists in educational institutions</li><li>Specialists in psychological and pedagogical counseling centers</li><li>Supporting teachers in schools and kindergartens</li><li>Consultants for pedagogical therapy</li><li>Employees of institutions dealing with diagnosis and therapy of learning difficulties</li></ul></div>",
+  "invite": "<div class=''> <p class='text-gray-100'>Gain the qualifications and skills necessary to conduct pedagogical therapy and support children and youth with learning difficulties.</p></div>"
+}
