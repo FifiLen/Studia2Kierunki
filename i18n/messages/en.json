@@ -1,0 +1,307 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "homeDescription": "Home page",
+    "courses": "Courses",
+    "coursesDescription": "Postgraduate studies offer",
+    "recruitment": "Recruitment",
+    "recruitmentDescription": "Recruitment for postgraduate studies",
+    "faq": "FAQ",
+    "faqDescription": "Questions and answers",
+    "contact": "Contact",
+    "contactDescription": "Contact page",
+    "logoAlt": "ISP Rybnik",
+    "logoText": "ISP Rybnik",
+    "openMenu": "Open main menu",
+    "enrollButton": "Enroll in studies",
+    "changeLanguage": "Change language"
+  },
+
+  "Banner": {
+    "invitationText": "We invite you to apply for the winter semester 2024/2025.",
+    "recruitmentProcessAriaLabel": "Recruitment process",
+    "recruitmentButtonText": "Recruitment"
+  },
+
+  "CtaHomePage": {
+    "recruitmentTitle": "Recruitment",
+    "semesterTitle": "Semester 2024/2025",
+    "description": "Enrollment for the 2024/2025 semester is now open. Join us and start your postgraduate studies adventure. We have prepared an exceptional offer of courses that will allow you to gain desired skills in the job market and open new perspectives for you.",
+    "exploreOfferAriaLabel": "explore our offer",
+    "exploreOfferButton": "Explore our offer",
+    "imageAlt": "Female student at a computer, recruitment 2024/2025"
+  },
+  "FinanceInformationSection": {
+    "funding": "Funding",
+    "fundingTitle": "Get funding from the Development Services Database",
+    "fundingDescription": "We hereby inform you that there is an opportunity to benefit from funding for postgraduate studies, courses, and training from the Development Services Database. The funding can cover 80-100% of the cost of educational services. \n\nWe invite all interested parties to contact us for information on where to submit an application.",
+    "burOfferAriaLabel": "explore our offer in the Development Services Database",
+    "burOfferButton": "Explore our BUR offer",
+    "information": "Information",
+    "loansTitle": "Interest-free loans",
+    "loansDescription": "The Ministry of Development has launched interest-free loans for education, including postgraduate studies, courses, and training. Under the Operational Program Knowledge Education Development, you can receive up to 50,000 PLN in repayable assistance without any additional costs. \n\nImportantly, there is a possibility of cancelling 20-25% of the granted amount.\n\nWe encourage you to familiarize yourself with the information regarding interest-free loans. You can find more information on the website www.inwestujwrozwoj.pl",
+    "learnMoreAriaLabel": "learn more about interest-free loans"
+  },
+  "FaqSection": {
+    "title": "Find answers to your questions",
+    "description": "Welcome to the FAQ section dedicated to postgraduate studies! Here you will find answers to the most frequently asked questions about recruitment, study programs, fees, course organization, and other issues related to postgraduate education at our university.",
+    "browseCourses": "Browse courses",
+    "askQuestion": "Ask us a question",
+    "recruitment": "Recruitment",
+    "internships": "Internships",
+    "documentDeadline": "Can I submit documents after the deadline?",
+    "documentDeadlineAnswer": "No, WSH-E gives us a specific time by which we must have your documents prepared. Student ID numbers are also assigned by this time, which are necessary to qualify you for studies. After the deadline, WSH-E does not generate additional ID numbers, which means that applications are not accepted.",
+    "shortenCourse": "Can I complete a three-semester course in two semesters?",
+    "shortenCourseAnswer": "Yes, provided that you complete the internships scheduled for the third semester during the two semesters.",
+    "diplomaCopy": "How can I certify a copy of my diploma as true to the original?",
+    "diplomaCopyAnswer": "You can certify it by writing the sentence: \"I confirm this is a true copy of the original\" on the copy and confirming it with your handwritten signature. This form is accepted by WSH-E.",
+    "secondCourseDiscount": "Can I get a discount for a second course?",
+    "secondCourseDiscountAnswer": "Yes, you can take advantage of the discount by selecting courses from the \"offer\" tab on our website. A 50% discount on the second, cheaper course should be included in the payments.",
+    "doctoralDiploma": "Can I send a copy of my doctoral studies diploma?",
+    "doctoralDiplomaAnswer": "Unfortunately not, WSH-E only accepts copies of first or second degree diplomas.",
+    "shortenTwoSemesters": "Can I complete a two-semester course in one semester?",
+    "shortenTwoSemestersAnswer": "Absolutely not, a two-semester course cannot be shortened.",
+    "observationSheet": "Who should sign the observation sheet?",
+    "observationSheetAnswer": "The intern conducts classes that are observed by the Internship Supervisor who evaluates the intern. Therefore, the internship supervisor signs the document.",
+    "observationSheetModule": "To which module should I attach the observation sheet?",
+    "observationSheetModuleAnswer": "The observation sheet is attached to the module in which the intern is required to conduct classes independently.",
+    "internshipDeadline": "When do I need to submit my internship documents?",
+    "internshipDeadlineAnswer": "We submit internship documents as follows for the intake: October intake: March 30th of the following year, March intake: January 30th of the following year.",
+    "internshipSettlement": "What does the internship submission/settlement deadline mean?",
+    "internshipSettlementAnswer": "This means that if the settlement deadline is, for example, March 30th, the documents must be in the dean's office by March 30th at the latest in order to settle the internship on time.",
+    "completeDocuments": "Why do I need to send all internship documents together?",
+    "completeDocumentsAnswer": "Due to the number of students, it is very important that internship documents are sent together in accordance with the \"specialist internship credit\" file. Your documents are sent to WSH-E and checked there for content - the more missing documents, the longer you will wait for your certificate.",
+    "documentStatus": "I haven't received a response about whether everything is okay with my internship documents, what does this mean?",
+    "documentStatusAnswer": "Most often, this means that WSH-E has checked the documents and has no comments. Comments are sent to students via email. However, it's always worth contacting us in this case to double-check."
+  },
+  "ContactForm": {
+    "contactImageAlt": "contact",
+    "contact": "Contact",
+    "getInTouch": "Get in touch with us",
+    "formDescription": "Do you have questions about postgraduate studies? Want to learn more about the program, recruitment process, or fees? Get in touch with us!",
+    "name": "First Name",
+    "namePlaceholder": "John",
+    "surname": "Last Name",
+    "surnamePlaceholder": "Doe",
+    "email": "Email",
+    "emailPlaceholder": "johndoe@mail.com",
+    "message": "Your message",
+    "maxCharacters": "Maximum 500 characters",
+    "messagePlaceholder": "How can we help you?",
+    "sendMessageAriaLabel": "Send message",
+    "sending": "Sending...",
+    "thankYou": "Thank you for your message",
+    "sendMessage": "Send message",
+    "nameRequired": "First name is required.",
+    "surnameRequired": "Last name is required.",
+    "emailRequired": "Email is required.",
+    "emailInvalid": "Email is invalid."
+  },
+  "CoursesPage": {
+    "courses": "Courses",
+    "button-more": "See other majors",
+    "searchPlaceholder": "Search for a course...",
+    "sortBy": "Sort by",
+    "sortDefault": "Default",
+    "sortTitle": "Name (A-Z)",
+    "sortPrice": "Price (ascending)",
+    "allCategories": "All",
+    "psychologyAndPsychotherapy": "Psychology and Psychotherapy",
+    "specialAndCorrectivePedagogy": "Special and Corrective Pedagogy",
+    "educationalManagementAndDidactics": "Educational Management and Didactics",
+    "learnMore": "Learn more",
+    "aboutCourse": "about the course {title}",
+    "comingSoon": "Coming Soon",
+    "courseImageAlt": "Image representing the course: {title}",
+    "heroPostgraduateStudies": "Postgraduate Studies",
+    "heroGuaranteeStablePrice": "Fixed Price Guarantee",
+    "heroNoAdditionalFees": "No additional fees",
+    "heroNoSummerFee": "No holiday fee",
+    "heroInstallmentsPayment": "Payment in instalments",
+    "heroStudyCost": "Study cost",
+    "heroStudyDuration": "Duration",
+    "heroPaymentsCount": "Number of payments",
+    "heroPracticalHours": "Number of practices",
+    "heroEnrollOnThisCourse": "Enrol on the selected course"
+  },
+  "NavigationCourse": {
+    "opis": "Course Description",
+    "program-studiow": "Study Program",
+    "praktyki": "Internships",
+    "harmonogram": "Schedule",
+    "faq": "FAQ"
+  },
+  "AboutCourse": {
+    "courseDescription": "Course Description",
+    "courseDescriptionSubtitle": "Get detailed information about the course and find out who it is intended for.",
+    "targetGroup": "Target Group",
+    "courseObjective": "Course Objective",
+    "viewCourseProgram": "View Course Program"
+  },
+  "CourseProgramPsychotherapy": {
+    "noCourseProgram": "Course program not found.",
+    "courseProgram": "Course Program",
+    "courseDescription": "Familiarize yourself with the detailed course program and training modules"
+  },
+  "CourseProgram": {
+    "courseProgram": "Course Program",
+    "courseDescription": "Familiarize yourself with the detailed course program and training modules"
+  },
+  "CoursePractises": {
+    "internships": "Internships",
+    "internshipsImageAlt": "Student internships",
+    "evaluationTitle": "Assessment and Evaluation",
+    "evaluationImageAlt": "Assessment and evaluation",
+    "jobOpportunitiesTitle": "Job Opportunities",
+    "jobOpportunitiesImageAlt": "Job opportunities"
+  },
+
+  "ScheduleCourseSection": {
+    "schedule": "Schedule",
+    "months": "January,February,March,April,May,June,July,August,September,October,November,December"
+  },
+
+  "CtaCoursePageSection": {
+    "readyForNewChallenges": "Ready for new challenges?",
+    "enrollButton": "Enroll in your chosen course",
+    "imageAlt": "Recruitment 2024/2025"
+  },
+  "BannerFinanceCoursePage": {
+    "imageAlt": "Recruitment 2024/2025",
+    "funding": "Funding",
+    "title": "Get funding from the Development Services Database",
+    "description1": "We hereby inform you that there is an opportunity to benefit from funding for postgraduate studies, courses, and training from the Development Services Database. The funding can cover 80-100% of the cost of educational services",
+    "description2": "We encourage entrepreneurs and governing bodies to contact the County Labor Office and regional operators to apply for funding.",
+    "buttonAriaLabel": "explore our offer in the Development Services Database",
+    "buttonText": "Explore our DSB offer"
+  },
+  "RecruitmentPage": {
+    "imageAlt": "contact",
+    "recruitmentProcess": "Recruitment Process",
+    "allNecessaryInfo": "All Necessary Information",
+    "recruitmentDescription": "The recruitment for postgraduate studies is completed in a few steps. Below you will find step-by-step instructions that will guide you through the recruitment process. If you encounter any difficulties, we encourage you to contact us through the form, and our team will assist you.",
+    "errors": {
+      "nameRequired": "Name is required.",
+      "surnameRequired": "Surname is required.",
+      "emailRequired": "Email is required.",
+      "emailInvalid": "Email is invalid."
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "John",
+      "surname": "Surname",
+      "surnamePlaceholder": "Doe",
+      "email": "Email",
+      "emailPlaceholder": "johndoe@mail.com",
+      "message": "Your message",
+      "messageLimit": "Maximum 500 characters",
+      "messagePlaceholder": "How can we help you?",
+      "submitAriaLabel": "Send message",
+      "submitting": "Sending...",
+      "submitSuccess": "Thank you for submitting your message",
+      "submit": "Send message"
+    },
+    "steps": {
+      "title": "See how to enroll in postgraduate studies step by step",
+      "description": "To join the student community, you need to complete a few steps. We have prepared detailed instructions that will allow you to go through the entire process without problems.",
+      "enrollmentFee": "*The enrollment fee is 150 PLN.",
+      "exploreCoursesAriaLabel": "Learn more from FAQ",
+      "exploreCourses": "Explore our courses",
+      "askQuestionAriaLabel": "Ask us a question",
+      "askQuestion": "Ask us a question",
+      "recruitmentForm": "recruitment form",
+      "step1": {
+        "title": "Fill out the application form",
+        "description": "On our website, you will find an application form that needs to be filled out. Make sure the information provided is correct and complete."
+      },
+      "step2": {
+        "title": "Prepare required documents",
+        "description": "You need to attach a copy of your higher education diploma, confirmation of the enrollment fee payment, and a copy of the agreement you will receive after filling out the form. Make sure all documents are up to date."
+      },
+      "step3": {
+        "title": "Submit documents",
+        "description": "All documents can be sent electronically to the email address: nowekwalifikacjerybnik@gmail.com or submitted in person at our office at ul. Magnolii 25, 44-207 Rybnik."
+      },
+      "step4": {
+        "title": "Confirmation of acceptance",
+        "description": "After positive consideration of your application, you will receive an official confirmation of admission to postgraduate studies."
+      },
+      "step5": {
+        "title": "Having a problem?",
+        "description": "If you have any questions or concerns about the recruitment process, please contact us by phone at +48 123 456 789 or by email: nowekwalifikacjerybnik@gmail.com"
+      }
+    }
+  },
+  "ContactPage": {
+    "imageAlt": "contact",
+    "contact": "Contact",
+    "contactUs": "Contact Us",
+    "contactDescription": "Do you have questions about postgraduate studies? Want to learn more about the program, recruitment process, or fees? Get in touch with us!",
+    "contactInfo": "Contact Information",
+    "address": "ISP Rybnik, ul. Magnolii 25, 44-207 Rybnik",
+    "phone": "Phone: +48 797 173 501",
+    "email": "Email:",
+    "errors": {
+      "nameRequired": "Name is required.",
+      "surnameRequired": "Surname is required.",
+      "emailRequired": "Email is required.",
+      "emailInvalid": "Email is invalid."
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "John",
+      "surname": "Surname",
+      "surnamePlaceholder": "Doe",
+      "email": "Email",
+      "emailPlaceholder": "johndoe@mail.com",
+      "message": "Your message",
+      "messageLimit": "Maximum 500 characters",
+      "messagePlaceholder": "How can we help you?",
+      "submitAriaLabel": "Send message",
+      "submitting": "Sending...",
+      "submitSuccess": "Thank you for submitting your message",
+      "submit": "Send message"
+    }
+  },
+  "FooterComponent": {
+    "navigation": "Navigation",
+    "home": "Home",
+    "offer": "Offer",
+    "recruitment": "Recruitment",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "phone": "Phone",
+    "phoneWhatsapp": "Phone/Whatsapp",
+    "email": "Email",
+    "information": "Information",
+    "lecturers": "Lecturers",
+    "references": "References",
+    "dekraCertificate": "DEKRA Certificate",
+    "tglsCertificate": "TGLS Certificate",
+    "privacyPolicy": "Privacy Policy",
+    "documentCollection": "Document Collection",
+    "funding": "Funding",
+    "minorProtectionStandards": "Minor Protection Standards in Educational Institutions",
+    "graphics": "Graphics",
+    "socialMedia": "Social Media",
+    "courses": "Courses",
+    "comingSoon": "New courses will be available soon.",
+    "copyright": "© {year} ISP Rybnik. All rights reserved.",
+    "courseCategories": {
+      "psychologyAndPsychotherapy": "Psychology and Psychotherapy",
+      "specialAndCorrectivePedagogy": "Special and Corrective Pedagogy",
+      "educationalManagementAndDidactics": "Educational Management and Didactics"
+    }
+  },
+  "HeroHomePage": {
+    "courseImageAlt": "Image for course {title}",
+    "postgraduateStudies": "Postgraduate Studies",
+    "enrollButton": "Enroll in the course",
+    "learnMoreButton": "Learn more about the course",
+    "previousSlideAriaLabel": "Previous slide",
+    "nextSlideAriaLabel": "Next slide",
+    "goToSlideAriaLabel": "Go to slide {slideNumber}",
+    "resumeSlideAriaLabel": "Resume slide",
+    "pauseSlideAriaLabel": "Pause slide"
+  }
+}

@@ -1,6 +1,6 @@
-import { courses } from "@/utils/Kierunki";
 import React from "react";
 import TKA from "./tka-certyficate";
+import { useTranslations } from "next-intl";
 
 interface ScheduleProps {
   schedule: string[];
@@ -8,20 +8,13 @@ interface ScheduleProps {
 }
 
 const groupDatesByMonth = (dates: string[]): Record<string, string[]> => {
-  const months = [
-    "Styczeń",
-    "Luty",
-    "Marzec",
-    "Kwiecień",
-    "Maj",
-    "Czerwiec",
-    "Lipiec",
-    "Sierpień",
-    "Wrzesień",
-    "Październik",
-    "Listopad",
-    "Grudzień",
-  ];
+  if (!Array.isArray(dates)) {
+    return {};
+  }
+
+  const t = useTranslations("ScheduleCourseSection");
+
+  const months = t("months").split(",");
 
   return dates.reduce((acc: Record<string, string[]>, date) => {
     const [day, month, year] = date.split(".");
@@ -38,16 +31,19 @@ const groupDatesByMonth = (dates: string[]): Record<string, string[]> => {
 };
 
 export const ScheduleCourseSection: React.FC<ScheduleProps> = ({
-  schedule,
+  schedule = [],
   scheduleInfo,
 }) => {
-  const groupedSchedule = groupDatesByMonth(schedule);
+  const t = useTranslations("ScheduleCourseSection");
+  const groupedSchedule = Array.isArray(schedule)
+    ? groupDatesByMonth(schedule)
+    : {};
 
   return (
     <section id="harmonogram" className="w-full bg-gray-100 py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <h2 className=" mb-3 text-4xl md:text-5xl font-semibold tracking-tighter text-zinc-800">
-          Harmonogram
+        <h2 className="mb-3 text-4xl md:text-5xl font-semibold tracking-tighter text-zinc-800">
+          {t("schedule")}
         </h2>
         <p className="text-xl text-zinc-700 tracking-tighter mb-8">
           {scheduleInfo}

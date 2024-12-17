@@ -1,0 +1,87 @@
+{
+  "category": "educational management and didactics",
+  "id": "zarzadzanie-oswiata",
+  "title": "Educational Management",
+  "banerDescription": "Prepare yourself for effective and creative management of schools and educational institutions.",
+  "description": "<ul className=\"list-disc list-inside space-y-2\"><li>Management staff of schools and educational institutions</li><li>Employees of local and governmental educational administration</li><li>Individuals with higher education seeking qualifications in educational management</li><li>People wishing to enrich their knowledge in modern organization and management in educational institutions</li></ul>",
+  "description2": "The postgraduate studies in \"Educational Management\" aim to prepare qualified management staff for effective and creative management of schools and educational institutions. Completion of the course is associated with obtaining qualifications to work in management in all types of schools and educational institutions.",
+  "description3": "Graduates will receive a certificate of completion of postgraduate studies confirming their eligibility to hold management positions in all types of schools and educational institutions subject to the Education System Act, based on the current regulations of the Minister of Education and Science.",
+  "description4": "",
+  "descriptionP1": "",
+  "duration": "2 semesters",
+  "practicalHours": "30h of internship",
+  "price": "2600 PLN",
+  "payments": "10 x 260 PLN",
+  "scheduleInfo": "",
+  "schedule": [
+    "26.10.2024",
+    "16.11.2024",
+    "23.11.2024",
+    "30.11.2024",
+    "07.12.2024",
+    "14.12.2024",
+    "11.01.2025",
+    "18.01.2025",
+    "25.01.2025",
+    "15.02.2025",
+    "01.03.2025",
+    "15.03.2025",
+    "22.03.2025",
+    "05.04.2025",
+    "12.04.2025",
+    "10.05.2025",
+    "17.05.2025",
+    "24.05.2025"
+  ],
+  "modules": [
+    {
+      "title": "Specialized Education Module",
+      "topics": [
+        {
+          "title": "Administration of educational institution assets",
+          "subtopics": []
+        },
+        { "title": "Management ethics", "subtopics": [] },
+        { "title": "School finances", "subtopics": [] },
+        { "title": "Human resource management", "subtopics": [] },
+        { "title": "Change management", "subtopics": [] },
+        { "title": "Computer-aided school management", "subtopics": [] },
+        { "title": "Management control", "subtopics": [] },
+        { "title": "Marketing premises of management", "subtopics": [] },
+        { "title": "Pedagogical supervision in school", "subtopics": [] },
+        {
+          "title": "General theory of organization and management",
+          "subtopics": []
+        },
+        {
+          "title": "Organization of the pedagogical process in the context of education system reform",
+          "subtopics": []
+        },
+        {
+          "title": "Educational institution and local environment",
+          "subtopics": []
+        },
+        { "title": "Educational law", "subtopics": [] },
+        {
+          "title": "Psychology in managing an educational institution",
+          "subtopics": []
+        },
+        {
+          "title": "Selected issues of accounting for public finance sector entities",
+          "subtopics": []
+        },
+        { "title": "Quality management", "subtopics": [] },
+        {
+          "title": "Selected problems of contemporary education",
+          "subtopics": []
+        },
+        { "title": "Professional internship 30 h", "subtopics": [] }
+      ]
+    }
+  ],
+  "faculty": "Classes are conducted by experienced practitioners in the field of educational management, with many years of experience in managing educational institutions and in educational administration.",
+  "practices": "<ul className=\"list-disc list-inside space-y-2\"><li>The professional internship covers 30 hours and can be carried out in educational institutions, local administration, or other institutions related to education.</li><li>Possibility to complete internships at the workplace or in selected educational institutions.</li></ul>",
+  "evaluation": "The assessment of learning outcomes is based on activity during classes, completion of individual modules, and preparation of a diploma thesis.",
+  "jobOpportunities": "<div><p className=\"text-lg font-semibold\">Graduates of the program will be prepared to work as:</p><ul className=\"list-disc list-inside mt-2 space-y-2\"><li>Directors and deputy directors of schools and educational institutions</li><li>Managers and employees of educational administration</li><li>Specialists in pedagogical supervision</li><li>Consultants in educational institutions</li><li>Coordinators of educational projects</li><li>Employees of bodies running schools and educational institutions</li></ul></div>",
+  "invite": "<div class=''> <p class='text-gray-100'>Join the group of professionals and gain the competencies necessary for management in education.</p></div>"
+}

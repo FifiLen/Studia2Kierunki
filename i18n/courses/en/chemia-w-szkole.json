@@ -1,0 +1,65 @@
+{
+  "category": "zarzadzanie i dydaktyka edukacyjna",
+  "id": "chemia-w-szkole",
+  "title": "Chemistry in School",
+  "banerDescription": "Gain qualifications to teach chemistry, developing your pedagogical and subject-matter competencies.",
+  "description": "<ul className=\"list-disc list-inside space-y-2\"><li>Teachers wishing to obtain qualifications to teach chemistry</li><li>Individuals interested in chemistry and chemistry education</li><li>Specialists looking to expand their competencies in chemistry</li></ul>",
+  "description2": "The main goal of the studies is to provide solid foundations in the field of chemistry and pedagogy, so that you can become a competent chemistry teacher. Our curricula focus not only on theory but also on practical skills that will allow you to effectively convey knowledge to your students.",
+  "description3": "We emphasize high-quality teaching by engaging qualified specialists and experienced lecturers. We want you to gain not only knowledge during your studies but also practical experience through participation in workshops and internships. Our aim is to provide you with tools and competencies that will enable you to effectively teach chemistry and develop your own teaching methods.",
+  "description4": "Understanding how important self-improvement and professional development are, we are ready to support you at every stage of your education and career. By choosing our postgraduate studies, you open doors to new professional opportunities and increase your chances of success as a chemistry teacher.",
+  "descriptionP1": "",
+  "duration": "3 semesters",
+  "practicalHours": "Pedagogical practice (90 hours)",
+  "price": "3300 PLN",
+  "payments": "10 x 330 PLN",
+  "scheduleInfo": "",
+  "schedule": [
+    "26.10.2024",
+    "16.11.2024",
+    "23.11.2024",
+    "30.11.2024",
+    "07.12.2024",
+    "14.12.2024",
+    "11.01.2025",
+    "18.01.2025",
+    "25.01.2025",
+    "15.02.2025",
+    "01.03.2025",
+    "15.03.2025",
+    "22.03.2025",
+    "05.04.2025",
+    "12.04.2025",
+    "10.05.2025",
+    "17.05.2025",
+    "24.05.2025"
+  ],
+  "modules": [
+    {
+      "title": "Specialized Education Module",
+      "topics": [
+        { "title": "General Chemistry", "subtopics": [] },
+        { "title": "Organic Chemistry", "subtopics": [] },
+        { "title": "Inorganic Chemistry", "subtopics": [] },
+        { "title": "Physical Chemistry", "subtopics": [] },
+        { "title": "Analytical Chemistry", "subtopics": [] },
+        { "title": "Nuclear Chemistry", "subtopics": [] },
+        { "title": "Chemistry Core Curriculum", "subtopics": [] },
+        { "title": "Chemistry and the Natural Environment", "subtopics": [] },
+        {
+          "title": "Didactics of Teaching Chemistry in Primary School",
+          "subtopics": []
+        },
+        {
+          "title": "Didactics of Teaching Chemistry in Secondary School",
+          "subtopics": []
+        },
+        { "title": "Pedagogical Practice (90 hours)", "subtopics": [] }
+      ]
+    }
+  ],
+  "faculty": "Classes are conducted by experienced practitioners and specialists in the field of chemistry and chemistry didactics.",
+  "practices": "<ul className=\"list-disc list-inside space-y-2\"><li>Pedagogical practice allows gaining experience in teaching chemistry.</li><li>Internships can be carried out in primary and secondary schools.</li></ul>",
+  "evaluation": "The assessment of learning outcomes is based on activity during classes, completion of individual modules, implementation of internships, and preparation of a diploma thesis.",
+  "jobOpportunities": "<div><p className=\"text-lg font-semibold\">Graduates of the program will be prepared to work as:</p><ul className=\"list-disc list-inside mt-2 space-y-2\"><li>Chemistry teachers in primary and secondary schools</li><li>Chemistry education specialists</li><li>Consultants in the field of chemistry teaching</li><li>Employees of educational and scientific institutions</li><li>Creators of educational materials in the field of chemistry</li></ul></div>",
+  "invite": "<div class=''> <p class='text-gray-100'>Gain the qualifications and skills necessary to teach chemistry and inspire students to discover the fascinating world of chemical sciences.</p></div>"
+}

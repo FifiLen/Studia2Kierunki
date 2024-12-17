@@ -1,0 +1,102 @@
+{
+  "category": "educational management and didactics",
+  "id": "edukacja-dla-bezpieczenstwa",
+  "title": "Education for Safety",
+  "banerDescription": "Gain qualifications to teach the subject 'Education for Safety' in primary and secondary schools, developing competencies in public safety, civil protection, and rescue operations.",
+  "description": "<ul className=\"list-disc list-inside space-y-2\"><li>Teachers wishing to obtain qualifications to teach the subject 'Education for Safety'</li><li>Individuals interested in public safety, civil protection, and rescue operations</li><li>Specialists looking to expand their competencies in safety education</li></ul>",
+  "description2": "The aim of the postgraduate studies in Education for Safety is to prepare teachers to conduct classes in safety education in primary and secondary schools. The study program aims to develop didactic and methodological competencies related to teaching issues of public safety, civil protection, and rescue operations.",
+  "description3": "The studies allow for deepening theoretical knowledge in the fields of defense systems, civil protection, humanitarian law, first aid, rescue, and contemporary threats such as natural disasters, military crises, and other emergency situations.",
+  "description4": "The program prepares for conducting practical classes including first aid training, organization of rescue operations, crisis management, and acquiring basic defense skills.",
+  "descriptionP1": "",
+  "duration": "3 semesters",
+  "practicalHours": "90 hours of internship",
+  "price": "3600 PLN",
+  "payments": "10 x 360 PLN",
+  "scheduleInfo": "",
+  "schedule": [
+    "26.10.2024",
+    "16.11.2024",
+    "23.11.2024",
+    "30.11.2024",
+    "07.12.2024",
+    "14.12.2024",
+    "11.01.2025",
+    "18.01.2025",
+    "25.01.2025",
+    "15.02.2025",
+    "01.03.2025",
+    "15.03.2025",
+    "22.03.2025",
+    "05.04.2025",
+    "12.04.2025",
+    "10.05.2025",
+    "17.05.2025",
+    "24.05.2025"
+  ],
+  "modules": [
+    {
+      "title": "Specialized Education Module",
+      "topics": [
+        {
+          "title": "Peacetime threats, their sources, and forms of occurrence",
+          "subtopics": []
+        },
+        {
+          "title": "Threats during military crisis and war, their sources and forms of occurrence",
+          "subtopics": []
+        },
+        {
+          "title": "Preparation for rescue operations in extraordinary threat situations (mass accidents and disasters)",
+          "subtopics": []
+        },
+        {
+          "title": "Defense systems of the Republic of Poland",
+          "subtopics": []
+        },
+        { "title": "Rescue operations", "subtopics": [] },
+        {
+          "title": "Psychological role of the individual in shaping personal and social security",
+          "subtopics": []
+        },
+        {
+          "title": "Types of armed forces of the Republic of Poland, their characteristics and purpose",
+          "subtopics": []
+        },
+        { "title": "Civil protection and civil defense", "subtopics": [] },
+        {
+          "title": "International humanitarian law and selected issues concerning behavior in threat situations",
+          "subtopics": []
+        },
+        { "title": "Sport shooting and orienteering", "subtopics": [] },
+        {
+          "title": "Basics of maneuvering and organizing actions",
+          "subtopics": []
+        },
+        { "title": "Terrorism", "subtopics": [] },
+        { "title": "Counteracting violence in school", "subtopics": [] },
+        { "title": "Human rights in times of war and peace", "subtopics": [] },
+        { "title": "Military service", "subtopics": [] },
+        {
+          "title": "Security and protection of personal data",
+          "subtopics": []
+        },
+        { "title": "Basics of addictions", "subtopics": [] },
+        { "title": "First aid", "subtopics": [] },
+        {
+          "title": "Didactics of teaching Education for Safety in primary school",
+          "subtopics": []
+        },
+        {
+          "title": "Didactics of teaching Education for Safety in secondary school",
+          "subtopics": []
+        },
+        { "title": "Internship (90 hours)", "subtopics": [] }
+      ]
+    }
+  ],
+  "faculty": "Classes are conducted by experienced practitioners in the fields of public safety, civil protection, rescue operations, and didactics.",
+  "practices": "<ul className=\"list-disc list-inside space-y-2\"><li>The internship includes 90 hours and allows gaining experience in teaching the subject 'Education for Safety'.</li><li>Internships can be carried out in primary and secondary schools.</li></ul>",
+  "evaluation": "The assessment of learning outcomes is based on activity during classes, completion of individual modules, implementation of internships, and preparation of a diploma thesis.",
+  "jobOpportunities": "<div><p className=\"text-lg font-semibold\">Graduates of the program will be prepared to work as:</p><ul className=\"list-disc list-inside mt-2 space-y-2\"><li>Teachers of the subject 'Education for Safety' in primary and secondary schools</li><li>Safety specialists in educational institutions</li><li>Consultants in the field of public safety and civil protection</li><li>First aid and rescue operations trainers</li><li>Employees of institutions dealing with education on public safety</li></ul></div>",
+  "invite": "<div class=''> <p class='text-gray-100'>Gain the qualifications and skills necessary to teach the subject 'Education for Safety' and support students in developing awareness of public safety.</p></div>"
+}

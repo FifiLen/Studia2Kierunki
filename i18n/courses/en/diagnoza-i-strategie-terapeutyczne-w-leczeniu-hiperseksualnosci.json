@@ -1,0 +1,185 @@
+{
+  "category": "psychology and psychotherapy",
+  "id": "diagnoza-i-strategie-terapeutyczne-w-leczeniu-hiperseksualnosci",
+  "title": "Diagnosis and Therapeutic Strategies in the Treatment of Hypersexuality",
+  "banerDescription": "Learn advanced methods of diagnosis and therapy for hypersexuality, offering practical tools and therapeutic strategies.",
+  "description": "<ul className=\"list-disc list-inside space-y-2\"><li>management staff of educational institutions<br><span className=\"ml-4\">(schools, kindergartens, nurseries, counseling centers, educational centers, others)</span></li><li>pedagogues</li><li>psychologists</li><li>speech therapists</li><li>therapists</li><li>teachers</li><li>parents</li><li>legal guardians</li><li>educators</li><li>people working with children, youth, adults, seniors</li><li>people working with children, youth and adults with&nbsp;<span className=\"ml-2\">disabilities that cause lack or limitation of communication and functioning in society</span></li></ul>",
+  "description2": "The aim of the study program is to prepare specialists in the diagnosis and therapy of individuals struggling with hypersexuality. The program emphasizes an interdisciplinary approach, combining knowledge from psychology, sexology, psychiatry, medicine, and behavioral therapy. Students will gain both theoretical knowledge and practical skills that will allow them to effectively help patients.",
+  "description3": "The study program is divided into two semesters, including theoretical lectures, practical workshops, seminars, and professional internships.",
+  "description4": "",
+  "descriptionP1": "",
+  "duration": "2 semesters",
+  "practicalHours": "30h of internship",
+  "price": "6000 PLN",
+  "payments": "10x600 PLN",
+  "scheduleInfo": "",
+  "schedule": [
+    "26.10.2024",
+    "16.11.2024",
+    "23.11.2024",
+    "30.11.2024",
+    "07.12.2024",
+    "14.12.2024",
+    "11.01.2025",
+    "18.01.2025",
+    "25.01.2025",
+    "15.02.2025",
+    "01.03.2025",
+    "15.03.2025",
+    "22.03.2025",
+    "05.04.2025",
+    "12.04.2025",
+    "10.05.2025",
+    "17.05.2025",
+    "24.05.2025"
+  ],
+  "modules": [
+    {
+      "title": "Theoretical Foundations",
+      "topics": [
+        {
+          "title": "Clinical Psychology",
+          "subtopics": [
+            { "title": "Basic concepts and theories" },
+            { "title": "Psychological diagnosis" },
+            { "title": "Mental disorders" }
+          ]
+        },
+        {
+          "title": "Sexology",
+          "subtopics": [
+            { "title": "Introduction to sexology" },
+            { "title": "Human sexual development" },
+            { "title": "Sexual norms and pathologies" }
+          ]
+        },
+        {
+          "title": "Basics of Psychiatry",
+          "subtopics": [
+            { "title": "Biological basis of mental disorders" },
+            { "title": "Pharmacological treatment of mental disorders" },
+            { "title": "Mood, anxiety, and personality disorders" }
+          ]
+        },
+        {
+          "title": "Research Methods in Psychology and Sexology",
+          "subtopics": [
+            { "title": "Quantitative and qualitative methods" },
+            { "title": "Statistical analysis" },
+            { "title": "Ethics in scientific research" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Diagnosis of Hypersexuality",
+      "topics": [
+        {
+          "title": "Diagnosis in Sexology",
+          "subtopics": [
+            { "title": "Diagnostic tools" },
+            { "title": "Clinical interview" },
+            { "title": "Tests and questionnaires" }
+          ]
+        },
+        {
+          "title": "Hypersexuality",
+          "subtopics": [
+            { "title": "Definitions and diagnostic criteria" },
+            { "title": "Epidemiology and etiology" },
+            { "title": "Health and social consequences" }
+          ]
+        },
+        {
+          "title": "Sexual Psychopathology",
+          "subtopics": [
+            { "title": "Sexual disorders" },
+            { "title": "Comorbidity of hypersexuality with other disorders" },
+            { "title": "Recognition and differentiation of disorders" }
+          ]
+        },
+        {
+          "title": "Clinical Case Studies",
+          "subtopics": [
+            { "title": "Analysis of clinical cases" },
+            { "title": "Practical application of diagnostic tools" },
+            { "title": "Clinical supervisions" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Therapeutic Strategies",
+      "topics": [
+        {
+          "title": "Cognitive-Behavioral Psychotherapy",
+          "subtopics": [
+            { "title": "CBT theory and techniques" },
+            { "title": "Exposure therapy and desensitization" },
+            { "title": "Cognitive interventions" }
+          ]
+        },
+        {
+          "title": "Sexual Therapy",
+          "subtopics": [
+            { "title": "Sexual therapy techniques" },
+            { "title": "Couple therapy" },
+            { "title": "Individual therapy" }
+          ]
+        },
+        {
+          "title": "Integrative Approaches in Therapy",
+          "subtopics": [
+            { "title": "Schema therapy" },
+            { "title": "Acceptance and Commitment Therapy (ACT)" },
+            { "title": "Psychodynamic therapy" }
+          ]
+        },
+        {
+          "title": "Therapeutic Practice",
+          "subtopics": [
+            { "title": "Clinical practices" },
+            { "title": "Supervisions and intervisions" },
+            { "title": "Therapy planning and evaluation" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Professional Practice and Diploma Thesis",
+      "topics": [
+        {
+          "title": "Professional Practice",
+          "subtopics": [
+            { "title": "Internship in therapeutic institutions" },
+            { "title": "Work with patients under supervision" },
+            { "title": "Documentation and reporting" }
+          ]
+        },
+        {
+          "title": "Diploma Seminar",
+          "subtopics": [
+            { "title": "Preparation of diploma thesis" },
+            { "title": "Presentation of diploma thesis" },
+            { "title": "Professional ethics" }
+          ]
+        },
+        {
+          "title": "Final Supervision",
+          "subtopics": [
+            { "title": "Assessment of professional competencies" },
+            { "title": "Reflection on clinical practice" },
+            {
+              "title": "Summary and planning of further professional development"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faculty": "The program is conducted by experienced specialists in the fields of psychology, sexology, psychiatry, and therapy, with many years of clinical and scientific experience.",
+  "practices": "<ul className=\"list-disc list-inside space-y-2\"><li>50% - possibility to complete internships remotely at the MAGNOLIA Psychological and Pedagogical Counseling Center</li><li>The remaining 50% can be completed:<ul className=\"list-disc list-inside space-y-1 ml-4\"><li>in home institutions in the form of additional classes or performed within the teaching load,</li><li>in educational institutions,</li><li>in counseling centers,</li><li>other.</li></ul></li></ul>",
+  "evaluation": "The assessment of learning outcomes will be based on: preparation of a project work in the area of Diagnosis and therapeutic strategies in the treatment of hypersexuality.",
+  "jobOpportunities": "<ul className=\"list-disc list-inside\"><li className=\"mb-2\">Therapists specializing in the treatment of sexual disorders</li><li className=\"mb-2\">Consultants in mental and sexual health clinics</li><li className=\"mb-2\">Scientists and researchers in the field of sexology and psychotherapy</li><li className=\"mb-2\">Specialists in therapeutic and rehabilitation centers</li></ul>",
+  "invite": "<div class=''> <p class='text-gray-100'> Learn advanced methods of diagnosis and therapy for hypersexuality, offering practical tools and therapeutic strategies.</p></div>"
+}

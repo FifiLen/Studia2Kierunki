@@ -1,0 +1,92 @@
+{
+  "category": "educational management and didactics",
+  "id": "jezyk-polski",
+  "title": "Polish Language",
+  "banerDescription": "Gain qualifications to teach Polish language in primary and secondary schools, developing your substantive and didactic competencies.",
+  "description": "<ul className=\"list-disc list-inside space-y-2\"><li>Teachers wishing to obtain qualifications to teach Polish language</li><li>Individuals interested in Polish literature and language culture</li><li>Specialists wanting to develop skills in analyzing and interpreting literary texts</li></ul>",
+  "description2": "The studies aim to provide solid knowledge in grammar, history of the Polish language, literature, and practical teaching skills. The program covers both theory and practice, enabling participants to develop competencies necessary for a teacher's work.",
+  "description3": "Through these studies, you will gain skills in analyzing and interpreting literature in the context of different epochs, as well as learn methods for effective teaching of the Polish language. Classes are conducted by experienced specialists, ensuring a high level of education.",
+  "description4": "The study program emphasizes professional development, offering practical teaching classes and workshops. As a result, graduates are prepared to work in primary and secondary schools.",
+  "descriptionP1": "",
+  "duration": "3 semesters",
+  "practicalHours": "Pedagogical practice (90 hours)",
+  "price": "3600 PLN",
+  "payments": "12 x 300 PLN",
+  "scheduleInfo": "",
+  "schedule": [
+    "26.10.2024",
+    "16.11.2024",
+    "23.11.2024",
+    "30.11.2024",
+    "07.12.2024",
+    "14.12.2024",
+    "11.01.2025",
+    "18.01.2025",
+    "25.01.2025",
+    "15.02.2025",
+    "01.03.2025",
+    "15.03.2025",
+    "22.03.2025",
+    "05.04.2025",
+    "12.04.2025",
+    "10.05.2025",
+    "17.05.2025",
+    "24.05.2025"
+  ],
+  "modules": [
+    {
+      "title": "Substantive Preparation Module",
+      "topics": [
+        { "title": "Polish Grammar", "subtopics": [] },
+        { "title": "History of the Polish Language", "subtopics": [] },
+        {
+          "title": "Polish Language Culture with Practical Stylistics",
+          "subtopics": []
+        },
+        { "title": "Poetics and Analysis of Literary Works", "subtopics": [] },
+        { "title": "World Literature", "subtopics": [] },
+        {
+          "title": "Literature of Renaissance, Baroque, Enlightenment with Analysis of Literary Texts",
+          "subtopics": []
+        },
+        {
+          "title": "Literature of Romanticism and Positivism with Analysis of Literary Texts",
+          "subtopics": []
+        },
+        {
+          "title": "Literature of Young Poland and 20th Century, with Analysis of Literary Texts",
+          "subtopics": []
+        },
+        { "title": "Children's and Youth Literature", "subtopics": [] },
+        {
+          "title": "Literary Text in School - Analysis and Interpretation",
+          "subtopics": []
+        },
+        {
+          "title": "Causes and Prevention of Difficulties in Learning to Read and Write",
+          "subtopics": []
+        },
+        { "title": "Knowledge of Contemporary Culture", "subtopics": [] }
+      ]
+    },
+    {
+      "title": "Didactic and Methodological Module",
+      "topics": [
+        {
+          "title": "Didactics of Teaching Polish Language in Primary School",
+          "subtopics": []
+        },
+        {
+          "title": "Didactics of Teaching Polish Language in Secondary School",
+          "subtopics": []
+        },
+        { "title": "Pedagogical Practice (90 hours)", "subtopics": [] }
+      ]
+    }
+  ],
+  "faculty": "Classes are conducted by experienced specialists in the fields of linguistics, literary studies, and Polish language didactics.",
+  "practices": "<ul className=\"list-disc list-inside space-y-2\"><li>Pedagogical practice allows gaining experience in teaching Polish language.</li><li>Internships are carried out in primary and secondary schools.</li></ul>",
+  "evaluation": "Assessment of learning outcomes includes activity during classes, completion of modules, implementation of internships, and preparation of a diploma thesis.",
+  "jobOpportunities": "<div><p className=\"text-lg font-semibold\">Graduates of the program will be prepared to work as:</p><ul className=\"list-disc list-inside mt-2 space-y-2\"><li>Polish language teachers in primary and secondary schools</li><li>Specialists in literature analysis and interpretation</li><li>Educational consultants in the field of Polish language</li><li>Creators of didactic materials and educational programs</li><li>Employees of cultural and educational institutions</li></ul></div>",
+  "invite": "<div class=''> <p class='text-gray-100'>Develop your literary passions and didactic competencies through our postgraduate studies in Polish language.</p></div>"
+}

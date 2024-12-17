@@ -1,0 +1,229 @@
+{
+  "category": "special and corrective education",
+  "id": "trener-umiejetnosci-spolecznych",
+  "title": "Social Skills Trainer",
+  "banerDescription": "Become an expert in building relationships and effective communication in any organization.",
+  "description": "<ul className=\"list-disc list-inside space-y-2\"><li>management staff of educational institutions<br><span className=\"ml-4\">(schools, kindergartens, nurseries, counseling centers, educational centers, others)</span></li><li>pedagogues</li><li>psychologists</li><li>speech therapists</li><li>therapists</li><li>teachers</li><li>parents</li><li>legal guardians</li><li>educators</li><li>people working with children, youth, adults, seniors</li><li>people working with children, youth and adults with&nbsp;<span className=\"ml-2\">disabilities that cause lack or limitation of communication and functioning in society</span></li></ul>",
+  "description2": "The aim of the studies is to comprehensively prepare specialists to work in shaping and developing social skills. The program emphasizes understanding social theories, a practical approach to teaching interpersonal skills, and developing training competencies. Students will gain knowledge in psychology, pedagogy, sociology, and coaching training techniques, which will allow them to effectively support the development of social competencies in various age groups and environments.",
+  "description3": "The study program is divided into two semesters, including lectures, practical workshops, seminars, and professional internships. There is a possibility to complete 30 hours in a remote format at the MAGNOLIA Psychological and Pedagogical Counseling Center.",
+  "description4": "",
+  "descriptionP1": "",
+  "duration": "2 semesters",
+  "practicalHours": "60h of internship",
+  "price": "2500 PLN",
+  "payments": "5x500 PLN",
+  "scheduleInfo": "",
+  "schedule": [
+    "26.10.2024",
+    "16.11.2024",
+    "23.11.2024",
+    "30.11.2024",
+    "07.12.2024",
+    "14.12.2024",
+    "11.01.2025",
+    "18.01.2025",
+    "25.01.2025",
+    "15.02.2025",
+    "01.03.2025",
+    "15.03.2025",
+    "22.03.2025",
+    "05.04.2025",
+    "12.04.2025",
+    "10.05.2025",
+    "17.05.2025",
+    "24.05.2025"
+  ],
+  "modules": [
+    {
+      "title": "Fundamentals of Psychology and Social Pedagogy",
+      "topics": [
+        {
+          "title": "Social Psychology",
+          "subtopics": [
+            { "title": "Basic concepts and theories" },
+            { "title": "Mechanisms of social influence" },
+            { "title": "Interpersonal relationships" }
+          ]
+        },
+        {
+          "title": "Social Pedagogy",
+          "subtopics": [
+            { "title": "Theories of education" },
+            { "title": "Methods of teaching and developing social skills" },
+            { "title": "Working with groups" }
+          ]
+        },
+        {
+          "title": "Interpersonal Communication",
+          "subtopics": [
+            { "title": "Communication models" },
+            { "title": "Communication barriers" },
+            { "title": "Effective communication techniques" }
+          ]
+        },
+        {
+          "title": "Research Methods in Social Sciences",
+          "subtopics": [
+            { "title": "Quantitative and qualitative methods" },
+            { "title": "Statistical analysis" },
+            { "title": "Ethics in social research" }
+          ]
+        },
+        {
+          "title": "Introduction to Coaching",
+          "subtopics": [
+            { "title": "History and definition of coaching" },
+            { "title": "Main trends and approaches" },
+            { "title": "Role of a coach" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Diagnosis of Social Skills",
+      "topics": [
+        {
+          "title": "Diagnosis in Social Psychology",
+          "subtopics": [
+            { "title": "Diagnostic tools" },
+            { "title": "Interview and observation" },
+            { "title": "Tests and questionnaires" }
+          ]
+        },
+        {
+          "title": "Development of Social Skills",
+          "subtopics": [
+            { "title": "Stages of social development" },
+            { "title": "Factors influencing the development of social skills" },
+            { "title": "Consequences of lack of social skills" }
+          ]
+        },
+        {
+          "title": "Social Psychopathology",
+          "subtopics": [
+            { "title": "Communication disorders" },
+            { "title": "Adaptation difficulties" },
+            { "title": "Recognition and differentiation of social disorders" }
+          ]
+        },
+        {
+          "title": "Clinical Case Studies",
+          "subtopics": [
+            { "title": "Analysis of clinical cases" },
+            { "title": "Practical application of diagnostic tools" },
+            { "title": "Clinical supervisions" }
+          ]
+        },
+        {
+          "title": "Emotional Education",
+          "subtopics": [
+            { "title": "Role of emotions in social life" },
+            { "title": "Emotion management techniques" },
+            { "title": "Emotional intelligence" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Intervention and Therapeutic Strategies",
+      "topics": [
+        {
+          "title": "Social Skills Training Techniques",
+          "subtopics": [
+            { "title": "Assertiveness training" },
+            { "title": "Communication skills training" },
+            { "title": "Stress management training" }
+          ]
+        },
+        {
+          "title": "Coaching and Mentoring",
+          "subtopics": [
+            { "title": "Basics of coaching" },
+            { "title": "Mentoring techniques" },
+            { "title": "Role of the trainer in personal development" }
+          ]
+        },
+        {
+          "title": "Integrative Approaches in Training",
+          "subtopics": [
+            { "title": "Cognitive-behavioral therapy (CBT)" },
+            { "title": "Acceptance and commitment therapy (ACT)" },
+            { "title": "Psychodynamic therapy" }
+          ]
+        },
+        {
+          "title": "Trainer Practice",
+          "subtopics": [
+            { "title": "Clinical and training practices" },
+            { "title": "Supervisions and intervisions" },
+            { "title": "Planning and evaluation of training sessions" }
+          ]
+        },
+        {
+          "title": "Crisis Interventions",
+          "subtopics": [
+            { "title": "Managing crisis situations" },
+            { "title": "Crisis intervention techniques" },
+            { "title": "Working with people in crisis" }
+          ]
+        },
+        {
+          "title": "Team Building",
+          "subtopics": [
+            { "title": "Group dynamics" },
+            { "title": "Team roles" },
+            { "title": "Techniques for building and managing teams" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Professional Practice and Diploma Thesis",
+      "topics": [
+        {
+          "title": "Professional Practice",
+          "subtopics": [
+            {
+              "title": "Internship in educational and therapeutic institutions"
+            },
+            {
+              "title": "Working with groups and individual clients under supervision"
+            },
+            { "title": "Documentation and reporting" }
+          ]
+        },
+        {
+          "title": "Diploma Seminar",
+          "subtopics": [
+            { "title": "Preparation of diploma thesis" },
+            { "title": "Presentation of research results" },
+            { "title": "Professional ethics" }
+          ]
+        },
+        {
+          "title": "Final Supervision",
+          "subtopics": [
+            { "title": "Assessment of professional competencies" },
+            { "title": "Reflection on training practice" },
+            {
+              "title": "Summary and planning of further professional development"
+            }
+          ]
+        },
+        {
+          "title": "Personal Development of the Trainer",
+          "subtopics": [
+            { "title": "Self-reflection and self-assessment" },
+            { "title": "Stress management techniques" },
+            { "title": "Professional development plans" }
+          ]
+        }
+      ]
+    }
+  ],
+  "faculty": "The program will be conducted by experienced specialists in psychology, pedagogy, sociology, and professional social skills trainers with many years of clinical and training experience. The faculty consists of experts with practical experience in training and coaching work, which will ensure a high level of education and support for students.",
+  "practices": "<ul className=\"list-disc list-inside space-y-2\"><li>50% - possibility to complete internships remotely at the MAGNOLIA Psychological and Pedagogical Counseling Center</li><li>The remaining 50% can be completed:<ul className=\"list-disc list-inside space-y-1 ml-4\"><li>in home institutions in the form of additional classes or performed within the teaching load,</li><li>in educational institutions,</li><li>in counseling centers,</li><li>other.</li></ul></li></ul>",
+  "evaluation": "The assessment of learning outcomes will be based on: preparation of a project work in the area of Social Skills Training.",
+  "jobOpportunities": "<span className=\"text-lg font-semibold\">Graduates of the program will be prepared to work as:</span><span className=\"block mb-2 mt-2\">-Social skills trainers in educational, therapeutic, and business institutions</span><span className=\"block mb-2\">-Consultants in training companies</span><span className=\"block mb-2\">-Personal and professional development specialists</span><span className=\"block mb-2\">-Employees in non-governmental organizations dealing with education and social support</span><span className=\"block mb-2\">-Coaches and mentors</span><span className=\"block mb-2\">-Mediators and conflict management specialists</span><span className=\"block mb-2\">-Team leaders in various industries</span>",
+  "invite": "<div class=''> <p class='text-gray-100'>Become an expert in building relationships and effective communication in any organization.</p></div>"
+}

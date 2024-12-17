@@ -1,0 +1,105 @@
+{
+  "category": "psychology and psychotherapy",
+  "id": "seksuologia-praktyczna",
+  "title": "Practical Sexology",
+  "banerDescription": "Gain practical skills and knowledge in sexology that will allow you to work in various therapeutic contexts",
+  "description": "<ul className=\"list-disc list-inside space-y-2\"><li>management staff of educational institutions<br><span className=\"ml-4\">(schools, kindergartens, nurseries, counseling centers, educational centers, others)</span></li><li>pedagogues</li><li>psychologists</li><li>speech therapists</li><li>therapists</li><li>teachers</li><li>parents</li><li>legal guardians</li><li>educators</li><li>people working with children, youth, adults, seniors</li><li>people working with children, youth and adults with&nbsp;<span className=\"ml-2\">disabilities that cause lack or limitation of communication and functioning in society</span></li></ul>",
+  "description2": "The study program also includes the development of practical skills: sexological subjective examination, diagnosis, differentiation and treatment of sexual disorders, and social competencies.",
+  "description3": "Graduates will be prepared to work in the field of diagnosis and therapy of sexual disorders in sexology clinics, psychiatric clinics, and hospitals.",
+  "description4": "",
+  "descriptionP1": "",
+  "duration": "3 semesters",
+  "practicalHours": "100h of internship",
+  "price": "6000 PLN",
+  "payments": "10x600 PLN",
+  "scheduleInfo": "The third semester is dedicated to internships",
+  "schedule": [
+    "26.10.2024",
+    "16.11.2024",
+    "23.11.2024",
+    "30.11.2024",
+    "07.12.2024",
+    "14.12.2024",
+    "11.01.2025",
+    "18.01.2025",
+    "25.01.2025",
+    "15.02.2025",
+    "01.03.2025",
+    "15.03.2025",
+    "22.03.2025",
+    "05.04.2025",
+    "12.04.2025",
+    "10.05.2025",
+    "17.05.2025",
+    "24.05.2025"
+  ],
+  "modules": [
+    {
+      "title": "Fundamentals of Sexology",
+      "topics": [
+        { "title": "Norm and pathology" },
+        { "title": "Biological foundations of sexuality" },
+        { "title": "Ethics in sexology practice" },
+        { "title": "Sexuality in children and adolescents" },
+        { "title": "Sexuality in adults" },
+        { "title": "Gender differentiation" },
+        { "title": "Models of sexuality" },
+        { "title": "Methods and tools for studying sexuality" },
+        {
+          "title": "Impact of technology on sexuality. Sexuality in the digital era, influence of media and technology"
+        }
+      ]
+    },
+    {
+      "title": "Neurobiology of Sexuality",
+      "topics": [
+        { "title": "Neurobiological mechanisms affecting sexuality" },
+        {
+          "title": "Sexual disorders - Classification, diagnosis, and therapies for sexual disorders"
+        },
+        { "title": "Hypersexuality" },
+        { "title": "Co-dependency" },
+        {
+          "title": "Therapy for compulsive sexual behaviors (cognitive-behavioral, psychodynamic, humanistic, and integrative approaches in treating sexual and relationship disorders)"
+        },
+        { "title": "Working with couples/relationships after infidelity" },
+        { "title": "Working with sexuality and gender diversity" },
+        { "title": "Working with teenagers" },
+        { "title": "Working with children" }
+      ]
+    },
+    {
+      "title": "Fundamentals of Forensic Sexology",
+      "topics": [
+        { "title": "Child as a victim of sexual violence" },
+        { "title": "Adult as a victim of sexual violence" },
+        {
+          "title": "Mechanisms of child sexual abuse within and outside the family"
+        },
+        { "title": "Diagnosis and therapy for victims of sexual violence" },
+        { "title": "Clinical sexology" },
+        { "title": "Organic causes of sexual problems and their treatment" },
+        { "title": "Diagnosis of child sexual abuse" },
+        { "title": "Incestuous family" },
+        { "title": "Sexuality of people with disabilities" },
+        { "title": "Atypical sexuality" },
+        {
+          "title": "Sexual trends and contemporary directions in working with sexuality"
+        },
+        { "title": "Intervention work" }
+      ]
+    },
+    {
+      "title": "Workshops / Internship",
+      "topics": [
+        { "title": "Sexology clinics" },
+        { "title": "Institutions operating in the field of sexual health" }
+      ]
+    }
+  ],
+  "faculty": "The program will be conducted by a qualified team of specialists in the fields of sexology, psychology, psychiatry, and therapy.",
+  "practices": "<ul className=\"list-disc list-inside space-y-2\"><li>50% - possibility to complete internships remotely at the MAGNOLIA Psychological and Pedagogical Counseling Center</li><li>The remaining 50% can be completed:<ul className=\"list-disc list-inside space-y-1 ml-4\"><li>in home institutions in the form of additional classes or performed within the teaching load,</li><li>in educational institutions,</li><li>in counseling centers,</li><li>other.</li></ul></li></ul>",
+  "evaluation": "The assessment of learning outcomes will be based on: preparation of a project work in the area of Practical Sexology.",
+  "jobOpportunities": "Graduates will be prepared to work in the field of diagnosis and therapy of sexual disorders in sexology clinics, psychiatric clinics, and hospitals.",
+  "invite": "<div class=''> <p class='text-gray-100'>Gain practical skills and knowledge in <strong class='font-semibold'>clinical sexology</strong> that will allow you to work in various therapeutic contexts.<br /> Invest in your future and realize your new professional perspectives.</p></div>"
+}

@@ -5,6 +5,7 @@ import { useUserPreferences } from "../providers/UserPreferencesContext";
 import { IoMdContacts } from "react-icons/io";
 import { CgArrowTopRightO } from "react-icons/cg";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 interface Errors {
   name?: string;
@@ -13,6 +14,7 @@ interface Errors {
 }
 
 export const ContactMainPageSection = () => {
+  const t = useTranslations("ContactForm");
   const { fontSize, highContrast } = useUserPreferences();
   const [state, handleSubmit] = useForm("mwkggozp");
   const [errors, setErrors] = useState<Errors>({});
@@ -34,18 +36,18 @@ export const ContactMainPageSection = () => {
     const newErrors: Errors = {};
 
     if (!data.get("name")) {
-      newErrors.name = "Imię jest wymagane.";
+      newErrors.name = t("nameRequired");
     }
 
     if (!data.get("surname")) {
-      newErrors.surname = "Nazwisko jest wymagane.";
+      newErrors.surname = t("surnameRequired");
     }
 
     const email = data.get("email") as string;
     if (!email) {
-      newErrors.email = "Email jest wymagany.";
+      newErrors.email = t("emailRequired");
     } else if (!/\S+@\S+\.\S+/.test(email)) {
-      newErrors.email = "Email jest nieprawidłowy.";
+      newErrors.email = t("emailInvalid");
     }
 
     if (Object.keys(newErrors).length > 0) {
@@ -73,7 +75,7 @@ export const ContactMainPageSection = () => {
           <Image
             src="/assets/kontakt.jpg"
             fill
-            alt="kontakt"
+            alt={t("contactImageAlt")}
             className="object-cover"
             quality={100}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -83,18 +85,16 @@ export const ContactMainPageSection = () => {
         <div className="px-6 md:px-20 py-10 md:py-20 flex flex-col">
           <h4 className="text-2xl md:text-3xl font-semibold text-blue-600 tracking-[-0.2rem] flex gap-2 items-center mb-3">
             <IoMdContacts />
-            Kontakt
+            {t("contact")}
           </h4>
           <div className="">
             <h3
               className={`text-3xl md:text-5xl tracking-tighter font-semibold mb-4 ${textContrastStyles}`}
             >
-              Skontaktuj się z nami
+              {t("getInTouch")}
             </h3>
             <p className="mb-8 md:mb-14 text-sm md:text-base">
-              Masz pytania dotyczące studiów podyplomowych? Chcesz dowiedzieć
-              się więcej o programie, procesie rekrutacji lub opłatach?
-              Skontaktuj się z nami!
+              {t("formDescription")}
             </p>
             <form onSubmit={handleFormSubmit}>
               <div className="mb-4 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -103,13 +103,14 @@ export const ContactMainPageSection = () => {
                     className={`block mb-2 font-semibold ${textContrastStyles}`}
                     htmlFor="name"
                   >
-                    Imię<span className="text-blue-500">*</span>
+                    {t("name")}
+                    <span className="text-blue-500">*</span>
                   </label>
                   <input
                     type="text"
                     id="name"
                     name="name"
-                    placeholder="Jan"
+                    placeholder={t("namePlaceholder")}
                     aria-required="true"
                     className={`w-full p-3 rounded-md ${inputBgStyles} ${textContrastStyles} border border-gray-300 focus:border-blue-500`}
                   />
@@ -127,13 +128,14 @@ export const ContactMainPageSection = () => {
                     className={`block mb-2 font-semibold ${textContrastStyles}`}
                     htmlFor="surname"
                   >
-                    Nazwisko<span className="text-blue-500">*</span>
+                    {t("surname")}
+                    <span className="text-blue-500">*</span>
                   </label>
                   <input
                     type="text"
                     id="surname"
                     name="surname"
-                    placeholder="Kowalski"
+                    placeholder={t("surnamePlaceholder")}
                     aria-required="true"
                     className={`w-full p-3 rounded-md ${inputBgStyles} ${textContrastStyles} border border-gray-300 focus:border-blue-500`}
                   />
@@ -154,13 +156,14 @@ export const ContactMainPageSection = () => {
                   className={`block mb-2 font-semibold ${textContrastStyles}`}
                   htmlFor="email"
                 >
-                  Email<span className="text-blue-500">*</span>
+                  {t("email")}
+                  <span className="text-blue-500">*</span>
                 </label>
                 <input
                   type="email"
                   id="email"
                   name="email"
-                  placeholder="jankowalski@mail.com"
+                  placeholder={t("emailPlaceholder")}
                   aria-required="true"
                   className={`w-full p-3 rounded-md ${inputBgStyles} ${textContrastStyles} border border-gray-300 focus:border-blue-500`}
                 />
@@ -179,17 +182,15 @@ export const ContactMainPageSection = () => {
                     className={`block mb-2 font-semibold ${textContrastStyles}`}
                     htmlFor="message"
                   >
-                    Twoja wiadomość
+                    {t("message")}
                   </label>
-                  <p className="text-sm text-zinc-400">
-                    Maksymalnie 500 znaków
-                  </p>
+                  <p className="text-sm text-zinc-400">{t("maxCharacters")}</p>
                 </div>
                 <textarea
                   id="message"
                   name="message"
                   rows={4}
-                  placeholder="Jak możemy Ci pomóc?"
+                  placeholder={t("messagePlaceholder")}
                   className={`w-full p-3 rounded-md ${inputBgStyles} ${textContrastStyles} border border-gray-300 focus:border-blue-500`}
                 ></textarea>
                 <ValidationError
@@ -199,7 +200,7 @@ export const ContactMainPageSection = () => {
                 />
               </div>
               <button
-                aria-label="Wyślij wiadomość"
+                aria-label={t("sendMessageAriaLabel")}
                 type="submit"
                 disabled={state.submitting}
                 className={`w-fit py-3 px-6 flex gap-2 items-center font-medium rounded-md ${
@@ -210,13 +211,14 @@ export const ContactMainPageSection = () => {
               >
                 {state.submitting ? (
                   <div className="flex items-center gap-2">
-                    <span className="loader"></span>Wysyłanie...
+                    <span className="loader"></span>
+                    {t("sending")}
                   </div>
                 ) : state.succeeded ? (
-                  "Dziękujemy za przesłanie wiadomości"
+                  t("thankYou")
                 ) : (
                   <>
-                    Wyślij wiadomość
+                    {t("sendMessage")}
                     <CgArrowTopRightO />
                   </>
                 )}

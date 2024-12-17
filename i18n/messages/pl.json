@@ -1,0 +1,303 @@
+{
+  "Navigation": {
+    "home": "Strona główna",
+    "homeDescription": "Strona główna",
+    "courses": "Kierunki",
+    "coursesDescription": "Oferta studiów podyplomowych",
+    "recruitment": "Rekrutacja",
+    "recruitmentDescription": "Rekrutacja na studia podyplomowe",
+    "faq": "FAQ",
+    "faqDescription": "Pytania i odpowiedzi",
+    "contact": "Kontakt",
+    "contactDescription": "Strona kontaktowa",
+    "logoAlt": "ISP Rybnik",
+    "logoText": "ISP Rybnik",
+    "openMenu": "Otwórz menu główne",
+    "enrollButton": "Zapisz się na studia",
+    "changeLanguage": "Zmień język"
+  },
+  "Banner": {
+    "invitationText": "Zapraszamy do składania aplikacji na semestr zimowy 2024/2025.",
+    "recruitmentProcessAriaLabel": "Proces rekrutacji",
+    "recruitmentButtonText": "Rekrutacja"
+  },
+  "CtaHomePage": {
+    "recruitmentTitle": "Rekrutacja",
+    "semesterTitle": "Semestr 2024/2025",
+    "description": "Trwają zapisy na semestr 2024/2025. Dołącz do nas i rozpocznij swoją przygodę ze studiami podyplomowymi. Przygotowaliśmy wyjątkową ofertę kierunków, które pozwolą zdobyć Ci pożądane umiejętności na rynku pracy i otworzą przed Tobą nowe perspektywy.",
+    "exploreOfferAriaLabel": "poznaj naszą ofertę",
+    "exploreOfferButton": "Poznaj naszą ofertę",
+    "imageAlt": "Studentka przy komputerze, rekrutacja 2024/2025"
+  },
+  "FinanceInformationSection": {
+    "funding": "Dofinansowanie",
+    "fundingTitle": "Uzyskaj dofinansowanie z Bazy Usług Rozwojowych",
+    "fundingDescription": "Niniejszym informujemy, że pojawiła się możliwość skorzystania z dofinansowania studiów podyplomowych, kursów, szkoleń z Bazy Usług Rozwojowych. Dofinansowanie może wynosić 80-100% kosztu usług edukacyjnych. \n\nZapraszamy wszystkich zainteresowanych do kontaktu z nami w celu uzyskania informacji, gdzie należy złożyć wniosek.",
+    "burOfferAriaLabel": "poznaj naszą ofertę Bazy Usług Rozwojowych",
+    "burOfferButton": "Poznaj naszą ofertę BUR",
+    "information": "Informacja",
+    "loansTitle": "Nieoprocentowane pożyczki",
+    "loansDescription": "Ministerstwo Rozwoju uruchomiło nieoprocentowane pożyczki na kształcenie obejmujące m.in. studia podyplomowe, kursy, szkolenia. W ramach Programu Operacyjnego Wiedza Edukacja Rozwój możesz otrzymać nawet do 50 000 zł pomocy zwrotnej bez żadnych dodatkowych kosztów. \n\nCo ważne, istnieje możliwość umorzenia 20–25% przyznanej kwoty.\n\nZachęcamy do zapoznania się z informacjami odnośnie nieoprocentowanych pożyczek. Więcej informacji znajdą Państwo na stronie www.inwestujwrozwoj.pl",
+    "learnMoreAriaLabel": "dowiedz się więcej o nieoprocentowanych pożyczkach"
+  },
+  "FaqSection": {
+    "title": "Znajdź odpowiedzi na swoje pytania",
+    "description": "Witamy w sekcji FAQ poświęconej studiom podyplomowym! Tutaj znajdziesz odpowiedzi na najczęściej zadawane pytania dotyczące rekrutacji, programu studiów, opłat, organizacji zajęć i innych kwestii związanych z kształceniem podyplomowym na naszej uczelni.",
+    "browseCourses": "Przeglądaj kierunki",
+    "askQuestion": "Zadaj nam pytanie",
+    "recruitment": "Rekrutacja",
+    "internships": "Praktyki",
+    "documentDeadline": "Mogę dosłać dokumenty po wyznaczonym terminie?",
+    "documentDeadlineAnswer": "Nie, WSH-E daje nam określony czas, do którego musimy mieć przygotowane Państwa dokumenty. Do tego czasu również są nadawane numery albumów, które są niezbędne aby móc Państwa zakwalifikować na studia – Po wyznaczonym terminie WSH-E nie generuje dodatkowych numerów albumów, co wiąże się z tym, że zgłoszenia nie są przyjmowane.",
+    "shortenCourse": "Czy mogę kierunek, który jest trzysemetralny skończyć w dwa semestry?",
+    "shortenCourseAnswer": "Tak, pod warunkiem, że zrealizujesz praktyki, które są przewidziane na semestr trzeci, w trakcie trwania dwóch semestrów.",
+    "diplomaCopy": "Jak mogę potwierdzić kopię dyplomu za zgodność z oryginałem?",
+    "diplomaCopyAnswer": "Zgodność potwierdza się wpisując na kopii zdanie: \"Potwierdzam za zgodność z oryginałem\" i potwierdzając to własnoręcznym podpisem. Taka forma jest akceptowana przez WSH-E.",
+    "secondCourseDiscount": "Czy mogę skorzystać ze zniżki na drugi kierunek?",
+    "secondCourseDiscountAnswer": "Tak, można skorzystać ze zniżki wybierając kierunki z zakładki \"oferta\" na naszej stronie internetowej. Zniżkę 50 % na drugi tańszy kierunek należy uwzględnić w płatnościach.",
+    "doctoralDiploma": "Mogę wysłać kopię dyplomu ze studiów doktoranckich?",
+    "doctoralDiplomaAnswer": "Niestety nie, WSH-E akceptuje jedynie kopię dyplomów I lub II stopnia.",
+    "shortenTwoSemesters": "Czy kierunek, który ma 2 semestry mogę skończyć w jeden?",
+    "shortenTwoSemestersAnswer": "Absolutnie nie, kierunek dwusemestralny nie podlega skróceniom.",
+    "observationSheet": "Kto powinien podpisać arkusz obserwacji?",
+    "observationSheetAnswer": "Praktykant prowadzi zajęcia, które obserwuje Opiekun Praktyk i ocenia praktykanta. Tak więc podpisuje dokument opiekun praktyk.",
+    "observationSheetModule": "Do którego modułu muszę dołączyć arkusz obserwacji?",
+    "observationSheetModuleAnswer": "Arkusz obserwacji dołącza się do modułu, w którym praktykant ma obowiązek samodzielnego prowadzenia zajęć.",
+    "internshipDeadline": "Do kiedy muszę oddać praktyki?",
+    "internshipDeadlineAnswer": "Praktyki oddajemy następująco dla naboru: Październikowego: 30 marzec następnego roku marcowego: 30 stycznia następnego roku.",
+    "internshipSettlement": "Co oznacza termin oddania/rozliczenia praktyk?",
+    "internshipSettlementAnswer": "Oznacza to, że jeśli termin rozliczenia jest przykładowo do 30 marca to dokumenty maksymalnie do 30 marca muszą być w dziekanacie aby móc rozliczyć się z praktyk w terminie.",
+    "completeDocuments": "Dlaczego muszę wszystkie dokumenty z praktyk wysłać w komplecie?",
+    "completeDocumentsAnswer": "Przez wzgląd na ilość słuchaczy bardzo ważne jest by dokumenty z praktyk były wysyłane w komplecie zgodnie z plikiem \"zaliczenie praktyk specjalistycznych\". Państwa dokumenty są wysyłane do WSH-E i tam sprawdzane pod względem merytorycznym – im więcej będzie braków tym dłużej będziecie Państwo czekać na świadectwo.",
+    "documentStatus": "Nie mam odpowiedzi czy wszystko w porządku z moimi dokumentami z praktyk, co to oznacza?",
+    "documentStatusAnswer": "Najczęściej oznacza to, że WSH-E sprawdziło dokumenty i nie ma do nich uwag. Uwagi są wysyłane do słuchaczy mailowo. Zawsze w tym przypadku jednak warto się z nami skontaktować i dopytać."
+  },
+  "ContactForm": {
+    "contactImageAlt": "kontakt",
+    "contact": "Kontakt",
+    "getInTouch": "Skontaktuj się z nami",
+    "formDescription": "Masz pytania dotyczące studiów podyplomowych? Chcesz dowiedzieć się więcej o programie, procesie rekrutacji lub opłatach? Skontaktuj się z nami!",
+    "name": "Imię",
+    "namePlaceholder": "Jan",
+    "surname": "Nazwisko",
+    "surnamePlaceholder": "Kowalski",
+    "email": "Email",
+    "emailPlaceholder": "jankowalski@mail.com",
+    "message": "Twoja wiadomość",
+    "maxCharacters": "Maksymalnie 500 znaków",
+    "messagePlaceholder": "Jak możemy Ci pomóc?",
+    "sendMessageAriaLabel": "Wyślij wiadomość",
+    "sending": "Wysyłanie...",
+    "thankYou": "Dziękujemy za przesłanie wiadomości",
+    "sendMessage": "Wyślij wiadomość",
+    "nameRequired": "Imię jest wymagane.",
+    "surnameRequired": "Nazwisko jest wymagane.",
+    "emailRequired": "Email jest wymagany.",
+    "emailInvalid": "Email jest nieprawidłowy."
+  },
+  "CoursesPage": {
+    "courses": "Kierunki",
+    "button-more": "Sprawdź pozostałe kierunki",
+    "searchPlaceholder": "Szukaj kierunku...",
+    "sortBy": "Sortuj według",
+    "sortDefault": "Domyślnie",
+    "sortTitle": "Nazwa (A-Z)",
+    "sortPrice": "Cena (rosnąco)",
+    "allCategories": "Wszystkie",
+    "psychologyAndPsychotherapy": "Psychologia i psychoterapia",
+    "specialAndCorrectivePedagogy": "Pedagogika specjalna i korekcyjna",
+    "educationalManagementAndDidactics": "Zarządzanie i dydaktyka edukacyjna",
+    "learnMore": "Dowiedz się więcej",
+    "aboutCourse": "o kierunku {title}",
+    "comingSoon": "Wkrótce",
+    "courseImageAlt": "Zdjęcie przedstawiające kurs: {title}",
+    "heroPostgraduateStudies": "Studia Podyplomowe",
+    "heroGuaranteeStablePrice": "Gwarancja stałej ceny",
+    "heroNoAdditionalFees": "Brak dodatkowych opłat",
+    "heroNoSummerFee": "Brak opłaty wakacyjnej",
+    "heroInstallmentsPayment": "Płatność w ratach",
+    "heroStudyCost": "Koszt studiów",
+    "heroStudyDuration": "Czas trwania",
+    "heroPaymentsCount": "Liczba wpłat",
+    "heroPracticalHours": "Ilość praktyk",
+    "heroEnrollOnThisCourse": "Zapisz się na wybrany kierunek"
+  },
+  "NavigationCourse": {
+    "opis": "Opis kierunku",
+    "program-studiow": "Program studiów",
+    "praktyki": "Praktyki",
+    "harmonogram": "Harmonogram",
+    "faq": "Pytania i odpowiedzi"
+  },
+  "AboutCourse": {
+    "courseDescription": "Opis kierunku",
+    "courseDescriptionSubtitle": "Zapoznaj się ze szczegółowymi informacjami na temat kierunku i dowiedz się, dla kogo jest przeznaczony.",
+    "targetGroup": "Grupa docelowa",
+    "courseObjective": "Cel studiów",
+    "viewCourseProgram": "Zobacz program studiów"
+  },
+  "CourseProgramPsychotherapy": {
+    "noCourseProgram": "Nie znaleziono programu studiów.",
+    "courseProgram": "Program Studiów",
+    "courseDescription": "Zapoznaj się ze szczegółowym programem studiów i modułami kształcenia"
+  },
+  "CourseProgram": {
+    "courseProgram": "Program Studiów",
+    "courseDescription": "Zapoznaj się ze szczegółowym programem studiów i modułami kształcenia"
+  },
+  "CoursePractises": {
+    "internships": "Praktyki",
+    "internshipsImageAlt": "Praktyki studenckie",
+    "evaluationTitle": "Ocena i ewaluacja",
+    "evaluationImageAlt": "Ocena i ewaluacja",
+    "jobOpportunitiesTitle": "Możliwość zatrudnienia",
+    "jobOpportunitiesImageAlt": "Możliwości zatrudnienia"
+  },
+  "ScheduleCourseSection": {
+    "schedule": "Harmonogram",
+    "months": "Styczeń,Luty,Marzec,Kwiecień,Maj,Czerwiec,Lipiec,Sierpień,Wrzesień,Październik,Listopad,Grudzień"
+  },
+  "CtaCoursePageSection": {
+    "readyForNewChallenges": "Gotowy/a na nowe wyzwania?",
+    "enrollButton": "Zapisz się na wybrany kierunek",
+    "imageAlt": "Rekrutacja 2024/2025"
+  },
+  "BannerFinanceCoursePage": {
+    "imageAlt": "Rekrutacja 2024/2025",
+    "funding": "Dofinansowanie",
+    "title": "Uzyskaj dofinansowanie z Bazy Usług Rozwojowych",
+    "description1": "Niniejszym informujemy, że pojawiła się możliwość skorzystania z dofinansowania studiów podyplomowych, kursów, szkoleń z Bazy Usług Rozwojowych. Dofinansowanie może wynosić 80-100% kosztu usług edukacyjnych",
+    "description2": "Zachęcamy przedsiębiorców oraz organy prowadzące do kontaktu z Powiatowym Urzędem Pracy oraz operatorami wojewódzkimi w celu złożenia wniosku o dofinansowanie.",
+    "buttonAriaLabel": "poznaj naszą ofertę Bazy Usług Rozwojowych",
+    "buttonText": "Poznaj naszą ofertę BUR"
+  },
+  "RecruitmentPage": {
+    "imageAlt": "kontakt",
+    "recruitmentProcess": "Proces rekrutacji",
+    "allNecessaryInfo": "Wszystkie niezbędne informacje",
+    "recruitmentDescription": "Rekrutacja na studia podyplomowe zamyka się w kilku krokach. Poniżej znajdziesz instrukcję krok po kroku, która poprowadzi Cię przez proces rekrutacji. W przypadku napotkania trudności zachęcamy do kontaktu poprzez formularz, a nasz zespół udzieli Ci pomocy.",
+    "errors": {
+      "nameRequired": "Imię jest wymagane.",
+      "surnameRequired": "Nazwisko jest wymagane.",
+      "emailRequired": "Email jest wymagany.",
+      "emailInvalid": "Email jest nieprawidłowy."
+    },
+    "form": {
+      "name": "Imię",
+      "namePlaceholder": "Jan",
+      "surname": "Nazwisko",
+      "surnamePlaceholder": "Kowalski",
+      "email": "Email",
+      "emailPlaceholder": "jankowalski@mail.com",
+      "message": "Twoja wiadomość",
+      "messageLimit": "Maksymalnie 500 znaków",
+      "messagePlaceholder": "Jak możemy Ci pomóc?",
+      "submitAriaLabel": "Wyślij wiadomość",
+      "submitting": "Wysyłanie...",
+      "submitSuccess": "Dziękujemy za przesłanie wiadomości",
+      "submit": "Wyślij wiadomość"
+    },
+    "steps": {
+      "title": "Zobacz jak krok po kroku zapisać się na studia podyplomowe",
+      "description": "Chcąc dołączyć do grona studentów należy wykonać kilka kroków. Przygotowaliśmy szczegółową instrukcję, która pozwoli Ci przejść przez cały proces bez problemów.",
+      "enrollmentFee": "*Opłata wpisowa wynosi 150zł.",
+      "exploreCoursesAriaLabel": "Dowiedz się więcej z FAQ",
+      "exploreCourses": "Zapoznaj się z kierunkami",
+      "askQuestionAriaLabel": "Zadaj nam pytanie",
+      "askQuestion": "Zadaj nam pytanie",
+      "recruitmentForm": "formularz rekrutacyjny",
+      "step1": {
+        "title": "Wypełnij formularz zgłoszeniowy",
+        "description": "Na naszej stronie znajdziesz formularz zgłoszeniowy, który należy wypełnić. Upewnij się, że podane informacje są prawidłowe i kompletne."
+      },
+      "step2": {
+        "title": "Przygotuj wymagane dokumenty",
+        "description": "Do formularza zgłoszeniowego należy dołączyć kopię dyplomu ukończenia studiów wyższych, potwierdzenie przelewu wpisowego oraz kopię umowy, którą otrzymasz po wypełnieniu formularza. Upewnij się, że wszystkie dokumenty są aktualne."
+      },
+      "step3": {
+        "title": "Złożenie dokumentów",
+        "description": "Wszystkie dokumenty można przesłać drogą elektroniczną na adres email: nowekwalifikacjerybnik@gmail.com lub złożyć osobiście w naszej siedzibie przy ul. Magnolii 25, 44-207 Rybnik."
+      },
+      "step4": {
+        "title": "Potwierdzenie przyjęcia",
+        "description": "Po pozytywnym rozpatrzeniu zgłoszenia, otrzymasz oficjalne potwierdzenie przyjęcia na studia podyplomowe."
+      },
+      "step5": {
+        "title": "Pojawił się problem?",
+        "description": "Jeżeli masz jakiekolwiek pytania lub wątpliwości dotyczące procesu rekrutacji, zapraszamy do kontaktu telefonicznego pod numerem +48 123 456 789 lub mailowego: nowekwalifikacjerybnik@gmail.com"
+      }
+    }
+  },
+  "ContactPage": {
+    "imageAlt": "kontakt",
+    "contact": "Kontakt",
+    "contactUs": "Skontaktuj się z nami",
+    "contactDescription": "Masz pytania dotyczące studiów podyplomowych? Chcesz dowiedzieć się więcej o programie, procesie rekrutacji lub opłatach? Skontaktuj się z nami!",
+    "contactInfo": "Informacje kontaktowe",
+    "address": "ISP Rybnik, ul. Magnolii 25, 44-207 Rybnik",
+    "phone": "Telefon: +48 797 173 501",
+    "email": "Email:",
+    "errors": {
+      "nameRequired": "Imię jest wymagane.",
+      "surnameRequired": "Nazwisko jest wymagane.",
+      "emailRequired": "Email jest wymagany.",
+      "emailInvalid": "Email jest nieprawidłowy."
+    },
+    "form": {
+      "name": "Imię",
+      "namePlaceholder": "Jan",
+      "surname": "Nazwisko",
+      "surnamePlaceholder": "Kowalski",
+      "email": "Email",
+      "emailPlaceholder": "jankowalski@mail.com",
+      "message": "Twoja wiadomość",
+      "messageLimit": "Maksymalnie 500 znaków",
+      "messagePlaceholder": "Jak możemy Ci pomóc?",
+      "submitAriaLabel": "Wyślij wiadomość",
+      "submitting": "Wysyłanie...",
+      "submitSuccess": "Dziękujemy za przesłanie wiadomości",
+      "submit": "Wyślij wiadomość"
+    }
+  },
+  "FooterComponent": {
+    "navigation": "Nawigacja",
+    "home": "Strona główna",
+    "offer": "Oferta",
+    "recruitment": "Rekrutacja",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "phone": "Telefon",
+    "phoneWhatsapp": "Tel/Whatsapp",
+    "email": "Email",
+    "information": "Informacje",
+    "lecturers": "Wykładowcy",
+    "references": "Referencje",
+    "dekraCertificate": "Certyfikat DEKRA",
+    "tglsCertificate": "Certyfikat TGLS",
+    "privacyPolicy": "Polityka prywatności",
+    "documentCollection": "Odbiór dokumentów",
+    "funding": "Dofinansowanie",
+    "minorProtectionStandards": "Standardy ochrony małoletnich w placówkach oświatowych",
+    "graphics": "Grafiki",
+    "socialMedia": "Media Społecznościowe",
+    "courses": "Kierunki",
+    "comingSoon": "Nowe kierunki będą dostępne już wkrótce.",
+    "copyright": "© {year} ISP Rybnik. Wszelkie prawa zastrzeżone.",
+    "courseCategories": {
+      "psychologyAndPsychotherapy": "Psychologia i Psychoterapia",
+      "specialAndCorrectivePedagogy": "Pedagogika Specjalna i Korekcyjna",
+      "educationalManagementAndDidactics": "Zarządzanie i Dydaktyka Edukacyjna"
+    }
+  },
+  "HeroHomePage": {
+    "courseImageAlt": "Obraz kursu {title}",
+    "postgraduateStudies": "Studia podyplomowe",
+    "enrollButton": "Zapisz się na studia",
+    "learnMoreButton": "Dowiedz się więcej o kierunku",
+    "previousSlideAriaLabel": "Poprzedni slajd",
+    "nextSlideAriaLabel": "Następny slajd",
+    "goToSlideAriaLabel": "Przejdź do slajdu {slideNumber}",
+    "resumeSlideAriaLabel": "Wznów slajd",
+    "pauseSlideAriaLabel": "Zatrzymaj slajd"
+  }
+}

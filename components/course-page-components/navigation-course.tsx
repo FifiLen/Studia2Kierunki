@@ -1,14 +1,16 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { useUserPreferences } from "../providers/UserPreferencesContext";
+import { useTranslations } from "next-intl";
 
 interface SectionNavigationProps {
-  sections: { id: string; title: string }[];
+  sections: { id: string; titleKey: string }[];
 }
 
 export const NavigationCourse = ({ sections }: SectionNavigationProps) => {
   const { fontSize, highContrast } = useUserPreferences();
   const [activeSection, setActiveSection] = useState<string>(sections[0].id);
+  const t = useTranslations("NavigationCourse");
 
   const fontSizeStyles = {
     small: "text-sm",
@@ -30,7 +32,7 @@ export const NavigationCourse = ({ sections }: SectionNavigationProps) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + 80; // Adjust the offset as needed
+      const scrollPosition = window.scrollY + 80; // Dostosuj offset według potrzeb
       let currentSection = sections[0].id;
 
       sections.forEach((section) => {
@@ -70,7 +72,7 @@ export const NavigationCourse = ({ sections }: SectionNavigationProps) => {
                     : ""
                 }`}
               >
-                {section.title}
+                {t(section.titleKey)}
               </a>
             </li>
           ))}

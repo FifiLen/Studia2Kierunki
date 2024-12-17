@@ -1,0 +1,78 @@
+{
+  "category": "educational management and didactics",
+  "id": "wychowanie-fizyczne-w-szkole",
+  "title": "Physical Education in School",
+  "banerDescription": "Gain qualifications to teach physical education, developing your pedagogical competencies and practical skills.",
+  "description": "<ul className=\"list-disc list-inside space-y-2\"><li>Teachers wishing to obtain qualifications to teach physical education</li><li>Individuals interested in physical activity and sports education</li><li>Specialists wanting to expand their competencies in physical education</li></ul>",
+  "description2": "The primary goal of the postgraduate program in physical education is to provide highly effective education, enhance qualifications, and develop practical skills that will excellently prepare participants for the profession of a physical education teacher.",
+  "description3": "The program is unique and designed to enable quick and effective acquisition of knowledge and skills that will significantly increase competitiveness in the job market. Through engaging lectures, fascinating classes, and inspiring workshops, participants will have the opportunity to acquire valuable education that will contribute to enhancing their professional competencies.",
+  "description4": "The postgraduate studies prepare for conducting physical education classes at various educational levels and provide the necessary qualifications for effective knowledge transfer and conducting physical activities.",
+  "descriptionP1": "",
+  "duration": "3 semesters",
+  "practicalHours": "Internship (60 hours)",
+  "price": "4800 PLN",
+  "payments": "10 x 480 PLN",
+  "scheduleInfo": "",
+  "schedule": [
+    "26.10.2024",
+    "16.11.2024",
+    "23.11.2024",
+    "30.11.2024",
+    "07.12.2024",
+    "14.12.2024",
+    "11.01.2025",
+    "18.01.2025",
+    "25.01.2025",
+    "15.02.2025",
+    "01.03.2025",
+    "15.03.2025",
+    "22.03.2025",
+    "05.04.2025",
+    "12.04.2025",
+    "10.05.2025",
+    "17.05.2025",
+    "24.05.2025"
+  ],
+  "modules": [
+    {
+      "title": "Specialized Education Module",
+      "topics": [
+        { "title": "Anatomy", "subtopics": [] },
+        { "title": "Anthropology and Anthropomotorics", "subtopics": [] },
+        {
+          "title": "Biomechanical Foundations of Physical Activity",
+          "subtopics": []
+        },
+        { "title": "Biomechanics", "subtopics": [] },
+        {
+          "title": "Didactics of Physical Education Teaching",
+          "subtopics": []
+        },
+        { "title": "Health Education", "subtopics": [] },
+        { "title": "Physiology of Physical Effort", "subtopics": [] },
+        { "title": "Gymnastics", "subtopics": [] },
+        { "title": "Athletics", "subtopics": [] },
+        { "title": "Methodology of Team Games – Basketball", "subtopics": [] },
+        { "title": "Methodology of Team Games – Football", "subtopics": [] },
+        { "title": "Methodology of Team Games – Handball", "subtopics": [] },
+        { "title": "Swimming Methodology", "subtopics": [] },
+        { "title": "Basics of School Tourism and Recreation", "subtopics": [] },
+        {
+          "title": "Psychomotor Development of School Children and Youth",
+          "subtopics": []
+        },
+        { "title": "Rhythmics and Dance", "subtopics": [] },
+        {
+          "title": "Theory of Physical Education with Elements of Physical Culture",
+          "subtopics": []
+        },
+        { "title": "Movement Games and Activities", "subtopics": [] }
+      ]
+    }
+  ],
+  "faculty": "Classes are conducted by experienced practitioners and specialists in the field of physical education, sports, and didactics.",
+  "practices": "<ul className=\"list-disc list-inside space-y-2\"><li>The internship allows gaining experience in teaching physical education.</li><li>Internships can be carried out in primary and secondary schools.</li></ul>",
+  "evaluation": "The assessment of learning outcomes is based on activity during classes, completion of individual modules, implementation of internships, and preparation of a diploma thesis.",
+  "jobOpportunities": "<div><p className=\"text-lg font-semibold\">Graduates of the program will be prepared to work as:</p><ul className=\"list-disc list-inside mt-2 space-y-2\"><li>Physical education teachers in primary and secondary schools</li><li>Sports coaches and instructors</li><li>Health education and physical activity promotion specialists</li><li>Sports and recreation animators</li><li>Employees of institutions dealing with physical culture and sports</li></ul></div>",
+  "invite": "<div class=''> <p class='text-gray-100'>Gain the qualifications and skills necessary to teach physical education and inspire students to lead an active and healthy lifestyle.</p></div>"
+}

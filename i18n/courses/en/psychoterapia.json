@@ -1,0 +1,244 @@
+{
+  "category": "psychology and psychotherapy",
+  "id": "psychoterapia",
+  "title": "Psychotherapy",
+  "banerDescription": "Preparation for independent psychotherapy of mental disorders in children, adolescents, and adults.",
+  "description": "<ul className=\"list-disc list-inside space-y-2\"><li>management staff of educational institutions<br /><span className=\"ml-4\">(schools, kindergartens, nurseries, counseling centers, educational centers, others)</span></li><li>pedagogues</li><li>psychologists</li><li>speech therapists</li><li>therapists</li><li>teachers</li><li>parents</li><li>legal guardians</li><li>educators</li><li>people working with children, youth, adults, seniors</li><li>people working with children, youth and adults with&nbsp;disabilities that cause lack or limitation of communication and functioning in society</li></ul>",
+  "description2": "Specialized qualification studies that meet the requirements set by the National Health Fund, necessary to apply for a position as a psychotherapist (in accordance with the amendment to the Mental Health Protection Act, Article 5 of the Act of August 19, 1994, which came into force on January 1, 2024) and the Act on Certain Medical Professions of August 17, 2023 (Journal of Laws 2023, item 1972) Article 87 effective from January 1, 2024, which specifies the definition of psychotherapy and requirements for psychotherapists. <br /><br /> The aim of the two-stage, eight-semester postgraduate studies is to prepare students for independent psychotherapy of mental disorders in children, adolescents, and adults.",
+  "description3": "",
+  "description4": "Upon completion of the studies, the graduate has the possibility of certification.",
+  "descriptionP1": "<b>The program of four-year, two-stage postgraduate studies with 1200 hours</b> covers specialized topics in psychotherapy and general issues related to human mental functioning, psychopathology and various methods of diagnosis and treatment of mental disorders, methods of empirical verification of therapeutic effectiveness, as well as ethical and legal issues in psychotherapy. <br /><br /> Upon completion of the studies, the graduate has the possibility of certification.",
+  "duration": "8 semesters",
+  "price": "40000 PLN",
+  "payments": "40x1000 PLN",
+  "scheduleInfo": "",
+  "practicalHours": "150h of internship/semester",
+  "schedule": [
+    "26.10.2024",
+    "27.10.2024",
+    "16.11.2024",
+    "17.11.2024",
+    "23.11.2024",
+    "24.11.2024",
+    "30.11.2024",
+    "01.12.2024",
+    "07.12.2024",
+    "08.12.2024",
+    "14.12.2024",
+    "15.12.2024",
+    "18.01.2025",
+    "19.01.2025",
+    "25.01.2025",
+    "26.01.2025",
+    "15.02.2025",
+    "16.02.2025",
+    "01.03.2025",
+    "02.03.2025",
+    "08.03.2025",
+    "09.03.2025",
+    "15.03.2025",
+    "16.03.2025",
+    "22.03.2025",
+    "23.03.2025",
+    "29.03.2025",
+    "30.03.2025",
+    "05.04.2025",
+    "06.04.2025",
+    "12.04.2025",
+    "13.04.2025",
+    "10.05.2025",
+    "11.05.2025",
+    "17.05.2025",
+    "18.05.2025",
+    "24.05.2025",
+    "25.05.2025",
+    "25.10.2025",
+    "26.10.2025",
+    "01.11.2025",
+    "02.11.2025",
+    "15.11.2025",
+    "16.11.2025",
+    "22.11.2025",
+    "23.11.2025",
+    "29.11.2025",
+    "30.11.2025",
+    "05.12.2025",
+    "06.12.2025",
+    "12.12.2025",
+    "13.12.2025",
+    "17.01.2026",
+    "18.01.2026",
+    "07.02.2026",
+    "08.02.2026",
+    "21.02.2026",
+    "22.02.2026",
+    "28.02.2026",
+    "14.03.2026",
+    "15.03.2026",
+    "21.03.2026",
+    "22.03.2026",
+    "11.04.2026",
+    "12.04.2026",
+    "18.04.2026",
+    "19.04.2026",
+    "25.04.2026",
+    "26.04.2026",
+    "09.05.2026",
+    "10.05.2026",
+    "23.05.2026",
+    "24.05.2026",
+    "30.05.2026",
+    "31.05.2026",
+    "06.06.2026",
+    "07.06.2026",
+    "20.06.2026",
+    "21.06.2026"
+  ],
+  "modules": [
+    {
+      "title": "First level of education <br /> <span className='text-blue-50 tracking-tight text-sm'>(4 semesters, 600 hours, 150 hours/semester)</span>",
+      "topics": [
+        {
+          "title": "Semester 1",
+          "subtopics": [
+            { "title": "Ethics in the work/profession of a psychotherapist" },
+            { "title": "Law and regulations in the course of psychotherapy" },
+            {
+              "title": "Introduction to psychotherapy for children and adolescents, families, couples, groups, and individuals"
+            },
+            { "title": "Trends in psychotherapy" },
+            { "title": "Aspects of human psychosocial development" },
+            { "title": "Diagnosis for psychotherapy - research tools" },
+            {
+              "title": "Indications and consequences of pharmacotherapy in psychotherapy"
+            }
+          ]
+        },
+        {
+          "title": "Semester 2",
+          "subtopics": [
+            { "title": "Psychiatric diagnosis" },
+            { "title": "Psychometric diagnosis" },
+            { "title": "Differential diagnosis" },
+            { "title": "Functional diagnosis" },
+            { "title": "Personality diagnosis" },
+            { "title": "Diagnosis of behavioral addictions" },
+            { "title": "Diagnosis of chemical addictions" },
+            { "title": "Couple diagnosis" },
+            { "title": "Psychotherapeutic diagnosis" }
+          ]
+        },
+        {
+          "title": "Semester 3",
+          "subtopics": [
+            { "title": "Psychoanalysis and psychodynamic psychotherapy" },
+            { "title": "Behavioral psychotherapy" },
+            { "title": "Cognitive-behavioral psychotherapy (CBT)" },
+            { "title": "Gestalt psychotherapy" },
+            { "title": "Solution-focused therapy" },
+            { "title": "Systemic psychotherapy" },
+            { "title": "Psychodynamic psychotherapy" },
+            { "title": "Acceptance and Commitment Therapy (ACT)" },
+            { "title": "Humanistic psychotherapy" }
+          ]
+        },
+        {
+          "title": "Semester 4",
+          "subtopics": [
+            {
+              "title": "Mechanisms of mental disorders, biological, psychological, and social factors"
+            },
+            {
+              "title": "Mental illness vs. mental disorder. Classification of mental disorders according to ICD-10"
+            },
+            {
+              "title": "Organic mental disorders, including symptomatic syndromes, e.g., dementia in Alzheimer's, Pick's, Creutzfeldt-Jakob, Huntington's, Parkinson's diseases or vascular dementia, delirium, amnesia, hallucinations"
+            },
+            {
+              "title": "Mental and behavioral disorders due to psychoactive substance use, e.g., due to alcohol, sedatives and hypnotics, tobacco, psychoactive substances"
+            },
+            {
+              "title": "Schizophrenia, schizotypal and delusional disorders, e.g., paranoid schizophrenia, catatonic schizophrenia, delusional disorders, polymorphic psychotic disorders"
+            },
+            {
+              "title": "Mood disorders (affective), e.g., manic episode, depressive episode, bipolar affective disorder"
+            },
+            {
+              "title": "Neurotic, stress-related and somatoform disorders, e.g., social phobia, panic disorder, obsessive-compulsive disorder, severe stress reaction, dissociative disorders, persistent somatoform pain disorder, hypochondriacal disorders, neurosis"
+            },
+            {
+              "title": "Behavioral syndromes associated with physiological disturbances and physical factors, e.g., eating disorders, nonorganic sleep disorders (insomnia, sleepwalking, night terrors, nightmares), sexual disorders (sexual aversion and lack of sexual enjoyment, orgasmic dysfunction, premature ejaculation, vaginismus, dyspareunia, excessive sexual drive), mental disorders associated with the puerperium"
+            },
+            {
+              "title": "Disorders of adult personality and behavior, e.g., specific personality disorders (paranoid, schizoid, dissocial, emotionally unstable, anxious), pathological gambling, pathological fire-setting (pyromania), pathological stealing (kleptomania), transsexualism, gender identity disorder of childhood, disorders of sexual preference, fetishism, exhibitionism, pedophilia, sadomasochism, disorders of sexual maturation, ego-dystonic sexual orientation, sexual relationship disorder"
+            },
+            { "title": "Mental retardation" },
+            {
+              "title": "Disorders of psychological development, e.g., specific developmental disorders of speech and language, specific developmental disorders of scholastic skills, pervasive developmental disorders (autism, Asperger's syndrome)"
+            },
+            {
+              "title": "Behavioral and emotional disorders with onset usually occurring in childhood and adolescence, e.g., hyperkinetic disorders, depressive conduct disorder, separation anxiety disorder of childhood, phobic anxiety disorder of childhood, social anxiety disorder of childhood, tic disorders"
+            },
+            { "title": "Unspecified mental disorder" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Second level of education <br /> <span className='text-blue-50 tracking-tight text-base'>Clinical internship V – VIII semester</span> <br /><span className='text-blue-50 tracking-tight text-sm'> Including:  <br />- 150 clock hours in a 24-hour psychiatric ward or in an admission room at a 24-hour psychiatric ward or in a psychiatric day ward; including 50 clock hours of supervision for children, adolescents and adults <br /> - 250 clock hours of clinical work under the substantive care of a psychiatrist or psychotherapist or clinical psychologist; including 50 clock hours of supervision for children, adolescents and adults <br /> 50 hours of classes/semester </span>",
+      "topics": [
+        {
+          "title": "Semester 5",
+          "subtopics": [
+            { "title": "Child psychotherapy" },
+            { "title": "Adolescent psychotherapy" },
+            { "title": "Family psychotherapy" },
+            { "title": "Couple psychotherapy" },
+            { "title": "Individual psychotherapy" },
+            { "title": "Group psychotherapy" },
+            { "title": "Psychotherapy of sexual disorders" },
+            { "title": "Addiction psychotherapy" },
+            { "title": "Clinical internship" },
+            { "title": "Supervision" }
+          ]
+        },
+        {
+          "title": "Semester 6",
+          "subtopics": [
+            { "title": "Psychiatry" },
+            { "title": "Sexology" },
+            { "title": "Adult psychopathology" },
+            { "title": "Obsessive-compulsive disorders" },
+            { "title": "Child psychopathology" },
+            { "title": "Clinical internship" },
+            { "title": "Supervision" }
+          ]
+        },
+        {
+          "title": "Semester 7",
+          "subtopics": [
+            { "title": "Child psychopathology" },
+            { "title": "Hypnosis: basic and advanced course" },
+            { "title": "Clinical internship" },
+            { "title": "Supervision" }
+          ]
+        },
+        {
+          "title": "Semester 8",
+          "subtopics": [
+            {
+              "title": "Studying a chosen approach: psychodynamic, behavioral, cognitive, client-centered therapy, naturalistic hypnosis, mindfulness, body-work, systemic methods, BSFT and other psychotherapeutic techniques are assimilated into integrative systemic theory"
+            },
+            { "title": "Clinical internship" },
+            { "title": "Supervision" }
+          ]
+        }
+      ]
+    }
+  ],
+  "faculty": "The program will be conducted by a qualified team of specialists in the fields of psychology, psychiatry, addiction therapy, and other related disciplines. The faculty will include both academic lecturers and practitioners with many years of clinical experience.",
+  "practices": "<ul className=\"list-disc list-inside space-y-2\"><li>150 clock hours in a 24-hour psychiatric ward or in an admission room at a 24-hour psychiatric ward or in a psychiatric day ward; including 50 clock hours of supervision for children, adolescents and adults</li><li>250 clock hours of clinical work under the substantive care of a psychiatrist or psychotherapist or clinical psychologist; including 50 clock hours of supervision for children, adolescents and adults</li></ul>",
+  "evaluation": "The assessment of learning outcomes will be based on: preparation of a project work in the field of psychotherapy, completion of a clinical internship, and passing final exams.",
+  "jobOpportunities": "Graduates of the 'Psychotherapy' program will be prepared to work in various therapeutic institutions, such as mental health centers, psychotherapy clinics, psychiatric hospitals, as well as in non-governmental organizations dealing with mental health. Additionally, they will be able to run their own therapeutic practice and participate in scientific research and prevention programs.",
+  "invite": "<div class=\"\"><p class=\"text-gray-100\">Start your professional journey as a <strong class=\"font-semibold\">psychotherapist</strong>.<br />Invest in your future and realize your new career prospects.</p></div>"
+}

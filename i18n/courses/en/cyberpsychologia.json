@@ -1,0 +1,251 @@
+{
+  "category": "psychologia i psychoterapia",
+  "id": "cyberpsychologia",
+  "title": "Cyberpsychology",
+  "banerDescription": "Explore the psychological aspects of digital technology use and the impact of the Internet on behavior and emotions.",
+  "description": "<ul className=\"list-disc list-inside space-y-2\"><li>management staff of educational institutions<br><span className=\"ml-4\">(schools, kindergartens, nurseries, counseling centers, educational centers, others)</span></li><li>pedagogues</li><li>psychologists</li><li>speech therapists</li><li>therapists</li><li>teachers</li><li>parents</li><li>legal guardians</li><li>educators</li><li>people working with children, youth, adults, seniors</li><li>people working with children, youth and adults with&nbsp;<span className=\"ml-2\">disabilities that cause lack or limitation of communication and functioning in society</span></li></ul>",
+  "description2": "The postgraduate studies in \"Cyberpsychology\" focus on examining the interactions between humans and technology, with particular emphasis on the impact of digital technologies on behavior, emotions, and society. The program aims to prepare students for work in research, clinical, and industrial areas related to information and communication technologies (ICT).",
+  "description3": "The study program is divided into three semesters, including theoretical lectures, practical workshops, seminars, and professional internships.",
+  "description4": "",
+  "descriptionP1": "",
+  "duration": "3 semesters",
+  "practicalHours": "90h of internship",
+  "price": "8000 PLN",
+  "payments": "10x800 PLN",
+  "scheduleInfo": "The third semester is dedicated to internships",
+  "schedule": [
+    "26.10.2024",
+    "16.11.2024",
+    "23.11.2024",
+    "30.11.2024",
+    "07.12.2024",
+    "14.12.2024",
+    "11.01.2025",
+    "18.01.2025",
+    "25.01.2025",
+    "15.02.2025",
+    "01.03.2025",
+    "15.03.2025",
+    "22.03.2025",
+    "05.04.2025",
+    "12.04.2025",
+    "10.05.2025",
+    "17.05.2025",
+    "24.05.2025"
+  ],
+  "modules": [
+    {
+      "title": "Introduction to Psychology and Digital Technologies",
+      "topics": [
+        {
+          "title": "Introduction to Psychology",
+          "subtopics": [
+            { "title": "History and foundations of psychology" },
+            { "title": "Major psychological schools and trends" },
+            { "title": "Research methods in psychology" }
+          ]
+        },
+        {
+          "title": "Psychology of Technology",
+          "subtopics": [
+            { "title": "Introduction to cyberpsychology" },
+            { "title": "Evolution of digital technologies" },
+            { "title": "Basic concepts and theories" }
+          ]
+        },
+        {
+          "title": "Introduction to Computer Science and Digital Technologies",
+          "subtopics": [
+            { "title": "Basics of computer science" },
+            { "title": "Data structures and algorithms" },
+            { "title": "Network and communication technologies" }
+          ]
+        },
+        {
+          "title": "Research Methods in Psychology",
+          "subtopics": [
+            { "title": "Methodology of psychological research" },
+            { "title": "Statistics in psychology" },
+            { "title": "Conducting and analyzing research" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Social Psychology",
+      "topics": [
+        {
+          "title": "Social Psychology",
+          "subtopics": [
+            { "title": "Group processes and social influence" },
+            { "title": "Interpersonal communication and media" },
+            { "title": "Psychology of relationships in the digital world" }
+          ]
+        },
+        {
+          "title": "Psychopathology and the Internet",
+          "subtopics": [
+            { "title": "Mental disorders related to internet use" },
+            { "title": "Cyberbullying, digital addictions" },
+            { "title": "Diagnosis and therapy" }
+          ]
+        },
+        {
+          "title": "Human-Computer Interaction Design",
+          "subtopics": [
+            { "title": "Principles of HCI (Human-Computer Interaction)" },
+            { "title": "Ergonomics and usability" },
+            { "title": "Psychology of interface design" }
+          ]
+        },
+        {
+          "title": "Ethics and Law in Cyberspace",
+          "subtopics": [
+            { "title": "Ethical aspects of technology use" },
+            { "title": "Privacy and data security" },
+            { "title": "Digital law and regulations" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Psychology of Digital Media",
+      "topics": [
+        {
+          "title": "Psychology of Digital Media",
+          "subtopics": [
+            { "title": "Social media and their impact" },
+            { "title": "Psychology of interactive media" },
+            { "title": "Advertising and persuasion in digital media" }
+          ]
+        },
+        {
+          "title": "Assistive Technologies",
+          "subtopics": [
+            { "title": "Virtual and augmented reality" },
+            { "title": "Technologies supporting education and therapy" },
+            { "title": "Applications of technology in various fields" }
+          ]
+        },
+        {
+          "title": "Data Analysis and Big Data",
+          "subtopics": [
+            { "title": "Basics of data analysis" },
+            { "title": "Big data analysis tools" },
+            { "title": "Interpretation and visualization of results" }
+          ]
+        },
+        {
+          "title": "Professional Internship I",
+          "subtopics": [
+            { "title": "Internship in research or industrial institutions" },
+            { "title": "Internship supervision" },
+            { "title": "Reflection and analysis of experiences" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced Digital Technologies",
+      "topics": [
+        {
+          "title": "Advanced Digital Technologies",
+          "subtopics": [
+            { "title": "Artificial intelligence and machine learning" },
+            { "title": "Internet of Things (IoT)" },
+            { "title": "Blockchain and decentralized technologies" }
+          ]
+        },
+        {
+          "title": "Human-Technology Interactions",
+          "subtopics": [
+            { "title": "Psychological aspects of interaction with technology" },
+            { "title": "Wearable technologies and their impact on health" },
+            { "title": "Psychology of technology use" }
+          ]
+        },
+        {
+          "title": "Professional Internship II",
+          "subtopics": [
+            { "title": "In-depth internship at a chosen institution" },
+            { "title": "Advanced supervision" },
+            { "title": "Case studies" }
+          ]
+        },
+        {
+          "title": "Cyberpsychology and Society",
+          "subtopics": [
+            { "title": "Social and cultural implications of technology" },
+            { "title": "Digital identity and self-esteem" },
+            { "title": "The future of technology and its impact on society" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cybertherapy and Digital Interventions",
+      "topics": [
+        {
+          "title": "Research in Cyberpsychology",
+          "subtopics": [
+            { "title": "Research methodology in cyberpsychology" },
+            { "title": "Conducting own research" },
+            { "title": "Analysis and presentation of results" }
+          ]
+        },
+        {
+          "title": "Cybertherapy and Digital Interventions",
+          "subtopics": [
+            { "title": "Online therapy techniques" },
+            { "title": "Digital interventions and their effectiveness" },
+            { "title": "Case studies" }
+          ]
+        },
+        {
+          "title": "Cybersecurity and Privacy",
+          "subtopics": [
+            { "title": "Basics of cybersecurity" },
+            { "title": "Online privacy protection" },
+            { "title": "Digital risk management" }
+          ]
+        },
+        {
+          "title": "Game and Simulation Design",
+          "subtopics": [
+            { "title": "Psychology of game design" },
+            { "title": "Usability and user experience" },
+            { "title": "Practical aspects of design" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Diploma Project",
+      "topics": [
+        {
+          "title": "Diploma Project",
+          "subtopics": [
+            { "title": "Project preparation" },
+            { "title": "Diploma thesis presentation" },
+            { "title": "Ethics of research and practices in cyberpsychology" }
+          ]
+        },
+        {
+          "title": "Specialized Internships",
+          "subtopics": [
+            { "title": "Intensive internship at a chosen institution" },
+            { "title": "Comprehensive supervision" },
+            { "title": "Assessment and analysis of therapeutic effects" },
+            { "title": "Summary of acquired knowledge and skills" },
+            { "title": "Case studies and simulations" }
+          ]
+        }
+      ]
+    }
+  ],
+  "faculty": "The program will be conducted by a qualified team of specialists in the fields of psychology, computer science, cybersecurity, and other related disciplines. The faculty will include both academic lecturers and practitioners with many years of experience working with digital technologies.",
+  "practices": "<ul className=\"list-disc list-inside space-y-2\"><li>50% - possibility to complete internships remotely at the MAGNOLIA Psychological and Pedagogical Counseling Center</li><li>The remaining 50% can be completed:<ul className=\"list-disc list-inside space-y-1 ml-4\"><li>in home institutions in the form of additional classes or performed within the teaching load,</li><li>in educational institutions,</li><li>in counseling centers,</li><li>other.</li></ul></li></ul>",
+  "evaluation": "The assessment of learning outcomes will be based on: preparation of a project work in the area of Cyberpsychology.",
+  "jobOpportunities": "Graduates of the \"Cyberpsychology\" program will be prepared to work in various sectors such as scientific research, education, technology industry, mental health, digital marketing, and the public sector. They can work as UX specialists, data analysts, online therapists, media psychology researchers, and technology and digital security consultants.",
+  "invite": "<div class=''> <p class='text-gray-100'>Explore the psychological aspects of digital technology use and the impact of the Internet on behavior and emotions.</p></div>"
+}

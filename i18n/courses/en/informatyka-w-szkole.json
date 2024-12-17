@@ -1,0 +1,79 @@
+{
+  "category": "educational management and didactics",
+  "id": "informatyka-w-szkole",
+  "title": "Computer Science in School",
+  "banerDescription": "Gain qualifications to teach computer science in primary and secondary schools, developing your technological and didactic competencies.",
+  "description": "<ul className=\"list-disc list-inside space-y-2\"><li>Teachers from various fields wishing to obtain qualifications to teach computer science</li><li>Individuals interested in using information technology in education</li><li>Specialists wanting to expand their competencies in computer science and didactics</li></ul>",
+  "description2": "These studies have been designed for teachers from various fields to enable them to effectively conduct classes in Computer Science in light of the latest changes in the education system, both in primary and secondary schools. During the studies, you will explore teaching techniques, acquire the ability to innovatively create didactic materials and implement projects in educational institutions. A key goal is also to strengthen your ability to effectively and thoughtfully use information technology in the educational process.",
+  "description3": "By choosing this field, you are investing in your professional future and contributing to raising teaching standards in the country. If you feel that computer science is your passion, this course will allow you to develop your skills in the company of experts, guiding you towards achieving your professional goals every day.",
+  "description4": "",
+  "descriptionP1": "",
+  "duration": "3 semesters",
+  "practicalHours": "120h of internship",
+  "price": "3600 PLN",
+  "payments": "10 x 360 PLN",
+  "scheduleInfo": "",
+  "schedule": [
+    "26.10.2024",
+    "16.11.2024",
+    "23.11.2024",
+    "30.11.2024",
+    "07.12.2024",
+    "14.12.2024",
+    "11.01.2025",
+    "18.01.2025",
+    "25.01.2025",
+    "15.02.2025",
+    "01.03.2025",
+    "15.03.2025",
+    "22.03.2025",
+    "05.04.2025",
+    "12.04.2025",
+    "10.05.2025",
+    "17.05.2025",
+    "24.05.2025"
+  ],
+  "modules": [
+    {
+      "title": "Specialized Education Module",
+      "topics": [
+        { "title": "PC Computer Architecture", "subtopics": [] },
+        { "title": "Databases", "subtopics": [] },
+        {
+          "title": "Didactics of Teaching Computer Science in Grades I-III",
+          "subtopics": []
+        },
+        {
+          "title": "Didactics of Teaching Computer Science in Grades IV-VIII",
+          "subtopics": []
+        },
+        {
+          "title": "Didactics of Teaching Computer Science in Secondary School",
+          "subtopics": []
+        },
+        { "title": "Elements of Computer Graphics", "subtopics": [] },
+        { "title": "Voice Emission", "subtopics": [] },
+        { "title": "Ethics of the Teaching Profession", "subtopics": [] },
+        { "title": "Basics of Algorithms and Programming", "subtopics": [] },
+        { "title": "Basics of Didactics", "subtopics": [] },
+        {
+          "title": "Computer Networks and Network Applications",
+          "subtopics": []
+        },
+        { "title": "Operating Systems", "subtopics": [] },
+        { "title": "Web Development Techniques", "subtopics": [] },
+        {
+          "title": "Information Technology and Office Software",
+          "subtopics": []
+        },
+        { "title": "Information Technologies in Education", "subtopics": [] },
+        { "title": "Internship (120 h)", "subtopics": [] }
+      ]
+    }
+  ],
+  "faculty": "Classes are conducted by experienced practitioners in the fields of computer science, programming, computer networks, and computer science didactics.",
+  "practices": "<ul className=\"list-disc list-inside space-y-2\"><li>The internship includes 120 hours and allows gaining experience in teaching computer science.</li><li>Internships can be carried out in primary and secondary schools.</li></ul>",
+  "evaluation": "Assessment of learning outcomes is based on activity during classes, completion of individual modules, implementation of internships, and preparation of a diploma thesis.",
+  "jobOpportunities": "<div><p className=\"text-lg font-semibold\">Graduates of the program will be prepared to work as:</p><ul className=\"list-disc list-inside mt-2 space-y-2\"><li>Computer science teachers in primary and secondary schools</li><li>Information technology specialists in educational institutions</li><li>Consultants and trainers in computer science education</li><li>IT department employees in educational institutions</li><li>Creators of didactic and e-learning materials</li></ul></div>",
+  "invite": "<div class=''> <p class='text-gray-100'>Gain the qualifications and skills necessary to teach computer science and develop your passion for technology, supporting future generations of students.</p></div>"
+}
